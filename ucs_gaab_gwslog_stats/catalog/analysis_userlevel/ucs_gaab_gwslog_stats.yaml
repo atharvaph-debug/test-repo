@@ -6,23 +6,23 @@ resource:
   description: "Aggregated statistics for Google Web Server (GWS) logs at the user level."
 dataplex-types.global.schema:
   fields:
-    - name: aggregation_timestamp
-      dataType: TIMESTAMP
-      metadataType: OTHER
-      description: "The timestamp of the aggregation window. The table is partitioned on this field."
     - name: user_id
       dataType: STRING
       metadataType: STRING
-      description: "The unique identifier for the user."
-    - name: client_type
-      dataType: STRING
-      metadataType: STRING
-      description: "The type of client making the requests (e.g., WEB, MOBILE)."
+      description: "Obscured unique identifier for the user."
+    - name: aggregation_timestamp
+      dataType: TIMESTAMP
+      metadataType: OTHER
+      description: "The timestamp of the aggregation window. The table is partitioned by this field."
     - name: request_count
-      dataType: INT64
+      dataType: INTEGER
       metadataType: NUMBER
       description: "The total number of requests made by the user in the aggregation window."
     - name: error_count
-      dataType: INT64
+      dataType: INTEGER
       metadataType: NUMBER
-      description: "The total number of requests that resulted in an error."
+      description: "The total number of requests that resulted in an error in the aggregation window."
+    - name: source_log
+      dataType: STRING
+      metadataType: STRING
+      description: "The source GWS log file for the aggregated data."
