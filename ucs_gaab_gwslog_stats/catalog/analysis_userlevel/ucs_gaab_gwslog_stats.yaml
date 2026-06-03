@@ -13,16 +13,16 @@ dataplex-types.global.schema:
     - name: aggregation_timestamp
       dataType: TIMESTAMP
       metadataType: OTHER
-      description: "The timestamp of the aggregation window. The table is partitioned by this field."
+      description: "Timestamp of the aggregation window."
     - name: request_count
       dataType: INTEGER
       metadataType: NUMBER
-      description: "The total number of requests made by the user in the aggregation window."
+      description: "Total number of requests from the user in the aggregation window."
     - name: error_count
       dataType: INTEGER
       metadataType: NUMBER
-      description: "The total number of requests that resulted in an error in the aggregation window."
-    - name: source_log
-      dataType: STRING
-      metadataType: STRING
-      description: "The source GWS log file for the aggregated data."
+      description: "Total number of requests with errors from the user in the aggregation window."
+    - name: partition_date
+      dataType: DATE
+      metadataType: OTHER
+      description: "Date partition for the table, derived from the aggregation timestamp."
