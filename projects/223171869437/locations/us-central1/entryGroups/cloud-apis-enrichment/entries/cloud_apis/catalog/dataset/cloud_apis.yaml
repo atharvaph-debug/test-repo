@@ -1,0 +1,156 @@
+id: cloud_apis
+type: cloud-ml-metadata-test-jialu.us-central1.simple-entry-type
+resource:
+  name: "projects/concord-prod/datasets/analysis_userlevel/tables/cloud_apis"
+  displayName: "cloud_apis"
+  description: "Unified table aggregating Google Cloud API usage logs from OnePlatform, Apiary, SourceRepo, and GCS."
+dataplex-types.global.schema:
+  fields:
+    - name: partition_date
+      dataType: STRING
+      metadataType: STRING
+      description: "Contains the date for the entries in this log."
+    - name: source
+      dataType: STRING
+      metadataType: STRING
+      description: "The origin of the data (e.g., 'Apiary', 'OP', 'SourceRepoLog', 'GCS')."
+    - name: obscured_gaia_id
+      dataType: STRING
+      metadataType: STRING
+      description: "Pseudonymised GAIA ID of the user."
+    - name: obscured_cpi
+      dataType: STRING
+      metadataType: STRING
+      description: "Pseudonymised CPI."
+    - name: obscured_client_project_number
+      dataType: STRING
+      metadataType: STRING
+      description: "The project that owns an API client (via API key, OAuth, etc.)."
+    - name: obscured_consumer_project_number
+      dataType: STRING
+      metadataType: STRING
+      description: "The project number for the entity consuming the API service."
+    - name: obscured_resource_project_number
+      dataType: STRING
+      metadataType: STRING
+      description: "The project that owns the target resource (e.g., GCS bucket, GCE VM)."
+    - name: service_name
+      dataType: STRING
+      metadataType: STRING
+      description: "Name of the service (e.g., storage.googleapis.com)."
+    - name: api_version
+      dataType: STRING
+      metadataType: STRING
+      description: "The version of the called APIs."
+    - name: api_method
+      dataType: STRING
+      metadataType: STRING
+      description: "The called API methods."
+    - name: response_code
+      dataType: STRING
+      metadataType: STRING
+      description: "The HTTP response code."
+    - name: response_code_class
+      dataType: STRING
+      metadataType: STRING
+      description: "The HTTP response code class (e.g., '2xx', '4xx')."
+    - name: status_code_description
+      dataType: STRING
+      metadataType: STRING
+      description: "Human-readable status description mapped from gRPC status codes."
+    - name: is_error
+      dataType: BOOLEAN
+      metadataType: BOOLEAN
+      description: "Indicates if the API call resulted in an error (HTTP response code >= 400)."
+    - name: client_library_type
+      dataType: STRING
+      metadataType: STRING
+      description: "Type of the client library used."
+    - name: client_library_name
+      dataType: STRING
+      metadataType: STRING
+      description: "Name of the client library."
+    - name: client_library_version
+      dataType: STRING
+      metadataType: STRING
+      description: "Version of the client library."
+    - name: client_library_language
+      dataType: STRING
+      metadataType: STRING
+      description: "Language of the Google-authored client library."
+    - name: client_library_language_version
+      dataType: STRING
+      metadataType: STRING
+      description: "Version of the client library language."
+    - name: tool_name
+      dataType: STRING
+      metadataType: STRING
+      description: "Name of the tool sending the request."
+    - name: tool_type
+      dataType: STRING
+      metadataType: STRING
+      description: "Type of the tool sending the request."
+    - name: tool_version
+      dataType: STRING
+      metadataType: STRING
+      description: "Version of the tool."
+    - name: partner_name
+      dataType: STRING
+      metadataType: STRING
+      description: "Google partner parsed from the user agent."
+    - name: sdk_command
+      dataType: STRING
+      metadataType: STRING
+      description: "SDK command initiating the API request."
+    - name: sdk_environment
+      dataType: STRING
+      metadataType: STRING
+      description: "Environment metrics if set."
+    - name: sdk_interactive
+      dataType: BOOLEAN
+      metadataType: BOOLEAN
+      description: "Indicates if the terminal session is interactive."
+    - name: sdk_python
+      dataType: STRING
+      metadataType: STRING
+      description: "Python version used by the SDK."
+    - name: auth_lib_version
+      dataType: STRING
+      metadataType: STRING
+      description: "Auth library version."
+    - name: auth_req_type
+      dataType: STRING
+      metadataType: STRING
+      description: "Auth request type (e.g., 'access-token', 'id-token')."
+    - name: cred_type
+      dataType: STRING
+      metadataType: STRING
+      description: "Credential type (e.g., 'user', 'sa-assertion')."
+    - name: client_os
+      dataType: STRING
+      metadataType: STRING
+      description: "Operating system of the client."
+    - name: client_os_ver
+      dataType: STRING
+      metadataType: STRING
+      description: "Version of the client operating system."
+    - name: client_pltf_arch
+      dataType: STRING
+      metadataType: STRING
+      description: "Platform architecture of the client."
+    - name: obscured_sdk_invocation_id
+      dataType: STRING
+      metadataType: STRING
+      description: "SDK command invocation ID."
+    - name: is_internal
+      dataType: BOOLEAN
+      metadataType: BOOLEAN
+      description: "Whether the resource project is internal."
+    - name: request_count
+      dataType: INTEGER
+      metadataType: NUMBER
+      description: "The total number of requests."
+    - name: is_first_party
+      dataType: BOOLEAN
+      metadataType: BOOLEAN
+      description: "Indicates if the request originated from a first-party service."
