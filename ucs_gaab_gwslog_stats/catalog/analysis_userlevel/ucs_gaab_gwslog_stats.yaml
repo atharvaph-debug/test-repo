@@ -1,0 +1,28 @@
+id: ucs_gaab_gwslog_stats
+type: cloud-ml-metadata-test-jialu.us-central1.simple-entry-type
+resource:
+  name: projects/concord-prod/datasets/analysis_userlevel/tables/ucs_gaab_gwslog_stats
+  displayName: "ucs_gaab_gwslog_stats"
+  description: "Aggregated statistics for Google Web Server (GWS) logs at the user level."
+dataplex-types.global.schema:
+  fields:
+    - name: user_id
+      dataType: STRING
+      metadataType: STRING
+      description: "Unique user identifier."
+    - name: aggregation_timestamp
+      dataType: TIMESTAMP
+      metadataType: OTHER
+      description: "Timestamp of the aggregation."
+    - name: request_count
+      dataType: INT64
+      metadataType: NUMBER
+      description: "Total number of requests made by the user."
+    - name: error_count
+      dataType: INT64
+      metadataType: NUMBER
+      description: "Total number of errors encountered by the user."
+    - name: client_type
+      dataType: STRING
+      metadataType: STRING
+      description: "Type of client making the requests."
