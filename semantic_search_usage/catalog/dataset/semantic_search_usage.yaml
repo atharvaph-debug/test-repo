@@ -1,0 +1,55 @@
+id: semantic_search_usage
+type: cloud-ml-metadata-test-jialu.us-central1.simple-entry-type
+resource:
+  name: projects/concord-prod/datasets/dataset/tables/semantic_search_usage
+  displayName: "Semantic Search Usage"
+  description: "Aggregated telemetry and usage metrics for Dataplex Semantic Search and Discovery Agent APIs."
+  labels:
+    tier: "tier1"
+    pipeline: "concord"
+dataplex-types.global.schema:
+  fields:
+    - name: obscured_project_number
+      dataType: STRING
+      metadataType: STRING
+      description: "Pseudonymized project number of the service consumer to ensure privacy."
+    - name: obscured_organization_id
+      dataType: STRING
+      metadataType: STRING
+      description: "Pseudonymized organization ID associated with the consumer project."
+    - name: region
+      dataType: STRING
+      metadataType: STRING
+      description: "GCP region where the semantic search request was processed."
+    - name: execution_mode
+      dataType: STRING
+      metadataType: STRING
+      description: "Agent execution mode utilized (e.g., fast, medium, thinking)."
+    - name: search_page_path
+      dataType: STRING
+      metadataType: STRING
+      description: "For UI-originated calls, the specific Cloud Console page path."
+    - name: referrer
+      dataType: STRING
+      metadataType: STRING
+      description: "Source tool or interface initiating the search (e.g., UI, API, NL2SQL)."
+    - name: response_code
+      dataType: INTEGER
+      metadataType: NUMBER
+      description: "HTTP status code of the Search API response (e.g., 200, 403, 500)."
+    - name: api_count
+      dataType: INTEGER
+      metadataType: NUMBER
+      description: "Total count of Semantic Search API calls for this dimensional combination."
+    - name: tokens_used
+      dataType: INTEGER
+      metadataType: NUMBER
+      description: "LLM token consumption for reasoning steps and LookupContext delivery."
+    - name: latency_ms
+      dataType: INTEGER
+      metadataType: NUMBER
+      description: "Average end-to-end response latency in milliseconds."
+    - name: date
+      dataType: DATETIME
+      metadataType: OTHER
+      description: "UTC date and time of the aggregated event (Day granularity)."
