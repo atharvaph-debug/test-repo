@@ -1,0 +1,11 @@
+{
+  "agent_type": "doc",
+  "user_input": "TOPIC: What is the final output",
+  "tool_uses": [],
+  "tool_responses": [],
+  "final_text": "`catalog.yaml`\n```yaml\nscope: entryGroup.cloud-ml-metadata-test-jialu.us-central1.my-entry-group\naliases:\n  overview:\n    aspect: dataplex-types.global.overview\nsnapshot:\n  entries:\n    - cloud-ml-metadata-test-jialu.us-central1.simple-entry-type\n  aspects:\n    - dataplex-types.global.overview\n```\n\n`catalog/final-output-specification.yaml`\n```yaml\nid: final-output-specification\ntype: cloud-ml-metadata-test-jialu.us-central1.simple-entry-type\nresource:\n  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/final-output-specification\n  displayName: \"Final Output Specification\"\n  description: \"An entry representing the final output specifications for the topic.\"\n```\n\n`catalog/final-output-specification.overview.md`\n```markdown\n---\nuserManaged: true\n---\n# Final Output Specification\n\n## Overview\nThis entry represents the \"What is the final output\" topic. Because the compiled summary of all batches provided was empty, this serves as a placeholder to maintain the structural integrity of the Dataplex mdcode catalog. \n\n## Source References\n* No source URLs were provided in the compiled summary.\n```",
+  "token_usage": {
+    "input": 1030,
+    "output": 309
+  }
+}
