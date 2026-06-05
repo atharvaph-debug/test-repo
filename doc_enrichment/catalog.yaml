@@ -1,0 +1,9 @@
+scope: entryGroup.cloud-ml-metadata-test-jialu.us-central1.my-entry-group
+aliases:
+  overview:
+    aspect: dataplex-types.global.overview
+snapshot:
+  entries:
+    - cloud-ml-metadata-test-jialu.us-central1.simple-entry-type
+  aspects:
+    - dataplex-types.global.overview
