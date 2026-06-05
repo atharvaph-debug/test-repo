@@ -1,0 +1,6 @@
+id: final-output-specification
+type: cloud-ml-metadata-test-jialu.us-central1.simple-entry-type
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/final-output-specification
+  displayName: "Final Output Specification"
+  description: "An entry representing the final output specifications for the topic."
