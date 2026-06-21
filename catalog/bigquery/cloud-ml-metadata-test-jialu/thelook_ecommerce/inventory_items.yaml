@@ -1,0 +1,71 @@
+name: bigquery/cloud-ml-metadata-test-jialu/thelook_ecommerce/inventory_items
+type: dataplex-types.global.bigquery-table
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/datasets/thelook_ecommerce/tables/inventory_items
+  displayName: inventory_items
+  description: Programatically generated inventory for The Look fictitious e-commerce
+    store
+  location: us
+  ancestors:
+  - name: projects/cloud-ml-metadata-test-jialu/datasets/thelook_ecommerce
+    type: dataplex-types.global.bigquery-dataset
+  createTime: 2026-06-12 18:49:39.890000+00:00
+  updateTime: 2026-06-12 18:49:39.890000+00:00
+aspects:
+  bigquery-table:
+    type: TABLE
+    tableType: TABLE
+  schema:
+    fields:
+    - name: id
+      dataType: INTEGER
+      metadataType: NUMBER
+      mode: NULLABLE
+    - name: product_id
+      dataType: INTEGER
+      metadataType: NUMBER
+      mode: NULLABLE
+    - name: created_at
+      dataType: TIMESTAMP
+      metadataType: OTHER
+      mode: NULLABLE
+    - name: sold_at
+      dataType: TIMESTAMP
+      metadataType: OTHER
+      mode: NULLABLE
+    - name: cost
+      dataType: FLOAT
+      metadataType: NUMBER
+      mode: NULLABLE
+    - name: product_category
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: product_name
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: product_brand
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: product_retail_price
+      dataType: FLOAT
+      metadataType: NUMBER
+      mode: NULLABLE
+    - name: product_department
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: product_sku
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: product_distribution_center_id
+      dataType: INTEGER
+      metadataType: NUMBER
+      mode: NULLABLE
+  storage:
+    service: BIGQUERY
+    resourceName: //bigquery.googleapis.com/projects/cloud-ml-metadata-test-jialu/datasets/thelook_ecommerce/tables/inventory_items
+category: product-and-inventory
