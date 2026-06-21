@@ -1,0 +1,75 @@
+name: bigquery/cloud-ml-metadata-test-jialu/thelook_ecommerce/events
+type: dataplex-types.global.bigquery-table
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/datasets/thelook_ecommerce/tables/events
+  displayName: events
+  description: Programatically generated web events for The Look fictitious e-commerce
+    store
+  location: us
+  ancestors:
+  - name: projects/cloud-ml-metadata-test-jialu/datasets/thelook_ecommerce
+    type: dataplex-types.global.bigquery-dataset
+  createTime: 2026-06-12 18:49:34.788000+00:00
+  updateTime: 2026-06-12 18:49:34.788000+00:00
+aspects:
+  bigquery-table:
+    type: TABLE
+    tableType: TABLE
+  schema:
+    fields:
+    - name: id
+      dataType: INTEGER
+      metadataType: NUMBER
+      mode: NULLABLE
+    - name: user_id
+      dataType: INTEGER
+      metadataType: NUMBER
+      mode: NULLABLE
+    - name: sequence_number
+      dataType: INTEGER
+      metadataType: NUMBER
+      mode: NULLABLE
+    - name: session_id
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: created_at
+      dataType: TIMESTAMP
+      metadataType: OTHER
+      mode: NULLABLE
+    - name: ip_address
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: city
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: state
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: postal_code
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: browser
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: traffic_source
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: uri
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+    - name: event_type
+      dataType: STRING
+      metadataType: STRING
+      mode: NULLABLE
+  storage:
+    service: BIGQUERY
+    resourceName: //bigquery.googleapis.com/projects/cloud-ml-metadata-test-jialu/datasets/thelook_ecommerce/tables/events
+category: miscellaneous
