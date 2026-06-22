@@ -1,0 +1,78 @@
+name: enrichment-gate
+
+# Runs when the enrichment agent pushes a per-run branch (kc-enrichment/**).
+# It evaluates the staged metadata and either enables auto-merge into the
+# staging branch or opens the PR for human review (HITL).
+on:
+  push:
+    branches:
+      - "kc-enrichment/**"   # real agent runs; kc-enrichment-test/** is excluded
+
+permissions:
+  contents: write          # create branch refs / allow auto-merge
+  pull-requests: write     # create, label, comment on the PR
+  id-token: write          # GitHub OIDC -> GCP Workload Identity Federation
+  checks: write
+
+concurrency:
+  group: gate-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  STAGING_BRANCH: ${{ vars.STAGING_BRANCH || 'enrichment-staging' }}
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0      # full history so the gate can diff against staging
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install eval deps
+        run: pip install -r eval/requirements.txt
+
+      # Auth to GCP for the Vertex/Gemini judge (no long-lived keys).
+      - id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WIF_PROVIDER }}
+          service_account: ${{ secrets.GCP_SA_EMAIL }}
+
+      - id: gate
+        env:
+          GOOGLE_CLOUD_PROJECT: ${{ vars.GCP_PROJECT }}
+          GOOGLE_GENAI_USE_VERTEXAI: "True"
+          KC_EVAL_MODEL: ${{ vars.KC_EVAL_MODEL || 'gemini-2.5-pro' }}
+          EVAL_THRESHOLD: ${{ vars.EVAL_THRESHOLD || '0.7' }}
+          GATE_BASE: origin/${{ vars.STAGING_BRANCH || 'enrichment-staging' }}
+          GATE_HEAD: HEAD
+        run: python scripts/ci/run_gate.py
+
+      - name: Open / locate PR, then auto-merge or request review
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DECISION: ${{ steps.gate.outputs.decision }}
+          SUMMARY: ${{ steps.gate.outputs.summary }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -e
+          # Create the PR if one doesn't exist yet (idempotent).
+          gh pr create --base "$STAGING_BRANCH" --head "$BRANCH" \
+            --title "Enrichment: $BRANCH" \
+            --body "Automated enrichment change set. Gate: $SUMMARY" || true
+          PR=$(gh pr list --head "$BRANCH" --state open --json number -q '.[0].number')
+          if [ -z "$PR" ]; then echo "No PR found for $BRANCH"; exit 1; fi
+          gh pr comment "$PR" --body-file gate_report.md
+          if [ "$DECISION" = "pass" ]; then
+            gh pr edit "$PR" --add-label automerge || true
+            gh pr merge "$PR" --squash --auto
+            echo "::notice::Auto-merge enabled for PR #$PR"
+          else
+            gh pr edit "$PR" --add-label needs-hitl || true
+            echo "::notice::PR #$PR routed to human review (HITL)"
+          fi

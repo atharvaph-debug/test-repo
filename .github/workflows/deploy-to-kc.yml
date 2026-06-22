@@ -1,0 +1,26 @@
+name: deploy-to-kc
+
+# Step 4 of the loop: a merge into the staging branch "deploys" the metadata to
+# Knowledge Catalog. PLACEHOLDER: the metadata repo does not yet vendor the kcmd
+# binary, and KC publish needs its own auth. Wire this up once kcmd is available
+# in CI (or pulled from the source repo). For now it only reports what it would do.
+on:
+  push:
+    branches:
+      - "enrichment-staging"   # keep in sync with vars.STAGING_BRANCH
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # Add an Environment with required reviewers here for a HITL gate ON DEPLOY:
+    # environment: kc-prod
+    steps:
+      - uses: actions/checkout@v4
+      - name: (placeholder) publish to Knowledge Catalog
+        run: |
+          echo "Merged to staging. Would now run: kcmd push for each changed project."
+          echo "TODO: vendor/pull kcmd, auth to Dataplex, and publish."

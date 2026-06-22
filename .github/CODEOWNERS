@@ -1,0 +1,6 @@
+# Reviewer routing for the HITL path. When the gate routes a PR to human review
+# (label: needs-hitl), GitHub requests review from the owners below.
+# Replace with real owners; you can scope by project dir, e.g.:
+#   /doc_enrichment/        @your-team/doc-owners
+#   /semantic_search_usage/ @your-team/search-owners
+* @atharvaph-debug
