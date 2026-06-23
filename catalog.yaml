@@ -1,4 +1,4 @@
-scope: bq-dataset.cloud-ml-metadata-test-jialu.thelook_ecommerce
+scope: bq-dataset.cloud-ml-metadata-test-jialu.hello_world
 snapshot:
   entries:
     - dataplex-types.global.bigquery-table
