@@ -1,0 +1,14 @@
+name: data-model/users
+id: data-model/users
+type: dataplex-types.global.generic
+category: data-model
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/data-model/users
+  displayName: Users Table
+  description: Stores customer data, with one row per customer, including demographics,
+    location, and acquisition channel.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/data-model/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,11 @@
+name: index
+id: index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/index
+  displayName: Build a knowledge base
+  description: Index of the catalog root (3 item(s)).
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

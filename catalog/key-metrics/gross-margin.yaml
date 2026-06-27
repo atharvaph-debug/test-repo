@@ -1,0 +1,14 @@
+name: key-metrics/gross-margin
+id: key-metrics/gross-margin
+type: dataplex-types.global.generic
+category: key-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/key-metrics/gross-margin
+  displayName: Gross Margin
+  description: The total profit from sales, calculated as the sum of sale_price minus
+    cost for all net sales.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/key-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

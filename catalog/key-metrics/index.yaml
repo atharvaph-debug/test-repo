@@ -1,0 +1,13 @@
+name: key-metrics/index
+id: key-metrics/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/key-metrics/index
+  displayName: Key Metrics
+  description: The primary Key Performance Indicators (KPIs) used to measure business
+    performance.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

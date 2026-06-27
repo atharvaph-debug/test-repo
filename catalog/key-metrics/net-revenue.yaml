@@ -1,0 +1,13 @@
+name: key-metrics/net-revenue
+id: key-metrics/net-revenue
+type: dataplex-types.global.generic
+category: key-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/key-metrics/net-revenue
+  displayName: Net Revenue
+  description: The total revenue after subtracting the value of returned items.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/key-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

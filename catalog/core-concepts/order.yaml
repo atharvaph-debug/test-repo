@@ -1,0 +1,14 @@
+name: core-concepts/order
+id: core-concepts/order
+type: dataplex-types.global.generic
+category: core-concepts
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/core-concepts/order
+  displayName: Order
+  description: Represents a single purchase event placed by a customer, which can
+    contain multiple items.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/core-concepts/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

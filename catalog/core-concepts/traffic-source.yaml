@@ -1,0 +1,14 @@
+name: core-concepts/traffic-source
+id: core-concepts/traffic-source
+type: dataplex-types.global.generic
+category: core-concepts
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/core-concepts/traffic-source
+  displayName: Traffic Source
+  description: The marketing channel that acquired a customer, such as Search, Organic,
+    or Email.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/core-concepts/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: core-concepts/retail-price
+id: core-concepts/retail-price
+type: dataplex-types.global.generic
+category: core-concepts
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/core-concepts/retail-price
+  displayName: Retail Price
+  description: The advertised catalog price for a product before any discounts, stored
+    in products.retail_price.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/core-concepts/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

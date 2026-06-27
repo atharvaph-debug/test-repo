@@ -1,0 +1,14 @@
+name: data-model/products
+id: data-model/products
+type: dataplex-types.global.generic
+category: data-model
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/data-model/products
+  displayName: Products Table
+  description: The authoritative source for product attributes, with one row per sellable
+    product SKU.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/data-model/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

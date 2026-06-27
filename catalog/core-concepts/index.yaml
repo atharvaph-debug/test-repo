@@ -1,0 +1,13 @@
+name: core-concepts/index
+id: core-concepts/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/core-concepts/index
+  displayName: Core Concepts
+  description: Fundamental business entities and terminologies used in theLook eCommerce
+    operations.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

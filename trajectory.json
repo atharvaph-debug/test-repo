@@ -1,119 +1,39 @@
 {
-  "agent_type": "table",
-  "user_input": "TOPIC: theLook eCommerce model | DATASET: cloud-ml-metadata-test-jialu.thelook_ecommerce",
+  "agent_type": "doc",
+  "user_input": "TOPIC: Build a knowledge base",
   "tool_uses": [
     {
       "name": "fetch_gdoc",
       "args": {
-        "url": "https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk"
+        "url": "1yWKJ3-TRAzZG7zlDH4lqD02m33Y3O44D7OROCy5ng9A",
+        "depth": 1
       }
     },
     {
       "name": "fetch_gdoc",
       "args": {
-        "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
+        "url": "1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs",
+        "depth": 1
       }
     },
     {
       "name": "fetch_gdoc",
       "args": {
-        "url": "https://docs.google.com/document/d/1fm5barRArG0T_KLCIXWnpUwXkaVNdlHNFljmcQ4ppfA/edit?usp=drivesdk"
+        "url": "1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00",
+        "depth": 1
       }
     },
     {
       "name": "fetch_gdoc",
       "args": {
-        "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "args": {
-        "table": "distribution_centers"
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "args": {
-        "table": "events"
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "args": {
-        "table": "inventory_items"
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "args": {
-        "table": "order_items"
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "args": {
-        "table": "orders"
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "args": {
-        "table": "products"
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "args": {
-        "table": "users"
-      }
-    },
-    {
-      "name": "route_docs",
-      "args": {
-        "table": "distribution_centers"
-      }
-    },
-    {
-      "name": "route_docs",
-      "args": {
-        "table": "events"
-      }
-    },
-    {
-      "name": "route_docs",
-      "args": {
-        "table": "inventory_items"
-      }
-    },
-    {
-      "name": "route_docs",
-      "args": {
-        "table": "order_items"
-      }
-    },
-    {
-      "name": "route_docs",
-      "args": {
-        "table": "orders"
-      }
-    },
-    {
-      "name": "route_docs",
-      "args": {
-        "table": "products"
-      }
-    },
-    {
-      "name": "route_docs",
-      "args": {
-        "table": "users"
+        "url": "1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw",
+        "depth": 1
       }
     },
     {
       "name": "enumerate",
       "args": {
-        "topic": "theLook eCommerce model"
+        "topic": "Build a knowledge base"
       }
     }
   ],
@@ -121,737 +41,33 @@
     {
       "name": "fetch_gdoc",
       "response": {
-        "url": "https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk",
-        "name": "theLook eCommerce \u2014 Metric Definitions",
-        "content": "# theLook eCommerce \u2014 Metric Definitions (application/vnd.google-apps.document)\n\n# theLook eCommerce \u2014 Metric Definitions\n\n**Owner:** Commerce Data & Analytics **Purpose:** Canonical formulas for the core commerce metrics, expressed against the warehouse columns. Use these so every team computes the same number.\n\nAll revenue and unit metrics are computed at the **order-item grain** (`order_items`), which is the sold-unit grain. See the Business Glossary for the Order vs. Order Item distinction and the price definitions.\n\n## Revenue\n\n**Gross Revenue** \\= `SUM(order_items.sale_price)` over items whose status is not Cancelled.\n\n**Net Revenue** \\= `SUM(order_items.sale_price)` over items that are neither Cancelled nor Returned. Net revenue is gross revenue with returns removed.\n\nAlways exclude Cancelled items from any revenue figure; exclude Returned items additionally for *net* revenue.\n\n## Average Order Value (AOV)\n\n**AOV** \\= Gross Revenue / number of distinct orders \\= `SUM(order_items.sale_price) / COUNT(DISTINCT order_items.order_id)`. AOV is an order-grain metric derived from item-grain revenue.\n\n## Units Sold\n\n**Units Sold** \\= `COUNT(order_items.id)` for non-cancelled items. Each order item is one unit.\n\n## Return Rate\n\n**Return Rate** \\= returned units / sold units \\= `COUNT(order_items WHERE returned_at IS NOT NULL) / COUNT(order_items WHERE status <> 'Cancelled')`.\n\n## Gross Margin and Margin %\n\n**Gross Margin** \\= `SUM(order_items.sale_price - products.cost)` (join `order_items.product_id` \u2192 `products.id`), over non-returned, non-cancelled items.\n\n**Gross Margin %** \\= Gross Margin / Net Revenue.\n\n## Inventory Sell-Through and Days-in-Inventory\n\n**Sell-Through Rate** \\= sold inventory units / total inventory units \\= `COUNT(inventory_items WHERE sold_at IS NOT NULL) / COUNT(inventory_items)`.\n\n**Average Days in Inventory** \\= mean of `(sold_at - created_at)` over sold inventory items \u2014 how long a unit sits in stock before it sells.\n\n## Customer Acquisition by Channel\n\nGroup `users` by `traffic_source` to attribute customers (and, by joining through orders, revenue) to acquisition channels.  \n"
+        "url": "1yWKJ3-TRAzZG7zlDH4lqD02m33Y3O44D7OROCy5ng9A",
+        "depth": 1,
+        "content": "# theLook eCommerce \u2014 Order Lifecycle and Status (application/vnd.google-apps.document)\n\n# theLook eCommerce \u2014 Order Lifecycle and Status\n\n**Owner:** Fulfillment Operations **Audience:** Analysts working with orders, fulfillment, and returns\n\nHow an order moves from placement to completion (or return), and what each status and timestamp means. Applies to both the `orders` table and the `order_items` table.\n\n## Order status\n\n`orders.status` describes the overall state of the order. The lifecycle is:\n\n1. **Processing** \u2014 the order has been placed and is being prepared; payment captured, not yet shipped.  \n2. **Shipped** \u2014 the order has left a distribution center.  \n3. **Complete** \u2014 the order was delivered and the return window has effectively closed.  \n4. **Returned** \u2014 one or more items came back; the order is in a returned state.  \n5. **Cancelled** \u2014 the order was cancelled before fulfillment and generated no revenue.\n\n## Order Item status\n\n`order_items.status` tracks the **same lifecycle at the line-item grain**. Because an order can be partially fulfilled or partially returned, item status can differ from the parent order's status \u2014 e.g. an order may be **Complete** while one of its order items is **Returned**. Always compute fulfillment and return metrics from `order_items.status`, not from `orders.status`, when item-level accuracy matters.\n\n## The timestamp funnel\n\nBoth `orders` and `order_items` carry a sequence of event timestamps that record when the item moved through each stage:\n\n- **`created_at`** \u2014 when the order/line was placed.  \n- **`shipped_at`** \u2014 when it shipped from the distribution center.  \n- **`delivered_at`** \u2014 when it reached the customer.  \n- **`returned_at`** \u2014 when it was returned, if applicable.\n\nThese enable funnel and cycle-time analysis: processing time (`shipped_at - created_at`), transit time (`delivered_at - shipped_at`), and return latency (`returned_at - delivered_at`). A NULL timestamp means that stage has not happened.\n\n## Returns\n\nAn order item is a **return** when `returned_at` is set (or its `status` is Returned). Returns reverse the revenue and margin of that line and should be excluded from net revenue. **Return Rate** is the share of sold units that were later returned.\n\n## Revenue-bearing vs. non-revenue states\n\nOnly **Complete**, **Shipped**, and **Processing** items represent realized or in-flight revenue. **Cancelled** items never generated revenue and must be excluded from all revenue metrics. **Returned** items generated revenue that was subsequently reversed; exclude them from *net* revenue but keep them for gross-vs-net and return analysis.\n\n"
       }
     },
     {
       "name": "fetch_gdoc",
       "response": {
-        "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ",
-        "name": "theLook eCommerce \u2014 Data Model and Relationships",
-        "content": "# theLook eCommerce \u2014 Data Model and Relationships (application/vnd.google-apps.document)\n\n# theLook eCommerce \u2014 Data Model and Relationships\n\n**Owner:** Commerce Data & Analytics **Audience:** Engineers and analysts joining across the eCommerce tables\n\nThe grain of each table and how the tables relate. Use this to write correct joins and to understand lineage.\n\n## Tables and their grain\n\n- **`users`** \u2014 one row per customer. Grain: customer. Holds demographics (age, gender), location (city/state/country, lat/long), acquisition channel (`traffic_source`), and signup time (`created_at`).  \n- **`orders`** \u2014 one row per order (a checkout event). Grain: order. Links to the customer via `user_id`.  \n- **`order_items`** \u2014 one row per unit of a product in an order. Grain: order line / sold unit. This is the central fact table for revenue.  \n- **`products`** \u2014 one row per sellable product (SKU). Grain: product.  \n- **`inventory_items`** \u2014 one row per physical unit of stock. Grain: stock unit.  \n- **`distribution_centers`** \u2014 one row per fulfillment warehouse. Grain: warehouse.\n\n## Relationships (foreign keys)\n\n- `orders.user_id` \u2192 `users.id`  \n- `order_items.order_id` \u2192 `orders.order_id`  \n- `order_items.user_id` \u2192 `users.id`  \n- `order_items.product_id` \u2192 `products.id`  \n- `order_items.inventory_item_id` \u2192 `inventory_items.id`  \n- `products.distribution_center_id` \u2192 `distribution_centers.id`  \n- `inventory_items.product_id` \u2192 `products.id`\n\n`order_items` is the hub: it ties together the customer, the order, the product, and the specific inventory unit that was shipped. Most analytical queries start from `order_items` and join outward.\n\n## Denormalization note (important)\n\n`inventory_items` **denormalizes** the product attributes. The `product_*` columns on `inventory_items` (`product_category`, `product_name`, `product_brand`, `product_retail_price`, `product_department`, `product_sku`, `product_distribution_center_id`) are copies of the corresponding fields in `products`, carried for convenience so inventory queries don't need a join. The **authoritative source for product attributes is the `products` table** \u2014 if the two ever disagree, trust `products`. Do not treat the `inventory_items.product_*` columns as independent facts.\n\n## Lineage summary\n\nCustomer (`users`) places an Order (`orders`), which is composed of Order Items (`order_items`). Each order item references a Product (`products`) and the physical Inventory Item (`inventory_items`) that fulfilled it. Products are stocked and shipped from a Distribution Center (`distribution_centers`).  \n"
+        "url": "1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs",
+        "depth": 1,
+        "content": "# theLook eCommerce \u2014 Metric Definitions (application/vnd.google-apps.document)\n\n# theLook eCommerce \u2014 Metric Definitions\n\n**Owner:** Commerce Data & Analytics **Purpose:** Canonical formulas for the core commerce metrics, expressed against the warehouse columns. Use these so every team computes the same number.\n\nAll revenue and unit metrics are computed at the **order-item grain** (`order_items`), which is the sold-unit grain. See the Business Glossary for the Order vs. Order Item distinction and the price definitions.\n\n## Revenue\n\n**Gross Revenue** \\= `SUM(order_items.sale_price)` over items whose status is not Cancelled.\n\n**Net Revenue** \\= `SUM(order_items.sale_price)` over items that are neither Cancelled nor Returned. Net revenue is gross revenue with returns removed.\n\nAlways exclude Cancelled items from any revenue figure; exclude Returned items additionally for *net* revenue.\n\n## Average Order Value (AOV)\n\n**AOV** \\= Gross Revenue / number of distinct orders \\= `SUM(order_items.sale_price) / COUNT(DISTINCT order_items.order_id)`. AOV is an order-grain metric derived from item-grain revenue.\n\n## Units Sold\n\n**Units Sold** \\= `COUNT(order_items.id)` for non-cancelled items. Each order item is one unit.\n\n## Return Rate\n\n**Return Rate** \\= returned units / sold units \\= `COUNT(order_items WHERE returned_at IS NOT NULL) / COUNT(order_items WHERE status <> 'Cancelled')`.\n\n## Gross Margin and Margin %\n\n**Gross Margin** \\= `SUM(order_items.sale_price - products.cost)` (join `order_items.product_id` \u2192 `products.id`), over non-returned, non-cancelled items.\n\n**Gross Margin %** \\= Gross Margin / Net Revenue.\n\n## Inventory Sell-Through and Days-in-Inventory\n\n**Sell-Through Rate** \\= sold inventory units / total inventory units \\= `COUNT(inventory_items WHERE sold_at IS NOT NULL) / COUNT(inventory_items)`.\n\n**Average Days in Inventory** \\= mean of `(sold_at - created_at)` over sold inventory items \u2014 how long a unit sits in stock before it sells.\n\n## Customer Acquisition by Channel\n\nGroup `users` by `traffic_source` to attribute customers (and, by joining through orders, revenue) to acquisition channels.\n\n"
       }
     },
     {
       "name": "fetch_gdoc",
       "response": {
-        "url": "https://docs.google.com/document/d/1fm5barRArG0T_KLCIXWnpUwXkaVNdlHNFljmcQ4ppfA/edit?usp=drivesdk",
-        "name": "theLook eCommerce \u2014 Order Lifecycle and Status",
-        "content": "# theLook eCommerce \u2014 Order Lifecycle and Status (application/vnd.google-apps.document)\n\n# theLook eCommerce \u2014 Order Lifecycle and Status\n\n**Owner:** Fulfillment Operations **Audience:** Analysts working with orders, fulfillment, and returns\n\nHow an order moves from placement to completion (or return), and what each status and timestamp means. Applies to both the `orders` table and the `order_items` table.\n\n## Order status\n\n`orders.status` describes the overall state of the order. The lifecycle is:\n\n1. **Processing** \u2014 the order has been placed and is being prepared; payment captured, not yet shipped.  \n2. **Shipped** \u2014 the order has left a distribution center.  \n3. **Complete** \u2014 the order was delivered and the return window has effectively closed.  \n4. **Returned** \u2014 one or more items came back; the order is in a returned state.  \n5. **Cancelled** \u2014 the order was cancelled before fulfillment and generated no revenue.\n\n## Order Item status\n\n`order_items.status` tracks the **same lifecycle at the line-item grain**. Because an order can be partially fulfilled or partially returned, item status can differ from the parent order's status \u2014 e.g. an order may be **Complete** while one of its order items is **Returned**. Always compute fulfillment and return metrics from `order_items.status`, not from `orders.status`, when item-level accuracy matters.\n\n## The timestamp funnel\n\nBoth `orders` and `order_items` carry a sequence of event timestamps that record when the item moved through each stage:\n\n- **`created_at`** \u2014 when the order/line was placed.  \n- **`shipped_at`** \u2014 when it shipped from the distribution center.  \n- **`delivered_at`** \u2014 when it reached the customer.  \n- **`returned_at`** \u2014 when it was returned, if applicable.\n\nThese enable funnel and cycle-time analysis: processing time (`shipped_at - created_at`), transit time (`delivered_at - shipped_at`), and return latency (`returned_at - delivered_at`). A NULL timestamp means that stage has not happened.\n\n## Returns\n\nAn order item is a **return** when `returned_at` is set (or its `status` is Returned). Returns reverse the revenue and margin of that line and should be excluded from net revenue. **Return Rate** is the share of sold units that were later returned.\n\n## Revenue-bearing vs. non-revenue states\n\nOnly **Complete**, **Shipped**, and **Processing** items represent realized or in-flight revenue. **Cancelled** items never generated revenue and must be excluded from all revenue metrics. **Returned** items generated revenue that was subsequently reversed; exclude them from *net* revenue but keep them for gross-vs-net and return analysis.  \n"
+        "url": "1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00",
+        "depth": 1,
+        "content": "# theLook eCommerce \u2014 Data Model and Relationships (application/vnd.google-apps.document)\n\n# theLook eCommerce \u2014 Data Model and Relationships\n\n**Owner:** Commerce Data & Analytics **Audience:** Engineers and analysts joining across the eCommerce tables\n\nThe grain of each table and how the tables relate. Use this to write correct joins and to understand lineage.\n\n## Tables and their grain\n\n- **`users`** \u2014 one row per customer. Grain: customer. Holds demographics (age, gender), location (city/state/country, lat/long), acquisition channel (`traffic_source`), and signup time (`created_at`).  \n- **`orders`** \u2014 one row per order (a checkout event). Grain: order. Links to the customer via `user_id`.  \n- **`order_items`** \u2014 one row per unit of a product in an order. Grain: order line / sold unit. This is the central fact table for revenue.  \n- **`products`** \u2014 one row per sellable product (SKU). Grain: product.  \n- **`inventory_items`** \u2014 one row per physical unit of stock. Grain: stock unit.  \n- **`distribution_centers`** \u2014 one row per fulfillment warehouse. Grain: warehouse.\n\n## Relationships (foreign keys)\n\n- `orders.user_id` \u2192 `users.id`  \n- `order_items.order_id` \u2192 `orders.order_id`  \n- `order_items.user_id` \u2192 `users.id`  \n- `order_items.product_id` \u2192 `products.id`  \n- `order_items.inventory_item_id` \u2192 `inventory_items.id`  \n- `products.distribution_center_id` \u2192 `distribution_centers.id`  \n- `inventory_items.product_id` \u2192 `products.id`\n\n`order_items` is the hub: it ties together the customer, the order, the product, and the specific inventory unit that was shipped. Most analytical queries start from `order_items` and join outward.\n\n## Denormalization note (important)\n\n`inventory_items` **denormalizes** the product attributes. The `product_*` columns on `inventory_items` (`product_category`, `product_name`, `product_brand`, `product_retail_price`, `product_department`, `product_sku`, `product_distribution_center_id`) are copies of the corresponding fields in `products`, carried for convenience so inventory queries don't need a join. The **authoritative source for product attributes is the `products` table** \u2014 if the two ever disagree, trust `products`. Do not treat the `inventory_items.product_*` columns as independent facts.\n\n## Lineage summary\n\nCustomer (`users`) places an Order (`orders`), which is composed of Order Items (`order_items`). Each order item references a Product (`products`) and the physical Inventory Item (`inventory_items`) that fulfilled it. Products are stocked and shipped from a Distribution Center (`distribution_centers`).\n\n"
       }
     },
     {
       "name": "fetch_gdoc",
       "response": {
-        "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ",
-        "name": "theLook eCommerce \u2014 Business Glossary",
-        "content": "# theLook eCommerce \u2014 Business Glossary (application/vnd.google-apps.document)\n\n# theLook eCommerce \u2014 Business Glossary\n\n**Owner:** Commerce Data & Analytics **Audience:** Analysts, data scientists, and engineers querying the eCommerce warehouse\n\nShared definitions for the core business concepts in the theLook eCommerce dataset. theLook is a multi-brand online apparel and accessories retailer. Use these definitions so metrics and reports mean the same thing across teams.\n\n## Order vs. Order Item\n\nThese are two different grains and must not be confused.\n\n- An **Order** is a single purchase event placed by a customer. One order can contain many items; `num_of_item` records how many. An order carries an overall fulfillment `status` and the customer who placed it (`user_id`).  \n- An **Order Item** is a single unit of a single product within an order. It is the **revenue grain** \u2014 every line that a customer actually paid for is one order item. Revenue, margin, and units-sold are all computed at this grain, not at the order grain.\n\nA customer who buys two shirts and one hat in one checkout creates **one order** and **three order items**.\n\n## Sale Price, Retail Price, and Cost\n\nThese three money fields are easy to mix up; they are distinct and live on different tables.\n\n- **Cost** \u2014 what theLook paid its supplier for the unit (wholesale / landed cost). Found as `products.cost` and `inventory_items.cost`. Never shown to the customer.  \n- **Retail Price** \u2014 the list price theLook advertises for a product (`products.retail_price`). This is the catalog price, *before* any discount.  \n- **Sale Price** \u2014 the price the customer **actually paid** for a unit, recorded on the transaction line as `order_items.sale_price`. This is the authoritative figure for revenue. Sale price may differ from retail price because of promotions or markdowns.\n\n**Rule of thumb:** revenue uses `order_items.sale_price`; margin compares it to `cost`; `retail_price` is the reference list price, not realized revenue.\n\n## Gross Margin\n\n**Gross Margin** is the profit on a unit before operating costs: `sale_price - cost` per order item (or `retail_price - cost` at list price for catalog analysis). **Gross Margin %** is `gross_margin / sale_price`.\n\n## SKU and Product Taxonomy\n\n- **SKU (Stock Keeping Unit)** \u2014 the identifier theLook uses to track a sellable product variant in inventory (`products.sku`). One SKU corresponds to one row in `products`.  \n- Products are organized in a three-level taxonomy:  \n  - **Department** \u2014 the broadest grouping (e.g. Men, Women).  \n  - **Category** \u2014 the product type within a department (e.g. Jeans, Outerwear).  \n  - **Brand** \u2014 the manufacturer or label.\n\n## Distribution Center\n\nA **Distribution Center** is a physical warehouse that stocks and ships products. Every product is assigned to exactly one distribution center via `products.distribution_center_id`. Distribution centers carry a name and a geographic location (latitude/longitude) used for fulfillment and shipping-time analysis.\n\n## Inventory Item\n\nAn **Inventory Item** is one physical unit of a product held in stock. It is created when stock is received (`created_at`) and is marked `sold_at` when it is purchased. The difference between those two timestamps is how long the unit sat in inventory before selling.\n\n## Traffic Source\n\n**Traffic Source** is the marketing channel that brought a customer to theLook, stored on `users.traffic_source`. Typical values are Search, Organic, Email, Display, and Facebook. It is the basis for customer-acquisition and channel-attribution analysis.  \n"
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "response": {
-        "table": "distribution_centers",
-        "schema_fields": [
-          {
-            "name": "id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "name",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "latitude",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "longitude",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "distribution_center_geom",
-            "dataType": "GEOGRAPHY",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "response": {
-        "table": "events",
-        "schema_fields": [
-          {
-            "name": "id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "user_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "sequence_number",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "session_id",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "created_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "ip_address",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "city",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "state",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "postal_code",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "browser",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "traffic_source",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "uri",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "event_type",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "response": {
-        "table": "inventory_items",
-        "schema_fields": [
-          {
-            "name": "id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "created_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "sold_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "cost",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_category",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_name",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_brand",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_retail_price",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_department",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_sku",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_distribution_center_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "response": {
-        "table": "order_items",
-        "schema_fields": [
-          {
-            "name": "id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "order_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "user_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "inventory_item_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "status",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "created_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "shipped_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "delivered_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "returned_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "sale_price",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "response": {
-        "table": "orders",
-        "schema_fields": [
-          {
-            "name": "order_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "user_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "status",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "gender",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "created_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "returned_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "shipped_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "delivered_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "num_of_item",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "response": {
-        "table": "products",
-        "schema_fields": [
-          {
-            "name": "id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "cost",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "category",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "name",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "brand",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "retail_price",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "department",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "sku",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "distribution_center_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
-      }
-    },
-    {
-      "name": "get_table_entry",
-      "response": {
-        "table": "users",
-        "schema_fields": [
-          {
-            "name": "id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "first_name",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "last_name",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "email",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "age",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "gender",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "state",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "street_address",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "postal_code",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "city",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "country",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "latitude",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "longitude",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "traffic_source",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "created_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "user_geom",
-            "dataType": "GEOGRAPHY",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
-      }
-    },
-    {
-      "name": "route_docs",
-      "response": {
-        "table": "distribution_centers",
-        "relevant_docs": [
-          {
-            "name": "theLook eCommerce \u2014 Data Model and Relationships",
-            "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Business Glossary",
-            "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-          }
-        ]
-      }
-    },
-    {
-      "name": "route_docs",
-      "response": {
-        "table": "events",
-        "relevant_docs": []
-      }
-    },
-    {
-      "name": "route_docs",
-      "response": {
-        "table": "inventory_items",
-        "relevant_docs": [
-          {
-            "name": "theLook eCommerce \u2014 Data Model and Relationships",
-            "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Business Glossary",
-            "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Metric Definitions",
-            "url": "https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk"
-          }
-        ]
-      }
-    },
-    {
-      "name": "route_docs",
-      "response": {
-        "table": "order_items",
-        "relevant_docs": [
-          {
-            "name": "theLook eCommerce \u2014 Data Model and Relationships",
-            "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Order Lifecycle and Status",
-            "url": "https://docs.google.com/document/d/1fm5barRArG0T_KLCIXWnpUwXkaVNdlHNFljmcQ4ppfA/edit?usp=drivesdk"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Business Glossary",
-            "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Metric Definitions",
-            "url": "https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk"
-          }
-        ]
-      }
-    },
-    {
-      "name": "route_docs",
-      "response": {
-        "table": "orders",
-        "relevant_docs": [
-          {
-            "name": "theLook eCommerce \u2014 Order Lifecycle and Status",
-            "url": "https://docs.google.com/document/d/1fm5barRArG0T_KLCIXWnpUwXkaVNdlHNFljmcQ4ppfA/edit?usp=drivesdk"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Business Glossary",
-            "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Data Model and Relationships",
-            "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Metric Definitions",
-            "url": "https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk"
-          }
-        ]
-      }
-    },
-    {
-      "name": "route_docs",
-      "response": {
-        "table": "products",
-        "relevant_docs": [
-          {
-            "name": "theLook eCommerce \u2014 Data Model and Relationships",
-            "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Business Glossary",
-            "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-          }
-        ]
-      }
-    },
-    {
-      "name": "route_docs",
-      "response": {
-        "table": "users",
-        "relevant_docs": [
-          {
-            "name": "theLook eCommerce \u2014 Business Glossary",
-            "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Data Model and Relationships",
-            "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
-          }
-        ]
+        "url": "1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw",
+        "depth": 1,
+        "content": "# theLook eCommerce \u2014 Business Glossary (application/vnd.google-apps.document)\n\n# theLook eCommerce \u2014 Business Glossary\n\n**Owner:** Commerce Data & Analytics **Audience:** Analysts, data scientists, and engineers querying the eCommerce warehouse\n\nShared definitions for the core business concepts in the theLook eCommerce dataset. theLook is a multi-brand online apparel and accessories retailer. Use these definitions so metrics and reports mean the same thing across teams.\n\n## Order vs. Order Item\n\nThese are two different grains and must not be confused.\n\n- An **Order** is a single purchase event placed by a customer. One order can contain many items; `num_of_item` records how many. An order carries an overall fulfillment `status` and the customer who placed it (`user_id`).  \n- An **Order Item** is a single unit of a single product within an order. It is the **revenue grain** \u2014 every line that a customer actually paid for is one order item. Revenue, margin, and units-sold are all computed at this grain, not at the order grain.\n\nA customer who buys two shirts and one hat in one checkout creates **one order** and **three order items**.\n\n## Sale Price, Retail Price, and Cost\n\nThese three money fields are easy to mix up; they are distinct and live on different tables.\n\n- **Cost** \u2014 what theLook paid its supplier for the unit (wholesale / landed cost). Found as `products.cost` and `inventory_items.cost`. Never shown to the customer.  \n- **Retail Price** \u2014 the list price theLook advertises for a product (`products.retail_price`). This is the catalog price, *before* any discount.  \n- **Sale Price** \u2014 the price the customer **actually paid** for a unit, recorded on the transaction line as `order_items.sale_price`. This is the authoritative figure for revenue. Sale price may differ from retail price because of promotions or markdowns.\n\n**Rule of thumb:** revenue uses `order_items.sale_price`; margin compares it to `cost`; `retail_price` is the reference list price, not realized revenue.\n\n## Gross Margin\n\n**Gross Margin** is the profit on a unit before operating costs: `sale_price - cost` per order item (or `retail_price - cost` at list price for catalog analysis). **Gross Margin %** is `gross_margin / sale_price`.\n\n## SKU and Product Taxonomy\n\n- **SKU (Stock Keeping Unit)** \u2014 the identifier theLook uses to track a sellable product variant in inventory (`products.sku`). One SKU corresponds to one row in `products`.  \n- Products are organized in a three-level taxonomy:  \n  - **Department** \u2014 the broadest grouping (e.g. Men, Women).  \n  - **Category** \u2014 the product type within a department (e.g. Jeans, Outerwear).  \n  - **Brand** \u2014 the manufacturer or label.\n\n## Distribution Center\n\nA **Distribution Center** is a physical warehouse that stocks and ships products. Every product is assigned to exactly one distribution center via `products.distribution_center_id`. Distribution centers carry a name and a geographic location (latitude/longitude) used for fulfillment and shipping-time analysis.\n\n## Inventory Item\n\nAn **Inventory Item** is one physical unit of a product held in stock. It is created when stock is received (`created_at`) and is marked `sold_at` when it is purchased. The difference between those two timestamps is how long the unit sat in inventory before selling.\n\n## Traffic Source\n\n**Traffic Source** is the marketing channel that brought a customer to theLook, stored on `users.traffic_source`. Typical values are Search, Organic, Email, Display, and Facebook. It is the basis for customer-acquisition and channel-attribution analysis.\n\n"
       }
     },
     {
@@ -859,79 +75,287 @@
       "response": {
         "categories": [
           {
-            "id": "customer-and-order-data",
-            "title": "Customer and Order Data",
-            "description": "Tables related to customer accounts and their purchase orders.",
+            "id": "data-model",
+            "title": "Data Model",
+            "description": "The core tables that constitute the theLook eCommerce data schema.",
             "entries": [
               {
-                "id": "order_items",
-                "display_name": "Order Items",
+                "id": "users",
+                "display_name": "Users Table",
                 "aliases": [],
-                "description": "Programatically generated order items for The Look fictitious e-commerce store.",
-                "primary_source_urls": [],
-                "kind": "table"
+                "description": "Stores customer data, with one row per customer, including demographics, location, and acquisition channel.",
+                "primary_source_urls": [
+                  "1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00"
+                ],
+                "kind": "kb"
               },
               {
                 "id": "orders",
-                "display_name": "Orders",
+                "display_name": "Orders Table",
                 "aliases": [],
-                "description": "Programatically generated orders for The Look fictitious e-commerce store.",
-                "primary_source_urls": [],
-                "kind": "table"
+                "description": "Contains one row per order or checkout event, linking to the customer via user_id.",
+                "primary_source_urls": [
+                  "1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00"
+                ],
+                "kind": "kb"
               },
               {
-                "id": "users",
-                "display_name": "Users",
+                "id": "order-items",
+                "display_name": "Order Items Table",
                 "aliases": [],
-                "description": "Programatically generated users for The Look fictitious e-commerce store.",
-                "primary_source_urls": [],
-                "kind": "table"
-              }
-            ]
-          },
-          {
-            "id": "product-and-inventory",
-            "title": "Product and Inventory",
-            "description": "Tables containing the product catalog, inventory levels, and distribution center information.",
-            "entries": [
-              {
-                "id": "distribution_centers",
-                "display_name": "Distribution Centers",
-                "aliases": [],
-                "description": "The Look fictitious e-commerce dataset: distribution_centers table.",
-                "primary_source_urls": [],
-                "kind": "table"
-              },
-              {
-                "id": "inventory_items",
-                "display_name": "Inventory Items",
-                "aliases": [],
-                "description": "Programatically generated inventory for The Look fictitious e-commerce store.",
-                "primary_source_urls": [],
-                "kind": "table"
+                "description": "The central fact table containing one row per product unit in an order, connecting all major entities.",
+                "primary_source_urls": [
+                  "1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00"
+                ],
+                "kind": "kb"
               },
               {
                 "id": "products",
-                "display_name": "Products",
+                "display_name": "Products Table",
                 "aliases": [],
-                "description": "The Look fictitious e-commerce dataset - products table.",
-                "primary_source_urls": [],
-                "kind": "table"
+                "description": "The authoritative source for product attributes, with one row per sellable product SKU.",
+                "primary_source_urls": [
+                  "1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "inventory-items",
+                "display_name": "Inventory Items Table",
+                "aliases": [],
+                "description": "Tracks each physical unit of stock from its creation to its sale, with one row per unit.",
+                "primary_source_urls": [
+                  "1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "distribution-centers",
+                "display_name": "Distribution Centers Table",
+                "aliases": [],
+                "description": "A dimension table containing one row for each physical fulfillment warehouse.",
+                "primary_source_urls": [
+                  "1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00"
+                ],
+                "kind": "kb"
               }
             ]
           },
           {
-            "id": "miscellaneous",
-            "title": "Miscellaneous",
-            "description": "A collection of tables that do not fit into other specific categories.",
+            "id": "core-concepts",
+            "title": "Core Concepts",
+            "description": "Fundamental business entities and terminologies used in theLook eCommerce operations.",
             "entries": [
               {
-                "id": "events",
-                "display_name": "Events",
+                "id": "order",
+                "display_name": "Order",
                 "aliases": [],
-                "description": "Programatically generated web events for The Look fictitious e-commerce store.",
-                "primary_source_urls": [],
-                "kind": "table"
+                "description": "Represents a single purchase event placed by a customer, which can contain multiple items.",
+                "primary_source_urls": [
+                  "1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "order-item",
+                "display_name": "Order Item",
+                "aliases": [],
+                "description": "A single unit of a product within an order, which serves as the grain for revenue and sales calculations.",
+                "primary_source_urls": [
+                  "1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "stock-keeping-unit",
+                "display_name": "Stock Keeping Unit",
+                "aliases": [
+                  "SKU"
+                ],
+                "description": "The unique identifier used to track a sellable product variant, corresponding to a row in the products table.",
+                "primary_source_urls": [
+                  "1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "product-taxonomy",
+                "display_name": "Product Taxonomy",
+                "aliases": [],
+                "description": "The three-level product hierarchy consisting of Department, Category, and Brand.",
+                "primary_source_urls": [
+                  "1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "traffic-source",
+                "display_name": "Traffic Source",
+                "aliases": [],
+                "description": "The marketing channel that acquired a customer, such as Search, Organic, or Email.",
+                "primary_source_urls": [
+                  "1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "order-lifecycle",
+                "display_name": "Order Lifecycle",
+                "aliases": [],
+                "description": "The sequence of stages an order progresses through, typically from Processing to Shipped to Complete.",
+                "primary_source_urls": [
+                  "1yWKJ3-TRAzZG7zlDH4lqD02m33Y3O44D7OROCy5ng9A"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "order-status",
+                "display_name": "Order Status",
+                "aliases": [],
+                "description": "Indicates the current state of an order item, such as Processing, Shipped, Complete, Returned, or Cancelled.",
+                "primary_source_urls": [
+                  "1yWKJ3-TRAzZG7zlDH4lqD02m33Y3O44D7OROCy5ng9A"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "event-timestamps",
+                "display_name": "Event Timestamps",
+                "aliases": [],
+                "description": "A set of timestamps (created_at, shipped_at, etc.) that track key events in an order's lifecycle for cycle-time analysis.",
+                "primary_source_urls": [
+                  "1yWKJ3-TRAzZG7zlDH4lqD02m33Y3O44D7OROCy5ng9A"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "cost",
+                "display_name": "Cost",
+                "aliases": [],
+                "description": "The wholesale or landed cost paid by theLook for a product, stored in products.cost.",
+                "primary_source_urls": [
+                  "1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "retail-price",
+                "display_name": "Retail Price",
+                "aliases": [],
+                "description": "The advertised catalog price for a product before any discounts, stored in products.retail_price.",
+                "primary_source_urls": [
+                  "1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "sale-price",
+                "display_name": "Sale Price",
+                "aliases": [],
+                "description": "The actual price paid by a customer for an item, recorded in order_items.sale_price and used for revenue calculations.",
+                "primary_source_urls": [
+                  "1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw"
+                ],
+                "kind": "kb"
+              }
+            ]
+          },
+          {
+            "id": "key-metrics",
+            "title": "Key Metrics",
+            "description": "The primary Key Performance Indicators (KPIs) used to measure business performance.",
+            "entries": [
+              {
+                "id": "gross-revenue",
+                "display_name": "Gross Revenue",
+                "aliases": [],
+                "description": "The total revenue from all sold items before accounting for returns, calculated from order_items.sale_price.",
+                "primary_source_urls": [
+                  "1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "net-revenue",
+                "display_name": "Net Revenue",
+                "aliases": [],
+                "description": "The total revenue after subtracting the value of returned items.",
+                "primary_source_urls": [
+                  "1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "average-order-value",
+                "display_name": "Average Order Value",
+                "aliases": [
+                  "AOV"
+                ],
+                "description": "The average gross revenue generated per order, calculated as total gross revenue divided by the number of unique orders.",
+                "primary_source_urls": [
+                  "1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "units-sold",
+                "display_name": "Units Sold",
+                "aliases": [],
+                "description": "The total count of individual product units sold, excluding cancelled items.",
+                "primary_source_urls": [
+                  "1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "return-rate",
+                "display_name": "Return Rate",
+                "aliases": [],
+                "description": "The percentage of sold units that were subsequently returned by customers.",
+                "primary_source_urls": [
+                  "1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "gross-margin",
+                "display_name": "Gross Margin",
+                "aliases": [],
+                "description": "The total profit from sales, calculated as the sum of sale_price minus cost for all net sales.",
+                "primary_source_urls": [
+                  "1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "gross-margin-percentage",
+                "display_name": "Gross Margin %",
+                "aliases": [],
+                "description": "The gross margin expressed as a percentage of net revenue.",
+                "primary_source_urls": [
+                  "1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "sell-through-rate",
+                "display_name": "Sell-Through Rate",
+                "aliases": [],
+                "description": "The percentage of inventory units that have been sold over a period of time.",
+                "primary_source_urls": [
+                  "1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "average-days-in-inventory",
+                "display_name": "Average Days in Inventory",
+                "aliases": [],
+                "description": "The average number of days a product unit remains in stock before being sold.",
+                "primary_source_urls": [
+                  "1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs"
+                ],
+                "kind": "kb"
               }
             ]
           }
@@ -939,10 +363,10 @@
       }
     }
   ],
-  "final_text": "# distribution_centers Overview\n\nThe `distribution_centers` table is a dimension table in theLook eCommerce dataset that represents physical fulfillment warehouses. It serves as the single source of truth for distribution center locations, enabling analysts and engineers to perform logistics, fulfillment, and shipping-time analysis.\n\nThe grain of this table is **one row per fulfillment warehouse**.\n\n## Schema & Key Columns\n\nThe table contains the following columns:\n\n*   **`id`** (INTEGER): The unique identifier for each distribution center. This acts as the primary key at the warehouse grain.\n*   **`name`** (STRING): The name of the fulfillment warehouse.\n*   **`latitude`** (FLOAT): The geographic latitude of the distribution center, used to locate the warehouse and calculate shipping distances.\n*   **`longitude`** (FLOAT): The geographic longitude of the distribution center, used alongside latitude for mapping and logistics.\n*   **`distribution_center_geom`** (GEOGRAPHY): The geospatial representation of the distribution center's location.\n\n## Relationships & Lineage\n\nThe distribution center acts as the origin point for the physical inventory and products sold on theLook platform. Its relationships across the schema include:\n\n*   **`products.distribution_center_id` \u2192 `distribution_centers.id`**: Every sellable product (SKU) in the `products` table is assigned to exactly one distribution center where its inventory is stored and from which it is shipped.\n*   **Denormalization Note**: The `inventory_items` table (which tracks physical units of stock) contains a denormalized column named `product_distribution_center_id`. This column is copied from the `products` table for querying convenience. However, the authoritative source for product-to-warehouse assignments is the `products` table itself. If a discrepancy occurs, trust the relationship defined via `products.distribution_center_id`.\n\n## Business Context\n\nIn theLook's multi-brand apparel and accessories retail model, tracking distribution centers is vital for supply chain operations. Every physical product is stocked and shipped from one of these warehouses. By joining the distribution center's geographic coordinates (`latitude` and `longitude`) with customer locations found in the `users` table, analysts can measure shipping performance, analyze regional fulfillment latency, and optimize inventory distribution.\n\n## Source References\n\n* [theLook eCommerce \u2014 Data Model and Relationships](https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ)\n* [theLook eCommerce \u2014 Business Glossary](https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ)\n\n# Events Overview\n\nThe `events` table contains programmatically generated web event data for \"The Look\", a fictitious e-commerce platform. It records fine-grained clickstream data and user activity, tracking how users navigate the site, where they arrive from, and the actions they perform during their sessions.\n\n## Key Columns\n\nThe schema consists of the following columns:\n\n*   **`id`** (INTEGER): The unique identifier for each distinct web event.\n*   **`user_id`** (INTEGER): The unique identifier of the user who triggered the event. This can be null for anonymous or unauthenticated sessions.\n*   **`sequence_number`** (INTEGER): The chronological position of the event within the user's session sequence.\n*   **`session_id`** (STRING): The unique identifier for the web session grouping a series of related user events.\n*   **`created_at`** (TIMESTAMP): The date and time when the event occurred.\n*   **`ip_address`** (STRING): The IP address of the visitor.\n*   **`city`** (STRING): The city associated with the visitor's IP address.\n*   **`state`** (STRING): The state or region associated with the visitor's IP address.\n*   **`postal_code`** (STRING): The postal code associated with the visitor's IP address.\n*   **`browser`** (STRING): The web browser used by the visitor (e.g., Chrome, Safari, Firefox).\n*   **`traffic_source`** (STRING): The source of the traffic that brought the user to the site (e.g., Search, Email, Brand).\n*   **`uri`** (STRING): The web address path or Uniform Resource Identifier visited during the event.\n*   **`event_type`** (STRING): The category or classification of the action taken during the event (such as a page view, product click, cart addition, or checkout).\n\n# inventory_items Overview\n\nThe `inventory_items` table contains programmatically generated inventory records for **theLook**, a fictitious multi-brand online apparel and accessories retailer. \n\nThe grain of this table is **one row per physical unit of stock** (a stock unit). It tracks when individual inventory items are received, when they are sold, their landed cost, and denormalized details about the products they represent.\n\n---\n\n## Key Columns and Schema\n\nThe table contains 12 columns, which can be categorized into direct inventory tracking attributes and denormalized product attributes.\n\n### Inventory Tracking Columns\n* **`id`** (INTEGER): The unique identifier for a specific physical unit of stock. This joins directly to the order fulfillment records.\n* **`product_id`** (INTEGER): The foreign key referencing the associated product in the `products` table.\n* **`created_at`** (TIMESTAMP): The timestamp indicating when the specific physical stock unit was received into inventory.\n* **`sold_at`** (TIMESTAMP): The timestamp indicating when the specific unit was purchased/sold. This column is `NULL` for units that remain in inventory and have not yet been purchased.\n* **`cost`** (FLOAT): The wholesale or landed cost that theLook paid its supplier for this specific stock unit. This value is strictly internal and is never shown to customers.\n\n### Denormalized Product Columns\nTo make inventory-specific queries convenient and avoid mandatory joins, several product attributes are denormalized directly onto the `inventory_items` table. \n\n> \u26a0\ufe0f **Important Data Integrity Rule:** The `products` table is the single authoritative source of truth for all product attributes. If there is ever a disagreement between the values in these columns and the `products` table, always trust `products`. Do not treat these columns as independent facts.\n\n* **`product_name`** (STRING): The catalog name of the product.\n* **`product_brand`** (STRING): The manufacturer or label brand.\n* **`product_category`** (STRING): The product type (e.g., Jeans, Outerwear) within its department.\n* **`product_department`** (STRING): The broadest grouping of the product taxonomy (e.g., Men, Women).\n* **`product_sku`** (STRING): The Stock Keeping Unit identifier theLook uses to track sellable variants.\n* **`product_retail_price`** (FLOAT): The advertised catalog list price for the product before any discounts or promotions.\n* **`product_distribution_center_id`** (INTEGER): The foreign key linking the product to its home fulfillment warehouse in the `distribution_centers` table.\n\n---\n\n## Relationships and Joins\n\nThe `inventory_items` table acts as a key dimension for physical inventory, connecting products to sales:\n\n* **`inventory_items.id`** $\\rightarrow$ **`order_items.inventory_item_id`**: This relationship connects a physical unit of stock to the specific transaction line item that fulfilled a customer's purchase. `order_items` acts as the analytical hub, tying the customer, order, product, and inventory unit together.\n* **`inventory_items.product_id`** $\\rightarrow$ **`products.id`**: Connects the inventory unit to its canonical product definitions.\n\n---\n\n## Key Metrics Derived from Inventory\n\nThe fields in `inventory_items` are used to compute core operational and financial metrics:\n\n* **Sell-Through Rate**: Calculated as the count of inventory items where `sold_at` is not null, divided by the total count of inventory items.\n* **Average Days in Inventory**: Calculated as the mean difference between `sold_at` and `created_at` over all sold inventory items. This indicates how long a unit typically sits in stock before selling.\n* **Gross Margin**: Calculated per order item as `sale_price - cost` (using `inventory_items.cost` or `products.cost`). When evaluated globally, it is computed as the sum of transaction sales prices minus the cost of the products, evaluated over non-returned and non-cancelled items.\n\n---\n\n## Source References\n\n* [theLook eCommerce \u2014 Data Model and Relationships](https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ)\n* [theLook eCommerce \u2014 Business Glossary](https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ)\n* [theLook eCommerce \u2014 Metric Definitions](https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk)\n\n# order_items Overview\n\nThe `order_items` table is the central fact table for revenue and fulfillment analysis in the theLook eCommerce dataset. The grain of this table is **one row per unit of a product in an order** (an order line or sold unit). \n\nAs the primary hub of the data model, `order_items` ties together the customer, the parent checkout event, the specific product SKU, and the physical inventory item used to fulfill the order. Most analytical queries starting in theLook data warehouse begin with this table and join outward.\n\n## Key Columns and Schema\n\n| Column Name | Data Type | Business Role / Semantic Meaning |\n| :--- | :--- | :--- |\n| `id` | INTEGER | The unique identifier for the order item (the individual sold unit). |\n| `order_id` | INTEGER | The identifier of the parent checkout event. Multiple order items can share the same `order_id` (e.g., if a customer buys three items at once, they generate one order and three order items). Joins to `orders.order_id`. |\n| `user_id` | INTEGER | The identifier of the customer who placed the order. Joins to `users.id`. |\n| `product_id` | INTEGER | The product SKU identifier. Joins to `products.id`. |\n| `inventory_item_id` | INTEGER | The identifier of the physical stock unit shipped to fulfill this specific line. Joins to `inventory_items.id`. |\n| `status` | STRING | The line-item level fulfillment status. Lifecycle states include **Processing**, **Shipped**, **Complete**, **Returned**, and **Cancelled**. |\n| `created_at` | TIMESTAMP | The timestamp when the order and line item were placed. |\n| `shipped_at` | TIMESTAMP | The timestamp when the item departed the distribution center. `NULL` if the item has not yet shipped. |\n| `delivered_at` | TIMESTAMP | The timestamp when the item was delivered to the customer. `NULL` if not yet delivered. |\n| `returned_at` | TIMESTAMP | The timestamp when the item was returned by the customer. `NULL` if no return occurred. |\n| `sale_price` | FLOAT | The actual price the customer paid for the unit. This is the authoritative figure for realized revenue and may differ from `products.retail_price` due to promotions or markdowns. |\n\n---\n\n## Order Lifecycle and Status Funnel\n\n`order_items.status` tracks the order funnel at the line-item grain. Because an order containing multiple items can be partially fulfilled or partially returned, the item-level status can differ from the parent order's status (e.g., an order may be marked **Complete** while one of its corresponding order items is **Returned**). For item-level accuracy, metrics related to returns and fulfillment must be calculated using `order_items.status` rather than `orders.status`.\n\nThe timestamp columns can be used to construct a funnel and perform cycle-time analysis:\n*   **Processing Time:** `shipped_at` - `created_at`\n*   **Transit Time:** `delivered_at` - `shipped_at`\n*   **Return Latency:** `returned_at` - `delivered_at`\n\n---\n\n## Core Business Metrics\n\n### Revenue Types\n*   **Gross Revenue:** Computed by summing `sale_price` for all items that are **not Cancelled**. Cancelled items represent unfulfilled transactions and must be excluded.\n*   **Net Revenue:** Computed by summing `sale_price` for all items that are **neither Cancelled nor Returned**. This represents gross revenue with the value of returned items removed.\n\n### Average Order Value (AOV)\nAOV is calculated at the order level using item-level revenue: \n*   `Gross Revenue / Count of Distinct Orders`\n\n### Units Sold\nThe total count of sold units, calculated as the total count of `order_items.id` where the status is **not Cancelled**.\n\n### Return Rate\nThe share of sold units that were later returned:\n*   `Count of order items with a non-null returned_at / Count of non-cancelled order items`\n\n### Gross Margin and Margin %\n*   **Gross Margin:** The profit on a unit before operating costs, evaluated over non-returned and non-cancelled items. It is calculated by taking `sale_price` from `order_items` and subtracting `cost` (sourced by joining `order_items.product_id` to `products.id` and using `products.cost`).\n*   **Gross Margin %:** Calculated as `Gross Margin / Net Revenue` (or `(sale_price - cost) / sale_price` at the item level).\n\n---\n\n## Lineage and Relationships\n\nThe `order_items` table connects to the rest of theLook eCommerce ecosystem through the following foreign keys:\n*   `order_items.order_id` \u2192 `orders.order_id` (Ties line items to the parent checkout event)\n*   `order_items.user_id` \u2192 `users.id` (Ties line items to the customer profile and their acquisition `traffic_source`)\n*   `order_items.product_id` \u2192 `products.id` (Associates the transaction with the authoritative master catalog details, such as department, category, brand, and retail price)\n*   `order_items.inventory_item_id` \u2192 `inventory_items.id` (Links the line item to the physical stock unit that fulfilled the sale)\n\n---\n\n## Source References\n\n*   [theLook eCommerce \u2014 Data Model and Relationships](https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ)\n*   [theLook eCommerce \u2014 Order Lifecycle and Status](https://docs.google.com/document/d/1fm5barRArG0T_KLCIXWnpUwXkaVNdlHNFljmcQ4ppfA/edit?usp=drivesdk)\n*   [theLook eCommerce \u2014 Business Glossary](https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ)\n*   [theLook eCommerce \u2014 Metric Definitions](https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk)\n\n# orders Overview\n\nThe `orders` table contains programmatically generated order records for theLook eCommerce, a fictitious multi-brand online apparel and accessories retailer. The grain of this table is **one row per order** (a single checkout event placed by a customer). \n\nThis table tracks the overall state of each checkout event, the customer who placed it, the total number of items included, and the key lifecycle timestamps as the order progresses from placement to fulfillment or return.\n\n## Schema\n\n| Column Name | Data Type | Description |\n| :--- | :--- | :--- |\n| **order_id** | INTEGER | The unique identifier for the checkout event / order. |\n| **user_id** | INTEGER | The unique identifier of the customer who placed the order. Joins to `users.id`. |\n| **status** | STRING | The overall fulfillment and lifecycle state of the order. |\n| **gender** | STRING | Gender associated with the order. |\n| **created_at** | TIMESTAMP | The timestamp when the order was placed. |\n| **returned_at** | TIMESTAMP | The timestamp when the order was returned (if applicable). |\n| **shipped_at** | TIMESTAMP | The timestamp when the order shipped from the distribution center. |\n| **delivered_at** | TIMESTAMP | The timestamp when the order reached the customer. |\n| **num_of_item** | INTEGER | The total number of items purchased in this single checkout event. |\n\n## Order Grain vs. Order Item Grain\n\nIt is critical not to confuse the **Order** grain with the **Order Item** grain:\n* An **Order** (`orders` table) represents a single checkout event. One order can contain multiple items, and the total count of these items is recorded in `num_of_item`.\n* An **Order Item** (`order_items` table) represents a single unit of a single product within that order. The `order_items` table is the true revenue-bearing grain where pricing, cost, and item-level returns are calculated.\n\nBecause an order can be partially fulfilled or partially returned, item-level statuses in `order_items` can differ from the parent order's `status` in this table (e.g., a parent order may have a status of **Complete** while one of its constituent order items has a status of **Returned**). For accurate fulfillment, return, and revenue metrics, analysts should calculate metrics at the order-item grain rather than relying solely on the parent order status.\n\n## Order Lifecycle and Statuses\n\nThe `status` column represents the overall state of the order. The typical lifecycle stages are:\n\n1. **Processing**: The order has been placed and is being prepared. Payment has been captured, but the items have not yet shipped.\n2. **Shipped**: The order has left a distribution center.\n3. **Complete**: The order was delivered to the customer, and the return window has closed.\n4. **Returned**: One or more items from the order were returned.\n5. **Cancelled**: The order was cancelled before fulfillment and generated no revenue.\n\n## The Timestamp Funnel\n\nThe sequence of timestamp columns tracks how an order moves through the processing and fulfillment pipeline. They are used to calculate transition latency:\n* **Processing Time**: `shipped_at` - `created_at`\n* **Transit Time**: `delivered_at` - `shipped_at`\n* **Return Latency**: `returned_at` - `delivered_at`\n\nA `NULL` value in any of these timestamp columns indicates that the corresponding stage has not yet occurred.\n\n## Key Relationships\n\n* **`orders.user_id` \u2192 `users.id`**: Connects each order to the customer who placed it. This join allows analysts to connect orders to customer demographics (such as age, gender, and location) and attribute order activity to the customer's acquisition marketing channel (`users.traffic_source`).\n* **`order_items.order_id` \u2192 `orders.order_id`**: Joins individual sold items back to their parent checkout event. This relationship is essential for calculating order-level metrics like Average Order Value (AOV).\n\n## Source References\n\n* [theLook eCommerce \u2014 Order Lifecycle and Status](https://docs.google.com/document/d/1fm5barRArG0T_KLCIXWnpUwXkaVNdlHNFljmcQ4ppfA/edit?usp=drivesdk)\n* [theLook eCommerce \u2014 Business Glossary](https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ)\n* [theLook eCommerce \u2014 Data Model and Relationships](https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ)\n* [theLook eCommerce \u2014 Metric Definitions](https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk)\n\n# products Overview\n\nThe `products` table is a core dimension table in the theLook eCommerce dataset. It contains one row per sellable product variant, also referred to as a Stock Keeping Unit (SKU). \n\nThis table serves as the authoritative source of truth for all product taxonomy, pricing, and supplier cost attributes. \n\n## Key Columns\n\n*   **`id`** (INTEGER): The unique identifier for each product. This ID is used to join products to transactions and physical inventory.\n*   **`sku`** (STRING): The Stock Keeping Unit identifier used to track a specific sellable product variant in inventory. Each SKU corresponds to exactly one row in the `products` table.\n*   **`name`** (STRING): The name of the product.\n*   **`brand`** (STRING): The manufacturer or label of the product.\n*   **`category`** (STRING): The specific product type (e.g., Jeans, Outerwear). This is the second level of the product taxonomy.\n*   **`department`** (STRING): The broadest classification in the product taxonomy (e.g., Men, Women).\n*   **`cost`** (FLOAT): The wholesale or landed cost that theLook paid to its supplier for a single unit of the product. This value is never displayed to customers.\n*   **`retail_price`** (FLOAT): The list price advertised by theLook for the product. This represents the catalog price before any markdowns or promotional discounts.\n*   **`distribution_center_id`** (INTEGER): The ID of the physical fulfillment warehouse where the product is stocked and shipped from.\n\n## Relationships & Joins\n\nThe `products` table acts as a critical hub connecting inventory, orders, and warehousing:\n\n*   **Order Items (`order_items.product_id` \u2192 `products.id`)**: Associates individual transaction lines (sold units) with the sellable product SKU.\n*   **Inventory Items (`inventory_items.product_id` \u2192 `products.id`)**: Connects individual physical items in stock to their corresponding product definition.\n*   **Distribution Centers (`products.distribution_center_id` \u2192 `distribution_centers.id`)**: Associates each product with its designated fulfillment warehouse. Every product is assigned to exactly one distribution center.\n\n### Denormalization and Source of Truth\nThe `inventory_items` table contains several denormalized product columns prefixed with `product_` (such as `product_category`, `product_name`, `product_brand`, `product_retail_price`, `product_department`, `product_sku`, and `product_distribution_center_id`). These are copied into the inventory table for querying convenience. However, the **`products` table is the authoritative source for these attributes**. If any values disagree between the two tables, the data in the `products` table must be trusted.\n\n## Financial Concepts & Metrics\n\nUnderstanding the distinction between the financial attributes in the `products` table and other tables is crucial for correct analysis:\n\n*   **Cost vs. Retail Price vs. Sale Price**:\n    *   `products.cost` is the wholesale cost paid to suppliers.\n    *   `products.retail_price` is the advertised list price.\n    *   `order_items.sale_price` is what the customer actually paid (which may differ from `retail_price` due to promotions).\n*   **Gross Margin (Catalog Analysis)**: For catalog-level planning, list-price gross margin can be evaluated as `retail_price - cost`.\n*   **Realized Gross Margin**: The actual profit realized on completed transactions is calculated using the formula:\n    $$\\text{Gross Margin} = \\sum(\\text{order\\_items.sale\\_price} - \\text{products.cost})$$\n    This is evaluated by joining `order_items.product_id` to `products.id` and filtering only for items that have not been returned or cancelled.\n*   **Gross Margin %**: Calculated as $\\frac{\\text{Gross Margin}}{\\text{sale\\_price}}$.\n\n## Source References\n\n*   [theLook eCommerce \u2014 Data Model and Relationships](https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ)\n*   [theLook eCommerce \u2014 Business Glossary](https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ)\n\n# users Overview\n\nThe `users` table contains records of programmatically generated users for theLook, a fictitious multi-brand online apparel and accessories retailer. The table is structured at the customer level (grain: customer), meaning it contains exactly one row per customer. It serves as the primary source of truth for customer demographics, physical locations, signup details, and acquisition marketing channels.\n\n## Key Columns\n\n* **`id`**: The unique identifier for each customer. This column acts as the primary key for the table.\n* **`first_name` & `last_name`**: The customer's first and last name.\n* **`email`**: The contact email address of the customer.\n* **`age`**: The customer's age, used for demographic analysis.\n* **`gender`**: The customer's gender, used for demographic segmentation.\n* **`street_address`, `city`, `state`, `postal_code`, & `country`**: The physical mailing address details for the customer.\n* **`latitude` & `longitude`**: The geographic coordinates representing the customer's location.\n* **`user_geom`**: A geography spatial data type mapping the physical location of the user.\n* **`traffic_source`**: The marketing channel that brought the customer to theLook (e.g., Search, Organic, Email, Display, and Facebook). This is the basis for customer-acquisition and channel-attribution analysis.\n* **`created_at`**: The timestamp marking when the user account was created (signup time).\n\n## Business Context\n\nThe `users` table is heavily leveraged for customer-acquisition and channel-attribution analysis. By analyzing the `traffic_source` column, analysts can evaluate which marketing channels are most successful at driving customer signups and lifetime value. \n\nAdditionally, the demographic and spatial data (`age`, `gender`, and various location attributes like `user_geom`) allow the commerce data and analytics teams to perform spatial queries, cohort analyses, and regional performance reporting.\n\n## Relationships & Lineage\n\nThe customer sits at the beginning of the e-commerce lifecycle, establishing relationships with key downstream transactional tables:\n\n* **Orders to Users:** The `orders` table links to the `users` table by joining the `orders.user_id` field to the `users.id` field. This maps checkout events to customer demographics and locations. It is also used to evaluate customer acquisition channel revenue attribution by grouping user records by `traffic_source` and joining them through orders.\n* **Order Items to Users:** The central transaction table, `order_items`, directly links to this table by joining `order_items.user_id` to `users.id`. This direct connection bypasses the order-level table, allowing analysts to quickly associate individual sold items and revenue calculations to the customer who purchased them.\n\n## Source References\n\n* [theLook eCommerce \u2014 Business Glossary](https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ)\n* [theLook eCommerce \u2014 Data Model and Relationships](https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ)",
+  "final_text": "# Users Table Overview\n\nThe `users` table serves as the primary repository for customer data, with each row representing a unique customer. It stores essential demographic information, geographical location, and details about how the customer was acquired. This table is foundational for understanding customer segments and their behavior within the e-commerce ecosystem.\n\n## Key Features\n\nThe `users` table provides key attributes for customer analysis:\n*   **Demographics**: Includes data points such as age and gender, allowing for demographic segmentation of the customer base.\n*   **Location**: Stores geographical information for each customer.\n*   **Acquisition Channel (`traffic_source`)**: This column is crucial for marketing analysis, indicating the specific marketing channel (e.g., Search, Organic, Email, Display, Facebook) that led to a customer's acquisition. It forms the basis for acquisition and channel attribution reporting.\n\n## Schema\n\nThe table's grain is one row per customer. Key columns include:\n*   **`id`**: A unique identifier for each customer, serving as the primary key for the `users` table.\n*   **`traffic_source`**: Defines the marketing channel responsible for acquiring the customer. This field is vital for analyzing customer acquisition costs and channel effectiveness.\n*   **Demographic and Location Data**: Other columns capture details such as age, gender, and geographical location.\n\n## Relationships\n\nThe `users` table is central to understanding customer interactions and transactions:\n*   A `users` record can be linked to `orders` via `orders.user_id` which references `users.id`. This establishes the customer who placed a particular order.\n*   Similarly, `users` is directly linked to `order_items` via `order_items.user_id` referencing `users.id`, allowing for direct analysis of customer purchases at the item level.\n\n## Source References\n*   [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n*   [theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)\n\n# Orders Table Overview\n\nThe `Orders Table` contains one row for each order or checkout event, serving as a central entity for tracking customer purchases. It links directly to the customer who placed the order via a user identifier.\n\n## Key Features\n\n*   **Grain:** The table's granularity is one row per order or checkout event.\n*   **Customer Linkage:** Each order is linked to a specific customer through the `user_id` column, which is a foreign key referencing the `users.id` column in the `users` table.\n\n## Relationships\n\nThe `orders` table is integral to the eCommerce data model, establishing key relationships:\n\n*   **Customer to Order:** A `Customer` (from the `users` table) places an `Order` (`orders`). This relationship is defined by the foreign key `orders.user_id` referencing `users.id`.\n*   **Order to Order Items:** An `Order` (`orders`) is composed of `Order Items` (from the `order_items` table). This relationship is established through the foreign key `order_items.order_id` referencing `orders.order_id`.\n\n## Order Lifecycle Context\n\nThe `orders` table is part of the broader order lifecycle, which encompasses various statuses and event timestamps:\n\n*   **Order Statuses:** The typical order lifecycle progresses through `Processing`, `Shipped`, and `Complete` statuses. Other possible statuses include `Returned` (for items returned from an order) and `Cancelled` (for orders stopped before fulfillment). It's important to note that `order_items.status` is generally preferred over `orders.status` for accurate item-level fulfillment and return metrics, especially since an order can be partially returned.\n*   **Event Timestamps:** Key events in an order's lifecycle are tracked using timestamps such as `created_at`, `shipped_at`, `delivered_at`, and `returned_at`. These timestamps enable detailed cycle-time analysis, allowing calculation of metrics like Processing Time (`shipped_at - created_at`) and Transit Time (`delivered_at - shipped_at`).\n\n## Source References\n* [theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)\n* [theLook eCommerce \u2014 Order Lifecycle and Status](1yWKJ3-TRAzZG7zlDH4lqD02m33Y3O44D7OROCy5ng9A)\n\n# Order Items Table Overview\n\nThe `order_items` table serves as the central fact table within the theLook eCommerce data model, designed to capture each product unit included in an order. It connects all major entities involved in a purchase event, making it the primary starting point for most analytical queries aimed at building a comprehensive knowledge base about the business.\n\n## Key Features and Role\n\nThis table's grain is defined as one row per unit of a product within an order, which is crucial for all revenue, margin, and units-sold calculations. It establishes direct links to the customer, the order itself, the specific product purchased, and the inventory item that fulfilled the purchase.\n\n## Schema and Key Columns\n\nThe `order_items` table contains critical information about each purchased item, including pricing, status, and event timestamps:\n\n*   **`sale_price`**: This column records the actual price a customer paid for a specific unit. It is the definitive value used for all revenue calculations.\n*   **`status`**: This column indicates the item-level fulfillment and return status, and is preferred over `orders.status` for accuracy, especially when an order might be partially returned. Possible statuses include:\n    *   **Processing**: The order has been placed and is being prepared, but not yet shipped.\n    *   **Shipped**: The order item has left a distribution center.\n    *   **Complete**: The order item has been delivered, and its return window has closed.\n    *   **Returned**: The item was returned, reversing its associated revenue.\n    *   **Cancelled**: The order item was cancelled before fulfillment, resulting in zero revenue.\n*   **Event Timestamps**: Key lifecycle events are tracked through specific timestamp columns, enabling detailed cycle-time analysis:\n    *   **`created_at`**: The timestamp when the order item was created.\n    *   **`shipped_at`**: The timestamp when the order item was shipped.\n    *   **`delivered_at`**: The timestamp when the order item was delivered.\n    *   **`returned_at`**: The timestamp when the order item was returned.\n    These timestamps allow for calculations like Processing Time (`shipped_at - created_at`) and Transit Time (`delivered_at - shipped_at`).\n\n## Table Relationships\n\nThe `order_items` table is integral to the overall data model, linking various business entities through foreign keys:\n\n*   **`order_items.order_id`**: Links to `orders.order_id`, connecting the item to its parent order.\n*   **`order_items.user_id`**: Links to `users.id`, identifying the customer who placed the order.\n*   **`order_items.product_id`**: Links to `products.id`, providing details about the specific product.\n*   **`order_items.inventory_item_id`**: Links to `inventory_items.id`, referencing the specific physical unit of stock that fulfilled the item.\n\n## Core Metric Calculations\n\nThe `order_items` table is fundamental for calculating several key business metrics:\n\n*   **Gross Revenue**: Calculated as `SUM(order_items.sale_price)` for items whose status is not `Cancelled`.\n*   **Net Revenue**: Calculated as `SUM(order_items.sale_price)` for items that are neither `Cancelled` nor `Returned`.\n*   **Average Order Value (AOV)**: Computed as `SUM(order_items.sale_price) / COUNT(DISTINCT order_items.order_id)` over non-cancelled items, reflecting gross revenue per order.\n*   **Units Sold**: Determined by `COUNT(order_items.id)` for non-cancelled items.\n*   **Return Rate**: Measured as `COUNT(order_items WHERE returned_at IS NOT NULL) / COUNT(order_items WHERE status <> 'Cancelled')`.\n*   **Gross Margin**: Calculated as `SUM(order_items.sale_price - products.cost)` on non-cancelled, non-returned items, requiring a join to the `products` table for `cost`.\n\n## Source References\n\n*   [theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)\n*   [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n*   [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n*   [theLook eCommerce \u2014 Order Lifecycle and Status](1yWKJ3-TRAzZG7zlDH4lqD02m33Y3O44D7OROCy5ng9A)\n\n# Products Table Overview\n\nThe `products` table serves as the authoritative source for product attributes within theLook eCommerce data model. Each row in this table represents a single sellable product SKU (Stock Keeping Unit), making its grain one row per product variant ([theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw), [theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)).\n\n## Key Features\n\n*   **Product Identifier (SKU)**: The `products.sku` column holds the Stock Keeping Unit, which is the identifier used to track a sellable product variant. This ensures that one SKU uniquely corresponds to one row in the `products` table ([theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)).\n*   **Product Taxonomy**: Products are organized into a three-level hierarchy, allowing for structured classification. This hierarchy includes Department (e.g., Men, Women), Category (e.g., Jeans, Outerwear), and Brand ([theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)).\n*   **Pricing & Cost Information**:\n    *   `products.cost`: Represents the wholesale or landed cost paid by theLook for the product ([theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)).\n    *   `products.retail_price`: Indicates the advertised catalog price for the product ([theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)).\n*   **Distribution**: Each product is assigned to a specific Distribution Center, which is a physical warehouse responsible for stocking and shipping products ([theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)).\n*   **Source of Truth**: While the `inventory_items` table may denormalize product attributes for convenience, the `products` table should be considered the primary source of truth for these attributes if any discrepancies arise ([theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)).\n\n## Relationships\n\nThe `products` table is central to understanding order items and inventory:\n*   Each `order_item` references a specific product via `order_items.product_id` \u2192 `products.id` ([theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)).\n*   Each `inventory_item` (a single physical unit of stock) also references a product via `inventory_items.product_id` \u2192 `products.id` ([theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)).\n*   Products are linked to the warehouses they are stocked in via `products.distribution_center_id` \u2192 `distribution_centers.id` ([theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)).\n\n## Usage in Core Metrics\n\nThe cost information stored in the `products` table is crucial for financial analysis:\n*   **Gross Margin**: Calculated as `SUM(order_items.sale_price - products.cost)` for non-cancelled and non-returned items ([theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)).\n\n## Source References\n* [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n* [theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)\n* [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n\n# Inventory Items Table Overview\n\nThe `inventory_items` table tracks each physical unit of stock from its creation to its sale, with one row representing a single physical unit. It is a core component of theLook eCommerce data model, providing granular detail on the inventory lifecycle and serving as a critical link between products and customer orders.\n\n## Key Features\n\nThe `inventory_items` table provides a detailed record for each physical unit of a product held in stock. Its grain is one row per physical unit, and it tracks the lifecycle of this unit from its creation to its sale. While it may denormalize some product attributes for convenience, the `products` table should always be considered the authoritative source for product attribute data if discrepancies arise.\n\n## Schema and Relationships\n\nThis table's primary purpose is to track individual units and their status. Key columns include:\n\n*   **`id`**: A unique identifier for each physical inventory item.\n*   **`product_id`**: A foreign key that links the inventory item to its corresponding product in the `products` table.\n*   **`created_at`**: A timestamp indicating when the physical unit was first held in stock.\n*   **`sold_at`**: A timestamp indicating when the physical unit was sold. This field tracks the completion of the inventory item's lifecycle.\n\nThe `inventory_items` table forms crucial relationships within the data model:\n*   It is linked to the `products` table via `inventory_items.product_id` to provide product details for each unit.\n*   Each `order_item` references the specific `inventory_item` that fulfilled it through the foreign key `order_items.inventory_item_id`.\n\n## Usage for Metrics\n\nThe `inventory_items` table is essential for calculating inventory-related metrics:\n\n*   **Sell-Through Rate**: Calculated as `COUNT(inventory_items WHERE sold_at IS NOT NULL) / COUNT(inventory_items)`, this metric indicates the proportion of stock that has been sold.\n*   **Average Days in Inventory**: Determined by the mean of `(sold_at - created_at)` over all sold inventory items, this measures how long a unit typically remains in stock before being sold.\n\n## Source References\n*   [theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)\n*   [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n*   [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n\n# Distribution Centers Table Overview\n\nThe `distribution_centers` table is a dimension table within theLook eCommerce data model, designed to hold one row for each physical fulfillment warehouse. It serves as a central reference for information about these locations, which are crucial for stocking and shipping products.\n\n## Key Features\n\n*   **Grain**: Each row in this table represents a single fulfillment warehouse.\n*   **Definition**: A Distribution Center is a physical warehouse responsible for stocking and shipping products.\n*   **Attributes**: Each distribution center has a name and a geographic location, specified by latitude and longitude.\n*   **Product Assignment**: Every product is assigned to one specific distribution center.\n\n## Relationships\n\nThe `distribution_centers` table is linked to the `products` table via the `distribution_center_id`. Specifically, the `products.distribution_center_id` column acts as a foreign key, referencing the `id` column in the `distribution_centers` table. This relationship indicates which distribution center stocks and ships a particular product.\n\n## Source References\n\n*   [theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)\n*   [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n\n# Order Overview\n\nAn Order represents a single purchase event placed by a customer, which can contain multiple items. It signifies a distinct checkout event within the e-commerce system.\n\n## Key Features\n\nAn Order is a core business concept in theLook eCommerce system, detailing transactions made by customers.\n*   **Structure**: A single Order can encompass many individual `Order Items`.\n*   **Customer Link**: Each Order is directly linked to the customer who placed it via a `user_id`.\n*   **Lifecycle**: Orders progress through a typical lifecycle, including statuses like `Processing`, `Shipped`, and `Complete`. However, for accurate fulfillment and return metrics, the status is tracked at the `order_items` level (`order_items.status`) because an order can be partially returned. Other possible statuses include `Returned` and `Cancelled`.\n*   **Event Timestamps**: Key events related to an Order, such as creation, shipment, delivery, and return, are tracked with timestamps (`created_at`, `shipped_at`, `delivered_at`, `returned_at`). These timestamps enable cycle-time analysis like Processing Time and Transit Time.\n\n## Data Model\n\nThe `orders` table stores information about each individual order or checkout event.\n*   **Grain**: The `orders` table has a grain of one row per order/checkout event.\n*   **Relationships**:\n    *   It links to the `users` table via `orders.user_id` to identify the customer who placed the order.\n    *   An Order is composed of `Order Items`, which are recorded in the `order_items` table. The `order_items` table is considered the central fact table, connecting customers, orders, products, and inventory.\n\n## Core Metrics\n\nOrders are fundamental for calculating several key business metrics:\n*   **Average Order Value (AOV)**: This order-grain metric is calculated as the sum of `order_items.sale_price` for non-cancelled items, divided by the count of distinct `order_items.order_id`. It represents the gross revenue per order.\n\n## Source References\n*   [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n*   [theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)\n*   [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n*   [theLook eCommerce \u2014 Order Lifecycle and Status](1yWKJ3-TRAzZG7zlDH4lqD02m33Y3O44D7OROCy5ng9A)\n\n# Order Item Overview\n\nAn Order Item represents a single unit of a specific product contained within a customer's order. It serves as the fundamental grain for all revenue, margin, and units-sold calculations within the eCommerce system.\n\n## Key Features\n\nThe `Order Item` is a critical entity for understanding sales and product performance. It captures the specific details of a product as it was sold.\n\n*   **Calculation Grain**: It is the granular level at which revenue, margin, and units-sold are calculated.\n*   **Pricing**: The `sale_price` attribute records the actual price a customer paid for a unit, making it the basis for all revenue calculations. This can differ from the `retail_price` or `cost` of a product.\n*   **Relationship to Products and Inventory**: Each `Order Item` references a `Product` (via its `product_id`) and the specific `Inventory Item` (via `inventory_item_id`) that fulfilled that unit of the order.\n\n## Relationships\n\nAn `Order Item` is an integral part of the overall eCommerce data model, linking several core concepts:\n\n*   A **Customer** places an **Order**, which in turn is composed of one or more **Order Items**.\n*   Each `Order Item` is associated with a specific **Product** and the individual **Inventory Item** that was sold.\n*   Products are stocked in and shipped from **Distribution Centers**.\n\n## Schema\n\nThe `order_items` table contains key columns that establish its relationships and record transactional details:\n\n*   `order_items.order_id`: A foreign key referencing `orders.order_id`, linking the item to the overall purchase event.\n*   `order_items.user_id`: A foreign key referencing `users.id`, indicating the customer who placed the order.\n*   `order_items.product_id`: A foreign key referencing `products.id`, identifying the specific product that was purchased.\n*   `order_items.inventory_item_id`: A foreign key referencing `inventory_items.id`, pinpointing the exact physical unit of the product sold.\n*   `order_items.sale_price`: The actual price paid by the customer for this specific unit, used for all revenue calculations.\n\n## Source References\n\n*   [theLook eCommerce \u2014 Business Glossary](https://drive.google.com/corp/drive/u/0/folders/1e_dIMRmc1PWKxzYQKKp-5lV02hN1dk9L?resourcekey=0-Gfp-QcVibNIPzOiAJ3_tg#1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n*   [theLook eCommerce \u2014 Data Model and Relationships](https://drive.google.com/corp/drive/u/0/folders/1e_dIMRmc1PWKxzYQKKp-5lV02hN1dk9L?resourcekey=0-Gfp-QcVibNIzPzOiAJ3_tg#1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)\n\n# Stock Keeping Unit Overview\n\nA **Stock Keeping Unit (SKU)** is a unique identifier used to track a sellable product variant. It represents a specific product and its attributes, corresponding to a single row in the `products` table. SKUs are fundamental for managing inventory and sales within the e-commerce system.\n\n## Key Features and Role\n\n*   **Unique Identifier**: Each SKU uniquely identifies a specific product variant, allowing for precise tracking and management.\n*   **Product Variant**: It represents a \"sellable product variant\" ([theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)).\n*   **Core for Products**: One SKU corresponds to one row in the `products` table, which serves as the \"authoritative source for product attributes\" ([theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)).\n*   **Order Item Basis**: An \"Order Item\" is defined as a \"single unit of a single product within an order,\" and this product is identified by its SKU ([theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)).\n*   **Pricing**: Information such as the wholesale/landed `Cost` and the advertised `Retail Price` are associated with the product (and thus the SKU) in the `products` table ([theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)).\n\n## Data Model Integration\n\nThe SKU is primarily found in the `products` table as `products.sku`. This table's grain is \"one row per sellable product (SKU),\" making it the central repository for all product-related attributes ([theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)). While `inventory_items` may denormalize product attributes, the `products` table should be considered the source of truth for any discrepancies ([theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)).\n\n## Source References\n\n*   [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n*   [theLook eCommerce \u2014 Data Model and Relationships](1ZDPG_VXENJIHBTC63yrlq1Lq58mS6EoYleknZQtvl00)\n\n# Product Taxonomy Overview\n\nThe Product Taxonomy defines the three-level hierarchy used to organize products: Department, Category, and Brand.\n\n## Key Features\n\nThe taxonomy structures products into three distinct levels:\n*   **Department:** The highest level of classification, with examples including \"Men\" and \"Women.\"\n*   **Category:** A mid-level classification within a Department, such as \"Jeans\" or \"Outerwear.\"\n*   **Brand:** The specific brand associated with the product.\n\nThis hierarchical organization is used to categorize and manage all products.\n\n## Source References\n*   [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n\n# Traffic Source Overview\n\nTraffic Source refers to the marketing channel that acquired a customer. This concept is fundamental for understanding customer acquisition and performing channel attribution analysis.\n\n## Key Features\n\n*   **Definition:** The marketing channel responsible for acquiring a customer.\n*   **Examples:** Common traffic sources include Search, Organic, Email, Display, and Facebook.\n*   **Storage Location:** This information is stored in the `users.traffic_source` field within the data.\n*   **Analytical Use:** Traffic Source forms the basis for analyzing customer acquisition strategies and attributing success to specific marketing channels.\n\n## Source References\n* [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n\n# Order Lifecycle Overview\n\nThe Order Lifecycle describes the sequence of stages an order progresses through, typically from placement to completion. This core concept defines the various states an order can be in, as well as the key events that mark its progression, enabling detailed analysis of fulfillment and delivery performance.\n\n## Order Lifecycle Stages and Statuses\n\nThe typical progression for an order follows `Processing` \u2192 `Shipped` \u2192 `Complete`. However, orders can also enter `Returned` or `Cancelled` states. Each status signifies a distinct phase in the order's journey:\n\n*   **Processing:** An order has been placed and is currently being prepared for shipment. It has not yet left a distribution center.\n*   **Shipped:** The order has departed from a distribution center.\n*   **Complete:** The order has been delivered to the customer, and the designated return window has closed.\n*   **Returned:** One or more items from the order have been returned by the customer, which reverses the revenue associated with those specific items.\n*   **Cancelled:** The order was cancelled prior to being fulfilled, resulting in zero revenue generated from that order.\n\n## Status Granularity\n\nFor accurate measurement of fulfillment and return metrics, particularly in scenarios involving partial returns, the `order_items.status` grain is preferred over `orders.status`. This allows for precise tracking of individual item statuses within a single order.\n\n## Key Event Timestamps and Metrics\n\nSeveral key event timestamps are tracked to facilitate comprehensive cycle-time analysis of the order lifecycle:\n\n*   `created_at`: The timestamp when the order was initially placed.\n*   `shipped_at`: The timestamp when the order left the distribution center.\n*   `delivered_at`: The timestamp when the order was delivered to the customer.\n*   `returned_at`: The timestamp when items from the order were returned.\n\nThese timestamps enable the calculation of important metrics such as:\n\n*   **Processing Time:** Calculated as `shipped_at - created_at`.\n*   **Transit Time:** Calculated as `delivered_at - shipped_at`.\n\n## Source References\n*   [theLook eCommerce \u2014 Order Lifecycle and Status](1yWKJ3-TRAzZG7zlDH4lqD02m33Y3O44D7OROCy5ng9A)\n\n# Order Status Overview\n\nOrder Status indicates the current state of an order item within theLook eCommerce system. It tracks an item's progression through its lifecycle, from initial placement to delivery or cancellation, and is crucial for understanding fulfillment, returns, and revenue calculations.\n\n## Key Concepts and Lifecycle\n\nThe status of an order item reflects its current stage of fulfillment. The typical order lifecycle for an item is `Processing` \u2192 `Shipped` \u2192 `Complete`.\n\nThe defined statuses are:\n*   **Processing**: The order has been placed and is being prepared, but has not yet been shipped from a distribution center.\n*   **Shipped**: The order item has left a distribution center and is in transit.\n*   **Complete**: The order item has been delivered, and its return window has closed.\n*   **Returned**: One or more items from the order were returned, which reverses revenue for that specific line item.\n*   **Cancelled**: The order was cancelled before fulfillment began, resulting in zero revenue generated for that item.\n\nThe status is typically tracked at the `order_items.status` grain, rather than `orders.status`, to provide item-level accuracy for fulfillment and return metrics. This is important because a single order can be partially returned.\n\nKey events in an order item's lifecycle are also tracked via timestamps, including `created_at`, `shipped_at`, `delivered_at`, and `returned_at`. These timestamps enable analysis of various cycle times, such as \"Processing Time\" (calculated as `shipped_at - created_at`) and \"Transit Time\" (calculated as `delivered_at - shipped_at`).\n\n## Impact on Metrics\n\nOrder Status is a fundamental component in the calculation of several core business metrics:\n*   **Gross Revenue**: Includes `SUM(order_items.sale_price)` for items whose status is not `Cancelled`.\n*   **Net Revenue**: Includes `SUM(order_items.sale_price)` for items that are neither `Cancelled` nor `Returned`.\n*   **Average Order Value (AOV)**: Calculated over non-cancelled items, specifically `SUM(order_items.sale_price) / COUNT(DISTINCT order_items.order_id)`.\n*   **Units Sold**: `COUNT(order_items.id)` for non-cancelled items.\n*   **Return Rate**: Defined as `COUNT(order_items WHERE returned_at IS NOT NULL) / COUNT(order_items WHERE status <> 'Cancelled')`.\n*   **Gross Margin**: Calculated as `SUM(order_items.sale_price - products.cost)` specifically on non-cancelled, non-returned items.\n\n## Source References\n*   [theLook eCommerce \u2014 Order Lifecycle and Status](https://drive.google.com/corp/drive/u/0/folders/1e_dIMRmc1PWKxzYQKKp-5lV02hN1dk9L?resourcekey=0-Gfp-QcVibNIpPzOiAJ3_tg/1yWKJ3-TRAzZG7zlDH4lqD02m33Y3O44D7OROCy5ng9A)\n\n# Event Timestamps Overview\n\nEvent Timestamps refer to a set of timestamps (`created_at`, `shipped_at`, `delivered_at`, `returned_at`) that track key events in an order's lifecycle. These timestamps are crucial for performing cycle-time analysis, allowing for the calculation of various operational metrics.\n\n## Key Timestamps and Their Purpose\n\nThese timestamps mark specific stages in the fulfillment and delivery process of an order:\n*   **`created_at`**: Records when an order was initially placed.\n*   **`shipped_at`**: Indicates the moment an order has left a distribution center.\n*   **`delivered_at`**: Marks when an order has been successfully delivered.\n*   **`returned_at`**: Captures the time an item or order was returned.\n\n## Cycle-Time Analysis\n\nThe Event Timestamps enable the calculation of important cycle-time metrics:\n*   **Processing Time**: Calculated as the duration between when an order is shipped and when it was created (`shipped_at - created_at`). This measures the time taken for internal order preparation.\n*   **Transit Time**: Calculated as the duration between when an order is delivered and when it was shipped (`delivered_at - shipped_at`). This measures the shipping duration.\n\n## Order Lifecycle Context\n\nThese timestamps align with the typical stages of an order's lifecycle, which often progresses from `Processing` (order placed, being prepared) to `Shipped` (order has left the distribution center) and finally to `Complete` (order delivered and return window closed). Other statuses include `Returned` and `Cancelled`. While `orders.status` tracks the overall order, `order_items.status` is preferred for item-level accuracy, particularly for fulfillment and return metrics, as parts of an order can be returned.\n\n## Source References\n* [theLook eCommerce \u2014 Order Lifecycle and Status](1yWKJ3-TRAzZG7zlDH4lqD02m33Y3O44D7OROCy5ng9A)\n\n# Cost Overview\n\nCost represents the wholesale or landed cost that theLook pays for a product. This value is a crucial component in calculating product profitability and is specifically recorded in the `products.cost` field.\n\n## Key Features\n\n*   **Definition**: Cost refers to the price paid by theLook for a product before any markups for retail sale. This encompasses the wholesale price and any associated landed costs.\n*   **Location**: The cost for each product is stored in the `products` table, within the `cost` column.\n*   **Role in Profitability**: It is a fundamental element in determining financial metrics like `Gross Margin`. Specifically, `Gross Margin` is calculated as the sum of `(order_items.sale_price - products.cost)` for items that are neither cancelled nor returned.\n\n## Source References\n\n*   [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n*   [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n\n# Retail Price Overview\n\nRetail Price represents the advertised catalog price for a product before any discounts are applied. This value indicates the initial public price set for an item.\n\n## Key Features\n\nThe Retail Price is stored in the `products.retail_price` column. It serves as the standard price at which a product is initially offered to customers, distinct from the `Cost` (the wholesale price paid by the company) and the `Sale Price` (the actual price a customer pays after any discounts, which is used for revenue calculations).\n\n## Source References\n* [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n\n# Sale Price Overview\n\nThe **Sale Price** represents the actual price paid by a customer for a single unit of an item. It is a critical metric for financial tracking and is the basis for all revenue calculations within the system.\n\n## Key Features\n\n*   **Definition:** Sale Price is the final amount a customer pays for an item, distinguishing it from the advertised `Retail Price` (`products.retail_price`) or the company's `Cost` (`products.cost`).\n*   **Data Location:** This value is recorded in the `order_items.sale_price` field.\n*   **Purpose:** It is explicitly used for calculating revenue, making it fundamental to understanding sales performance and financial outcomes. Each \"Order Item\" represents a single unit of a product within an order, serving as the grain for these calculations.\n\n## Source References\n\n*   [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n\n# Gross Revenue Overview\n\nGross Revenue represents the total revenue generated from all sold items before accounting for any returns. It is calculated based on the `sale_price` of items from `order_items`.\n\n## Calculation\n\nGross Revenue is defined as the sum of the `sale_price` for all items in `order_items` where the item's status is not 'Cancelled'.\n\n```sql\nSUM(order_items.sale_price) WHERE order_items.status IS NOT 'Cancelled'\n```\n\n## Related Metrics\n\nGross Revenue is a foundational metric used in the calculation of other key performance indicators. For instance, **Average Order Value (AOV)** is derived from Gross Revenue, specifically as `SUM(order_items.sale_price) / COUNT(DISTINCT order_items.order_id)` over non-cancelled items.\n\n## Source References\n* [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n\n# Net Revenue Overview\n\nNet Revenue represents the total revenue generated after accounting for returned items. It is a key financial metric used to understand the actual income from sales activities, excluding any revenue from cancelled or returned orders.\n\n## Definition and Calculation\n\nNet Revenue is calculated by summing the `sale_price` for items that have not been `Cancelled` and have not been `Returned`.\n\nThe formula for Net Revenue is:\n```sql\nSUM(order_items.sale_price) for items that are neither 'Cancelled' nor 'Returned'\n```\n\n## Relationships with Other Metrics\n\nNet Revenue is a foundational component for calculating other financial performance indicators. For example, it is used in the calculation of **Gross Margin %**:\n*   **Gross Margin %:** `Gross Margin / Net Revenue`\n\n## Source References\n* [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n\n# Average Order Value Overview\n\nAverage Order Value (AOV), also known by its alias AOV, represents the average gross revenue generated per order. It is a key metric calculated by dividing the total gross revenue by the number of unique orders.\n\n## Key Features\n\nAverage Order Value is calculated using the following formula:\n`SUM(order_items.sale_price) / COUNT(DISTINCT order_items.order_id)`\n\nThis calculation is performed specifically over non-cancelled items, making it an order-grain metric that utilizes Gross Revenue.\n\n### Related Metrics\n\n*   **Gross Revenue:** This component of AOV is defined as `SUM(order_items.sale_price)` for items whose status is not `Cancelled`.\n\n## Source References\n* [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n\n# Units Sold Overview\n\nUnits Sold represents the total count of individual product units purchased by customers, specifically excluding any cancelled items. This metric quantifies the volume of products moved through sales.\n\n## Definition and Calculation\n\nUnits Sold is calculated by counting the unique identifiers of order items (`order_items.id`) where the item's status is not `Cancelled`. This ensures that only successfully transacted units contribute to the total.\n\nThe formula for Units Sold is:\n```sql\nCOUNT(order_items.id) WHERE status <> 'Cancelled'\n```\n\nThis metric uses `Order Item` as the grain for its calculation, meaning each distinct product unit within an order is counted individually.\n\n## Related Concepts\n\n*   **Order Item:** A single unit of a single product within an order. This is the fundamental unit for all units-sold calculations.\n*   **Return Rate:** Units Sold is used as the denominator in calculating the Return Rate, which is defined as `Returned units / sold units`.\n\n## Source References\n* [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n* [theLook eCommerce \u2014 Business Glossary](1-eJsLFIxSetKfyTwhU3mtQLNHwdEjKfMqGgzytYomDw)\n\n# Return Rate Overview\n\nReturn Rate is a key metric that quantifies the percentage of units sold that were subsequently returned by customers. It provides insight into product satisfaction and operational efficiency within an eCommerce context.\n\n## Definition\n\nThe Return Rate is calculated as the ratio of returned units to sold units. Specifically, it is defined by the following formula:\n\n`COUNT(order_items WHERE returned_at IS NOT NULL) / COUNT(order_items WHERE status <> 'Cancelled')`\n\n*   **Returned units**: Represented by `COUNT(order_items WHERE returned_at IS NOT NULL)`, indicating items for which a return date has been recorded.\n*   **Sold units**: Represented by `COUNT(order_items WHERE status <> 'Cancelled')`, referring to items that were not cancelled, thus considered sold. This aligns with the definition of \"Units Sold\" as `COUNT(order_items.id)` for non-cancelled items.\n\nThis metric is one of the core metric definitions for the theLook eCommerce dataset.\n\n## Source References\n* [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n\n# Gross Margin Overview\n\nGross Margin represents the total profit from sales, calculated as the sum of `sale_price` minus `cost` for all net sales. It is a key metric in the \"theLook eCommerce\" context, focusing on items that are neither cancelled nor returned.\n\n## Key Features\n\nGross Margin is calculated using the formula:\n`SUM(order_items.sale_price - products.cost)` for items that are not `Cancelled` and not `Returned`.\n\nA related metric, **Gross Margin %**, is also defined as:\n`Gross Margin / Net Revenue`.\nNet Revenue itself is defined as `SUM(order_items.sale_price)` for items that are neither `Cancelled` nor `Returned`.\n\n## Source References\n* [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n\n# Gross Margin % Overview\n\nGross Margin % is a key metric that expresses the gross margin as a percentage of net revenue. It provides insight into the profitability of sales after accounting for the cost of goods sold.\n\n## Definition\n\nGross Margin % is calculated by dividing Gross Margin by Net Revenue.\n\nThe components are defined as follows:\n*   **Gross Margin:** Calculated as `SUM(order_items.sale_price - products.cost)` for items that are neither `Cancelled` nor `Returned`.\n*   **Net Revenue:** Calculated as `SUM(order_items.sale_price)` for items that are neither `Cancelled` nor `Returned`.\n\n## Source References\n*   [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n\n# Sell-Through Rate Overview\n\nSell-Through Rate is a key metric representing the percentage of inventory units that have been sold over a period of time. It provides insight into the efficiency of inventory management and sales performance.\n\n## Definition and Calculation\n\nThe Sell-Through Rate is calculated as the ratio of inventory items that have been sold to the total number of inventory items.\n\nIt is formally defined as:\n`COUNT(inventory_items WHERE sold_at IS NOT NULL) / COUNT(inventory_items)`\n\nThis calculation tracks units by counting items from `inventory_items` where a `sold_at` timestamp exists, divided by the total count of all items in `inventory_items`.\n\n## Source References\n* [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)\n\n# Average Days in Inventory Overview\n\nAverage Days in Inventory is a key metric that quantifies the average number of days a product unit remains in stock before being sold. This metric helps to understand inventory turnover efficiency.\n\n## Key Features\n\nThis metric is calculated as the mean of the duration an inventory item spends in stock. Specifically, it measures the average of `(sold_at - created_at)` over all sold inventory items. It indicates how long a unit sits in stock from its creation (or entry into inventory) until it is sold.\n\n## Source References\n* [theLook eCommerce \u2014 Metric Definitions](1pVOj6ZQvZYFY3Udclcot2dJEW2Ncwoaw12ibxEWKETs)",
   "token_usage": {
-    "input": 47081,
-    "output": 11175
+    "input": 61290,
+    "output": 16135
   },
   "latency": 0.0
 }

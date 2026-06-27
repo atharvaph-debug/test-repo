@@ -1,0 +1,14 @@
+name: key-metrics/average-order-value
+id: key-metrics/average-order-value
+type: dataplex-types.global.generic
+category: key-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/key-metrics/average-order-value
+  displayName: Average Order Value
+  description: The average gross revenue generated per order, calculated as total
+    gross revenue divided by the number of unique orders.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/key-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,13 @@
+name: key-metrics/gross-margin-percentage
+id: key-metrics/gross-margin-percentage
+type: dataplex-types.global.generic
+category: key-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/key-metrics/gross-margin-percentage
+  displayName: Gross Margin %
+  description: The gross margin expressed as a percentage of net revenue.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/key-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

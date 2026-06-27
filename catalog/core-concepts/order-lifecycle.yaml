@@ -1,0 +1,14 @@
+name: core-concepts/order-lifecycle
+id: core-concepts/order-lifecycle
+type: dataplex-types.global.generic
+category: core-concepts
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/core-concepts/order-lifecycle
+  displayName: Order Lifecycle
+  description: The sequence of stages an order progresses through, typically from
+    Processing to Shipped to Complete.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/core-concepts/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

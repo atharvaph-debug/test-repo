@@ -1,0 +1,14 @@
+name: data-model/orders
+id: data-model/orders
+type: dataplex-types.global.generic
+category: data-model
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/data-model/orders
+  displayName: Orders Table
+  description: Contains one row per order or checkout event, linking to the customer
+    via user_id.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/data-model/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: core-concepts/event-timestamps
+id: core-concepts/event-timestamps
+type: dataplex-types.global.generic
+category: core-concepts
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/core-concepts/event-timestamps
+  displayName: Event Timestamps
+  description: A set of timestamps (created_at, shipped_at, etc.) that track key events
+    in an order's lifecycle for cycle-time analysis.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/core-concepts/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

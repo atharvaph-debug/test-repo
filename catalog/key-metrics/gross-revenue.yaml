@@ -1,0 +1,14 @@
+name: key-metrics/gross-revenue
+id: key-metrics/gross-revenue
+type: dataplex-types.global.generic
+category: key-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/key-metrics/gross-revenue
+  displayName: Gross Revenue
+  description: The total revenue from all sold items before accounting for returns,
+    calculated from order_items.sale_price.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/key-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

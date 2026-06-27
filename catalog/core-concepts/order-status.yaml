@@ -1,0 +1,14 @@
+name: core-concepts/order-status
+id: core-concepts/order-status
+type: dataplex-types.global.generic
+category: core-concepts
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/core-concepts/order-status
+  displayName: Order Status
+  description: Indicates the current state of an order item, such as Processing, Shipped,
+    Complete, Returned, or Cancelled.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/core-concepts/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

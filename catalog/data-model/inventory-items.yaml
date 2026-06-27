@@ -1,0 +1,14 @@
+name: data-model/inventory-items
+id: data-model/inventory-items
+type: dataplex-types.global.generic
+category: data-model
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/data-model/inventory-items
+  displayName: Inventory Items Table
+  description: Tracks each physical unit of stock from its creation to its sale, with
+    one row per unit.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/data-model/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

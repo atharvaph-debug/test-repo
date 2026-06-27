@@ -1,0 +1,14 @@
+name: core-concepts/stock-keeping-unit
+id: core-concepts/stock-keeping-unit
+type: dataplex-types.global.generic
+category: core-concepts
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/core-concepts/stock-keeping-unit
+  displayName: Stock Keeping Unit
+  description: The unique identifier used to track a sellable product variant, corresponding
+    to a row in the products table.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/core-concepts/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

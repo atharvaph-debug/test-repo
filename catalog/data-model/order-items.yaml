@@ -1,0 +1,14 @@
+name: data-model/order-items
+id: data-model/order-items
+type: dataplex-types.global.generic
+category: data-model
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/data-model/order-items
+  displayName: Order Items Table
+  description: The central fact table containing one row per product unit in an order,
+    connecting all major entities.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/data-model/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

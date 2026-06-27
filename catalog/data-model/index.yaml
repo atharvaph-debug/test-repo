@@ -1,0 +1,12 @@
+name: data-model/index
+id: data-model/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/data-model/index
+  displayName: Data Model
+  description: The core tables that constitute the theLook eCommerce data schema.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

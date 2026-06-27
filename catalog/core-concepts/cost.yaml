@@ -1,0 +1,14 @@
+name: core-concepts/cost
+id: core-concepts/cost
+type: dataplex-types.global.generic
+category: core-concepts
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/core-concepts/cost
+  displayName: Cost
+  description: The wholesale or landed cost paid by theLook for a product, stored
+    in products.cost.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/core-concepts/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

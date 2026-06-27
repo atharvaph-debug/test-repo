@@ -1,0 +1,14 @@
+name: core-concepts/order-item
+id: core-concepts/order-item
+type: dataplex-types.global.generic
+category: core-concepts
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/core-concepts/order-item
+  displayName: Order Item
+  description: A single unit of a product within an order, which serves as the grain
+    for revenue and sales calculations.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/core-concepts/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: core-concepts/product-taxonomy
+id: core-concepts/product-taxonomy
+type: dataplex-types.global.generic
+category: core-concepts
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/core-concepts/product-taxonomy
+  displayName: Product Taxonomy
+  description: The three-level product hierarchy consisting of Department, Category,
+    and Brand.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/core-concepts/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

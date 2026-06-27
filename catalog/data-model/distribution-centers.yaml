@@ -1,0 +1,14 @@
+name: data-model/distribution-centers
+id: data-model/distribution-centers
+type: dataplex-types.global.generic
+category: data-model
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/data-model/distribution-centers
+  displayName: Distribution Centers Table
+  description: A dimension table containing one row for each physical fulfillment
+    warehouse.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/data-model/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

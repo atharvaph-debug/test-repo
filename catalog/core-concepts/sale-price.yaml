@@ -1,0 +1,14 @@
+name: core-concepts/sale-price
+id: core-concepts/sale-price
+type: dataplex-types.global.generic
+category: core-concepts
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/us-central1/catalog/core-concepts/sale-price
+  displayName: Sale Price
+  description: The actual price paid by a customer for an item, recorded in order_items.sale_price
+    and used for revenue calculations.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/us-central1/entryGroups/kc-test/entries/core-concepts/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
