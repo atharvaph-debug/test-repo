@@ -1,0 +1,14 @@
+name: metadata-enrichment-frameworks/semantic-tagging-engine
+id: metadata-enrichment-frameworks/semantic-tagging-engine
+type: dataplex-types.global.generic
+category: metadata-enrichment-frameworks
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-enrichment-frameworks/semantic-tagging-engine
+  displayName: Semantic Tagging Engine
+  description: An engine that analyzes dataset contents to apply standardized semantic
+    tags and classification labels.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metadata-enrichment-frameworks/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

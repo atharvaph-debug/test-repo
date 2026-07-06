@@ -1,0 +1,13 @@
+name: data-curation-and-quality/index
+id: data-curation-and-quality/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-curation-and-quality/index
+  displayName: Data Curation and Quality
+  description: Tools and services focused on ensuring the quality, lineage, and discovery
+    of metadata assets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

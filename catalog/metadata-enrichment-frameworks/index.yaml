@@ -1,0 +1,13 @@
+name: metadata-enrichment-frameworks/index
+id: metadata-enrichment-frameworks/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-enrichment-frameworks/index
+  displayName: Metadata Enrichment Frameworks
+  description: Systems and frameworks designed to extract, enrich, and manage metadata
+    for datasets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

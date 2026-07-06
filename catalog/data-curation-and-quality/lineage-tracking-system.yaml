@@ -1,0 +1,14 @@
+name: data-curation-and-quality/lineage-tracking-system
+id: data-curation-and-quality/lineage-tracking-system
+type: dataplex-types.global.generic
+category: data-curation-and-quality
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-curation-and-quality/lineage-tracking-system
+  displayName: Lineage Tracking System
+  description: A system that tracks the provenance, transformations, and historical
+    flow of metadata assets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/data-curation-and-quality/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

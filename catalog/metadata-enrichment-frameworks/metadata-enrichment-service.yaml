@@ -1,0 +1,14 @@
+name: metadata-enrichment-frameworks/metadata-enrichment-service
+id: metadata-enrichment-frameworks/metadata-enrichment-service
+type: dataplex-types.global.generic
+category: metadata-enrichment-frameworks
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-enrichment-frameworks/metadata-enrichment-service
+  displayName: Metadata Enrichment Service
+  description: A service dedicated to automatically generating and appending semantic
+    metadata to datasets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metadata-enrichment-frameworks/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
