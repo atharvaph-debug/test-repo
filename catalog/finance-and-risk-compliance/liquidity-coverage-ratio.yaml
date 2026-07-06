@@ -1,0 +1,14 @@
+name: finance-and-risk-compliance/liquidity-coverage-ratio
+id: finance-and-risk-compliance/liquidity-coverage-ratio
+type: dataplex-types.global.generic
+category: finance-and-risk-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-and-risk-compliance/liquidity-coverage-ratio
+  displayName: Liquidity Coverage Ratio
+  description: The ratio of high-quality liquid assets to projected net cash outflows
+    over a 30-day stress window managed under Basel III standards.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/finance-and-risk-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

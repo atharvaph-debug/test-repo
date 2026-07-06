@@ -1,0 +1,13 @@
+name: finance-and-risk-compliance/index
+id: finance-and-risk-compliance/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-and-risk-compliance/index
+  displayName: Finance and Risk Compliance
+  description: Core metrics, risk scoring systems, compliance models, and processing
+    runbooks used within corporate treasury and retail banking operations.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

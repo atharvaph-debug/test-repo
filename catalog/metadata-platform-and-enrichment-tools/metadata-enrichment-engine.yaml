@@ -1,0 +1,14 @@
+name: metadata-platform-and-enrichment-tools/metadata-enrichment-engine
+id: metadata-platform-and-enrichment-tools/metadata-enrichment-engine
+type: dataplex-types.global.generic
+category: metadata-platform-and-enrichment-tools
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-platform-and-enrichment-tools/metadata-enrichment-engine
+  displayName: Metadata Enrichment Engine
+  description: A computing system designed to automatically analyze raw assets and
+    append metadata tags, properties, and relationships.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metadata-platform-and-enrichment-tools/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

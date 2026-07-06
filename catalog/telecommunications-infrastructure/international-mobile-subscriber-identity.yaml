@@ -1,0 +1,15 @@
+name: telecommunications-infrastructure/international-mobile-subscriber-identity
+id: telecommunications-infrastructure/international-mobile-subscriber-identity
+type: dataplex-types.global.generic
+category: telecommunications-infrastructure
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-infrastructure/international-mobile-subscriber-identity
+  displayName: International Mobile Subscriber Identity
+  description: The globally unique subscriber identifier provisioned onto a SIM card
+    that acts as the primary join key for subscriber-level network records and log
+    files.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-infrastructure/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

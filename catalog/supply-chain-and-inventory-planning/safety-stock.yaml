@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory-planning/safety-stock
+id: supply-chain-and-inventory-planning/safety-stock
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory-planning
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory-planning/safety-stock
+  displayName: Safety Stock
+  description: The buffer inventory held above anticipated baseline demand to protect
+    supply flows from demand spikes and lead-time variability.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory-planning/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

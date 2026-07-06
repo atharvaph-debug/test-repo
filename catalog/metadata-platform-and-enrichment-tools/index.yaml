@@ -1,0 +1,13 @@
+name: metadata-platform-and-enrichment-tools/index
+id: metadata-platform-and-enrichment-tools/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-platform-and-enrichment-tools/index
+  displayName: Metadata Platform and Enrichment Tools
+  description: System agents, service endpoints, and catalogs comprising the core
+    metadata enrichment platform.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

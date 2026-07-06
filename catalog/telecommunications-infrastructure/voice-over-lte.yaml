@@ -1,0 +1,14 @@
+name: telecommunications-infrastructure/voice-over-lte
+id: telecommunications-infrastructure/voice-over-lte
+type: dataplex-types.global.generic
+category: telecommunications-infrastructure
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-infrastructure/voice-over-lte
+  displayName: Voice over LTE
+  description: Packet-based voice communication services routed over LTE data networks
+    via IP Multimedia Subsystems.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-infrastructure/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

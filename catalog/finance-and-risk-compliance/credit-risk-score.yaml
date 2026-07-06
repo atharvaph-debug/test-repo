@@ -1,0 +1,14 @@
+name: finance-and-risk-compliance/credit-risk-score
+id: finance-and-risk-compliance/credit-risk-score
+type: dataplex-types.global.generic
+category: finance-and-risk-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-and-risk-compliance/credit-risk-score
+  displayName: Credit Risk Score
+  description: A calculated estimate of borrower default risk generated from historical
+    repayment schedules, leverage ratios, and outstanding exposure metrics.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/finance-and-risk-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

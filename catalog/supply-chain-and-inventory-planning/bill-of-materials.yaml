@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory-planning/bill-of-materials
+id: supply-chain-and-inventory-planning/bill-of-materials
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory-planning
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory-planning/bill-of-materials
+  displayName: Bill of Materials
+  description: The hierarchical tree structure detailing component sub-assemblies
+    and specific quantity recipes required to manufacture a finished parent SKU.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory-planning/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

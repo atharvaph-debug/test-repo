@@ -1,0 +1,14 @@
+name: metadata-platform-and-enrichment-tools/semantic-tagging-service
+id: metadata-platform-and-enrichment-tools/semantic-tagging-service
+type: dataplex-types.global.generic
+category: metadata-platform-and-enrichment-tools
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-platform-and-enrichment-tools/semantic-tagging-service
+  displayName: Semantic Tagging Service
+  description: An automated system service that scans unstructured and semi-structured
+    assets to assign standardized category and entity tags.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metadata-platform-and-enrichment-tools/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

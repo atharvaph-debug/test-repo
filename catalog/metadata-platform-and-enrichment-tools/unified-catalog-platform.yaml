@@ -1,0 +1,14 @@
+name: metadata-platform-and-enrichment-tools/unified-catalog-platform
+id: metadata-platform-and-enrichment-tools/unified-catalog-platform
+type: dataplex-types.global.generic
+category: metadata-platform-and-enrichment-tools
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-platform-and-enrichment-tools/unified-catalog-platform
+  displayName: Unified Catalog Platform
+  description: A centralized infrastructure platform hosting corporate data definitions,
+    structural metadata, and data access policies.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metadata-platform-and-enrichment-tools/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

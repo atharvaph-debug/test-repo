@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory-planning/stock-keeping-unit
+id: supply-chain-and-inventory-planning/stock-keeping-unit
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory-planning
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory-planning/stock-keeping-unit
+  displayName: Stock Keeping Unit
+  description: The granular, internal identifier representing a distinct sellable
+    product variant at which inventory levels and location balances are tracked.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory-planning/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

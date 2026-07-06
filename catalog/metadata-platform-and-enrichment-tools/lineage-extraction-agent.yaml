@@ -1,0 +1,14 @@
+name: metadata-platform-and-enrichment-tools/lineage-extraction-agent
+id: metadata-platform-and-enrichment-tools/lineage-extraction-agent
+type: dataplex-types.global.generic
+category: metadata-platform-and-enrichment-tools
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-platform-and-enrichment-tools/lineage-extraction-agent
+  displayName: Lineage Extraction Agent
+  description: An agent built to parse and map structural data linkages, transformations,
+    and relationships across complex data flows.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metadata-platform-and-enrichment-tools/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
