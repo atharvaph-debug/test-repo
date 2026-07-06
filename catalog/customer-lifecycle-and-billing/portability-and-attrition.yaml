@@ -1,0 +1,14 @@
+name: customer-lifecycle-and-billing/portability-and-attrition
+id: customer-lifecycle-and-billing/portability-and-attrition
+type: dataplex-types.global.generic
+category: customer-lifecycle-and-billing
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/customer-lifecycle-and-billing/portability-and-attrition
+  displayName: Portability and Attrition
+  description: Operational tracking of carrier-to-carrier telephone number migration
+    and the customer churn rates captured during retention workflows.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/customer-lifecycle-and-billing/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

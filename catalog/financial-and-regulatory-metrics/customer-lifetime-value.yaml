@@ -1,0 +1,14 @@
+name: financial-and-regulatory-metrics/customer-lifetime-value
+id: financial-and-regulatory-metrics/customer-lifetime-value
+type: dataplex-types.global.generic
+category: financial-and-regulatory-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-regulatory-metrics/customer-lifetime-value
+  displayName: Customer Lifetime Value
+  description: The total net profit expected from a customer over their entire relationship,
+    driving marketing and acquisition spend limits.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-and-regulatory-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

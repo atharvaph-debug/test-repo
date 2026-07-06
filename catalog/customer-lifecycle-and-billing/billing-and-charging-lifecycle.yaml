@@ -1,0 +1,15 @@
+name: customer-lifecycle-and-billing/billing-and-charging-lifecycle
+id: customer-lifecycle-and-billing/billing-and-charging-lifecycle
+type: dataplex-types.global.generic
+category: customer-lifecycle-and-billing
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/customer-lifecycle-and-billing/billing-and-charging-lifecycle
+  displayName: Billing and Charging Lifecycle
+  description: The process of transforming raw usage into priced rated events and
+    aggregating them into invoice cycles, incorporating balance-driven QoS throttling
+    policies.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/customer-lifecycle-and-billing/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

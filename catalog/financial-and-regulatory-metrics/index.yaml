@@ -1,0 +1,13 @@
+name: financial-and-regulatory-metrics/index
+id: financial-and-regulatory-metrics/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-regulatory-metrics/index
+  displayName: Financial and Regulatory Metrics
+  description: Metadata standards governing financial performance, balance sheet health,
+    and regulatory compliance targets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: financial-and-regulatory-metrics/liquidity-coverage-ratio
+id: financial-and-regulatory-metrics/liquidity-coverage-ratio
+type: dataplex-types.global.generic
+category: financial-and-regulatory-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-regulatory-metrics/liquidity-coverage-ratio
+  displayName: Liquidity Coverage Ratio
+  description: A primary short-term liquidity risk control metric measuring high-quality
+    liquid assets against net cash outflows over a 30-day stress scenario.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-and-regulatory-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

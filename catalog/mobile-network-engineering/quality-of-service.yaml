@@ -1,0 +1,14 @@
+name: mobile-network-engineering/quality-of-service
+id: mobile-network-engineering/quality-of-service
+type: dataplex-types.global.generic
+category: mobile-network-engineering
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/mobile-network-engineering/quality-of-service
+  displayName: Quality of Service
+  description: A system of prioritizing traffic classes based on latency, packet loss,
+    and jitter targets, with specialized rules for conversational voice applications.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/mobile-network-engineering/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

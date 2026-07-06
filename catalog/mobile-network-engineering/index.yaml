@@ -1,0 +1,13 @@
+name: mobile-network-engineering/index
+id: mobile-network-engineering/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/mobile-network-engineering/index
+  displayName: Mobile Network Engineering
+  description: Identifiers and operational parameters managing routing, subscriber
+    verification, and traffic prioritization over the core network.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

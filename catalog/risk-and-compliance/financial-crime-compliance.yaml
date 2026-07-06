@@ -1,0 +1,14 @@
+name: risk-and-compliance/financial-crime-compliance
+id: risk-and-compliance/financial-crime-compliance
+type: dataplex-types.global.generic
+category: risk-and-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/risk-and-compliance/financial-crime-compliance
+  displayName: Financial Crime Compliance
+  description: A collection of identity verification, continuous behavioral transaction
+    monitoring, and regulatory filing workflows to mitigate financial crime.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/risk-and-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

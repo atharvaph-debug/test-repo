@@ -1,0 +1,13 @@
+name: risk-and-compliance/index
+id: risk-and-compliance/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/risk-and-compliance/index
+  displayName: Risk and Compliance
+  description: Metadata properties and processes tracking borrower risk and financial-crime
+    regulatory compliance.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

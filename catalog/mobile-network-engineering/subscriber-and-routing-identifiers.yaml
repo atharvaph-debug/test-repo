@@ -1,0 +1,14 @@
+name: mobile-network-engineering/subscriber-and-routing-identifiers
+id: mobile-network-engineering/subscriber-and-routing-identifiers
+type: dataplex-types.global.generic
+category: mobile-network-engineering
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/mobile-network-engineering/subscriber-and-routing-identifiers
+  displayName: Subscriber and Routing Identifiers
+  description: Network identifiers used to route data sessions correctly and authenticate
+    subscriber SIMs.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/mobile-network-engineering/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

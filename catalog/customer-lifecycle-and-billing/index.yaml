@@ -1,0 +1,13 @@
+name: customer-lifecycle-and-billing/index
+id: customer-lifecycle-and-billing/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/customer-lifecycle-and-billing/index
+  displayName: Customer Lifecycle and Billing
+  description: Workflows and metrics defining subscriber account transformations,
+    usage rating, charging cycles, and customer retention activities.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

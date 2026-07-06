@@ -1,0 +1,14 @@
+name: financial-and-regulatory-metrics/net-interest-margin
+id: financial-and-regulatory-metrics/net-interest-margin
+type: dataplex-types.global.generic
+category: financial-and-regulatory-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-regulatory-metrics/net-interest-margin
+  displayName: Net Interest Margin
+  description: A key balance sheet profitability metric calculated as Net Interest
+    Income divided by average interest-earning assets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-and-regulatory-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
