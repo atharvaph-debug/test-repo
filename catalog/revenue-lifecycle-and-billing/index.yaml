@@ -1,0 +1,13 @@
+name: revenue-lifecycle-and-billing/index
+id: revenue-lifecycle-and-billing/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/revenue-lifecycle-and-billing/index
+  displayName: Revenue Lifecycle and Billing
+  description: Mechanisms and configurations that govern customer charges, accounting
+    models, and rating states.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

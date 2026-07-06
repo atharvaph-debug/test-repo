@@ -1,0 +1,15 @@
+name: subscriber-identity-and-network-sessions/access-point-name
+id: subscriber-identity-and-network-sessions/access-point-name
+type: dataplex-types.global.generic
+category: subscriber-identity-and-network-sessions
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/subscriber-identity-and-network-sessions/access-point-name
+  displayName: Access Point Name
+  description: A network identifier presented by a device during session establishment
+    that specifies the packet data network, gateway, policies, and services applied
+    to a session.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/subscriber-identity-and-network-sessions/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

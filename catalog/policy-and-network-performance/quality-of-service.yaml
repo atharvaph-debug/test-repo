@@ -1,0 +1,14 @@
+name: policy-and-network-performance/quality-of-service
+id: policy-and-network-performance/quality-of-service
+type: dataplex-types.global.generic
+category: policy-and-network-performance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/policy-and-network-performance/quality-of-service
+  displayName: Quality of Service
+  description: Mechanisms used to prioritize network traffic and manage packet delivery
+    to meet latency, loss, and throughput performance targets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/policy-and-network-performance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: revenue-lifecycle-and-billing/rating-and-billing-states
+id: revenue-lifecycle-and-billing/rating-and-billing-states
+type: dataplex-types.global.generic
+category: revenue-lifecycle-and-billing
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/revenue-lifecycle-and-billing/rating-and-billing-states
+  displayName: Rating and Billing States
+  description: The operational stages of mapping price plans to network usage events
+    and aggregating them into validated, reconciled invoices over active billing cycles.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/revenue-lifecycle-and-billing/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

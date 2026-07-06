@@ -1,0 +1,13 @@
+name: subscriber-identity-and-network-sessions/index
+id: subscriber-identity-and-network-sessions/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/subscriber-identity-and-network-sessions/index
+  displayName: Subscriber Identity and Network Sessions
+  description: Identifiers and routing parameters that govern subscriber sessions
+    and system authentication.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

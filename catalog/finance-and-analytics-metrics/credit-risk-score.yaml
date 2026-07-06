@@ -1,0 +1,14 @@
+name: finance-and-analytics-metrics/credit-risk-score
+id: finance-and-analytics-metrics/credit-risk-score
+type: dataplex-types.global.generic
+category: finance-and-analytics-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-and-analytics-metrics/credit-risk-score
+  displayName: Credit Risk Score
+  description: A financial projection measuring loan default probability, separated
+    from compliance-driven KYC ratings.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/finance-and-analytics-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

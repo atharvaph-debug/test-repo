@@ -1,0 +1,14 @@
+name: subscriber-identity-and-network-sessions/international-mobile-subscriber-identity
+id: subscriber-identity-and-network-sessions/international-mobile-subscriber-identity
+type: dataplex-types.global.generic
+category: subscriber-identity-and-network-sessions
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/subscriber-identity-and-network-sessions/international-mobile-subscriber-identity
+  displayName: International Mobile Subscriber Identity
+  description: A globally unique identifier of a subscriber provisioned onto the physical
+    SIM card, used for network authentication, roaming, and data logging.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/subscriber-identity-and-network-sessions/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

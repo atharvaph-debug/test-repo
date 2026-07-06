@@ -1,0 +1,13 @@
+name: finance-and-analytics-metrics/index
+id: finance-and-analytics-metrics/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-and-analytics-metrics/index
+  displayName: Finance and Analytics Metrics
+  description: Standardized metrics and risk indices utilized for corporate reporting
+    and strategic decision-making.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

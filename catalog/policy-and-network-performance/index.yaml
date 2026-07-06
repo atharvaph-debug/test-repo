@@ -1,0 +1,13 @@
+name: policy-and-network-performance/index
+id: policy-and-network-performance/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/policy-and-network-performance/index
+  displayName: Policy and Network Performance
+  description: Operational rules and performance criteria governing data and voice
+    traffic quality.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: policy-and-network-performance/voice-over-lte
+id: policy-and-network-performance/voice-over-lte
+type: dataplex-types.global.generic
+category: policy-and-network-performance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/policy-and-network-performance/voice-over-lte
+  displayName: Voice over LTE
+  description: A technology that routes voice calls as packetized data over LTE networks
+    via the IP Multimedia Subsystem (IMS) core using high-priority QoS controls.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/policy-and-network-performance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
