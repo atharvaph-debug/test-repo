@@ -1,0 +1,14 @@
+name: finance-treasury-and-operations/liquidity-coverage-ratio
+id: finance-treasury-and-operations/liquidity-coverage-ratio
+type: dataplex-types.global.generic
+category: finance-treasury-and-operations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-treasury-and-operations/liquidity-coverage-ratio
+  displayName: Liquidity Coverage Ratio
+  description: A regulatory short-term liquidity standard assessing financial resilience
+    against net cash outflows over a 30-day stress scenario.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/finance-treasury-and-operations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

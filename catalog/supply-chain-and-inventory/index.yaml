@@ -1,0 +1,13 @@
+name: supply-chain-and-inventory/index
+id: supply-chain-and-inventory/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory/index
+  displayName: Supply Chain and Inventory
+  description: Core metadata, planning parameters, and operational rules for inventory
+    and supply chain systems.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

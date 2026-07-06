@@ -1,0 +1,14 @@
+name: telecom-network-and-subscribers/access-point-name
+id: telecom-network-and-subscribers/access-point-name
+type: dataplex-types.global.generic
+category: telecom-network-and-subscribers
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecom-network-and-subscribers/access-point-name
+  displayName: Access Point Name
+  description: The metadata label a device presents to the network core to specify
+    which packet data network and gateway to route a data session through.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecom-network-and-subscribers/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

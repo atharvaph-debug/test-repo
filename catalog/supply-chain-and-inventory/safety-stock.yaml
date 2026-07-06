@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory/safety-stock
+id: supply-chain-and-inventory/safety-stock
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory/safety-stock
+  displayName: Safety Stock
+  description: Extra buffer inventory carried to absorb demand spikes or lead-time
+    variability, structured by SKU velocity class.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

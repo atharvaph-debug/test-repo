@@ -1,0 +1,14 @@
+name: banking-risk-and-compliance/credit-risk-score
+id: banking-risk-and-compliance/credit-risk-score
+type: dataplex-types.global.generic
+category: banking-risk-and-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/banking-risk-and-compliance/credit-risk-score
+  displayName: Credit Risk Score
+  description: A quantified estimate of a borrower's default likelihood, driving credit
+    approvals, interest rates, and loan terms.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/banking-risk-and-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: finance-treasury-and-operations/customer-lifetime-value
+id: finance-treasury-and-operations/customer-lifetime-value
+type: dataplex-types.global.generic
+category: finance-treasury-and-operations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-treasury-and-operations/customer-lifetime-value
+  displayName: Customer Lifetime Value
+  description: The expected net profit generated over the entire duration of a customer
+    relationship, utilized by marketing and finance.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/finance-treasury-and-operations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

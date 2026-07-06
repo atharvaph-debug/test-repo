@@ -1,0 +1,13 @@
+name: finance-treasury-and-operations/index
+id: finance-treasury-and-operations/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-treasury-and-operations/index
+  displayName: Finance, Treasury, and Operations
+  description: Balance sheet performance metrics, cash settlement rules, and policy
+    compliance parameters.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

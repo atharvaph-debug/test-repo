@@ -1,0 +1,14 @@
+name: banking-risk-and-compliance/suspicious-activity-report
+id: banking-risk-and-compliance/suspicious-activity-report
+type: dataplex-types.global.generic
+category: banking-risk-and-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/banking-risk-and-compliance/suspicious-activity-report
+  displayName: Suspicious Activity Report
+  description: The formal, time-sensitive regulatory filing submitted when an investigator
+    establishes a reasonable suspicion of illicit transaction activity.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/banking-risk-and-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

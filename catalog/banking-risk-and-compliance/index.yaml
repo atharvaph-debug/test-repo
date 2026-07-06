@@ -1,0 +1,13 @@
+name: banking-risk-and-compliance/index
+id: banking-risk-and-compliance/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/banking-risk-and-compliance/index
+  displayName: Banking Risk and Compliance
+  description: Onboarding, AML financial crime compliance, and risk profiling standards
+    for bank customers.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

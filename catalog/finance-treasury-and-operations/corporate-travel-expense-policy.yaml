@@ -1,0 +1,14 @@
+name: finance-treasury-and-operations/corporate-travel-expense-policy
+id: finance-treasury-and-operations/corporate-travel-expense-policy
+type: dataplex-types.global.generic
+category: finance-treasury-and-operations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-treasury-and-operations/corporate-travel-expense-policy
+  displayName: Corporate Travel Expense Policy
+  description: Corporate guidelines and systemic constraints governing reimbursement
+    limits, receipt thresholds, and exception approval trees.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/finance-treasury-and-operations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

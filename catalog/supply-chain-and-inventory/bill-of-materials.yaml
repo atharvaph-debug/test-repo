@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory/bill-of-materials
+id: supply-chain-and-inventory/bill-of-materials
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory/bill-of-materials
+  displayName: Bill of Materials
+  description: The authoritative, engineering-controlled specification that translates
+    a finished-good SKU into its component parts for downstream procurement.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

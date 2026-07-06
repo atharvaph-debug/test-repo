@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory/supplier-scorecard
+id: supply-chain-and-inventory/supplier-scorecard
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory/supplier-scorecard
+  displayName: Supplier Scorecard
+  description: A structured, periodically refreshed rating aggregating on-time delivery,
+    quality, and price competitiveness used to allocate order volume.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

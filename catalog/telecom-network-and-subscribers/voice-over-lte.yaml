@@ -1,0 +1,14 @@
+name: telecom-network-and-subscribers/voice-over-lte
+id: telecom-network-and-subscribers/voice-over-lte
+type: dataplex-types.global.generic
+category: telecom-network-and-subscribers
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecom-network-and-subscribers/voice-over-lte
+  displayName: Voice over LTE
+  description: A technology carrying voice calls as packets over the LTE data network
+    via the IP Multimedia Subsystem, requiring strict QoS treatments.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecom-network-and-subscribers/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

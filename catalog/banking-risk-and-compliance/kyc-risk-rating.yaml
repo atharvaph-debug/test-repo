@@ -1,0 +1,14 @@
+name: banking-risk-and-compliance/kyc-risk-rating
+id: banking-risk-and-compliance/kyc-risk-rating
+type: dataplex-types.global.generic
+category: banking-risk-and-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/banking-risk-and-compliance/kyc-risk-rating
+  displayName: KYC Risk Rating
+  description: An operational metadata tag assigned during onboarding that measures
+    a customer's potential financial crime and money laundering risk.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/banking-risk-and-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
