@@ -1,0 +1,12 @@
+name: metadata-extraction/index
+id: metadata-extraction/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-extraction/index
+  displayName: Metadata Extraction Tools
+  description: Tools and services designed to extract metadata from files and documents.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

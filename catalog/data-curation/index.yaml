@@ -1,0 +1,13 @@
+name: data-curation/index
+id: data-curation/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-curation/index
+  displayName: Data Curation & Preparation
+  description: Processes and pipelines for preparing, cleaning, and enriching dataset
+    collections.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

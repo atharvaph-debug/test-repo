@@ -1,0 +1,14 @@
+name: data-curation/corpus-enrichment-pipeline
+id: data-curation/corpus-enrichment-pipeline
+type: dataplex-types.global.generic
+category: data-curation
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-curation/corpus-enrichment-pipeline
+  displayName: Corpus Enrichment Pipeline
+  description: A pipeline built to ingest raw documents and enrich them with structural
+    and semantic metadata.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/data-curation/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
