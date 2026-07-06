@@ -1,0 +1,14 @@
+name: business-glossary/cost
+id: business-glossary/cost
+type: dataplex-types.global.generic
+category: business-glossary
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/business-glossary/cost
+  displayName: Cost
+  description: The wholesale or landed price paid to the supplier, hidden from the
+    customer facing catalog.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/business-glossary/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

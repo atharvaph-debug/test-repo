@@ -1,0 +1,14 @@
+name: core-data-models/inventory-items-table
+id: core-data-models/inventory-items-table
+type: dataplex-types.global.generic
+category: core-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/core-data-models/inventory-items-table
+  displayName: Inventory Items Table
+  description: Represents the physical units of stock within the distribution warehouses
+    at the stock unit grain.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/core-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

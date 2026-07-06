@@ -1,0 +1,14 @@
+name: business-glossary/retail-price
+id: business-glossary/retail-price
+type: dataplex-types.global.generic
+category: business-glossary
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/business-glossary/retail-price
+  displayName: Retail Price
+  description: The catalog or list price advertised to customers before any discounts
+    or promotions are applied.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/business-glossary/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

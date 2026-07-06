@@ -1,0 +1,13 @@
+name: core-data-models/products-table
+id: core-data-models/products-table
+type: dataplex-types.global.generic
+category: core-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/core-data-models/products-table
+  displayName: Products Table
+  description: Tracks sellable stock-keeping units at the SKU level of granularity.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/core-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

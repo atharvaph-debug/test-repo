@@ -1,0 +1,13 @@
+name: financial-metrics/index
+id: financial-metrics/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-metrics/index
+  displayName: Financial Metrics
+  description: Canonical mathematical formulations used for corporate financial reporting
+    and transaction analysis.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

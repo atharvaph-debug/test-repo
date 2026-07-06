@@ -1,0 +1,14 @@
+name: core-data-models/order-items-table
+id: core-data-models/order-items-table
+type: dataplex-types.global.generic
+category: core-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/core-data-models/order-items-table
+  displayName: Order Items Table
+  description: Tracks sold units at the order-line grain, serving as the central fact
+    table for transactional revenue calculations.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/core-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

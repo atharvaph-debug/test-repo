@@ -1,0 +1,14 @@
+name: financial-metrics/average-order-value
+id: financial-metrics/average-order-value
+type: dataplex-types.global.generic
+category: financial-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-metrics/average-order-value
+  displayName: Average Order Value
+  description: The mean gross monetary value of a single transaction order calculated
+    as total item sales prices divided by distinct order counts.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

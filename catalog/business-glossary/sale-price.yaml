@@ -1,0 +1,14 @@
+name: business-glossary/sale-price
+id: business-glossary/sale-price
+type: dataplex-types.global.generic
+category: business-glossary
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/business-glossary/sale-price
+  displayName: Sale Price
+  description: The actual realized transaction amount paid by the customer, utilized
+    as the source of truth for revenue calculations.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/business-glossary/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

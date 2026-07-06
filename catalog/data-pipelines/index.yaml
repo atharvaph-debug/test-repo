@@ -1,0 +1,13 @@
+name: data-pipelines/index
+id: data-pipelines/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-pipelines/index
+  displayName: Data Pipelines
+  description: Operational ingestion pipelines, runbooks, schemas, and scheduled workflows
+    for synchronizing transactional databases.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

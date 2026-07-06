@@ -1,0 +1,14 @@
+name: data-pipelines/orders-daily-v3
+id: data-pipelines/orders-daily-v3
+type: dataplex-types.global.generic
+category: data-pipelines
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-pipelines/orders-daily-v3
+  displayName: Orders Daily Pipeline
+  description: An Airflow DAG that runs daily at 03:00 UTC to ingest Shopify and Stripe
+    data into BigQuery analytics tables.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/data-pipelines/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

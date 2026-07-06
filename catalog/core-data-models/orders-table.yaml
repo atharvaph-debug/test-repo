@@ -1,0 +1,14 @@
+name: core-data-models/orders-table
+id: core-data-models/orders-table
+type: dataplex-types.global.generic
+category: core-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/core-data-models/orders-table
+  displayName: Orders Table
+  description: Represents checkout events at the order grain and links transactions
+    back to unique customers.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/core-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

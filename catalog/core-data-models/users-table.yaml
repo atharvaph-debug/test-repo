@@ -1,0 +1,14 @@
+name: core-data-models/users-table
+id: core-data-models/users-table
+type: dataplex-types.global.generic
+category: core-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/core-data-models/users-table
+  displayName: Users Table
+  description: Represents individual customers at the customer grain, holding demographic
+    and geographical metadata.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/core-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: data-pipelines/analytics-orders-orders-daily
+id: data-pipelines/analytics-orders-orders-daily
+type: dataplex-types.global.generic
+category: data-pipelines
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-pipelines/analytics-orders-orders-daily
+  displayName: Analytics Orders Daily Table
+  description: The target BigQuery data warehouse table holding aggregated and structured
+    daily transaction data.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/data-pipelines/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
