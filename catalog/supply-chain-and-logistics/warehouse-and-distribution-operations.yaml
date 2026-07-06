@@ -1,0 +1,14 @@
+name: supply-chain-and-logistics/warehouse-and-distribution-operations
+id: supply-chain-and-logistics/warehouse-and-distribution-operations
+type: dataplex-types.global.generic
+category: supply-chain-and-logistics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-logistics/warehouse-and-distribution-operations
+  displayName: Warehouse and Distribution Operations
+  description: Models regional and forward distribution nodes along with inbound scan
+    procedures feeding the supply chain.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-logistics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

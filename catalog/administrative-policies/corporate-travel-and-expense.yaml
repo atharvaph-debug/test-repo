@@ -1,0 +1,14 @@
+name: administrative-policies/corporate-travel-and-expense
+id: administrative-policies/corporate-travel-and-expense
+type: dataplex-types.global.generic
+category: administrative-policies
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/administrative-policies/corporate-travel-and-expense
+  displayName: Corporate Travel and Expense
+  description: Monitors business travel constraints, class limitations, and non-operational
+    expense reporting compliance.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/administrative-policies/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

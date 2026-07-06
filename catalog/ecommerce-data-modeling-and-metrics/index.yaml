@@ -1,0 +1,13 @@
+name: ecommerce-data-modeling-and-metrics/index
+id: ecommerce-data-modeling-and-metrics/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-modeling-and-metrics/index
+  displayName: eCommerce Data Modeling and Metrics
+  description: Schemas, relational database designs, and calculation formulas for
+    eCommerce and analytical databases.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

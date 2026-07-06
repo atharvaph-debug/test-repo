@@ -1,0 +1,14 @@
+name: administrative-policies/office-access-and-badging
+id: administrative-policies/office-access-and-badging
+type: dataplex-types.global.generic
+category: administrative-policies
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/administrative-policies/office-access-and-badging
+  displayName: Office Access and Badging
+  description: Coordinates visitor clearance guidelines and badging controls restricted
+    from general warehouse parameters.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/administrative-policies/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

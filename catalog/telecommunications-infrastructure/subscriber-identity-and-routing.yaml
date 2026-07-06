@@ -1,0 +1,14 @@
+name: telecommunications-infrastructure/subscriber-identity-and-routing
+id: telecommunications-infrastructure/subscriber-identity-and-routing
+type: dataplex-types.global.generic
+category: telecommunications-infrastructure
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-infrastructure/subscriber-identity-and-routing
+  displayName: Subscriber Identity and Routing
+  description: Technical profiles of IMSIs and APNs mapping subscriber identity, service
+    segments, and roaming boundaries.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-infrastructure/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,13 @@
+name: supply-chain-and-logistics/index
+id: supply-chain-and-logistics/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-logistics/index
+  displayName: Supply Chain and Logistics
+  description: Taxonomies, metrics, and operations that govern warehouse fulfillment,
+    inventory control, and supply scheduling.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

@@ -1,0 +1,13 @@
+name: administrative-policies/index
+id: administrative-policies/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/administrative-policies/index
+  displayName: Administrative Policies
+  description: Internal rules and processes related to corporate spend, workplace
+    operations, and employee administration.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

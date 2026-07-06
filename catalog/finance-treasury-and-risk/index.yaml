@@ -1,0 +1,13 @@
+name: finance-treasury-and-risk/index
+id: finance-treasury-and-risk/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-treasury-and-risk/index
+  displayName: Finance, Treasury, and Risk
+  description: Covers regulatory ratios, risk ratings, AML workflows, trade settlement
+    operations, and customer valuation metrics.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

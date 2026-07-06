@@ -1,0 +1,14 @@
+name: ecommerce-data-modeling-and-metrics/business-glossary-and-taxonomy-standards
+id: ecommerce-data-modeling-and-metrics/business-glossary-and-taxonomy-standards
+type: dataplex-types.global.generic
+category: ecommerce-data-modeling-and-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-modeling-and-metrics/business-glossary-and-taxonomy-standards
+  displayName: Business Glossary and Taxonomy Standards
+  description: Establishes unified definitions and pricing classifications to avoid
+    data discrepancies across retail analytics systems.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-modeling-and-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

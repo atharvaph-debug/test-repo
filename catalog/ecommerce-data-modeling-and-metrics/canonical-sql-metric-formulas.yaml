@@ -1,0 +1,14 @@
+name: ecommerce-data-modeling-and-metrics/canonical-sql-metric-formulas
+id: ecommerce-data-modeling-and-metrics/canonical-sql-metric-formulas
+type: dataplex-types.global.generic
+category: ecommerce-data-modeling-and-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-modeling-and-metrics/canonical-sql-metric-formulas
+  displayName: Canonical SQL Metric Formulas
+  description: Provides standardized SQL and mathematical formula definitions to track
+    business, revenue, and product performance indicators.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-modeling-and-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

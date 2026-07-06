@@ -1,0 +1,14 @@
+name: finance-treasury-and-risk/financial-crime-compliance
+id: finance-treasury-and-risk/financial-crime-compliance
+type: dataplex-types.global.generic
+category: finance-treasury-and-risk
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-treasury-and-risk/financial-crime-compliance
+  displayName: Financial Crime Compliance
+  description: Standard compliance baselines spanning identity verification, risk
+    evaluation, monitoring anomalies, and filing Suspicious Activity Reports.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/finance-treasury-and-risk/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

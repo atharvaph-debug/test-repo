@@ -1,0 +1,14 @@
+name: ecommerce-data-modeling-and-metrics/relational-data-models-and-table-schemas
+id: ecommerce-data-modeling-and-metrics/relational-data-models-and-table-schemas
+type: dataplex-types.global.generic
+category: ecommerce-data-modeling-and-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-modeling-and-metrics/relational-data-models-and-table-schemas
+  displayName: Relational Data Models and Table Schemas
+  description: Defines database structure, ETL pipelines, schemas, and relational
+    constraints across user, order, product, and inventory entities.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-modeling-and-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

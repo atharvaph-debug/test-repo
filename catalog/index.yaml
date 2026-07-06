@@ -1,0 +1,11 @@
+name: index
+id: index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/index
+  displayName: Metadata enrichment
+  description: Index of the catalog root (5 item(s)).
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

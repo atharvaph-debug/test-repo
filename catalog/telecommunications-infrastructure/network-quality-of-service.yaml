@@ -1,0 +1,14 @@
+name: telecommunications-infrastructure/network-quality-of-service
+id: telecommunications-infrastructure/network-quality-of-service
+type: dataplex-types.global.generic
+category: telecommunications-infrastructure
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-infrastructure/network-quality-of-service
+  displayName: Network Quality of Service
+  description: Outlines packet latency budgets and traffic prioritizations spanning
+    LTE scheduler and core transport platforms.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-infrastructure/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

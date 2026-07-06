@@ -1,0 +1,14 @@
+name: finance-treasury-and-risk/customer-valuation-and-churn
+id: finance-treasury-and-risk/customer-valuation-and-churn
+type: dataplex-types.global.generic
+category: finance-treasury-and-risk
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-treasury-and-risk/customer-valuation-and-churn
+  displayName: Customer Valuation and Churn
+  description: Calculates customer lifetime profit margins and analyzes churn rates
+    across active subscriptions.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/finance-treasury-and-risk/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

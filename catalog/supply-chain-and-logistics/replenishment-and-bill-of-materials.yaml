@@ -1,0 +1,14 @@
+name: supply-chain-and-logistics/replenishment-and-bill-of-materials
+id: supply-chain-and-logistics/replenishment-and-bill-of-materials
+type: dataplex-types.global.generic
+category: supply-chain-and-logistics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-logistics/replenishment-and-bill-of-materials
+  displayName: Replenishment and Bill of Materials
+  description: Covers hierarchical Bill of Materials explosions and quantitative formulas
+    for calculating inventory safety stocks and reorder points.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-logistics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
