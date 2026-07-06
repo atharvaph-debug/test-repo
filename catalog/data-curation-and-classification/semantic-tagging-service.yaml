@@ -1,0 +1,14 @@
+name: data-curation-and-classification/semantic-tagging-service
+id: data-curation-and-classification/semantic-tagging-service
+type: dataplex-types.global.generic
+category: data-curation-and-classification
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-curation-and-classification/semantic-tagging-service
+  displayName: Semantic Tagging Service
+  description: An AI-powered service that applies semantic tags and taxonomies to
+    raw data assets to improve discoverability.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/data-curation-and-classification/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

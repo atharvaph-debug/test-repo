@@ -1,0 +1,14 @@
+name: metadata-enrichment-frameworks/schema-inference-engine
+id: metadata-enrichment-frameworks/schema-inference-engine
+type: dataplex-types.global.generic
+category: metadata-enrichment-frameworks
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-enrichment-frameworks/schema-inference-engine
+  displayName: Schema Inference Engine
+  description: A component that automatically detects and documents structural schemas
+    from unstructured or semi-structured datasets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metadata-enrichment-frameworks/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

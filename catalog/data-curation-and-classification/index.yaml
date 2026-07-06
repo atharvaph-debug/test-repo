@@ -1,0 +1,13 @@
+name: data-curation-and-classification/index
+id: data-curation-and-classification/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-curation-and-classification/index
+  displayName: Data Curation and Classification
+  description: Tools and services used to classify, tag, and curate data assets for
+    better discoverability.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

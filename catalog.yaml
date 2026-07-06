@@ -1,14 +1,13 @@
-scope: bq-dataset.cloud-ml-metadata-test-jialu.thelook_ecommerce
+scope: entryGroup.cloud-ml-metadata-test-jialu.global.kc_enrich_verify
 snapshot:
   entries:
-    - dataplex-types.global.bigquery-table
+    - dataplex-types.global.generic
   aspects:
-    - dataplex-types.global.schema
-    - dataplex-types.global.bigquery-table
-    - dataplex-types.global.storage
+    - dataplex-types.global.generic
     - dataplex-types.global.overview
-    - dataplex-types.global.queries
 publishing:
+  entries:
+    - dataplex-types.global.generic
   aspects:
+    - dataplex-types.global.generic
     - dataplex-types.global.overview
-    - dataplex-types.global.queries

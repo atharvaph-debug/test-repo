@@ -1,0 +1,14 @@
+name: data-curation-and-classification/data-classification-pipeline
+id: data-curation-and-classification/data-classification-pipeline
+type: dataplex-types.global.generic
+category: data-curation-and-classification
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-curation-and-classification/data-classification-pipeline
+  displayName: Data Classification Pipeline
+  description: An automated pipeline that categorizes data based on sensitivity, domain,
+    and governance policies.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/data-curation-and-classification/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
