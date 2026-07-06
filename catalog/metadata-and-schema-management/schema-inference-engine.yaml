@@ -1,0 +1,14 @@
+name: metadata-and-schema-management/schema-inference-engine
+id: metadata-and-schema-management/schema-inference-engine
+type: dataplex-types.global.generic
+category: metadata-and-schema-management
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-and-schema-management/schema-inference-engine
+  displayName: Schema Inference Engine
+  description: An automated processing engine that scans incoming raw files to deduce
+    and build structural schemas.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metadata-and-schema-management/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: financial-and-regulatory-metadata/metadata-compliance-auditor
+id: financial-and-regulatory-metadata/metadata-compliance-auditor
+type: dataplex-types.global.generic
+category: financial-and-regulatory-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-regulatory-metadata/metadata-compliance-auditor
+  displayName: Metadata Compliance Auditor
+  description: Audits corporate data and transactional metadata against compliance
+    policies, financial controls, and corporate expense guidelines.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-and-regulatory-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

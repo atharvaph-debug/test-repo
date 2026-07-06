@@ -1,0 +1,14 @@
+name: financial-and-regulatory-metadata/credit-risk-and-kyc-metadata
+id: financial-and-regulatory-metadata/credit-risk-and-kyc-metadata
+type: dataplex-types.global.generic
+category: financial-and-regulatory-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-regulatory-metadata/credit-risk-and-kyc-metadata
+  displayName: Credit Risk and KYC Metadata
+  description: Customer risk profiles distinguishing default probabilities from money
+    laundering and financial-crime risk ratings.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-and-regulatory-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

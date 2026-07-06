@@ -1,0 +1,13 @@
+name: metadata-and-schema-management/index
+id: metadata-and-schema-management/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-and-schema-management/index
+  displayName: Metadata and Schema Management
+  description: Engines and catalogs responsible for discovering, standardizing, and
+    generating rich conceptual schemas across enterprise platforms.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

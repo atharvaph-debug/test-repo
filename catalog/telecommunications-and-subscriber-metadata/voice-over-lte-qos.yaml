@@ -1,0 +1,14 @@
+name: telecommunications-and-subscriber-metadata/voice-over-lte-qos
+id: telecommunications-and-subscriber-metadata/voice-over-lte-qos
+type: dataplex-types.global.generic
+category: telecommunications-and-subscriber-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-and-subscriber-metadata/voice-over-lte-qos
+  displayName: Voice over LTE QoS
+  description: Network policies and packet quality constraints for voice sessions
+    carried directly over long-term evolution data networks.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-and-subscriber-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

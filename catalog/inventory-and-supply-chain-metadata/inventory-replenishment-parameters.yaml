@@ -1,0 +1,14 @@
+name: inventory-and-supply-chain-metadata/inventory-replenishment-parameters
+id: inventory-and-supply-chain-metadata/inventory-replenishment-parameters
+type: dataplex-types.global.generic
+category: inventory-and-supply-chain-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/inventory-and-supply-chain-metadata/inventory-replenishment-parameters
+  displayName: Inventory Replenishment Parameters
+  description: Planning variables that configure order triggers, lead-time variances,
+    and buffer inventory rules across DCs.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/inventory-and-supply-chain-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

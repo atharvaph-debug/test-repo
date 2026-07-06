@@ -1,0 +1,13 @@
+name: financial-and-regulatory-metadata/index
+id: financial-and-regulatory-metadata/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-regulatory-metadata/index
+  displayName: Financial and Regulatory Metadata
+  description: Metadata definitions and tracking mechanisms for treasury operations,
+    credit risk, compliance, and regulatory reporting.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

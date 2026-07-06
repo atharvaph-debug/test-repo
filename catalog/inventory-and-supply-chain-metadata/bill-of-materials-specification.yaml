@@ -1,0 +1,14 @@
+name: inventory-and-supply-chain-metadata/bill-of-materials-specification
+id: inventory-and-supply-chain-metadata/bill-of-materials-specification
+type: dataplex-types.global.generic
+category: inventory-and-supply-chain-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/inventory-and-supply-chain-metadata/bill-of-materials-specification
+  displayName: Bill of Materials Specification
+  description: Multi-level hierarchical component definition mapping finished goods
+    to their raw materials and sub-assemblies.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/inventory-and-supply-chain-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

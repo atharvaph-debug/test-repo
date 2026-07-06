@@ -1,0 +1,14 @@
+name: financial-and-regulatory-metadata/net-interest-margin-metric
+id: financial-and-regulatory-metadata/net-interest-margin-metric
+type: dataplex-types.global.generic
+category: financial-and-regulatory-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-regulatory-metadata/net-interest-margin-metric
+  displayName: Net Interest Margin Metric
+  description: A core profitability metric measuring the net interest income generated
+    per dollar of interest-earning assets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-and-regulatory-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

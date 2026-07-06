@@ -1,0 +1,13 @@
+name: telecommunications-and-subscriber-metadata/index
+id: telecommunications-and-subscriber-metadata/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-and-subscriber-metadata/index
+  displayName: Telecommunications and Subscriber Metadata
+  description: Core identifiers, status indicators, and QoS signaling definitions
+    within network and customer-care billing systems.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

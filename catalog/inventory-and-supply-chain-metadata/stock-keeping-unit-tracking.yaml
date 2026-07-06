@@ -1,0 +1,14 @@
+name: inventory-and-supply-chain-metadata/stock-keeping-unit-tracking
+id: inventory-and-supply-chain-metadata/stock-keeping-unit-tracking
+type: dataplex-types.global.generic
+category: inventory-and-supply-chain-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/inventory-and-supply-chain-metadata/stock-keeping-unit-tracking
+  displayName: Stock Keeping Unit Tracking
+  description: Internal identifiers and external barcode standard mapping rules used
+    to run inventory, cycle counts, and logistics routing.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/inventory-and-supply-chain-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

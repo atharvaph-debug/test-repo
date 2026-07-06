@@ -1,0 +1,13 @@
+name: inventory-and-supply-chain-metadata/index
+id: inventory-and-supply-chain-metadata/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/inventory-and-supply-chain-metadata/index
+  displayName: Inventory and Supply Chain Metadata
+  description: Attributes and planning logic governing manufacturing recipes, distribution
+    networks, and fulfillment centers.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

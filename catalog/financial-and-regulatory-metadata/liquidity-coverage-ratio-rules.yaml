@@ -1,0 +1,14 @@
+name: financial-and-regulatory-metadata/liquidity-coverage-ratio-rules
+id: financial-and-regulatory-metadata/liquidity-coverage-ratio-rules
+type: dataplex-types.global.generic
+category: financial-and-regulatory-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-regulatory-metadata/liquidity-coverage-ratio-rules
+  displayName: Liquidity Coverage Ratio Rules
+  description: Regulatory balance-sheet and treasury metric measuring high-quality
+    liquid assets against a 30-day net cash outflow stress scenario.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-and-regulatory-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: telecommunications-and-subscriber-metadata/access-point-name-metadata
+id: telecommunications-and-subscriber-metadata/access-point-name-metadata
+type: dataplex-types.global.generic
+category: telecommunications-and-subscriber-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-and-subscriber-metadata/access-point-name-metadata
+  displayName: Access Point Name Metadata
+  description: The logical packet network identifier representing which service gateway
+    and dynamic routing policies are applied to a session.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-and-subscriber-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
