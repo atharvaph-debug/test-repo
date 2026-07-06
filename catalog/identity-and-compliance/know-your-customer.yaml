@@ -1,0 +1,14 @@
+name: identity-and-compliance/know-your-customer
+id: identity-and-compliance/know-your-customer
+type: dataplex-types.global.generic
+category: identity-and-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/identity-and-compliance/know-your-customer
+  displayName: Know Your Customer
+  description: Regulatory identification and risk validation protocols performed during
+    initial onboarding and periodically throughout the customer relationship.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/identity-and-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

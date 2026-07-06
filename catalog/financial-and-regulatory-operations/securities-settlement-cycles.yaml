@@ -1,0 +1,14 @@
+name: financial-and-regulatory-operations/securities-settlement-cycles
+id: financial-and-regulatory-operations/securities-settlement-cycles
+type: dataplex-types.global.generic
+category: financial-and-regulatory-operations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-regulatory-operations/securities-settlement-cycles
+  displayName: Securities Settlement Cycles
+  description: The standardized operational timelines and cutoffs governing the transfer
+    of securities and cash between transaction parties.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-and-regulatory-operations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,13 @@
+name: identity-and-compliance/index
+id: identity-and-compliance/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/identity-and-compliance/index
+  displayName: Identity & Compliance
+  description: Customer verification controls, identity management, and investigative
+    oversight.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: financial-and-regulatory-operations/credit-and-liquidity-risk-frameworks
+id: financial-and-regulatory-operations/credit-and-liquidity-risk-frameworks
+type: dataplex-types.global.generic
+category: financial-and-regulatory-operations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-regulatory-operations/credit-and-liquidity-risk-frameworks
+  displayName: Credit and Liquidity Risk Frameworks
+  description: Methodologies for computing borrower-level default risk and tracking
+    institutional exposure for treasury and credit risk mitigation.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-and-regulatory-operations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

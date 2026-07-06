@@ -1,0 +1,14 @@
+name: identity-and-compliance/aml-investigations-and-escalation
+id: identity-and-compliance/aml-investigations-and-escalation
+type: dataplex-types.global.generic
+category: identity-and-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/identity-and-compliance/aml-investigations-and-escalation
+  displayName: AML Investigations & Escalation
+  description: The workflow for evaluating transaction anomalies, generating suspicious
+    activity files, and maintaining regulatory communication confidentiality.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/identity-and-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: telecom-networks-and-billing/number-portability
+id: telecom-networks-and-billing/number-portability
+type: dataplex-types.global.generic
+category: telecom-networks-and-billing
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecom-networks-and-billing/number-portability
+  displayName: Number Portability
+  description: The administrative and technical process of retaining a telephone number
+    when changing service providers.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecom-networks-and-billing/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

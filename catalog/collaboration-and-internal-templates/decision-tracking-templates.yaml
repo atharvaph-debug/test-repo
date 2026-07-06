@@ -1,0 +1,14 @@
+name: collaboration-and-internal-templates/decision-tracking-templates
+id: collaboration-and-internal-templates/decision-tracking-templates
+type: dataplex-types.global.generic
+category: collaboration-and-internal-templates
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/collaboration-and-internal-templates/decision-tracking-templates
+  displayName: Decision Tracking Templates
+  description: Predefined schemas used to register contextual backgrounds, proposed
+    directions, and outcome ownership during team alignment phases.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/collaboration-and-internal-templates/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

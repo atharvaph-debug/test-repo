@@ -1,0 +1,13 @@
+name: telecom-networks-and-billing/index
+id: telecom-networks-and-billing/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecom-networks-and-billing/index
+  displayName: Telecom Networks & Billing
+  description: Core cellular identifiers, billing operations, and network quality
+    configurations.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

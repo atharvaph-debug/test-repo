@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory/demand-planning-and-safety-stock
+id: supply-chain-and-inventory/demand-planning-and-safety-stock
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory/demand-planning-and-safety-stock
+  displayName: Demand Planning & Safety Stock
+  description: Strategic calculations and stock buffering targets used to protect
+    inventory availability against delivery delays and spikes in consumer demand.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

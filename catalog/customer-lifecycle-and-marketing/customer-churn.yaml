@@ -1,0 +1,14 @@
+name: customer-lifecycle-and-marketing/customer-churn
+id: customer-lifecycle-and-marketing/customer-churn
+type: dataplex-types.global.generic
+category: customer-lifecycle-and-marketing
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/customer-lifecycle-and-marketing/customer-churn
+  displayName: Customer Churn
+  description: A subscriber-base metric representing the rate of customer departure
+    or contract termination within a designated reporting timeframe.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/customer-lifecycle-and-marketing/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

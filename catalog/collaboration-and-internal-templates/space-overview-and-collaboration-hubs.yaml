@@ -1,0 +1,14 @@
+name: collaboration-and-internal-templates/space-overview-and-collaboration-hubs
+id: collaboration-and-internal-templates/space-overview-and-collaboration-hubs
+type: dataplex-types.global.generic
+category: collaboration-and-internal-templates
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/collaboration-and-internal-templates/space-overview-and-collaboration-hubs
+  displayName: Space Overview & Collaboration Hubs
+  description: Automatic metadata aggregation on document portals to trace active
+    contributors and capture recently updated files.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/collaboration-and-internal-templates/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

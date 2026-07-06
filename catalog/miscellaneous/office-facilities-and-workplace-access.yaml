@@ -1,0 +1,14 @@
+name: miscellaneous/office-facilities-and-workplace-access
+id: miscellaneous/office-facilities-and-workplace-access
+type: dataplex-types.global.generic
+category: miscellaneous
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/miscellaneous/office-facilities-and-workplace-access
+  displayName: Office Facilities and Workplace Access
+  description: Corporate rules regulating active badges, building access clearance,
+    and workplace attendance setups.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/miscellaneous/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

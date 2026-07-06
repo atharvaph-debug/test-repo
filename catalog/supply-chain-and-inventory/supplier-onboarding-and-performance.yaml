@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory/supplier-onboarding-and-performance
+id: supply-chain-and-inventory/supplier-onboarding-and-performance
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory/supplier-onboarding-and-performance
+  displayName: Supplier Onboarding & Performance
+  description: The administrative framework used to register suppliers and assess
+    ongoing capability across delivery, quality, and pricing metrics.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

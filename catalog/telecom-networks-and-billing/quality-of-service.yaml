@@ -1,0 +1,14 @@
+name: telecom-networks-and-billing/quality-of-service
+id: telecom-networks-and-billing/quality-of-service
+type: dataplex-types.global.generic
+category: telecom-networks-and-billing
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecom-networks-and-billing/quality-of-service
+  displayName: Quality of Service
+  description: Network traffic prioritization policies designed to ensure target latencies
+    and performance bounds for real-time services.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecom-networks-and-billing/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

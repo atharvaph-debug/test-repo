@@ -1,0 +1,14 @@
+name: collaboration-and-internal-templates/meeting-notes-templates
+id: collaboration-and-internal-templates/meeting-notes-templates
+type: dataplex-types.global.generic
+category: collaboration-and-internal-templates
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/collaboration-and-internal-templates/meeting-notes-templates
+  displayName: Meeting Notes Templates
+  description: Consistent structural agendas formatting active tracking lists, attendance
+    records, discussion times, and immediate action-items.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/collaboration-and-internal-templates/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

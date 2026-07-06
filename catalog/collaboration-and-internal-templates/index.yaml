@@ -1,0 +1,13 @@
+name: collaboration-and-internal-templates/index
+id: collaboration-and-internal-templates/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/collaboration-and-internal-templates/index
+  displayName: Collaboration & Internal Templates
+  description: Standardized templates, workspaces, and collaboration practices for
+    documentation and teams.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

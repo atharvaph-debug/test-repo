@@ -1,0 +1,14 @@
+name: collaboration-and-internal-templates/project-plan-templates
+id: collaboration-and-internal-templates/project-plan-templates
+type: dataplex-types.global.generic
+category: collaboration-and-internal-templates
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/collaboration-and-internal-templates/project-plan-templates
+  displayName: Project Plan Templates
+  description: Structural formatting framework defining milestones, goal alignments,
+    team responsibilities, and scoped task boundaries.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/collaboration-and-internal-templates/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

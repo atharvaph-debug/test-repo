@@ -1,0 +1,13 @@
+name: financial-and-regulatory-operations/index
+id: financial-and-regulatory-operations/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-regulatory-operations/index
+  displayName: Financial & Regulatory Operations
+  description: Regulatory ratios, risk monitoring frameworks, and market trade processing
+    parameters.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

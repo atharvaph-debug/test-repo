@@ -1,0 +1,13 @@
+name: customer-lifecycle-and-marketing/index
+id: customer-lifecycle-and-marketing/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/customer-lifecycle-and-marketing/index
+  displayName: Customer Lifecycle & Marketing
+  description: Analytics tracking customer value, marketing optimization, and loyalty
+    performance.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent
