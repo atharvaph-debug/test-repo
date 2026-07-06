@@ -1,0 +1,13 @@
+name: lifecycle-and-time-tracking/index
+id: lifecycle-and-time-tracking/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/lifecycle-and-time-tracking/index
+  displayName: Lifecycle and Time Tracking
+  description: Calculations and statuses capturing the progression of items through
+    shipping and return phases.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

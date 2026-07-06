@@ -1,0 +1,14 @@
+name: core-data-models/products
+id: core-data-models/products
+type: dataplex-types.global.generic
+category: core-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/core-data-models/products
+  displayName: Products
+  description: The authoritative master catalog containing one row per sellable SKU,
+    detailing attributes, taxonomy, and costs.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/core-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

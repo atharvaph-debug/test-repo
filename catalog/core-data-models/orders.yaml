@@ -1,0 +1,14 @@
+name: core-data-models/orders
+id: core-data-models/orders
+type: dataplex-types.global.generic
+category: core-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/core-data-models/orders
+  displayName: Orders
+  description: Represents a single checkout event linking customers to overall fulfillment
+    status.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/core-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: financial-metrics/retail-price
+id: financial-metrics/retail-price
+type: dataplex-types.global.generic
+category: financial-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-metrics/retail-price
+  displayName: Retail Price
+  description: The advertised list or catalog price shown to customers prior to any
+    discounts.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,13 @@
+name: core-data-models/index
+id: core-data-models/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/core-data-models/index
+  displayName: Core Data Models
+  description: Essential database tables and entity grains constituting the database
+    schema of theLook eCommerce.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

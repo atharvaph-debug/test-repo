@@ -1,0 +1,13 @@
+name: order-and-inventory-performance/sell-through-rate
+id: order-and-inventory-performance/sell-through-rate
+type: dataplex-types.global.generic
+category: order-and-inventory-performance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/order-and-inventory-performance/sell-through-rate
+  displayName: Sell-Through Rate
+  description: The share of total warehouse inventory that has successfully been purchased.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/order-and-inventory-performance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

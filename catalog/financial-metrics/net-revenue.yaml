@@ -1,0 +1,13 @@
+name: financial-metrics/net-revenue
+id: financial-metrics/net-revenue
+type: dataplex-types.global.generic
+category: financial-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-metrics/net-revenue
+  displayName: Net Revenue
+  description: Gross revenue minus the revenue generated from returned items.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

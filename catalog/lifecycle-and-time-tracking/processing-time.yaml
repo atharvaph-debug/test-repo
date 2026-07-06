@@ -1,0 +1,14 @@
+name: lifecycle-and-time-tracking/processing-time
+id: lifecycle-and-time-tracking/processing-time
+type: dataplex-types.global.generic
+category: lifecycle-and-time-tracking
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/lifecycle-and-time-tracking/processing-time
+  displayName: Processing Time
+  description: The cycle-time calculated as the difference between the shipped timestamp
+    and the creation timestamp.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/lifecycle-and-time-tracking/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: lifecycle-and-time-tracking/return-latency
+id: lifecycle-and-time-tracking/return-latency
+type: dataplex-types.global.generic
+category: lifecycle-and-time-tracking
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/lifecycle-and-time-tracking/return-latency
+  displayName: Return Latency
+  description: The cycle-time representing the delay between item delivery and customer
+    return.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/lifecycle-and-time-tracking/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: order-and-inventory-performance/return-rate
+id: order-and-inventory-performance/return-rate
+type: dataplex-types.global.generic
+category: order-and-inventory-performance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/order-and-inventory-performance/return-rate
+  displayName: Return Rate
+  description: The share of non-cancelled order items that have been returned by the
+    customer.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/order-and-inventory-performance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: core-data-models/inventory-items
+id: core-data-models/inventory-items
+type: dataplex-types.global.generic
+category: core-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/core-data-models/inventory-items
+  displayName: Inventory Items
+  description: Table tracking physical stock units, receiving timestamps, purchase
+    timestamps, and denormalized product attributes.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/core-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

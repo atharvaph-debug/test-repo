@@ -1,0 +1,14 @@
+name: order-and-inventory-performance/average-days-in-inventory
+id: order-and-inventory-performance/average-days-in-inventory
+type: dataplex-types.global.generic
+category: order-and-inventory-performance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/order-and-inventory-performance/average-days-in-inventory
+  displayName: Average Days in Inventory
+  description: The average duration an item spends in stock before being successfully
+    sold.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/order-and-inventory-performance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

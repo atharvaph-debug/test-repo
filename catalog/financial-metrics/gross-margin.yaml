@@ -1,0 +1,14 @@
+name: financial-metrics/gross-margin
+id: financial-metrics/gross-margin
+type: dataplex-types.global.generic
+category: financial-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-metrics/gross-margin
+  displayName: Gross Margin
+  description: Net revenue minus the product cost, evaluated both in currency value
+    and as a percentage relative to net revenue.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

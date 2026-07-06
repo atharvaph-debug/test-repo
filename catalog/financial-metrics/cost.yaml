@@ -1,0 +1,13 @@
+name: financial-metrics/cost
+id: financial-metrics/cost
+type: dataplex-types.global.generic
+category: financial-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-metrics/cost
+  displayName: Cost
+  description: The wholesale or landed price paid to suppliers, hidden from consumers.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

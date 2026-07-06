@@ -1,0 +1,14 @@
+name: core-data-models/order-items
+id: core-data-models/order-items
+type: dataplex-types.global.generic
+category: core-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/core-data-models/order-items
+  displayName: Order Items
+  description: The revenue grain table holding one row per unit of a product in an
+    order, acting as the hub of the star schema.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/core-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

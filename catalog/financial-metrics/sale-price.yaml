@@ -1,0 +1,14 @@
+name: financial-metrics/sale-price
+id: financial-metrics/sale-price
+type: dataplex-types.global.generic
+category: financial-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-metrics/sale-price
+  displayName: Sale Price
+  description: The actual transaction price paid by the customer, serving as the source
+    of truth for realized revenue.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,13 @@
+name: order-and-inventory-performance/average-order-value
+id: order-and-inventory-performance/average-order-value
+type: dataplex-types.global.generic
+category: order-and-inventory-performance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/order-and-inventory-performance/average-order-value
+  displayName: Average Order Value
+  description: Total gross revenue divided by the unique count of orders.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/order-and-inventory-performance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

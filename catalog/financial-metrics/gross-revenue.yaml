@@ -1,0 +1,13 @@
+name: financial-metrics/gross-revenue
+id: financial-metrics/gross-revenue
+type: dataplex-types.global.generic
+category: financial-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-metrics/gross-revenue
+  displayName: Gross Revenue
+  description: The sum of the sale price for all non-cancelled order items.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
