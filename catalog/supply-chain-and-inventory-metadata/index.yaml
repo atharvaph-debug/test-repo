@@ -1,0 +1,13 @@
+name: supply-chain-and-inventory-metadata/index
+id: supply-chain-and-inventory-metadata/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory-metadata/index
+  displayName: Supply Chain and Inventory Metadata
+  description: Hierarchical structures, planning rules, and facilities data managing
+    products and supplier operations.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

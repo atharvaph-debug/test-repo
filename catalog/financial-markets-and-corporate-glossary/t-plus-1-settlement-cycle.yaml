@@ -1,0 +1,14 @@
+name: financial-markets-and-corporate-glossary/t-plus-1-settlement-cycle
+id: financial-markets-and-corporate-glossary/t-plus-1-settlement-cycle
+type: dataplex-types.global.generic
+category: financial-markets-and-corporate-glossary
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-markets-and-corporate-glossary/t-plus-1-settlement-cycle
+  displayName: T+1 Settlement Cycle
+  description: Standard transactional cycle where clearing and settlement of trades
+    must occur exactly one business day after the trade date.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-markets-and-corporate-glossary/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

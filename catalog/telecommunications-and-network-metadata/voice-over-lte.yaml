@@ -1,0 +1,14 @@
+name: telecommunications-and-network-metadata/voice-over-lte
+id: telecommunications-and-network-metadata/voice-over-lte
+type: dataplex-types.global.generic
+category: telecommunications-and-network-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-and-network-metadata/voice-over-lte
+  displayName: Voice over LTE
+  description: Voice communication service carried as packet data over LTE networks,
+    highly dependent on QoS policies to maintain call quality.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-and-network-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: financial-markets-and-corporate-glossary/net-interest-margin
+id: financial-markets-and-corporate-glossary/net-interest-margin
+type: dataplex-types.global.generic
+category: financial-markets-and-corporate-glossary
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-markets-and-corporate-glossary/net-interest-margin
+  displayName: Net Interest Margin
+  description: A performance metric measuring balance-sheet profitability as net interest
+    income divided by average interest-earning assets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-markets-and-corporate-glossary/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

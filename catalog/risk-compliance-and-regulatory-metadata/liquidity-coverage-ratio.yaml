@@ -1,0 +1,14 @@
+name: risk-compliance-and-regulatory-metadata/liquidity-coverage-ratio
+id: risk-compliance-and-regulatory-metadata/liquidity-coverage-ratio
+type: dataplex-types.global.generic
+category: risk-compliance-and-regulatory-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/risk-compliance-and-regulatory-metadata/liquidity-coverage-ratio
+  displayName: Liquidity Coverage Ratio
+  description: Basel III short-term liquidity standard measuring high-quality liquid
+    assets against total net cash outflows over 30 days.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/risk-compliance-and-regulatory-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

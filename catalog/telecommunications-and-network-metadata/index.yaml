@@ -1,0 +1,13 @@
+name: telecommunications-and-network-metadata/index
+id: telecommunications-and-network-metadata/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-and-network-metadata/index
+  displayName: Telecommunications and Network Metadata
+  description: Identifiers, routing pathways, and operational parameters managing
+    telecommunication sessions and customer identifiers.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

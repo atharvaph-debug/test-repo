@@ -1,0 +1,14 @@
+name: risk-compliance-and-regulatory-metadata/know-your-customer
+id: risk-compliance-and-regulatory-metadata/know-your-customer
+type: dataplex-types.global.generic
+category: risk-compliance-and-regulatory-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/risk-compliance-and-regulatory-metadata/know-your-customer
+  displayName: Know Your Customer
+  description: The process of verifying customer identities, beneficial ownership,
+    and risk levels during onboarding and periodic intervals.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/risk-compliance-and-regulatory-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

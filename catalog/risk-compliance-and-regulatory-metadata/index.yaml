@@ -1,0 +1,13 @@
+name: risk-compliance-and-regulatory-metadata/index
+id: risk-compliance-and-regulatory-metadata/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/risk-compliance-and-regulatory-metadata/index
+  displayName: Risk, Compliance, and Regulatory Metadata
+  description: Metadata governing regulatory standards, compliance checks, and financial
+    crime frameworks.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

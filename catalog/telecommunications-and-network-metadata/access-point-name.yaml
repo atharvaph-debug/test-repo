@@ -1,0 +1,14 @@
+name: telecommunications-and-network-metadata/access-point-name
+id: telecommunications-and-network-metadata/access-point-name
+type: dataplex-types.global.generic
+category: telecommunications-and-network-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-and-network-metadata/access-point-name
+  displayName: Access Point Name
+  description: The routing configuration and gateway identifier presented by a cellular
+    device to connect to a specific packet data network.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-and-network-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
