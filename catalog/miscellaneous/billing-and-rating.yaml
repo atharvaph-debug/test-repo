@@ -1,0 +1,14 @@
+name: miscellaneous/billing-and-rating
+id: miscellaneous/billing-and-rating
+type: dataplex-types.global.generic
+category: miscellaneous
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/miscellaneous/billing-and-rating
+  displayName: Billing and Rating
+  description: The two-step operational process where usage events are first rated
+    using tariff prices and subsequently billed on a cycle basis.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/miscellaneous/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

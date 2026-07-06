@@ -1,0 +1,14 @@
+name: inventory-and-supply-chain/bill-of-materials
+id: inventory-and-supply-chain/bill-of-materials
+type: dataplex-types.global.generic
+category: inventory-and-supply-chain
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/inventory-and-supply-chain/bill-of-materials
+  displayName: Bill of Materials
+  description: The structured hierarchical recipe linking finished goods to component
+    parts and sub-assemblies.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/inventory-and-supply-chain/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

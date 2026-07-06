@@ -1,0 +1,14 @@
+name: inventory-and-supply-chain/safety-stock
+id: inventory-and-supply-chain/safety-stock
+type: dataplex-types.global.generic
+category: inventory-and-supply-chain
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/inventory-and-supply-chain/safety-stock
+  displayName: Safety Stock
+  description: Extra inventory buffer held to protect service levels against demand
+    and lead-time variability.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/inventory-and-supply-chain/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

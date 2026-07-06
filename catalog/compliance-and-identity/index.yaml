@@ -1,0 +1,13 @@
+name: compliance-and-identity/index
+id: compliance-and-identity/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/compliance-and-identity/index
+  displayName: Compliance & Identity
+  description: Regulatory processes and scoring systems that manage financial crime,
+    risk profiling, and KYC data.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

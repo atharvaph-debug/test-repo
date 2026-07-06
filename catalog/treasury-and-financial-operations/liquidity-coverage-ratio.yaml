@@ -1,0 +1,14 @@
+name: treasury-and-financial-operations/liquidity-coverage-ratio
+id: treasury-and-financial-operations/liquidity-coverage-ratio
+type: dataplex-types.global.generic
+category: treasury-and-financial-operations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/treasury-and-financial-operations/liquidity-coverage-ratio
+  displayName: Liquidity Coverage Ratio
+  description: Basel III regulatory ratio defined as high-quality liquid assets divided
+    by total 30-day net cash outflows under stress.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/treasury-and-financial-operations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: compliance-and-identity/anti-money-laundering
+id: compliance-and-identity/anti-money-laundering
+type: dataplex-types.global.generic
+category: compliance-and-identity
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/compliance-and-identity/anti-money-laundering
+  displayName: Anti-Money Laundering
+  description: Transaction monitoring systems and protocols that dynamically scrutinize
+    behaviors based on customer compliance profiles.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/compliance-and-identity/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

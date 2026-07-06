@@ -1,0 +1,14 @@
+name: miscellaneous/travel-and-expense-compliance
+id: miscellaneous/travel-and-expense-compliance
+type: dataplex-types.global.generic
+category: miscellaneous
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/miscellaneous/travel-and-expense-compliance
+  displayName: Travel and Expense Compliance
+  description: Policy rules, booking channels, reimbursement limits, and approval
+    workflows maintained by Finance Shared Services.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/miscellaneous/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

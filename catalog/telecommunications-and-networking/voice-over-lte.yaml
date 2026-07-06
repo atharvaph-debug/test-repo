@@ -1,0 +1,14 @@
+name: telecommunications-and-networking/voice-over-lte
+id: telecommunications-and-networking/voice-over-lte
+type: dataplex-types.global.generic
+category: telecommunications-and-networking
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-and-networking/voice-over-lte
+  displayName: Voice over LTE
+  description: Technology that carries voice calls as packet data over LTE networks
+    with high priority treatment to ensure acceptable quality.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-and-networking/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

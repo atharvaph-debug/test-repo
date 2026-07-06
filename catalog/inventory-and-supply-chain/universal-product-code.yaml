@@ -1,0 +1,14 @@
+name: inventory-and-supply-chain/universal-product-code
+id: inventory-and-supply-chain/universal-product-code
+type: dataplex-types.global.generic
+category: inventory-and-supply-chain
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/inventory-and-supply-chain/universal-product-code
+  displayName: Universal Product Code
+  description: External barcode standards assigned for retail scanning and mapped
+    back as attributes to internal SKUs.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/inventory-and-supply-chain/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: compliance-and-identity/suspicious-activity-report
+id: compliance-and-identity/suspicious-activity-report
+type: dataplex-types.global.generic
+category: compliance-and-identity
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/compliance-and-identity/suspicious-activity-report
+  displayName: Suspicious Activity Report
+  description: Confidential, time-bound legal filings escalated by compliance investigators
+    when transaction monitoring reveals suspicious behaviors.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/compliance-and-identity/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: inventory-and-supply-chain/supplier-scorecards
+id: inventory-and-supply-chain/supplier-scorecards
+type: dataplex-types.global.generic
+category: inventory-and-supply-chain
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/inventory-and-supply-chain/supplier-scorecards
+  displayName: Supplier Scorecards
+  description: Performance ratings based on delivery, quality, and pricing metrics
+    used to distribute purchasing volume.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/inventory-and-supply-chain/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: treasury-and-financial-operations/trade-settlement
+id: treasury-and-financial-operations/trade-settlement
+type: dataplex-types.global.generic
+category: treasury-and-financial-operations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/treasury-and-financial-operations/trade-settlement
+  displayName: Trade Settlement
+  description: The process finalizing a trade where cash and securities are exchanged
+    to discharge transaction obligations, heavily reliant on daily cutoffs.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/treasury-and-financial-operations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

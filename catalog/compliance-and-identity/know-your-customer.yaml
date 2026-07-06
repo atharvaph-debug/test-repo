@@ -1,0 +1,14 @@
+name: compliance-and-identity/know-your-customer
+id: compliance-and-identity/know-your-customer
+type: dataplex-types.global.generic
+category: compliance-and-identity
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/compliance-and-identity/know-your-customer
+  displayName: Know Your Customer
+  description: Financial compliance metric and due diligence process to verify identity
+    and establish risk ratings.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/compliance-and-identity/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

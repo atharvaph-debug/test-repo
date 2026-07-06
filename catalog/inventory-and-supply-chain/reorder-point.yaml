@@ -1,0 +1,14 @@
+name: inventory-and-supply-chain/reorder-point
+id: inventory-and-supply-chain/reorder-point
+type: dataplex-types.global.generic
+category: inventory-and-supply-chain
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/inventory-and-supply-chain/reorder-point
+  displayName: Reorder Point
+  description: The system-calculated inventory level that automatically triggers replenishment
+    purchase orders.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/inventory-and-supply-chain/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

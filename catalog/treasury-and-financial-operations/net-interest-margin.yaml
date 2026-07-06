@@ -1,0 +1,14 @@
+name: treasury-and-financial-operations/net-interest-margin
+id: treasury-and-financial-operations/net-interest-margin
+type: dataplex-types.global.generic
+category: treasury-and-financial-operations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/treasury-and-financial-operations/net-interest-margin
+  displayName: Net Interest Margin
+  description: A profitability metric calculated as net interest income divided by
+    average interest-earning assets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/treasury-and-financial-operations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

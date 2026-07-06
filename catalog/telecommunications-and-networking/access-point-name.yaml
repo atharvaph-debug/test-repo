@@ -1,0 +1,14 @@
+name: telecommunications-and-networking/access-point-name
+id: telecommunications-and-networking/access-point-name
+type: dataplex-types.global.generic
+category: telecommunications-and-networking
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-and-networking/access-point-name
+  displayName: Access Point Name
+  description: The identifier presented by a device to select the target packet data
+    network and routing gateway for a data session.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-and-networking/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
