@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory-management/stock-keeping-unit
+id: supply-chain-and-inventory-management/stock-keeping-unit
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory-management
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory-management/stock-keeping-unit
+  displayName: Stock Keeping Unit
+  description: Internal and external identification standards used to track sellable
+    inventory, mapping strictly to avoid double-counting.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory-management/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

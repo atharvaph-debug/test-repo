@@ -1,0 +1,14 @@
+name: treasury-and-capital-markets/liquidity-coverage-ratio
+id: treasury-and-capital-markets/liquidity-coverage-ratio
+type: dataplex-types.global.generic
+category: treasury-and-capital-markets
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/treasury-and-capital-markets/liquidity-coverage-ratio
+  displayName: Liquidity Coverage Ratio
+  description: Basel III short-term liquidity metric representing high-quality liquid
+    assets divided by net cash outflows over a 30-day stress scenario.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/treasury-and-capital-markets/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

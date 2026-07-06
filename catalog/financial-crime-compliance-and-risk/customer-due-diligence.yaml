@@ -1,0 +1,14 @@
+name: financial-crime-compliance-and-risk/customer-due-diligence
+id: financial-crime-compliance-and-risk/customer-due-diligence
+type: dataplex-types.global.generic
+category: financial-crime-compliance-and-risk
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-crime-compliance-and-risk/customer-due-diligence
+  displayName: Customer Due Diligence
+  description: Verification of applicant identities and beneficial owners at onboarding
+    alongside periodic profile refreshes.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-crime-compliance-and-risk/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

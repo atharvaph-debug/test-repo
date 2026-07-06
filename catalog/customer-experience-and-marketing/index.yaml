@@ -1,0 +1,13 @@
+name: customer-experience-and-marketing/index
+id: customer-experience-and-marketing/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/customer-experience-and-marketing/index
+  displayName: Customer Experience and Marketing
+  description: Terminology and metrics focused on subscriber lifecycles, churn, and
+    value.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

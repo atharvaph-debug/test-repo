@@ -1,0 +1,14 @@
+name: treasury-and-capital-markets/t-plus-1-settlement-cutoff
+id: treasury-and-capital-markets/t-plus-1-settlement-cutoff
+type: dataplex-types.global.generic
+category: treasury-and-capital-markets
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/treasury-and-capital-markets/t-plus-1-settlement-cutoff
+  displayName: T+1 Settlement Cutoff
+  description: Operational daily cutoff window (revised to 15:30 ET / 16:00 ET) required
+    to ensure same-day inclusion in the T+1 settlement run.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/treasury-and-capital-markets/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

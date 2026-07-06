@@ -1,0 +1,13 @@
+name: treasury-and-capital-markets/index
+id: treasury-and-capital-markets/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/treasury-and-capital-markets/index
+  displayName: Treasury and Capital Markets
+  description: Liquidity requirements, balance-sheet metrics, and trading desk settlement
+    rules.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: financial-crime-compliance-and-risk/credit-risk-score
+id: financial-crime-compliance-and-risk/credit-risk-score
+type: dataplex-types.global.generic
+category: financial-crime-compliance-and-risk
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-crime-compliance-and-risk/credit-risk-score
+  displayName: Credit Risk Score
+  description: A quantitative estimate of borrower default risk based on repayment
+    history, exposure, income, and leverage, separate from KYC ratings.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-crime-compliance-and-risk/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

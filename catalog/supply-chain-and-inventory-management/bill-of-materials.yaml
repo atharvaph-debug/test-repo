@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory-management/bill-of-materials
+id: supply-chain-and-inventory-management/bill-of-materials
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory-management
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory-management/bill-of-materials
+  displayName: Bill of Materials
+  description: The authoritative, hierarchical engineering specification detailing
+    components and sub-assemblies required to manufacture a product.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory-management/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

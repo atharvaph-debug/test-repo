@@ -1,0 +1,14 @@
+name: ecommerce-data-modeling/order-item-grain
+id: ecommerce-data-modeling/order-item-grain
+type: dataplex-types.global.generic
+category: ecommerce-data-modeling
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-modeling/order-item-grain
+  displayName: Order Item Grain
+  description: The fundamental revenue grain where sales, margins, and unit metrics
+    must be computed, mapped at one row per product unit.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-modeling/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

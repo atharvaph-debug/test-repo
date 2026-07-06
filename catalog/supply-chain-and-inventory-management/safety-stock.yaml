@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory-management/safety-stock
+id: supply-chain-and-inventory-management/safety-stock
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory-management
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory-management/safety-stock
+  displayName: Safety Stock
+  description: The inventory cushion held to absorb demand spikes and late shipments,
+    calibrated dynamically based on SKU velocity classifications.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory-management/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

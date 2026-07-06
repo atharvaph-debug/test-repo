@@ -1,0 +1,14 @@
+name: financial-crime-compliance-and-risk/kyc-risk-rating
+id: financial-crime-compliance-and-risk/kyc-risk-rating
+type: dataplex-types.global.generic
+category: financial-crime-compliance-and-risk
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-crime-compliance-and-risk/kyc-risk-rating
+  displayName: KYC Risk Rating
+  description: Standard or enhanced risk ratings mapping directly to transaction-monitoring
+    scrutiny levels to detect financial crimes.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-crime-compliance-and-risk/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

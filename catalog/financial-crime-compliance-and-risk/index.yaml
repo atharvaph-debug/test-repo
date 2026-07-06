@@ -1,0 +1,13 @@
+name: financial-crime-compliance-and-risk/index
+id: financial-crime-compliance-and-risk/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-crime-compliance-and-risk/index
+  displayName: Financial Crime Compliance and Risk
+  description: Procedures, metrics, and risk ratings associated with compliance, customer
+    onboarding, and credit risk.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

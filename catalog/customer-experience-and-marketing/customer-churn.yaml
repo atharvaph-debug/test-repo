@@ -1,0 +1,14 @@
+name: customer-experience-and-marketing/customer-churn
+id: customer-experience-and-marketing/customer-churn
+type: dataplex-types.global.generic
+category: customer-experience-and-marketing
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/customer-experience-and-marketing/customer-churn
+  displayName: Customer Churn
+  description: The measure of subscriber loss over a given period, reported as the
+    share of deactivated subscribers.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/customer-experience-and-marketing/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

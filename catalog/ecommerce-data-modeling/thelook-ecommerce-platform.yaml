@@ -1,0 +1,14 @@
+name: ecommerce-data-modeling/thelook-ecommerce-platform
+id: ecommerce-data-modeling/thelook-ecommerce-platform
+type: dataplex-types.global.generic
+category: ecommerce-data-modeling
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-modeling/thelook-ecommerce-platform
+  displayName: theLook eCommerce Platform
+  description: A multi-brand online apparel and accessories retail platform representing
+    the master data set.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-modeling/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

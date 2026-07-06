@@ -1,0 +1,14 @@
+name: telecommunications-and-networking/quality-of-service
+id: telecommunications-and-networking/quality-of-service
+type: dataplex-types.global.generic
+category: telecommunications-and-networking
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-and-networking/quality-of-service
+  displayName: Quality of Service
+  description: Network policies and targets used to configure traffic prioritization
+    to prevent degradation in critical real-time services.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-and-networking/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

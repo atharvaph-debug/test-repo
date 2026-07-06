@@ -1,0 +1,13 @@
+name: supply-chain-and-inventory-management/index
+id: supply-chain-and-inventory-management/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory-management/index
+  displayName: Supply Chain and Inventory Management
+  description: Physical identifiers, forecasting buffers, and facility configurations
+    within the logistics network.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

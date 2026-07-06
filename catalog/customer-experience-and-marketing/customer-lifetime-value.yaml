@@ -1,0 +1,13 @@
+name: customer-experience-and-marketing/customer-lifetime-value
+id: customer-experience-and-marketing/customer-lifetime-value
+type: dataplex-types.global.generic
+category: customer-experience-and-marketing
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/customer-experience-and-marketing/customer-lifetime-value
+  displayName: Customer Lifetime Value
+  description: The total net profit expected from a customer over their entire relationship.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/customer-experience-and-marketing/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: treasury-and-capital-markets/net-interest-margin
+id: treasury-and-capital-markets/net-interest-margin
+type: dataplex-types.global.generic
+category: treasury-and-capital-markets
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/treasury-and-capital-markets/net-interest-margin
+  displayName: Net Interest Margin
+  description: A key balance-sheet profitability metric calculated as net interest
+    income divided by average interest-earning assets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/treasury-and-capital-markets/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

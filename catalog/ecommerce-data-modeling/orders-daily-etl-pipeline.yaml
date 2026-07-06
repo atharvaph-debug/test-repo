@@ -1,0 +1,14 @@
+name: ecommerce-data-modeling/orders-daily-etl-pipeline
+id: ecommerce-data-modeling/orders-daily-etl-pipeline
+type: dataplex-types.global.generic
+category: ecommerce-data-modeling
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-modeling/orders-daily-etl-pipeline
+  displayName: Orders Daily ETL Pipeline
+  description: Daily pipeline landing normalized Stripe and Shopify orders raw data
+    into analytics.orders.orders_daily inside BigQuery.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-modeling/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
