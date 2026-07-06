@@ -1,0 +1,14 @@
+name: financial-risk-and-compliance/customer-due-diligence
+id: financial-risk-and-compliance/customer-due-diligence
+type: dataplex-types.global.generic
+category: financial-risk-and-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-risk-and-compliance/customer-due-diligence
+  displayName: Customer Due Diligence
+  description: The process of verifying identity, establishing beneficial ownership,
+    and determining a financial-crime risk rating during customer onboarding.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-risk-and-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

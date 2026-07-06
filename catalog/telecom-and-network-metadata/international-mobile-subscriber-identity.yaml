@@ -1,0 +1,14 @@
+name: telecom-and-network-metadata/international-mobile-subscriber-identity
+id: telecom-and-network-metadata/international-mobile-subscriber-identity
+type: dataplex-types.global.generic
+category: telecom-and-network-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecom-and-network-metadata/international-mobile-subscriber-identity
+  displayName: International Mobile Subscriber Identity
+  description: The globally unique identifier of a mobile subscriber, written to the
+    SIM card and registered in subscriber databases for home and roaming authentication.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecom-and-network-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

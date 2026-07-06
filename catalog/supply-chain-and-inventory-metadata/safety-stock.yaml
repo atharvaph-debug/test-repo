@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory-metadata/safety-stock
+id: supply-chain-and-inventory-metadata/safety-stock
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory-metadata/safety-stock
+  displayName: Safety Stock
+  description: The buffer inventory held to mitigate demand volatility and supply
+    chain delays, dynamically sized based on SKU velocity class.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

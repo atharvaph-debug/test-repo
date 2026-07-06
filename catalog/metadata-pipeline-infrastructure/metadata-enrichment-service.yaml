@@ -1,0 +1,14 @@
+name: metadata-pipeline-infrastructure/metadata-enrichment-service
+id: metadata-pipeline-infrastructure/metadata-enrichment-service
+type: dataplex-types.global.generic
+category: metadata-pipeline-infrastructure
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-pipeline-infrastructure/metadata-enrichment-service
+  displayName: Metadata Enrichment Service
+  description: A seed infrastructure service that dynamically appends, updates, and
+    structures metadata fields across domain tables.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metadata-pipeline-infrastructure/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,13 @@
+name: metadata-pipeline-infrastructure/index
+id: metadata-pipeline-infrastructure/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-pipeline-infrastructure/index
+  displayName: Metadata Pipeline Infrastructure
+  description: Core software components and pipelines designed to execute metadata
+    enrichment.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

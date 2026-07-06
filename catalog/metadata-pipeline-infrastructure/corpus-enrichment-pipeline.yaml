@@ -1,0 +1,14 @@
+name: metadata-pipeline-infrastructure/corpus-enrichment-pipeline
+id: metadata-pipeline-infrastructure/corpus-enrichment-pipeline
+type: dataplex-types.global.generic
+category: metadata-pipeline-infrastructure
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-pipeline-infrastructure/corpus-enrichment-pipeline
+  displayName: Corpus Enrichment Pipeline
+  description: A seed pipeline responsible for enriching internal document corpuses
+    with structured metadata attributes.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metadata-pipeline-infrastructure/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

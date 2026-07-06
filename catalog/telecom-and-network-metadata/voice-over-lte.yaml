@@ -1,0 +1,14 @@
+name: telecom-and-network-metadata/voice-over-lte
+id: telecom-and-network-metadata/voice-over-lte
+type: dataplex-types.global.generic
+category: telecom-and-network-metadata
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecom-and-network-metadata/voice-over-lte
+  displayName: Voice-over-LTE
+  description: A high-priority service that routes conversational voice calls as packets
+    over the LTE network using IMS.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecom-and-network-metadata/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,13 @@
+name: telecom-and-network-metadata/index
+id: telecom-and-network-metadata/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecom-and-network-metadata/index
+  displayName: Telecom & Network Metadata
+  description: Metadata standards, identifiers, and configuration rules governing
+    network provisioning, performance metrics, and subscriber operations.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent
