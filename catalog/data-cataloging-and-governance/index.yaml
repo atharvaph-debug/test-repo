@@ -1,0 +1,13 @@
+name: data-cataloging-and-governance/index
+id: data-cataloging-and-governance/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-cataloging-and-governance/index
+  displayName: Data Cataloging and Governance
+  description: Platforms and frameworks aimed at organizing, auditing, and maintaining
+    compliance of metadata catalogs.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

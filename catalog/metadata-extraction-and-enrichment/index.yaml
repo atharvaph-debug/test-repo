@@ -1,0 +1,13 @@
+name: metadata-extraction-and-enrichment/index
+id: metadata-extraction-and-enrichment/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-extraction-and-enrichment/index
+  displayName: Metadata Extraction and Enrichment
+  description: Systems and frameworks designed to extract semantic meaning, tags,
+    and rich metadata from unstructured or semi-structured data sources.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

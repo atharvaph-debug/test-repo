@@ -1,0 +1,14 @@
+name: data-cataloging-and-governance/metadata-compliance-auditor
+id: data-cataloging-and-governance/metadata-compliance-auditor
+type: dataplex-types.global.generic
+category: data-cataloging-and-governance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-cataloging-and-governance/metadata-compliance-auditor
+  displayName: Metadata Compliance Auditor
+  description: An automated auditing tool that continuously scans metadata repositories
+    to ensure compliance with enterprise and regulatory standards.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/data-cataloging-and-governance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

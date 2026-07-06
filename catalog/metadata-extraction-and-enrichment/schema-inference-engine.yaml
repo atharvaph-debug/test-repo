@@ -1,0 +1,14 @@
+name: metadata-extraction-and-enrichment/schema-inference-engine
+id: metadata-extraction-and-enrichment/schema-inference-engine
+type: dataplex-types.global.generic
+category: metadata-extraction-and-enrichment
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-extraction-and-enrichment/schema-inference-engine
+  displayName: Schema Inference Engine
+  description: A system designed to dynamically discover, infer, and document structural
+    schemas and metadata profiles from raw data streams and lakes.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metadata-extraction-and-enrichment/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

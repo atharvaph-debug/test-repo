@@ -1,0 +1,15 @@
+name: data-cataloging-and-governance/unified-metadata-catalog
+id: data-cataloging-and-governance/unified-metadata-catalog
+type: dataplex-types.global.generic
+category: data-cataloging-and-governance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-cataloging-and-governance/unified-metadata-catalog
+  displayName: Unified Metadata Catalog
+  description: A centralized repository that stores and manages enriched metadata
+    assets, offering unified discovery and search capabilities across enterprise data
+    sources.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/data-cataloging-and-governance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

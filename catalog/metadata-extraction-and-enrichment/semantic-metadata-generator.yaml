@@ -1,0 +1,14 @@
+name: metadata-extraction-and-enrichment/semantic-metadata-generator
+id: metadata-extraction-and-enrichment/semantic-metadata-generator
+type: dataplex-types.global.generic
+category: metadata-extraction-and-enrichment
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metadata-extraction-and-enrichment/semantic-metadata-generator
+  displayName: Semantic Metadata Generator
+  description: An automated pipeline that analyzes unstructured documents to extract
+    key entities, topics, and taxonomies, appending them as structured metadata attributes.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metadata-extraction-and-enrichment/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
