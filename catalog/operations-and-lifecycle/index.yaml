@@ -1,0 +1,13 @@
+name: operations-and-lifecycle/index
+id: operations-and-lifecycle/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/operations-and-lifecycle/index
+  displayName: Operations and Lifecycle
+  description: State tracking, timestamp evaluation, and pipeline statuses throughout
+    the fulfillment cycle.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

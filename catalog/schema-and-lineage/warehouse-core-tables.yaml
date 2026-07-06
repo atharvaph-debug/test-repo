@@ -1,0 +1,14 @@
+name: schema-and-lineage/warehouse-core-tables
+id: schema-and-lineage/warehouse-core-tables
+type: dataplex-types.global.generic
+category: schema-and-lineage
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/schema-and-lineage/warehouse-core-tables
+  displayName: Warehouse Core Tables
+  description: The base schema tables serving as core entity grains and relational
+    endpoints.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/schema-and-lineage/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

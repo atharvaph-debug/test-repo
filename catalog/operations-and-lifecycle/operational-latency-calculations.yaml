@@ -1,0 +1,14 @@
+name: operations-and-lifecycle/operational-latency-calculations
+id: operations-and-lifecycle/operational-latency-calculations
+type: dataplex-types.global.generic
+category: operations-and-lifecycle
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/operations-and-lifecycle/operational-latency-calculations
+  displayName: Operational Latency Calculations
+  description: Formulas that use timestamps to compute execution velocity across the
+    logistic lifecycle.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/operations-and-lifecycle/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

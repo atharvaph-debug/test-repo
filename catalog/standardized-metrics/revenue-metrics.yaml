@@ -1,0 +1,14 @@
+name: standardized-metrics/revenue-metrics
+id: standardized-metrics/revenue-metrics
+type: dataplex-types.global.generic
+category: standardized-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/standardized-metrics/revenue-metrics
+  displayName: Revenue Metrics
+  description: Financial evaluations calculated using transaction levels and purchase
+    cancellation boundaries.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/standardized-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

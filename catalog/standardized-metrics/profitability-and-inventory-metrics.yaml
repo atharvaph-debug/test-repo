@@ -1,0 +1,14 @@
+name: standardized-metrics/profitability-and-inventory-metrics
+id: standardized-metrics/profitability-and-inventory-metrics
+type: dataplex-types.global.generic
+category: standardized-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/standardized-metrics/profitability-and-inventory-metrics
+  displayName: Profitability and Inventory Metrics
+  description: Performance formulas determining catalog efficiency, profit margins,
+    and distribution times.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/standardized-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

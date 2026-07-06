@@ -1,0 +1,14 @@
+name: schema-and-lineage/denormalization-and-lineage-rules
+id: schema-and-lineage/denormalization-and-lineage-rules
+type: dataplex-types.global.generic
+category: schema-and-lineage
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/schema-and-lineage/denormalization-and-lineage-rules
+  displayName: Denormalization and Lineage Rules
+  description: Rules governing the replication of authoritative attributes and relational
+    mappings inside physical staging layers.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/schema-and-lineage/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

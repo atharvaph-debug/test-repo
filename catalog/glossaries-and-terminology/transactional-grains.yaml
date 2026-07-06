@@ -1,0 +1,14 @@
+name: glossaries-and-terminology/transactional-grains
+id: glossaries-and-terminology/transactional-grains
+type: dataplex-types.global.generic
+category: glossaries-and-terminology
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/glossaries-and-terminology/transactional-grains
+  displayName: Transactional Grains
+  description: Clear mappings of transactional increments separating overall purchase
+    events from individual product units.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/glossaries-and-terminology/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

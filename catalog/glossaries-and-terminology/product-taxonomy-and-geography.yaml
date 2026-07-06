@@ -1,0 +1,14 @@
+name: glossaries-and-terminology/product-taxonomy-and-geography
+id: glossaries-and-terminology/product-taxonomy-and-geography
+type: dataplex-types.global.generic
+category: glossaries-and-terminology
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/glossaries-and-terminology/product-taxonomy-and-geography
+  displayName: Product Taxonomy and Geography
+  description: Structural mapping of products into hierarchies and operational delivery
+    nodes.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/glossaries-and-terminology/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

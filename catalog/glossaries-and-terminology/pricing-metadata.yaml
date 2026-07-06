@@ -1,0 +1,14 @@
+name: glossaries-and-terminology/pricing-metadata
+id: glossaries-and-terminology/pricing-metadata
+type: dataplex-types.global.generic
+category: glossaries-and-terminology
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/glossaries-and-terminology/pricing-metadata
+  displayName: Pricing Metadata
+  description: Distinctions between reference catalog prices, wholesale costs, and
+    actual realized sale transaction prices.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/glossaries-and-terminology/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

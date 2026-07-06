@@ -1,0 +1,13 @@
+name: schema-and-lineage/index
+id: schema-and-lineage/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/schema-and-lineage/index
+  displayName: Schema and Lineage
+  description: Identify raw database tables, relationships, and structural constraints
+    of the analytical warehouse.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

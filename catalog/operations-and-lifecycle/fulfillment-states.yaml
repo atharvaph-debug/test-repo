@@ -1,0 +1,14 @@
+name: operations-and-lifecycle/fulfillment-states
+id: operations-and-lifecycle/fulfillment-states
+type: dataplex-types.global.generic
+category: operations-and-lifecycle
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/operations-and-lifecycle/fulfillment-states
+  displayName: Fulfillment States
+  description: Individual logical phases detailing order creation, processing, delivery,
+    and returns.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/operations-and-lifecycle/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

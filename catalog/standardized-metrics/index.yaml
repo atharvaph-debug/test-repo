@@ -1,0 +1,13 @@
+name: standardized-metrics/index
+id: standardized-metrics/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/standardized-metrics/index
+  displayName: Standardized Metrics
+  description: Canonical calculations and formula mappings used to evaluate financial
+    performance and inventory efficiency.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

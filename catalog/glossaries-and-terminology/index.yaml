@@ -1,0 +1,13 @@
+name: glossaries-and-terminology/index
+id: glossaries-and-terminology/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/glossaries-and-terminology/index
+  displayName: Glossaries and Terminology
+  description: Establish clear, shared definitions of transactional grains, taxonomy,
+    and pricing metadata to align users across departments.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent
