@@ -1,0 +1,13 @@
+name: ecommerce-data-model-governance/index
+id: ecommerce-data-model-governance/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-model-governance/index
+  displayName: E-Commerce Data Model Governance
+  description: Core entity tables and structural databases detailing user, transactional,
+    and inventory relations.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

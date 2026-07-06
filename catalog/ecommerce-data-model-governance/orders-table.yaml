@@ -1,0 +1,14 @@
+name: ecommerce-data-model-governance/orders-table
+id: ecommerce-data-model-governance/orders-table
+type: dataplex-types.global.generic
+category: ecommerce-data-model-governance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-model-governance/orders-table
+  displayName: Orders Table
+  description: Represents checkout events mapping directly to a single unique order
+    transaction containing one or more physical items.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-model-governance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

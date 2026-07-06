@@ -1,0 +1,14 @@
+name: pipeline-orchestration/orders-daily-v3-dag
+id: pipeline-orchestration/orders-daily-v3-dag
+type: dataplex-types.global.generic
+category: pipeline-orchestration
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/pipeline-orchestration/orders-daily-v3-dag
+  displayName: orders_daily_v3 DAG
+  description: Airflow DAG that runs daily at 03:00 UTC to ingest, join, and normalize
+    external payments and Shopify order details.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/pipeline-orchestration/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

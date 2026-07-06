@@ -1,0 +1,14 @@
+name: pipeline-orchestration/analytics-orders-orders-daily-table
+id: pipeline-orchestration/analytics-orders-orders-daily-table
+type: dataplex-types.global.generic
+category: pipeline-orchestration
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/pipeline-orchestration/analytics-orders-orders-daily-table
+  displayName: analytics.orders.orders_daily Table
+  description: The final target BigQuery table containing normalized and ingested
+    data from payments and eCommerce platforms.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/pipeline-orchestration/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

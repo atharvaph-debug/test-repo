@@ -1,0 +1,13 @@
+name: pipeline-orchestration/index
+id: pipeline-orchestration/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/pipeline-orchestration/index
+  displayName: Pipeline Orchestration & Operations
+  description: Technical details, schemas, and operational runbooks for transactional
+    and analytical data pipelines.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

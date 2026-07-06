@@ -1,0 +1,14 @@
+name: metric-formulations-calculations/units-sold
+id: metric-formulations-calculations/units-sold
+type: dataplex-types.global.generic
+category: metric-formulations-calculations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metric-formulations-calculations/units-sold
+  displayName: Units Sold
+  description: Total count of order item-level lines processed, excluding cancelled
+    orders.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metric-formulations-calculations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

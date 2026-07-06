@@ -1,0 +1,13 @@
+name: metric-formulations-calculations/average-order-value
+id: metric-formulations-calculations/average-order-value
+type: dataplex-types.global.generic
+category: metric-formulations-calculations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metric-formulations-calculations/average-order-value
+  displayName: Average Order Value
+  description: Gross revenue divided by the unique count of orders, excluding cancellations.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metric-formulations-calculations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

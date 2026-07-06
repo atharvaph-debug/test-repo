@@ -1,0 +1,14 @@
+name: ecommerce-data-model-governance/users-table
+id: ecommerce-data-model-governance/users-table
+type: dataplex-types.global.generic
+category: ecommerce-data-model-governance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-model-governance/users-table
+  displayName: Users Table
+  description: Represents customer accounts with attributes such as demographics,
+    geographic location, acquisition channel, and creation timestamps.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-model-governance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,13 @@
+name: metric-formulations-calculations/index
+id: metric-formulations-calculations/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metric-formulations-calculations/index
+  displayName: Metric Formulations & Calculations
+  description: Analytical business intelligence metrics formulated on warehouse transactional
+    logs.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

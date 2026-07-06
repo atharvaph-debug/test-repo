@@ -1,0 +1,14 @@
+name: business-glossary-pricing-semantics/sale-price
+id: business-glossary-pricing-semantics/sale-price
+type: dataplex-types.global.generic
+category: business-glossary-pricing-semantics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/business-glossary-pricing-semantics/sale-price
+  displayName: Sale Price
+  description: The final amount the customer actually paid for an individual product,
+    acting as the single source of truth for revenue.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/business-glossary-pricing-semantics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

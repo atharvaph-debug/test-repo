@@ -1,0 +1,13 @@
+name: metric-formulations-calculations/net-revenue
+id: metric-formulations-calculations/net-revenue
+type: dataplex-types.global.generic
+category: metric-formulations-calculations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/metric-formulations-calculations/net-revenue
+  displayName: Net Revenue
+  description: Sum of sales price excluding both cancelled and returned transactions.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/metric-formulations-calculations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

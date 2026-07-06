@@ -1,0 +1,14 @@
+name: business-glossary-pricing-semantics/wholesale-cost
+id: business-glossary-pricing-semantics/wholesale-cost
+type: dataplex-types.global.generic
+category: business-glossary-pricing-semantics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/business-glossary-pricing-semantics/wholesale-cost
+  displayName: Wholesale Cost
+  description: The wholesale or landed cost paid to suppliers, restricted from customer-facing
+    environments.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/business-glossary-pricing-semantics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

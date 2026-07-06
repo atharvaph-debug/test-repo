@@ -1,0 +1,14 @@
+name: ecommerce-data-model-governance/products-catalog-table
+id: ecommerce-data-model-governance/products-catalog-table
+type: dataplex-types.global.generic
+category: ecommerce-data-model-governance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-model-governance/products-catalog-table
+  displayName: Products Catalog Table
+  description: Contains product details for each sellable SKU and links to its sourcing
+    origin.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-model-governance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

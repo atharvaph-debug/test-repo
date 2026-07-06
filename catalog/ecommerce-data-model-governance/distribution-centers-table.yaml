@@ -1,0 +1,13 @@
+name: ecommerce-data-model-governance/distribution-centers-table
+id: ecommerce-data-model-governance/distribution-centers-table
+type: dataplex-types.global.generic
+category: ecommerce-data-model-governance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-model-governance/distribution-centers-table
+  displayName: Distribution Centers Table
+  description: Houses details for warehouses and product sourcing fulfillment centers.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-model-governance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

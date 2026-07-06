@@ -1,0 +1,14 @@
+name: ecommerce-data-model-governance/order-items-table
+id: ecommerce-data-model-governance/order-items-table
+type: dataplex-types.global.generic
+category: ecommerce-data-model-governance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-model-governance/order-items-table
+  displayName: Order Items Table
+  description: The central fact table for financial revenue and metrics, tracking
+    individual product units purchased within an order.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-model-governance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
