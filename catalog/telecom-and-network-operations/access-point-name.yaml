@@ -1,0 +1,14 @@
+name: telecom-and-network-operations/access-point-name
+id: telecom-and-network-operations/access-point-name
+type: dataplex-types.global.generic
+category: telecom-and-network-operations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecom-and-network-operations/access-point-name
+  displayName: Access Point Name
+  description: The packet gateway identifier presented by a mobile device to initiate
+    and route active data or IMS voice sessions.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecom-and-network-operations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

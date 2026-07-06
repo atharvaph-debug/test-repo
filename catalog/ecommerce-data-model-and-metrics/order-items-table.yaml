@@ -1,0 +1,14 @@
+name: ecommerce-data-model-and-metrics/order-items-table
+id: ecommerce-data-model-and-metrics/order-items-table
+type: dataplex-types.global.generic
+category: ecommerce-data-model-and-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-model-and-metrics/order-items-table
+  displayName: Order Items Table
+  description: The central fact table in the eCommerce database representing individual
+    units of a product purchased within an checkout session.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-model-and-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

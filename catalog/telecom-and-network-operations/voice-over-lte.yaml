@@ -1,0 +1,14 @@
+name: telecom-and-network-operations/voice-over-lte
+id: telecom-and-network-operations/voice-over-lte
+type: dataplex-types.global.generic
+category: telecom-and-network-operations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecom-and-network-operations/voice-over-lte
+  displayName: Voice over LTE
+  description: A packet-based voice communication protocol running over the LTE data
+    network using the IP Multimedia Subsystem framework.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecom-and-network-operations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: financial-and-risk-compliance/customer-due-diligence
+id: financial-and-risk-compliance/customer-due-diligence
+type: dataplex-types.global.generic
+category: financial-and-risk-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-risk-compliance/customer-due-diligence
+  displayName: Customer Due Diligence
+  description: Verification policies and financial-crime checks applied to customers
+    during onboarding and account lifecycle monitoring.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-and-risk-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

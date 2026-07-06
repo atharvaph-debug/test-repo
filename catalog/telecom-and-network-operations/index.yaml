@@ -1,0 +1,13 @@
+name: telecom-and-network-operations/index
+id: telecom-and-network-operations/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecom-and-network-operations/index
+  displayName: Telecom & Network Operations
+  description: Terminology, signaling configurations, and performance metrics relating
+    to cellular voice and data networks.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

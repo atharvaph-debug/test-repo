@@ -1,0 +1,13 @@
+name: financial-and-risk-compliance/index
+id: financial-and-risk-compliance/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-and-risk-compliance/index
+  displayName: Financial & Risk Compliance
+  description: Policies, regulatory standards, and credit assessment metrics managing
+    financial, crime, and liquidity risk.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

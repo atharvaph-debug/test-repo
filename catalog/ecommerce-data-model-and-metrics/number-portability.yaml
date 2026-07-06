@@ -1,0 +1,14 @@
+name: ecommerce-data-model-and-metrics/number-portability
+id: ecommerce-data-model-and-metrics/number-portability
+type: dataplex-types.global.generic
+category: ecommerce-data-model-and-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-model-and-metrics/number-portability
+  displayName: Number Portability
+  description: The capability and administrative process enabling telecom subscribers
+    to retain phone numbers when transitioning across service carriers.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-model-and-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
