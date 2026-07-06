@@ -1,0 +1,13 @@
+name: network-engineering-and-qos/international-mobile-subscriber-identity
+id: network-engineering-and-qos/international-mobile-subscriber-identity
+type: dataplex-types.global.generic
+category: network-engineering-and-qos
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/network-engineering-and-qos/international-mobile-subscriber-identity
+  displayName: International Mobile Subscriber Identity
+  description: The globally unique subscriber identity provisioned on a SIM card.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/network-engineering-and-qos/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: network-engineering-and-qos/quality-of-service-policy
+id: network-engineering-and-qos/quality-of-service-policy
+type: dataplex-types.global.generic
+category: network-engineering-and-qos
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/network-engineering-and-qos/quality-of-service-policy
+  displayName: Quality of Service Policy
+  description: Performance mechanisms prioritizing traffic based on latency, packet
+    loss, and throughput targets, specifically tuned for VoLTE.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/network-engineering-and-qos/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

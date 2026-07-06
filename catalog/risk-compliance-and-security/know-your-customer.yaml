@@ -1,0 +1,14 @@
+name: risk-compliance-and-security/know-your-customer
+id: risk-compliance-and-security/know-your-customer
+type: dataplex-types.global.generic
+category: risk-compliance-and-security
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/risk-compliance-and-security/know-your-customer
+  displayName: Know Your Customer
+  description: The process of verifying identity, establishing beneficial ownership
+    for non-individual entities, and assigning a risk rating.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/risk-compliance-and-security/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

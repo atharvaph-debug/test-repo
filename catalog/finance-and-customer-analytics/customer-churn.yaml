@@ -1,0 +1,14 @@
+name: finance-and-customer-analytics/customer-churn
+id: finance-and-customer-analytics/customer-churn
+type: dataplex-types.global.generic
+category: finance-and-customer-analytics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-and-customer-analytics/customer-churn
+  displayName: Customer Churn
+  description: The rate at which subscribers deactivate or leave service over a specific
+    period, calculated as a percentage of the total subscriber base.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/finance-and-customer-analytics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

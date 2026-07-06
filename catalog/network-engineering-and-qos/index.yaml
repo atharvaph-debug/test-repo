@@ -1,0 +1,13 @@
+name: network-engineering-and-qos/index
+id: network-engineering-and-qos/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/network-engineering-and-qos/index
+  displayName: Network Engineering & QoS
+  description: Parameters and performance mechanisms governing telemetry routing,
+    subscriber identity, and traffic prioritization.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

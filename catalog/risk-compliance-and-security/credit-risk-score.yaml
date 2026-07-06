@@ -1,0 +1,14 @@
+name: risk-compliance-and-security/credit-risk-score
+id: risk-compliance-and-security/credit-risk-score
+type: dataplex-types.global.generic
+category: risk-compliance-and-security
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/risk-compliance-and-security/credit-risk-score
+  displayName: Credit Risk Score
+  description: A quantified estimate of a borrower's default probability, evaluated
+    using repayment history, current exposure, and leverage or income.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/risk-compliance-and-security/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

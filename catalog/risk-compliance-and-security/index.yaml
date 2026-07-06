@@ -1,0 +1,13 @@
+name: risk-compliance-and-security/index
+id: risk-compliance-and-security/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/risk-compliance-and-security/index
+  displayName: Risk, Compliance & Security
+  description: Terminology, processes, and filings associated with credit risk profiling
+    and financial crime compliance.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

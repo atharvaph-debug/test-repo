@@ -1,0 +1,14 @@
+name: risk-compliance-and-security/anti-money-laundering
+id: risk-compliance-and-security/anti-money-laundering
+type: dataplex-types.global.generic
+category: risk-compliance-and-security
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/risk-compliance-and-security/anti-money-laundering
+  displayName: Anti-Money Laundering
+  description: Broad transaction monitoring designed to identify patterns inconsistent
+    with expected behavior and support suspicious activity reporting.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/risk-compliance-and-security/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

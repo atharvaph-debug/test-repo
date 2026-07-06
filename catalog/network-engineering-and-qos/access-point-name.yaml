@@ -1,0 +1,14 @@
+name: network-engineering-and-qos/access-point-name
+id: network-engineering-and-qos/access-point-name
+type: dataplex-types.global.generic
+category: network-engineering-and-qos
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/network-engineering-and-qos/access-point-name
+  displayName: Access Point Name
+  description: The identifier presented by a device to route data sessions through
+    specific gateways.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/network-engineering-and-qos/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

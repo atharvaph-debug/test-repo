@@ -1,0 +1,13 @@
+name: finance-and-customer-analytics/index
+id: finance-and-customer-analytics/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/finance-and-customer-analytics/index
+  displayName: Finance & Customer Analytics
+  description: Standardized metrics and terms tracking financial performance and customer
+    lifetime value.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

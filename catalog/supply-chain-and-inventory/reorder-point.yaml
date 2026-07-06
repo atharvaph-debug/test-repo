@@ -1,0 +1,14 @@
+name: supply-chain-and-inventory/reorder-point
+id: supply-chain-and-inventory/reorder-point
+type: dataplex-types.global.generic
+category: supply-chain-and-inventory
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory/reorder-point
+  displayName: Reorder Point
+  description: A dynamic target formula calculated as (Average Daily Demand * Lead
+    Time in Days) + Safety Stock.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-and-inventory/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

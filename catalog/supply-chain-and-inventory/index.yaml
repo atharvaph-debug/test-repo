@@ -1,0 +1,13 @@
+name: supply-chain-and-inventory/index
+id: supply-chain-and-inventory/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-and-inventory/index
+  displayName: Supply Chain & Inventory
+  description: Formulas and parameters governing replenishment, velocity prioritization,
+    and stock policies.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent
