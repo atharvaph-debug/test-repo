@@ -1,0 +1,14 @@
+name: ecommerce-data-models/users-table
+id: ecommerce-data-models/users-table
+type: dataplex-types.global.generic
+category: ecommerce-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-models/users-table
+  displayName: Users Table
+  description: Represents customers at a customer grain containing demographic details,
+    location, traffic source, and sign-up timestamps.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

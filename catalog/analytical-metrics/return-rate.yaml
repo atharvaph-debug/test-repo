@@ -1,0 +1,13 @@
+name: analytical-metrics/return-rate
+id: analytical-metrics/return-rate
+type: dataplex-types.global.generic
+category: analytical-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/analytical-metrics/return-rate
+  displayName: Return Rate
+  description: The proportion of non-cancelled items that were returned.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/analytical-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

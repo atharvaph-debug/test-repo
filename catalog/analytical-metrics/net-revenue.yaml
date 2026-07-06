@@ -1,0 +1,14 @@
+name: analytical-metrics/net-revenue
+id: analytical-metrics/net-revenue
+type: dataplex-types.global.generic
+category: analytical-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/analytical-metrics/net-revenue
+  displayName: Net Revenue
+  description: The total sum of sale_price for order items excluding both cancelled
+    and returned items.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/analytical-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,13 @@
+name: analytical-metrics/index
+id: analytical-metrics/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/analytical-metrics/index
+  displayName: Analytical Metrics
+  description: Canonical formulas and metrics definitions used for consistent business
+    reporting.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

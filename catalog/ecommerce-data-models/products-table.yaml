@@ -1,0 +1,14 @@
+name: ecommerce-data-models/products-table
+id: ecommerce-data-models/products-table
+type: dataplex-types.global.generic
+category: ecommerce-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-models/products-table
+  displayName: Products Table
+  description: Contains SKU-level details on sellable products and their associated
+    retail prices, supplier costs, and warehouse origins.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

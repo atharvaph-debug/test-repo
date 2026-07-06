@@ -1,0 +1,13 @@
+name: ecommerce-data-models/inventory-items-table
+id: ecommerce-data-models/inventory-items-table
+type: dataplex-types.global.generic
+category: ecommerce-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-models/inventory-items-table
+  displayName: Inventory Items Table
+  description: Represents specific physical units of stock at a stock unit grain.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

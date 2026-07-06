@@ -1,0 +1,14 @@
+name: pipelines-and-runbooks/orders-etl-pipeline
+id: pipelines-and-runbooks/orders-etl-pipeline
+type: dataplex-types.global.generic
+category: pipelines-and-runbooks
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/pipelines-and-runbooks/orders-etl-pipeline
+  displayName: Orders ETL Pipeline
+  description: A daily BigQuery ETL process managed via Airflow that synthesizes Shopify
+    orders and Stripe transactions.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/pipelines-and-runbooks/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

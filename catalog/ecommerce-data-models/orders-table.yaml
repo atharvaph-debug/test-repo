@@ -1,0 +1,14 @@
+name: ecommerce-data-models/orders-table
+id: ecommerce-data-models/orders-table
+type: dataplex-types.global.generic
+category: ecommerce-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-models/orders-table
+  displayName: Orders Table
+  description: Represents checkout events at an order grain and relates back to the
+    customer.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

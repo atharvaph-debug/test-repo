@@ -1,0 +1,13 @@
+name: ecommerce-data-models/distribution-centers-table
+id: ecommerce-data-models/distribution-centers-table
+type: dataplex-types.global.generic
+category: ecommerce-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-models/distribution-centers-table
+  displayName: Distribution Centers Table
+  description: Represents fulfillment warehouses at a warehouse grain.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

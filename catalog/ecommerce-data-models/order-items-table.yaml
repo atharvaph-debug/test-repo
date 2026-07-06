@@ -1,0 +1,14 @@
+name: ecommerce-data-models/order-items-table
+id: ecommerce-data-models/order-items-table
+type: dataplex-types.global.generic
+category: ecommerce-data-models
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/ecommerce-data-models/order-items-table
+  displayName: Order Items Table
+  description: Central fact table tracking transactions at the order line/sold unit
+    grain to calculate revenue, units sold, and margins.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/ecommerce-data-models/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
