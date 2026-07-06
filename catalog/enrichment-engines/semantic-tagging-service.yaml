@@ -1,0 +1,14 @@
+name: enrichment-engines/semantic-tagging-service
+id: enrichment-engines/semantic-tagging-service
+type: dataplex-types.global.generic
+category: enrichment-engines
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/enrichment-engines/semantic-tagging-service
+  displayName: Semantic Tagging Service
+  description: An automated service that analyzes metadata structures to apply taxonomical
+    labels and business glossary terms.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/enrichment-engines/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

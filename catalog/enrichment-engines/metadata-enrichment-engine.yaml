@@ -1,0 +1,14 @@
+name: enrichment-engines/metadata-enrichment-engine
+id: enrichment-engines/metadata-enrichment-engine
+type: dataplex-types.global.generic
+category: enrichment-engines
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/enrichment-engines/metadata-enrichment-engine
+  displayName: Metadata Enrichment Engine
+  description: A core framework designed to automatically append semantic tags, classifications,
+    and lineage details to ingestion pipelines.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/enrichment-engines/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

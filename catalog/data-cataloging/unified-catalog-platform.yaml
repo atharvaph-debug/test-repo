@@ -1,0 +1,14 @@
+name: data-cataloging/unified-catalog-platform
+id: data-cataloging/unified-catalog-platform
+type: dataplex-types.global.generic
+category: data-cataloging
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-cataloging/unified-catalog-platform
+  displayName: Unified Catalog Platform
+  description: A centralized repository that stores enriched schemas, data lineage,
+    and operational metadata for enterprise discovery.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/data-cataloging/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

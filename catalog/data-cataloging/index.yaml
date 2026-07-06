@@ -1,0 +1,13 @@
+name: data-cataloging/index
+id: data-cataloging/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-cataloging/index
+  displayName: Data Cataloging & Discovery
+  description: Tools and systems that catalog enriched metadata to facilitate discoverability
+    and governance.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

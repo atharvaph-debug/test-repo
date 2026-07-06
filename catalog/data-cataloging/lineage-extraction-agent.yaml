@@ -1,0 +1,14 @@
+name: data-cataloging/lineage-extraction-agent
+id: data-cataloging/lineage-extraction-agent
+type: dataplex-types.global.generic
+category: data-cataloging
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/data-cataloging/lineage-extraction-agent
+  displayName: Lineage Extraction Agent
+  description: An automated agent that parses SQL dialects and execution logs to build
+    end-to-end metadata lineage maps.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/data-cataloging/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
