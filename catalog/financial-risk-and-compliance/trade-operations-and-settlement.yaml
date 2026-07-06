@@ -1,0 +1,14 @@
+name: financial-risk-and-compliance/trade-operations-and-settlement
+id: financial-risk-and-compliance/trade-operations-and-settlement
+type: dataplex-types.global.generic
+category: financial-risk-and-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-risk-and-compliance/trade-operations-and-settlement
+  displayName: Trade Operations and Settlement
+  description: Standard guidelines, cutoff times, and workflows governing the clearing
+    and settlement of equities and fixed-income trades.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-risk-and-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

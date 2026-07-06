@@ -1,0 +1,14 @@
+name: financial-risk-and-compliance/know-your-customer
+id: financial-risk-and-compliance/know-your-customer
+type: dataplex-types.global.generic
+category: financial-risk-and-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-risk-and-compliance/know-your-customer
+  displayName: Know Your Customer
+  description: A mandatory identity verification and risk assessment process for customer
+    onboarding and ongoing AML compliance risk monitoring.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-risk-and-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

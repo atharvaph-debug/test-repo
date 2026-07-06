@@ -1,0 +1,13 @@
+name: financial-performance-metrics/index
+id: financial-performance-metrics/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-performance-metrics/index
+  displayName: Financial Performance Metrics
+  description: Metrics and KPIs used to assess corporate profitability and customer
+    value.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: financial-performance-metrics/customer-lifetime-value
+id: financial-performance-metrics/customer-lifetime-value
+type: dataplex-types.global.generic
+category: financial-performance-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-performance-metrics/customer-lifetime-value
+  displayName: Customer Lifetime Value
+  description: The total expected net profit generated over a customer's entire relationship,
+    calculated as projected revenue minus cost-to-serve and retention spend.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-performance-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: telecommunications-and-networking/usage-rating-and-billing
+id: telecommunications-and-networking/usage-rating-and-billing
+type: dataplex-types.global.generic
+category: telecommunications-and-networking
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-and-networking/usage-rating-and-billing
+  displayName: Usage Rating and Billing
+  description: The operational sequence of applying pricing plans to individual usage
+    events and aggregating them into recurring customer invoices.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-and-networking/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

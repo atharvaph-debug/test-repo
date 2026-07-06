@@ -1,0 +1,14 @@
+name: telecommunications-and-networking/customer-churn
+id: telecommunications-and-networking/customer-churn
+type: dataplex-types.global.generic
+category: telecommunications-and-networking
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-and-networking/customer-churn
+  displayName: Customer Churn
+  description: The rate, measured as a percentage share over a given period, at which
+    subscribers deactivate or leave a service.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-and-networking/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

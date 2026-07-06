@@ -1,0 +1,15 @@
+name: financial-risk-and-compliance/credit-risk-scoring
+id: financial-risk-and-compliance/credit-risk-scoring
+type: dataplex-types.global.generic
+category: financial-risk-and-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-risk-and-compliance/credit-risk-scoring
+  displayName: Credit Risk Scoring
+  description: A predictive estimate of a borrower's likelihood of default, derived
+    from repayment history, financial exposure, and leverage ratios, used during loan
+    origination, portfolio monitoring, and loss provisioning.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-risk-and-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: financial-performance-metrics/net-interest-margin
+id: financial-performance-metrics/net-interest-margin
+type: dataplex-types.global.generic
+category: financial-performance-metrics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-performance-metrics/net-interest-margin
+  displayName: Net Interest Margin
+  description: A balance sheet profitability metric expressing the net interest margin
+    produced per dollar of interest-earning assets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-performance-metrics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
