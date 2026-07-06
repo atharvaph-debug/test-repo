@@ -1,0 +1,14 @@
+name: order-lifecycle-and-latency/operational-latency-timestamps
+id: order-lifecycle-and-latency/operational-latency-timestamps
+type: dataplex-types.global.generic
+category: order-lifecycle-and-latency
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/order-lifecycle-and-latency/operational-latency-timestamps
+  displayName: Operational Latency Timestamps
+  description: Measures cycle times and bottlenecks using timestamps for processing
+    time, transit time, and return latency.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/order-lifecycle-and-latency/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

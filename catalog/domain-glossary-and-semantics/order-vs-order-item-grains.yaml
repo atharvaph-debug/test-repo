@@ -1,0 +1,14 @@
+name: domain-glossary-and-semantics/order-vs-order-item-grains
+id: domain-glossary-and-semantics/order-vs-order-item-grains
+type: dataplex-types.global.generic
+category: domain-glossary-and-semantics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/domain-glossary-and-semantics/order-vs-order-item-grains
+  displayName: Order vs. Order Item Grains
+  description: Distinguishes between a purchase checkout event and the individual
+    product units within that purchase, which serve as the authoritative revenue grain.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/domain-glossary-and-semantics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

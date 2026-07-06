@@ -1,0 +1,14 @@
+name: domain-glossary-and-semantics/financial-fields-taxonomy
+id: domain-glossary-and-semantics/financial-fields-taxonomy
+type: dataplex-types.global.generic
+category: domain-glossary-and-semantics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/domain-glossary-and-semantics/financial-fields-taxonomy
+  displayName: Financial Fields Taxonomy
+  description: Defines the semantic distinctions between wholesale/landed cost, advertised
+    catalog list retail price, and the actual promotion-adjusted sale price.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/domain-glossary-and-semantics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

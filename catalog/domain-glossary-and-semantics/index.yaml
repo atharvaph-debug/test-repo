@@ -1,0 +1,13 @@
+name: domain-glossary-and-semantics/index
+id: domain-glossary-and-semantics/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/domain-glossary-and-semantics/index
+  displayName: Domain Glossary & Semantics
+  description: Core business concepts, financial taxonomies, and entity definitions
+    for eCommerce metadata.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: order-lifecycle-and-latency/lifecycle-status-matrix
+id: order-lifecycle-and-latency/lifecycle-status-matrix
+type: dataplex-types.global.generic
+category: order-lifecycle-and-latency
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/order-lifecycle-and-latency/lifecycle-status-matrix
+  displayName: Lifecycle Status Matrix
+  description: 'Defines business definitions and financial impact for execution states:
+    Processing, Shipped, Complete, Returned, and Cancelled.'
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/order-lifecycle-and-latency/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

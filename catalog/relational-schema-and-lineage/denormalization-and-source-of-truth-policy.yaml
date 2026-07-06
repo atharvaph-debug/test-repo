@@ -1,0 +1,15 @@
+name: relational-schema-and-lineage/denormalization-and-source-of-truth-policy
+id: relational-schema-and-lineage/denormalization-and-source-of-truth-policy
+type: dataplex-types.global.generic
+category: relational-schema-and-lineage
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/relational-schema-and-lineage/denormalization-and-source-of-truth-policy
+  displayName: Denormalization & Source of Truth Policy
+  description: Establishes that the canonical products catalog table is the authoritative
+    source when attributes conflict with denormalized product columns in inventory
+    items.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/relational-schema-and-lineage/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

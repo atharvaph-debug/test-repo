@@ -1,0 +1,14 @@
+name: canonical-metric-formulations/revenue-and-volume-metrics
+id: canonical-metric-formulations/revenue-and-volume-metrics
+type: dataplex-types.global.generic
+category: canonical-metric-formulations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/canonical-metric-formulations/revenue-and-volume-metrics
+  displayName: Revenue and Volume Metrics
+  description: Mathematical representations for evaluating sales performance and order
+    sizes, adjusted for cancelled and returned items.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/canonical-metric-formulations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

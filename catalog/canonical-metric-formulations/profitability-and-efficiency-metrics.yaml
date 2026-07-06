@@ -1,0 +1,14 @@
+name: canonical-metric-formulations/profitability-and-efficiency-metrics
+id: canonical-metric-formulations/profitability-and-efficiency-metrics
+type: dataplex-types.global.generic
+category: canonical-metric-formulations
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/canonical-metric-formulations/profitability-and-efficiency-metrics
+  displayName: Profitability and Efficiency Metrics
+  description: Mathematical models for assessing margins, returns, inventory sell-through
+    velocity, and warehouse holding times.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/canonical-metric-formulations/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

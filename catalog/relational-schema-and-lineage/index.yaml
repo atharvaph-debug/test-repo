@@ -1,0 +1,13 @@
+name: relational-schema-and-lineage/index
+id: relational-schema-and-lineage/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/relational-schema-and-lineage/index
+  displayName: Relational Schema & Lineage Mapping
+  description: Defines relational entities, source grains, key relationships, and
+    source of truth policies for database integration.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

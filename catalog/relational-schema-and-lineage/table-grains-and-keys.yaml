@@ -1,0 +1,14 @@
+name: relational-schema-and-lineage/table-grains-and-keys
+id: relational-schema-and-lineage/table-grains-and-keys
+type: dataplex-types.global.generic
+category: relational-schema-and-lineage
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/relational-schema-and-lineage/table-grains-and-keys
+  displayName: Table Grains and Keys
+  description: Maps keys and defines rows for core physical tables including users,
+    orders, order items, products, inventory items, and distribution centers.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/relational-schema-and-lineage/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,13 @@
+name: order-lifecycle-and-latency/index
+id: order-lifecycle-and-latency/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/order-lifecycle-and-latency/index
+  displayName: Order Lifecycle & Funnel Latency
+  description: Operational tracking of order execution states, financial impact of
+    transitions, and cycle-time performance calculation.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: domain-glossary-and-semantics/product-taxonomy
+id: domain-glossary-and-semantics/product-taxonomy
+type: dataplex-types.global.generic
+category: domain-glossary-and-semantics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/domain-glossary-and-semantics/product-taxonomy
+  displayName: Product Taxonomy
+  description: Three-level classification hierarchy organizing sellable product variants
+    (SKUs) by department, category, and brand.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/domain-glossary-and-semantics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

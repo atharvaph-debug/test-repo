@@ -1,0 +1,13 @@
+name: canonical-metric-formulations/index
+id: canonical-metric-formulations/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/canonical-metric-formulations/index
+  displayName: Canonical Metric Formulations
+  description: Structured mathematical formulas for calculating sales, inventory efficiency,
+    and margin metrics.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent
