@@ -1,0 +1,14 @@
+name: financial-risk-compliance/net-interest-margin
+id: financial-risk-compliance/net-interest-margin
+type: dataplex-types.global.generic
+category: financial-risk-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-risk-compliance/net-interest-margin
+  displayName: Net Interest Margin
+  description: A core balance-sheet profitability metric managed by Treasury that
+    measures net interest income relative to average interest-earning assets.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-risk-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

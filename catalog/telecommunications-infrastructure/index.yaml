@@ -1,0 +1,13 @@
+name: telecommunications-infrastructure/index
+id: telecommunications-infrastructure/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-infrastructure/index
+  displayName: Telecommunications Infrastructure
+  description: Core identifiers, routing protocols, and operational targets for mobile
+    network and subscriber management.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

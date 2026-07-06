@@ -1,0 +1,14 @@
+name: financial-risk-compliance/suspicious-activity-report
+id: financial-risk-compliance/suspicious-activity-report
+type: dataplex-types.global.generic
+category: financial-risk-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-risk-compliance/suspicious-activity-report
+  displayName: Suspicious Activity Report
+  description: The regulatory output filed when financial crime investigations confirm
+    reasonable suspicion of illegal activity.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-risk-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: telecommunications-infrastructure/number-portability
+id: telecommunications-infrastructure/number-portability
+type: dataplex-types.global.generic
+category: telecommunications-infrastructure
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-infrastructure/number-portability
+  displayName: Number Portability
+  description: The process and regulatory capability allowing a customer to retain
+    their existing phone number when changing carriers.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-infrastructure/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

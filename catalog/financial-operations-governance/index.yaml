@@ -1,0 +1,13 @@
+name: financial-operations-governance/index
+id: financial-operations-governance/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-operations-governance/index
+  displayName: Financial Operations & Governance
+  description: Systems, standards, and rules defining corporate travel compliance
+    and daily settlement deadlines.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

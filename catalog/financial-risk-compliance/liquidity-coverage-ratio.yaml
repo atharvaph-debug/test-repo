@@ -1,0 +1,14 @@
+name: financial-risk-compliance/liquidity-coverage-ratio
+id: financial-risk-compliance/liquidity-coverage-ratio
+type: dataplex-types.global.generic
+category: financial-risk-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-risk-compliance/liquidity-coverage-ratio
+  displayName: Liquidity Coverage Ratio
+  description: A Basel III regulatory metric measuring the proportion of high-quality
+    liquid assets held by a financial institution to meet short-term cash outflows.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-risk-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

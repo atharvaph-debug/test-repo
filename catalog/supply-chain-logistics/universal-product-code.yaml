@@ -1,0 +1,14 @@
+name: supply-chain-logistics/universal-product-code
+id: supply-chain-logistics/universal-product-code
+type: dataplex-types.global.generic
+category: supply-chain-logistics
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-logistics/universal-product-code
+  displayName: Universal Product Code
+  description: An external, globally registered barcode standard used for retail scanning
+    and mapped as an attribute to internal SKUs.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/supply-chain-logistics/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

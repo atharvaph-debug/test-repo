@@ -1,119 +1,242 @@
 {
-  "agent_type": "table",
-  "user_input": "TOPIC: theLook eCommerce model | DATASET: cloud-ml-metadata-test-jialu.thelook_ecommerce",
+  "agent_type": "doc",
+  "user_input": "TOPIC: Metadata enrichment",
   "tool_uses": [
     {
       "name": "fetch_gdoc",
       "args": {
-        "url": "https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk"
+        "url": "1Obu3LNs7aVPvtEEuKbgiD7b553zn-LOE5xe3KuWt6Fg",
+        "depth": 1
       }
     },
     {
       "name": "fetch_gdoc",
       "args": {
-        "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
+        "url": "1IXn1QX1m7lJ7kn6yGnQi8At_hhvBKsHuPGbs5SFUUI0",
+        "depth": 1
       }
     },
     {
       "name": "fetch_gdoc",
       "args": {
-        "url": "https://docs.google.com/document/d/1fm5barRArG0T_KLCIXWnpUwXkaVNdlHNFljmcQ4ppfA/edit?usp=drivesdk"
+        "url": "1FFaghxSz7YKUakJzBsGu_u_C1ZeNPXBG38apWoU0Xdc",
+        "depth": 1
       }
     },
     {
       "name": "fetch_gdoc",
       "args": {
-        "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
+        "url": "1LGv8kJwGMxFmrObzlWWabfavoaapl24zaFbXiQXU_aY",
+        "depth": 1
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "distribution_centers"
+        "url": "1Tp3jIXE-_Wfeb3gbFbouX0seOyi15etrylUYMzGWyh4",
+        "depth": 1
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "events"
+        "url": "1eQLBFVW806z85uPAT1-bFY_BHOz-iUCT6b_LIQYPT7c",
+        "depth": 1
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "inventory_items"
+        "url": "1VR5cX-s-EA9fwFyVH9BVPmlLB59qd-UtL0LRZGfNBNU",
+        "depth": 1
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "order_items"
+        "url": "132WG298COjjbV1PqmJ01cnXFeQfTSdF30a1tlf9YjhU",
+        "depth": 1
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "orders"
+        "url": "1tcp-BhUCYXWiKrsrTBRST5Umu6_13ib7m_viXBggsYk",
+        "depth": 1
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "products"
+        "url": "1DqruUuQIFjaVVYoBKmXnppaFmqCXj6PVZMom_hVOxxM",
+        "depth": 1
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "users"
+        "url": "1jI6HhNVjOkkpuUYDDZ3xhpUlgzqtjg1lTaBQt9OeImQ",
+        "depth": 1
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "distribution_centers"
+        "url": "1GPtX16AkNHHRYrkUk87lsfDHuMLXYVcVV3RycBtHexE",
+        "depth": 1
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "events"
+        "url": "1K6Yoj4uE_IwHJHezZKDCY5bC_URWnCHE9BSm5dSd1-0",
+        "depth": 1
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "inventory_items"
+        "url": "145vwcMxn2xKFP5uxq624N5QnBZEbU-Wton8ZUI8QwD0",
+        "depth": 1
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "order_items"
+        "url": "1jdHG_-0mgrVIOR10oZf5bF44j9qXkp9UEGnppu4v30U",
+        "depth": 1
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "orders"
+        "url": "15XrKEZF7PSXKCzdRbRj7BxleBcFn2onBv1QAkvDDlgs",
+        "depth": 1
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "products"
+        "url": "1mGNA1aQHvYEJS6N1cmr5N3nkTkZ8fX7Hjz-IvFOd_3o",
+        "depth": 1
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "args": {
-        "table": "users"
+        "url": "1dMxGBP8x0XdqajLqmzbxZIxcj7FzLe0V2X3esw_ipOw",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1r8JdSHyWNkmXNa3_di80tSJJaBeJMPKAzB2_J-IzJdA",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1iX1WcU06wst5e-qRfVN6g8F12Mp-lICKmEfEJPs33I0",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1LPeSLuvREqR9ql9k32aWivsTU8kUWQmH-bi10HPcwZQ",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1hevfD6a2hojbAU42dp215AX7mN-KY0sLIeJSowu6LcQ",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1REJ7VjzTcvcEAiviGYU0psJZhCjTjxDPJ6NIHf5zZqQ",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "10ivoRcx7RyKcugHb7zVnJSgIRV98XZgVjtV10CZro04",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1coQ-rJmhOszO-0LOU_s9su7sL_JjTLzPzpGCFLj0svk",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1Axp8e_zvhvHjyJ0B3sSuDRzINv-Zt8r9aJVpFGILAtE",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1qWcFBL9LnXxm2iOegMjnO4_Qywbt17Kw-hAOH-arSUs",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1lX_2XEm4jpiN-gNOv30UEBoJ1eYAvDUl2BL-g-FZ2KE",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1dSWNVjfYvUmeb-kA8ETaZ38K6YCJG7SkC5oOksvxKeo",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1SsgbjuwQKjwAQHcXoTBiOPKJg9sZAtIHntksCJsCVf8",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1tSCGhnctQOuy4Vdjz7IArJ7B6n-PJBlO29Z0ipKc-UE",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1kXDYTun6V0lc4d83F_HS1g-L6G_iTsTFt6eoYnTGtwA",
+        "depth": 1
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "args": {
+        "url": "1DItkIvyGbrC1vPDIKxuKP0_qBnC1ShzTYoxsgKWSuSk",
+        "depth": 1
       }
     },
     {
       "name": "enumerate",
       "args": {
-        "topic": "theLook eCommerce model"
+        "topic": "Metadata enrichment"
       }
     }
   ],
@@ -121,737 +244,265 @@
     {
       "name": "fetch_gdoc",
       "response": {
-        "url": "https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk",
-        "name": "theLook eCommerce \u2014 Metric Definitions",
-        "content": "# theLook eCommerce \u2014 Metric Definitions (application/vnd.google-apps.document)\n\n# theLook eCommerce \u2014 Metric Definitions\n\n**Owner:** Commerce Data & Analytics **Purpose:** Canonical formulas for the core commerce metrics, expressed against the warehouse columns. Use these so every team computes the same number.\n\nAll revenue and unit metrics are computed at the **order-item grain** (`order_items`), which is the sold-unit grain. See the Business Glossary for the Order vs. Order Item distinction and the price definitions.\n\n## Revenue\n\n**Gross Revenue** \\= `SUM(order_items.sale_price)` over items whose status is not Cancelled.\n\n**Net Revenue** \\= `SUM(order_items.sale_price)` over items that are neither Cancelled nor Returned. Net revenue is gross revenue with returns removed.\n\nAlways exclude Cancelled items from any revenue figure; exclude Returned items additionally for *net* revenue.\n\n## Average Order Value (AOV)\n\n**AOV** \\= Gross Revenue / number of distinct orders \\= `SUM(order_items.sale_price) / COUNT(DISTINCT order_items.order_id)`. AOV is an order-grain metric derived from item-grain revenue.\n\n## Units Sold\n\n**Units Sold** \\= `COUNT(order_items.id)` for non-cancelled items. Each order item is one unit.\n\n## Return Rate\n\n**Return Rate** \\= returned units / sold units \\= `COUNT(order_items WHERE returned_at IS NOT NULL) / COUNT(order_items WHERE status <> 'Cancelled')`.\n\n## Gross Margin and Margin %\n\n**Gross Margin** \\= `SUM(order_items.sale_price - products.cost)` (join `order_items.product_id` \u2192 `products.id`), over non-returned, non-cancelled items.\n\n**Gross Margin %** \\= Gross Margin / Net Revenue.\n\n## Inventory Sell-Through and Days-in-Inventory\n\n**Sell-Through Rate** \\= sold inventory units / total inventory units \\= `COUNT(inventory_items WHERE sold_at IS NOT NULL) / COUNT(inventory_items)`.\n\n**Average Days in Inventory** \\= mean of `(sold_at - created_at)` over sold inventory items \u2014 how long a unit sits in stock before it sells.\n\n## Customer Acquisition by Channel\n\nGroup `users` by `traffic_source` to attribute customers (and, by joining through orders, revenue) to acquisition channels.  \n"
+        "url": "1Obu3LNs7aVPvtEEuKbgiD7b553zn-LOE5xe3KuWt6Fg",
+        "depth": 1,
+        "content": "# Copy of Supplier Onboarding Guide (application/vnd.google-apps.document)\n\n# Supplier Onboarding Guide\n\n**Owner:** Strategic Sourcing **Purpose:** Bring a new supplier from first contact to production-ready.\n\nOnboarding a supplier is about establishing two things before we depend on them: a reliable **lead time** and an initial **supplier scorecard**.\n\n## Step 1 \u2014 Qualification\n\nCollect business and compliance documentation, run financial and quality checks, and agree commercial terms. No production orders are placed during qualification.\n\n## Step 2 \u2014 Establishing lead time\n\nWe ask each new supplier to commit to a quoted lead time for each part \u2014 the full duration from PO placement to goods available for pick, including their order processing and transit. We validate the quote with one or two trial orders. Trial-order actuals, not the quote alone, become the lead time we plan against, because suppliers often quote optimistically. Lead time variability observed during trials is recorded; high variability means planning will need more safety stock to protect service.\n\n## Step 3 \u2014 The supplier scorecard\n\nEvery active supplier carries a **supplier scorecard** (also called a vendor rating). It is a structured, periodically refreshed rating of the supplier's performance, combining:\n\n- **On-time delivery %** \u2014 share of POs received by the promised date.  \n- **Quality** \u2014 defect, return, and rejection rates.  \n- **Price competitiveness** \u2014 relative to alternate suppliers for the same part.\n\nThe scorecard is the basis for how much volume a supplier earns. A new supplier starts with a provisional score from the trial orders; it matures as real PO history accumulates. Buyers consult the scorecard whenever a part has more than one qualified source.\n\n## Step 4 \u2014 Go live\n\nOnce lead time is validated and a scorecard exists, the supplier is flagged production-ready and becomes eligible for demand-driven replenishment orders.  \n"
       }
     },
     {
       "name": "fetch_gdoc",
       "response": {
-        "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ",
-        "name": "theLook eCommerce \u2014 Data Model and Relationships",
-        "content": "# theLook eCommerce \u2014 Data Model and Relationships (application/vnd.google-apps.document)\n\n# theLook eCommerce \u2014 Data Model and Relationships\n\n**Owner:** Commerce Data & Analytics **Audience:** Engineers and analysts joining across the eCommerce tables\n\nThe grain of each table and how the tables relate. Use this to write correct joins and to understand lineage.\n\n## Tables and their grain\n\n- **`users`** \u2014 one row per customer. Grain: customer. Holds demographics (age, gender), location (city/state/country, lat/long), acquisition channel (`traffic_source`), and signup time (`created_at`).  \n- **`orders`** \u2014 one row per order (a checkout event). Grain: order. Links to the customer via `user_id`.  \n- **`order_items`** \u2014 one row per unit of a product in an order. Grain: order line / sold unit. This is the central fact table for revenue.  \n- **`products`** \u2014 one row per sellable product (SKU). Grain: product.  \n- **`inventory_items`** \u2014 one row per physical unit of stock. Grain: stock unit.  \n- **`distribution_centers`** \u2014 one row per fulfillment warehouse. Grain: warehouse.\n\n## Relationships (foreign keys)\n\n- `orders.user_id` \u2192 `users.id`  \n- `order_items.order_id` \u2192 `orders.order_id`  \n- `order_items.user_id` \u2192 `users.id`  \n- `order_items.product_id` \u2192 `products.id`  \n- `order_items.inventory_item_id` \u2192 `inventory_items.id`  \n- `products.distribution_center_id` \u2192 `distribution_centers.id`  \n- `inventory_items.product_id` \u2192 `products.id`\n\n`order_items` is the hub: it ties together the customer, the order, the product, and the specific inventory unit that was shipped. Most analytical queries start from `order_items` and join outward.\n\n## Denormalization note (important)\n\n`inventory_items` **denormalizes** the product attributes. The `product_*` columns on `inventory_items` (`product_category`, `product_name`, `product_brand`, `product_retail_price`, `product_department`, `product_sku`, `product_distribution_center_id`) are copies of the corresponding fields in `products`, carried for convenience so inventory queries don't need a join. The **authoritative source for product attributes is the `products` table** \u2014 if the two ever disagree, trust `products`. Do not treat the `inventory_items.product_*` columns as independent facts.\n\n## Lineage summary\n\nCustomer (`users`) places an Order (`orders`), which is composed of Order Items (`order_items`). Each order item references a Product (`products`) and the physical Inventory Item (`inventory_items`) that fulfilled it. Products are stocked and shipped from a Distribution Center (`distribution_centers`).  \n"
+        "url": "1IXn1QX1m7lJ7kn6yGnQi8At_hhvBKsHuPGbs5SFUUI0",
+        "depth": 1,
+        "content": "# Copy of Procurement SOP (application/vnd.google-apps.document)\n\n# Procurement Standard Operating Procedure\n\n**Owner:** Procurement Operations **Audience:** Buyers, sourcing managers\n\nThis SOP describes how the procurement team converts a replenishment need into a received shipment, and how supplier choices are made along the way.\n\n## 1\\. Triggering a purchase\n\nReplenishment is demand-driven. When a SKU's on-hand position drops to its reorder point, our planning system raises a purchase requisition. For manufactured goods, the requisition is exploded against the product's **Bill of Materials (BOM)** so that we order the right component materials in the right quantities. The BOM is the structured list of every component and sub-assembly, with the quantity of each, needed to build one finished unit. A buyer should never hand-edit component quantities on a PO without checking the BOM, because the BOM is the single source of truth for what goes into a product.\n\n## 2\\. Choosing a supplier\n\nWhere a component can be bought from more than one supplier, the buyer consults the **supplier scorecard**. The scorecard is a rolling performance rating that combines on-time delivery percentage, quality (defect/return rate), and price competitiveness into a single view. Higher-rated suppliers receive a larger share of order volume. New suppliers cannot receive production orders until they have been onboarded and have an initial scorecard established.\n\n## 3\\. Lead time and order timing\n\nEvery supplier-part combination has an expected **lead time** \u2014 the total time from PO placement to goods being available to pick, including the supplier's processing time, transit, and our inbound handling. Buyers must use the current quoted lead time, not historical averages, when promising replenishment dates, because lead times drift as supplier capacity changes. If a supplier's lead time increases materially, flag it to planning so safety stock can be revisited.\n\n## 4\\. Receiving\n\nOn receipt, goods are inspected and only \"good\" quantity is posted as available. Lead time is considered complete at this posting, not at dock arrival.  \n"
       }
     },
     {
       "name": "fetch_gdoc",
       "response": {
-        "url": "https://docs.google.com/document/d/1fm5barRArG0T_KLCIXWnpUwXkaVNdlHNFljmcQ4ppfA/edit?usp=drivesdk",
-        "name": "theLook eCommerce \u2014 Order Lifecycle and Status",
-        "content": "# theLook eCommerce \u2014 Order Lifecycle and Status (application/vnd.google-apps.document)\n\n# theLook eCommerce \u2014 Order Lifecycle and Status\n\n**Owner:** Fulfillment Operations **Audience:** Analysts working with orders, fulfillment, and returns\n\nHow an order moves from placement to completion (or return), and what each status and timestamp means. Applies to both the `orders` table and the `order_items` table.\n\n## Order status\n\n`orders.status` describes the overall state of the order. The lifecycle is:\n\n1. **Processing** \u2014 the order has been placed and is being prepared; payment captured, not yet shipped.  \n2. **Shipped** \u2014 the order has left a distribution center.  \n3. **Complete** \u2014 the order was delivered and the return window has effectively closed.  \n4. **Returned** \u2014 one or more items came back; the order is in a returned state.  \n5. **Cancelled** \u2014 the order was cancelled before fulfillment and generated no revenue.\n\n## Order Item status\n\n`order_items.status` tracks the **same lifecycle at the line-item grain**. Because an order can be partially fulfilled or partially returned, item status can differ from the parent order's status \u2014 e.g. an order may be **Complete** while one of its order items is **Returned**. Always compute fulfillment and return metrics from `order_items.status`, not from `orders.status`, when item-level accuracy matters.\n\n## The timestamp funnel\n\nBoth `orders` and `order_items` carry a sequence of event timestamps that record when the item moved through each stage:\n\n- **`created_at`** \u2014 when the order/line was placed.  \n- **`shipped_at`** \u2014 when it shipped from the distribution center.  \n- **`delivered_at`** \u2014 when it reached the customer.  \n- **`returned_at`** \u2014 when it was returned, if applicable.\n\nThese enable funnel and cycle-time analysis: processing time (`shipped_at - created_at`), transit time (`delivered_at - shipped_at`), and return latency (`returned_at - delivered_at`). A NULL timestamp means that stage has not happened.\n\n## Returns\n\nAn order item is a **return** when `returned_at` is set (or its `status` is Returned). Returns reverse the revenue and margin of that line and should be excluded from net revenue. **Return Rate** is the share of sold units that were later returned.\n\n## Revenue-bearing vs. non-revenue states\n\nOnly **Complete**, **Shipped**, and **Processing** items represent realized or in-flight revenue. **Cancelled** items never generated revenue and must be excluded from all revenue metrics. **Returned** items generated revenue that was subsequently reversed; exclude them from *net* revenue but keep them for gross-vs-net and return analysis.  \n"
+        "url": "1FFaghxSz7YKUakJzBsGu_u_C1ZeNPXBG38apWoU0Xdc",
+        "depth": 1,
+        "content": "# Copy of Logistics Network Overview (application/vnd.google-apps.document)\n\n# Logistics Network Overview\n\n**Owner:** Network Strategy **Audience:** Planning, transportation, and operations leadership\n\nThis document describes the shape of our physical distribution network and the role each tier plays.\n\n## Network tiers\n\nOur network moves goods from suppliers to demand through a tiered set of **distribution centers (DCs)**. A DC is a facility that stores inventory and fulfills downstream demand. We operate two tiers:\n\n- **Regional DCs** hold broad assortment and replenish the next tier.  \n- **Forward DCs** (also called fulfillment nodes) sit closer to demand and ship directly to stores or customers.\n\nEach DC, regardless of tier, maintains its own on-hand inventory per SKU and makes its own replenishment decisions. The network is therefore a graph of inventory-holding nodes, not a single pool of stock.\n\n## Lead time across the network\n\nWhen we talk about **lead time** at the network level, we mean the end-to-end time to get a SKU from its source to the node that needs it. There are two flavors:\n\n- **Inbound lead time** \u2014 supplier PO to receipt at a regional DC. This is the lead time procurement plans against.  \n- **Inter-node lead time** \u2014 the transit time to move stock from a regional DC to a forward DC.\n\nBoth contribute to how much buffer a forward node must carry: the longer and more variable the combined lead time to a node, the more safety stock that node needs to maintain service. Network design is largely the exercise of trading off the number of DCs against the lead time (and therefore inventory) required to serve demand.\n\n## Order routing\n\nWhen demand arrives, the order router selects a DC that holds the needed SKU, preferring the node with the shortest fulfillment lead time to the destination. If the nearest node is out of stock, the router falls back to another node that holds the SKU.  \n"
       }
     },
     {
       "name": "fetch_gdoc",
       "response": {
-        "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ",
-        "name": "theLook eCommerce \u2014 Business Glossary",
-        "content": "# theLook eCommerce \u2014 Business Glossary (application/vnd.google-apps.document)\n\n# theLook eCommerce \u2014 Business Glossary\n\n**Owner:** Commerce Data & Analytics **Audience:** Analysts, data scientists, and engineers querying the eCommerce warehouse\n\nShared definitions for the core business concepts in the theLook eCommerce dataset. theLook is a multi-brand online apparel and accessories retailer. Use these definitions so metrics and reports mean the same thing across teams.\n\n## Order vs. Order Item\n\nThese are two different grains and must not be confused.\n\n- An **Order** is a single purchase event placed by a customer. One order can contain many items; `num_of_item` records how many. An order carries an overall fulfillment `status` and the customer who placed it (`user_id`).  \n- An **Order Item** is a single unit of a single product within an order. It is the **revenue grain** \u2014 every line that a customer actually paid for is one order item. Revenue, margin, and units-sold are all computed at this grain, not at the order grain.\n\nA customer who buys two shirts and one hat in one checkout creates **one order** and **three order items**.\n\n## Sale Price, Retail Price, and Cost\n\nThese three money fields are easy to mix up; they are distinct and live on different tables.\n\n- **Cost** \u2014 what theLook paid its supplier for the unit (wholesale / landed cost). Found as `products.cost` and `inventory_items.cost`. Never shown to the customer.  \n- **Retail Price** \u2014 the list price theLook advertises for a product (`products.retail_price`). This is the catalog price, *before* any discount.  \n- **Sale Price** \u2014 the price the customer **actually paid** for a unit, recorded on the transaction line as `order_items.sale_price`. This is the authoritative figure for revenue. Sale price may differ from retail price because of promotions or markdowns.\n\n**Rule of thumb:** revenue uses `order_items.sale_price`; margin compares it to `cost`; `retail_price` is the reference list price, not realized revenue.\n\n## Gross Margin\n\n**Gross Margin** is the profit on a unit before operating costs: `sale_price - cost` per order item (or `retail_price - cost` at list price for catalog analysis). **Gross Margin %** is `gross_margin / sale_price`.\n\n## SKU and Product Taxonomy\n\n- **SKU (Stock Keeping Unit)** \u2014 the identifier theLook uses to track a sellable product variant in inventory (`products.sku`). One SKU corresponds to one row in `products`.  \n- Products are organized in a three-level taxonomy:  \n  - **Department** \u2014 the broadest grouping (e.g. Men, Women).  \n  - **Category** \u2014 the product type within a department (e.g. Jeans, Outerwear).  \n  - **Brand** \u2014 the manufacturer or label.\n\n## Distribution Center\n\nA **Distribution Center** is a physical warehouse that stocks and ships products. Every product is assigned to exactly one distribution center via `products.distribution_center_id`. Distribution centers carry a name and a geographic location (latitude/longitude) used for fulfillment and shipping-time analysis.\n\n## Inventory Item\n\nAn **Inventory Item** is one physical unit of a product held in stock. It is created when stock is received (`created_at`) and is marked `sold_at` when it is purchased. The difference between those two timestamps is how long the unit sat in inventory before selling.\n\n## Traffic Source\n\n**Traffic Source** is the marketing channel that brought a customer to theLook, stored on `users.traffic_source`. Typical values are Search, Organic, Email, Display, and Facebook. It is the basis for customer-acquisition and channel-attribution analysis.  \n"
+        "url": "1LGv8kJwGMxFmrObzlWWabfavoaapl24zaFbXiQXU_aY",
+        "depth": 1,
+        "content": "# Copy of Q3 Stockout Postmortem (application/vnd.google-apps.document)\n\n# Postmortem: Q3 Apparel Class-A Stockouts\n\n**Status:** Final **Owner:** Supply Chain Analytics **Date:** End of Q3 (most recent decision of record on this topic)\n\n## Summary\n\nDuring Q3, several Class-A apparel SKUs stocked out at forward DCs despite the planning system operating as designed. No system fault was found. The root cause was that our safety stock parameters were undersized for current demand variability.\n\n## Timeline\n\n- Weeks 4\u20136: three near-miss events flagged in Demand Planning syncs.  \n- Week 7: two Class-A SKUs hit zero on-hand at a forward DC for \\~2 days.  \n- Week 8: investigation opened.\n\n## Root cause\n\nThe reorder point fired correctly each time \u2014 on-hand fell to the reorder point and a PO was generated on schedule. The problem was upstream of the trigger: the **safety stock** cushion was too thin. Class-A safety stock had been set at **14 days of supply** against last year's variability. Demand variability for apparel has risen materially since then, so 14 days no longer covered the gap between reorder firing and replenishment landing. Because the reorder point is computed on top of safety stock, an undersized safety stock also meant the reorder point was firing later than it should have.\n\n## Corrective action\n\nEffective immediately, **Class-A safety stock is raised to 21 days of supply.** This is the new value planning should apply for Class-A items; it reflects current-year demand variability and supersedes the figure in the standing Inventory Policy Memo for Class A. Class B and C remain under review and are unchanged for now.\n\nThe reorder point was not adjusted directly; raising safety stock to 21 days will lift the Class-A reorder point automatically through the standard formula.\n\n## Follow-ups\n\n1. Analytics to fold the 21-day Class-A figure into the next Inventory Policy Memo revision.  \n2. Re-evaluate Class B/C safety stock against current variability next quarter.\n\n"
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "distribution_centers",
-        "schema_fields": [
-          {
-            "name": "id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "name",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "latitude",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "longitude",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "distribution_center_geom",
-            "dataType": "GEOGRAPHY",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
+        "url": "1Tp3jIXE-_Wfeb3gbFbouX0seOyi15etrylUYMzGWyh4",
+        "depth": 1,
+        "content": "# Copy of Inventory Systems Overview (application/vnd.google-apps.document)\n\n# Inventory Systems Overview\n\n**Audience:** New analysts and engineers integrating with our planning stack **Owner:** Supply Chain Analytics\n\nThis overview explains, in plain language, how the core inventory concepts relate to one another in our systems. It deliberately avoids field-level detail; it is about meaning, not schemas.\n\n## Products and their identifiers\n\nEverything in inventory hangs off the **SKU (Stock Keeping Unit)**. A SKU represents one sellable variant of a product \u2014 a specific size, color, and pack configuration. When merchandising launches a \"product,\" engineering and planning see it as a set of SKUs, one per variant. The SKU is the level at which we forecast, hold stock, and replenish.\n\nIt is worth repeating a common point of confusion: the SKU is *internal*. The barcode a cashier scans is a **UPC/GTIN**, an external standard. We store the UPC/GTIN as an attribute so we can map scans back to a SKU, but the two are different identifiers with different owners \u2014 the UPC/GTIN comes from a global registry, the SKU is assigned by us. Treating them as the same thing causes double-counting, so keep them distinct.\n\n## Finished goods and their recipes\n\nFor anything we manufacture or assemble, each finished-good SKU is associated with a **Bill of Materials (BOM)**. The BOM is the recipe: the list of components and sub-assemblies, and how many of each, required to build one unit of that SKU. BOMs can be multi-level \u2014 a sub-assembly named in one BOM may itself have its own BOM \u2014 which is how complex products are represented as a tree of simpler parts. The BOM is what links a finished SKU to the component materials procurement must buy.\n\n## How it fits together\n\nIn short: demand is forecast per SKU; finished SKUs explode through their BOMs into component demand; that component demand drives procurement. The SKU is the hub that the rest of the system revolves around.  \n"
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "events",
-        "schema_fields": [
-          {
-            "name": "id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "user_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "sequence_number",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "session_id",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "created_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "ip_address",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "city",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "state",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "postal_code",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "browser",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "traffic_source",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "uri",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "event_type",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
+        "url": "1eQLBFVW806z85uPAT1-bFY_BHOz-iUCT6b_LIQYPT7c",
+        "depth": 1,
+        "content": "# Copy of Office Badge Facilities Policy (application/vnd.google-apps.document)\n\n# Office Badge & Facilities Policy\n\n**Owner:** Workplace Services **Applies to:** All corporate office employees and visitors\n\nThis policy covers building access, badging, and shared facility etiquette at our corporate offices. It is unrelated to warehouse or distribution operations.\n\n## Badge access\n\n- All employees must wear their photo access badge above the waist while on premises. Badges are issued by Workplace Services on the first day.  \n- Tailgating is prohibited. Each person must badge in individually at secured doors, even when traveling in a group.  \n- Lost badges must be reported to the reception desk within 24 hours so the badge can be deactivated. A temporary day-pass can be issued against a government ID.\n\n## Visitors\n\n- Visitors must be pre-registered in the lobby system by their host and sign in on arrival. Visitors are escorted at all times and receive a visitor badge that expires at end of day.\n\n## Shared spaces\n\n- Conference rooms are bookable through the room calendar; please release rooms you are not using.  \n- Kitchens are cleaned nightly; staff are asked to wash personal dishes and not leave food in shared refrigerators over the weekend.  \n- Quiet zones are designated on each floor; phone calls should be taken in phone booths or meeting rooms.\n\n## Parking and bikes\n\n- Parking permits are assigned per site; bicycles must be stored in the secured bike room, not in stairwells.\n\n## Emergencies\n\n- In the event of a fire alarm, use the nearest stairwell and proceed to the designated assembly point. Do not use elevators.\n\nFor any facilities request \u2014 temperature, lighting, repairs \u2014 file a ticket with Workplace Services.  \n"
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "inventory_items",
-        "schema_fields": [
-          {
-            "name": "id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "created_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "sold_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "cost",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_category",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_name",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_brand",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_retail_price",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_department",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_sku",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_distribution_center_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
+        "url": "1VR5cX-s-EA9fwFyVH9BVPmlLB59qd-UtL0LRZGfNBNU",
+        "depth": 1,
+        "content": "# Copy of Inventory Management Glossary (application/vnd.google-apps.document)\n\n# Inventory Management Glossary\n\nThis glossary is maintained by the Supply Chain Analytics team as a shared reference for terminology used across our planning, procurement, and warehouse processes. It is intended as an onboarding aid for new analysts and a tie-breaker when teams use terms inconsistently.\n\n## Core terms\n\n**SKU (Stock Keeping Unit).** A SKU is our internal identifier for a distinct, sellable product variant. \"Variant\" matters here: a single product line such as a t-shirt becomes many SKUs once you account for size and color, because each size/color/pack combination is tracked separately. The SKU is the unit at which we hold and count inventory in every distribution center. People sometimes casually call it the \"item number,\" which is fine, but do not confuse the SKU with the **UPC** or **GTIN**. The UPC/GTIN is an *external* barcode standard assigned for retail scanning and is shared across the industry; the SKU is internal to us and never leaves our systems. A product can have one UPC but several of our SKUs over its life, so the two are not interchangeable.\n\n**Lead time.** The elapsed time from the moment we place a purchase order with a supplier to the moment the goods are received, inspected, and available to pick. It is not just shipping time \u2014 it includes the supplier's own order processing and our inbound putaway. Lead time is rarely a constant; its variability is one of the main reasons we carry buffer inventory.\n\n**Safety stock.** Extra inventory we deliberately hold on top of expected demand to absorb surprises \u2014 a demand spike, or a supplier shipment that runs late. Without safety stock, any variability in demand or lead time would translate directly into stockouts. We size safety stock either as a number of days of supply or against a target service level.\n\n**Reorder point.** The inventory level at which the system automatically triggers a replenishment order. When on-hand stock for a SKU falls to its reorder point, a purchase order is generated. The reorder point is derived from demand, lead time, and safety stock \u2014 see the Inventory Policy Memo for the exact formula.\n\n## A note on usage\n\nWhen writing planning documents, prefer \"reorder point\" over the informal \"reorder level\"; both refer to the same thing but the former is what our ERP fields are labeled. Likewise, \"buffer stock\" and \"safety stock\" are synonyms.  \n"
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "order_items",
-        "schema_fields": [
-          {
-            "name": "id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "order_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "user_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "product_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "inventory_item_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "status",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "created_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "shipped_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "delivered_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "returned_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "sale_price",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
+        "url": "132WG298COjjbV1PqmJ01cnXFeQfTSdF30a1tlf9YjhU",
+        "depth": 1,
+        "content": "# Copy of Inventory Policy Memo (application/vnd.google-apps.document)\n\n# Inventory Policy Memo\n\n**Classification:** Decision of record **Owner:** Supply Chain Analytics **Supersedes:** prior year's policy memo\n\nThis memo defines the inventory parameters our planning system uses. Values here are authoritative until a subsequent memo or postmortem revises them.\n\n## Reorder point\n\nThe **reorder point (ROP)** is the on-hand level that triggers a replenishment order for a SKU. We compute it as:\n\n**ROP \\= (average daily demand \u00d7 lead time in days) \\+ safety stock**\n\nThe first term covers expected consumption during the time it takes to replenish; the second term is the cushion against variability. Because the ROP is built directly on lead time and safety stock, any change to either flows through to the ROP automatically. We do not set the ROP by hand.\n\n## Safety stock\n\n**Safety stock** is the buffer held above expected demand to protect service against demand spikes and lead-time variability. Our current policy sizes safety stock in **days of supply**, differentiated by velocity class:\n\n- **Class A (fast movers): 14 days of supply.**  \n- Class B: 10 days of supply.  \n- Class C: 7 days of supply.\n\nThese figures were set against last year's observed demand variability. They are the values planning should use unless a later decision of record changes them.\n\n## Review cadence\n\nSafety stock days are reviewed at minimum annually, or sooner if a stockout postmortem recommends a change. Lead time is monitored continuously by procurement; a sustained lead-time shift is grounds for an off-cycle review.  \n"
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "orders",
-        "schema_fields": [
-          {
-            "name": "order_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "user_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "status",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "gender",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "created_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "returned_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "shipped_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "delivered_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "num_of_item",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
+        "url": "1tcp-BhUCYXWiKrsrTBRST5Umu6_13ib7m_viXBggsYk",
+        "depth": 1,
+        "content": "# Copy of Warehouse Ops Runbook (application/vnd.google-apps.document)\n\n# Warehouse Operations Runbook\n\n**Scope:** Day-to-day operations inside a distribution center (DC) **Owner:** DC Operations\n\n## What a distribution center is\n\nA **distribution center (DC)** is a facility that receives inventory in bulk, stores it, and fulfills downstream orders to stores or customers. Each DC is a node in our logistics network sitting between suppliers upstream and demand downstream. Critically, every DC holds and counts its own inventory independently: the same SKU can have very different on-hand quantities across DCs, and replenishment decisions are made per DC. People sometimes call these facilities \"fulfillment centers\" or \"fulfillment nodes\"; in our network the terms are used interchangeably.\n\n## Inbound\n\n1. Receive against the purchase order. Verify carton counts.  \n2. Inspect and post good quantity as available. Damaged units are quarantined.  \n3. Putaway: assign each **SKU** to a storage location. Because we track inventory at the SKU level, every putaway must be scanned to the exact SKU \u2014 not the product family \u2014 or downstream picks will fail.\n\n## Storage and counts\n\nCycle counts run continuously by zone. Any count discrepancy is reconciled at the SKU \\+ location level. The DC's on-hand position per SKU is what feeds the planning system's reorder calculations, so count accuracy directly affects when replenishment fires.\n\n## Outbound\n\nPicks are generated from downstream orders, batched by zone, packed, and manifested to the carrier. A DC only ships SKUs it physically holds; if a SKU is out of stock at one DC, the order router may source it from another DC in the network.\n\n## Escalations\n\n- Receiving mismatch vs PO \u2192 notify Procurement.  \n- Persistent stockouts of a fast-moving SKU \u2192 notify Demand Planning to review safety stock and reorder point.\n\n"
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "products",
-        "schema_fields": [
-          {
-            "name": "id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "cost",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "category",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "name",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "brand",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "retail_price",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "department",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "sku",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "distribution_center_id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
+        "url": "1DqruUuQIFjaVVYoBKmXnppaFmqCXj6PVZMom_hVOxxM",
+        "depth": 1,
+        "content": "# Copy of BOM Spec (application/vnd.google-apps.document)\n\n# Bill of Materials \u2014 Engineering Specification\n\n**Owner:** Product Engineering **Audience:** Design engineers, manufacturing planners\n\nThis specification defines how a **Bill of Materials (BOM)** is authored and maintained for products we manufacture or assemble.\n\n## What the BOM is\n\nThe BOM is the authoritative, structured definition of what goes into a product. For a given finished-good **SKU**, the BOM lists every component and sub-assembly and the exact quantity of each required to build one unit. It is the bridge between engineering intent and what procurement actually buys: change the BOM and you change the shopping list.\n\n## Structure\n\nBOMs are **hierarchical (multi-level)**. A finished good is composed of sub-assemblies; each sub-assembly is itself a parent with its own BOM of lower components, and so on down to purchased raw components. This tree lets us reuse a sub-assembly across many products \u2014 its BOM is defined once and referenced wherever it is used.\n\nEach line in a BOM carries, at minimum, the component identity and the per-parent quantity. A finished-good SKU has exactly one released BOM at a time; revisions are versioned so that production always builds against a known recipe.\n\n## Relationship to SKUs\n\nEvery manufactured finished-good SKU maps to a BOM. The reverse is not one-to-one: a single component can appear in the BOMs of many different finished SKUs. When demand is planned at the finished-SKU level, the planning system \"explodes\" each SKU through its BOM to derive how many of each component must be procured \u2014 multiplying parent demand by the per-unit quantities at every level of the tree.\n\n## Change control\n\nBOM changes are engineering-controlled. Because a BOM edit directly alters component demand and procurement, no buyer or planner may alter component quantities outside the BOM. Engineering releases a new BOM revision; downstream systems pick it up automatically.  \n"
       }
     },
     {
-      "name": "get_table_entry",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "users",
-        "schema_fields": [
-          {
-            "name": "id",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "first_name",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "last_name",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "email",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "age",
-            "dataType": "INTEGER",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "gender",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "state",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "street_address",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "postal_code",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "city",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "country",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "latitude",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "longitude",
-            "dataType": "FLOAT",
-            "metadataType": "NUMBER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "traffic_source",
-            "dataType": "STRING",
-            "metadataType": "STRING",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "created_at",
-            "dataType": "TIMESTAMP",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          },
-          {
-            "name": "user_geom",
-            "dataType": "GEOGRAPHY",
-            "metadataType": "OTHER",
-            "mode": "NULLABLE",
-            "description": ""
-          }
-        ]
+        "url": "1jI6HhNVjOkkpuUYDDZ3xhpUlgzqtjg1lTaBQt9OeImQ",
+        "depth": 1,
+        "content": "# Copy of Demand Planning Meeting Notes (application/vnd.google-apps.document)\n\n# Demand Planning \u2014 Weekly Sync Notes\n\n**Date:** Q3, Week 6 **Attendees:** Demand Planning, Supply Chain Analytics, DC Ops (partial)\n\nInformal notes from the weekly demand/supply review. Not a policy document \u2014 decisions of record go into the Inventory Policy Memo.\n\n## Discussion\n\n- **Service levels holding except apparel.** Most categories are meeting target fill rate. Apparel Class-A SKUs have seen three near-misses this quarter where on-hand dipped close to zero before replenishment landed.  \n    \n- **Safety stock under pressure.** The team agreed the near-misses trace back to safety stock being sized for last year's demand variability. Safety stock is the cushion we hold above forecast to absorb demand spikes and late inbound; when variability rises and the cushion doesn't, you get exactly these near-misses. Action: Analytics to re-evaluate Class-A safety stock days.  \n    \n- **Reorder point follows safety stock.** Several people noted that bumping safety stock will automatically raise the **reorder point**, since the reorder point is the level that triggers replenishment and is built on top of safety stock plus demand-over-lead-time. No one wants to touch the reorder point directly \u2014 the agreement is to fix safety stock and let the reorder point move with it.  \n    \n- **Lead time stable.** No material change in supplier lead times this quarter, so the near-misses are demand-side, not supply-side.\n\n## Open actions\n\n1. Analytics: model Class-A safety stock against current-year variability; bring a recommendation to next week.  \n2. DC Ops: confirm count accuracy in apparel zones isn't masking the issue.\n\n"
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "distribution_centers",
-        "relevant_docs": [
-          {
-            "name": "theLook eCommerce \u2014 Data Model and Relationships",
-            "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Business Glossary",
-            "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-          }
-        ]
+        "url": "1GPtX16AkNHHRYrkUk87lsfDHuMLXYVcVV3RycBtHexE",
+        "depth": 1,
+        "content": "# Copy of Billing Charging System Overview (application/vnd.google-apps.document)\n\n# Billing & Charging System Overview\n\n**Owner:** Billing Platform Engineering **Audience:** Engineers and analysts working with charging and invoicing\n\nThis overview explains how usage becomes a bill, in concept. No schema detail.\n\n## Rating and the billing cycle\n\nThe system turns raw usage events into money in two conceptual stages: **rating** and **billing**.\n\n- **Rating** applies the customer's price plan to each usage event to compute a charge.  \n- **Billing** accumulates rated charges over the customer's **billing cycle** \u2014 the recurring period over which usage is aggregated \u2014 and produces an invoice at the cycle close.\n\nEach subscriber belongs to a billing cycle; cycle boundaries are staggered across the customer base so invoicing load is spread through the month rather than spiking on a single day.\n\n## Prepaid vs postpaid\n\nThe billing cycle behaves differently by plan type:\n\n- **Postpaid:** usage is rated and accumulated across the cycle, then invoiced at the end. The customer pays in arrears.  \n- **Prepaid:** charges are decremented from a balance in real time as usage occurs; the \"cycle\" is mainly a window for plan allowances rather than an invoice period.\n\n## Where QoS comes in\n\nCharging and **QoS (Quality of Service)** intersect for data plans. Some plans tie a data allowance to a QoS treatment \u2014 for example, full-speed data up to a threshold, after which the subscriber's traffic is moved to a lower-priority QoS class (commonly experienced as \"throttling\") rather than being cut off. The charging system signals the policy function when a threshold is crossed so the appropriate QoS class is applied for the remainder of the cycle.\n\n## Reconciliation\n\nAt cycle close, rated charges are reconciled against the invoice total before issuance; discrepancies are held for review rather than billed.  \n"
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "events",
-        "relevant_docs": []
+        "url": "1K6Yoj4uE_IwHJHezZKDCY5bC_URWnCHE9BSm5dSd1-0",
+        "depth": 1,
+        "content": "# Copy of QoS Policy Doc (application/vnd.google-apps.document)\n\n# Quality of Service (QoS) Policy\n\n**Owner:** Network Policy & Architecture **Status:** Standing policy (see Dropped-Calls Postmortem for any later revisions)\n\nThis policy defines how traffic classes are treated on our network and the targets each must meet.\n\n## Purpose of QoS\n\n**Quality of Service (QoS)** is how the network gives different kinds of traffic different treatment so that each meets its needs. Without QoS, a large file download could starve a live voice call of the timely delivery it requires. QoS sorts traffic into classes and assigns each class a priority and a set of performance targets \u2014 primarily latency, packet loss, and jitter.\n\n## Traffic classes\n\nWe use standardized QoS class identifiers. The key ones:\n\n- **Conversational voice** \u2014 highest priority, reserved for real-time voice.  \n- **Real-time streaming** \u2014 high priority, tolerant of slightly more delay.  \n- **Interactive / best-effort data** \u2014 default classes for general traffic.\n\n## VoLTE requirements\n\n**VoLTE (Voice over LTE)** carries voice as packets over LTE and is therefore entirely dependent on QoS to sound acceptable. VoLTE traffic must be carried on the **conversational voice** class. The policy targets for that class are:\n\n- **One-way packet latency budget: 100 ms.**  \n- Packet loss: under 1%.  \n- Guaranteed bit rate appropriate to the voice codec.\n\nIf VoLTE traffic is not placed on the conversational-voice class, or the latency budget is exceeded, callers experience clipping, delay, and dropped calls.\n\n## Enforcement\n\nQoS is enforced end-to-end \u2014 on the radio scheduler and across the core transport. Policy is applied per bearer when a session is established. Changes to class targets require Architecture review.  \n"
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "inventory_items",
-        "relevant_docs": [
-          {
-            "name": "theLook eCommerce \u2014 Data Model and Relationships",
-            "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Business Glossary",
-            "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Metric Definitions",
-            "url": "https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk"
-          }
-        ]
+        "url": "145vwcMxn2xKFP5uxq624N5QnBZEbU-Wton8ZUI8QwD0",
+        "depth": 1,
+        "content": "# Copy of Dropped Calls Postmortem (application/vnd.google-apps.document)\n\n# Postmortem: Metro Region Dropped-Calls Incident\n\n**Status:** Final **Owner:** Network Operations **Date:** Most recent record on VoLTE QoS targets \u2014 supersedes the standing QoS Policy figure where they conflict.\n\n## Summary\n\nOver a two-week window, subscribers in the metro region experienced elevated VoLTE call drops and audible clipping. Investigation found that the standing latency target for the conversational-voice class was too loose for our actual network conditions, allowing calls to degrade before any alarm fired.\n\n## Background\n\n**VoLTE (Voice over LTE)** carries voice as packets and depends on the conversational-voice **QoS** class. The standing **QoS Policy** sets a one-way packet **latency budget of 100 ms** for that class. Monitoring alarmed only when latency exceeded that budget.\n\n## What happened\n\nIn the affected cells, one-way latency frequently sat in the 80\u2013100 ms band \u2014 *within* the 100 ms policy budget, so no alarm \u2014 yet call quality was already degrading and drops were climbing. The 100 ms target, inherited from an older network generation, did not reflect the tighter budget our current VoLTE codec and jitter profile actually need.\n\n## Root cause\n\nThe VoLTE latency target was too high. At 100 ms the policy tolerated latency that in practice produced clipping and drops, and the alarm threshold tied to it fired too late to act.\n\n## Corrective action\n\n- **Effective immediately, the VoLTE one-way latency target is tightened to 80 ms.** This is the current target for the conversational-voice class carrying VoLTE and replaces the 100 ms figure in the QoS Policy. Calls must be kept under 80 ms one-way latency.  \n- Re-tune monitoring to alarm at 80 ms, with a warning at 70 ms.  \n- Architecture to fold the 80 ms target into the next QoS Policy revision.\n\n## Follow-ups\n\n1. Update the QoS Policy to 80 ms.  \n2. Review other real-time class budgets for the same legacy-inheritance issue.\n\n"
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "order_items",
-        "relevant_docs": [
-          {
-            "name": "theLook eCommerce \u2014 Data Model and Relationships",
-            "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Order Lifecycle and Status",
-            "url": "https://docs.google.com/document/d/1fm5barRArG0T_KLCIXWnpUwXkaVNdlHNFljmcQ4ppfA/edit?usp=drivesdk"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Business Glossary",
-            "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Metric Definitions",
-            "url": "https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk"
-          }
-        ]
+        "url": "1jdHG_-0mgrVIOR10oZf5bF44j9qXkp9UEGnppu4v30U",
+        "depth": 1,
+        "content": "# Copy of Network Engineering Glossary (application/vnd.google-apps.document)\n\n# Network Engineering Glossary\n\n**Owner:** Mobile Core Engineering **Audience:** New network and platform engineers\n\nA shared reference for the mobile-network terms that come up daily. Brief definitions; deeper treatment lives in the dedicated design docs.\n\n**APN (Access Point Name).** The APN is the identifier a device presents to the network to say *which packet data network it wants to reach*. It tells the core which gateway to route a data session through \u2014 for example, a public-internet APN versus an internal IMS APN for voice signaling. The APN is part of the device's data profile and is applied when a data session is established. Different APNs can map to different services and policies.\n\n**IMSI (International Mobile Subscriber Identity).** The IMSI is the globally unique identity of a subscriber, provisioned onto the SIM. It is what the network uses to recognize and authenticate a subscriber. Because it uniquely identifies the subscriber, the IMSI is the key reference used when subscribers connect \u2014 at home or, via roaming, on another operator's network.\n\n**QoS (Quality of Service).** QoS is the set of mechanisms that prioritize traffic and hold it to performance targets \u2014 latency, packet loss, and throughput. Traffic is sorted into classes, and each class is given a treatment appropriate to its needs. Real-time services need stricter QoS than best-effort data.\n\n**VoLTE (Voice over LTE).** VoLTE carries voice calls as packets over the LTE data network (via IMS) rather than over the legacy circuit-switched voice path. Because voice is delay-sensitive, VoLTE depends on a high-priority QoS class to keep calls clear; the specific QoS targets are defined in the QoS Policy.\n\n## Usage note\n\n\"SIM identity\" is sometimes used loosely to mean the IMSI; prefer \"IMSI\" in engineering docs. Voice-over-LTE, VoLTE, and \"IMS voice\" all refer to the same service.  \n"
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "orders",
-        "relevant_docs": [
-          {
-            "name": "theLook eCommerce \u2014 Order Lifecycle and Status",
-            "url": "https://docs.google.com/document/d/1fm5barRArG0T_KLCIXWnpUwXkaVNdlHNFljmcQ4ppfA/edit?usp=drivesdk"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Business Glossary",
-            "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Data Model and Relationships",
-            "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Metric Definitions",
-            "url": "https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk"
-          }
-        ]
+        "url": "15XrKEZF7PSXKCzdRbRj7BxleBcFn2onBv1QAkvDDlgs",
+        "depth": 1,
+        "content": "# Copy of Churn Analysis Quarterly Report (application/vnd.google-apps.document)\n\n# Churn Analysis \u2014 Quarterly Report\n\n**Owner:** Subscriber Analytics **Audience:** Commercial and care leadership\n\nThis report summarizes subscriber loss for the quarter and the drivers behind it.\n\n## Headline\n\n**Customer churn** \u2014 the rate at which subscribers leave our service over a period \u2014 was the focus this quarter. (Some teams call this \"customer attrition\"; it is the same measure of subscribers lost, and we use the terms interchangeably in this report.) Churn is reported as the share of the subscriber base that deactivated during the quarter.\n\n## What drove churn\n\nThree drivers accounted for most voluntary departures:\n\n1. **Price.** Subscribers leaving for cheaper competitor plans were the largest group, concentrated among out-of-contract subscribers.  \n2. **Network quality.** A meaningful share of departures correlated with areas of poor coverage or call quality \u2014 including regions flagged in the recent dropped-calls investigation. Network experience and churn are linked: poor VoLTE quality shows up later as cancellations.  \n3. **Competitor offers.** Aggressive port-in incentives from a rival drove a spike mid-quarter.\n\n## Where churn concentrated\n\n- Out-of-contract subscribers churned at several times the rate of those in contract.  \n- Single-product subscribers churned more than those with multiple services, consistent with the view that deeper relationships are stickier.\n\n## Recommendations\n\n- Target retention offers at out-of-contract, single-product subscribers before competitor windows.  \n- Feed network-quality hotspots to engineering; reducing dropped calls should reduce quality-driven churn.  \n- Track churn against customer lifetime value so retention spend goes where it protects the most value.\n\n"
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "products",
-        "relevant_docs": [
-          {
-            "name": "theLook eCommerce \u2014 Data Model and Relationships",
-            "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Business Glossary",
-            "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-          }
-        ]
+        "url": "1mGNA1aQHvYEJS6N1cmr5N3nkTkZ8fX7Hjz-IvFOd_3o",
+        "depth": 1,
+        "content": "# Copy of Customer Care Handbook (application/vnd.google-apps.document)\n\n# Customer Care Handbook\n\n**Owner:** Customer Care Enablement **Audience:** Frontline care agents\n\nReference for handling the most common subscriber requests. Plain language for agents, not engineers.\n\n## Switching to us \u2014 keeping your number\n\nCustomers very often want to bring their existing phone number when they join. This is **number portability** \u2014 the customer keeps their number when moving between carriers. Agents will also hear it called \"porting,\" \"LNP,\" or \"MNP\"; these all mean the same thing. To start a port-in, collect the customer's current account details and submit a port request; there is a defined process and a validation window during which the losing carrier confirms the details. Set expectations that the number transfers once validation completes \u2014 it is not always instant.\n\n## Billing questions\n\nMost billing questions come down to the **billing cycle** \u2014 the recurring period over which we accumulate a customer's usage and then issue an invoice. Each customer is assigned to a billing cycle, and their charges for that period are totaled and billed at the cycle close. Two points to convey:\n\n- Usage is tallied within the cycle and billed at its end (for postpaid plans).  \n- A customer's cycle dates may differ from another customer's; \"my friend was billed on a different day\" is normal.\n\nIf a customer disputes a charge, check where in the billing cycle the usage fell before escalating.\n\n## Cancellations and retention\n\nWhen a customer asks to leave, treat it as a retention moment. Customer departures are what the business calls **churn** (you may also see \"attrition\") \u2014 the rate at which subscribers leave. Care plays a direct role in reducing churn: identify the reason (price, coverage, a competitor offer), and apply the approved retention options before processing a cancellation.\n\n## Escalation\n\n- Port stuck past the validation window \u2192 Provisioning.  \n- Repeated billing disputes for one account \u2192 Billing Operations.\n\n"
       }
     },
     {
-      "name": "route_docs",
+      "name": "fetch_gdoc",
       "response": {
-        "table": "users",
-        "relevant_docs": [
-          {
-            "name": "theLook eCommerce \u2014 Business Glossary",
-            "url": "https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ"
-          },
-          {
-            "name": "theLook eCommerce \u2014 Data Model and Relationships",
-            "url": "https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ"
-          }
-        ]
+        "url": "1dMxGBP8x0XdqajLqmzbxZIxcj7FzLe0V2X3esw_ipOw",
+        "depth": 1,
+        "content": "# Copy of Retail Store Opening Checklist (application/vnd.google-apps.document)\n\n# Retail Store Opening Checklist\n\n**Owner:** Retail Operations **Applies to:** Store managers and shift leads\n\nA daily checklist for opening one of our retail stores. This is store-floor operations and is unrelated to network, billing, or subscriber systems.\n\n## Before doors open\n\n- [ ] Disable the alarm and confirm the security panel shows \"disarmed.\"  \n- [ ] Unlock the storeroom; verify overnight stock deliveries against the manifest.  \n- [ ] Count the cash float and confirm it matches the logged amount.  \n- [ ] Power on point-of-sale terminals and confirm they connect.  \n- [ ] Power on demo handsets and confirm they are charged and locked to display mode.\n\n## Merchandising\n\n- [ ] Straighten window displays and remove any expired promotional signage.  \n- [ ] Restock accessory walls to planogram.  \n- [ ] Confirm pricing labels match the current price list.\n\n## Staffing\n\n- [ ] Confirm the shift roster is fully covered; call in cover for any no-shows.  \n- [ ] Brief the team on the day's promotions and any service advisories.  \n- [ ] Assign zones (sales floor, service desk, greeter).\n\n## Health & safety\n\n- [ ] Walk the floor for trip hazards and spills.  \n- [ ] Confirm fire exits are clear and emergency lighting is functional.  \n- [ ] Check that the first-aid kit is stocked.\n\n## Open\n\n- [ ] At opening time, unlock the front doors and switch the sign to \"Open.\"  \n- [ ] Greeter takes position.\n\n## End-of-day note\n\nClosing uses a separate checklist; ensure the float is reconciled and the alarm is re-armed on exit.  \n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1r8JdSHyWNkmXNa3_di80tSJJaBeJMPKAzB2_J-IzJdA",
+        "depth": 1,
+        "content": "# Copy of SIM Provisioning Runbook (application/vnd.google-apps.document)\n\n# SIM Provisioning Runbook\n\n**Owner:** Subscriber Provisioning **Audience:** Provisioning engineers and OSS operators\n\nThis runbook covers preparing a SIM and subscriber so a device can attach to the network and use data.\n\n## What we provision\n\nTwo things make a subscriber usable: their identity on the SIM, and the data profile that lets their device reach services.\n\n### IMSI\n\nEvery SIM is provisioned with an **IMSI (International Mobile Subscriber Identity)** \u2014 the globally unique subscriber identifier the network authenticates against. The IMSI is written to the SIM during personalization and registered in the subscriber database (HSS/HLR). Without a valid, registered IMSI, the device cannot authenticate or attach. The IMSI is the anchor that everything else about the subscriber hangs off.\n\n### APN\n\nThe subscriber's data profile includes one or more **APNs (Access Point Names)**. The APN determines which packet data gateway \u2014 and therefore which network and policy set \u2014 a data session uses. A typical profile contains an internet APN for general data and may include a separate IMS APN used for VoLTE signaling. Provisioning the wrong APN is a common cause of \"attached but no data\" tickets: the subscriber authenticates fine (IMSI is good) but their sessions route to the wrong or a non-existent gateway.\n\n## Procedure\n\n1. Personalize the SIM with the IMSI and security keys.  \n2. Register the IMSI in the subscriber database with the correct service plan.  \n3. Apply the data profile, including the correct APN(s) for the plan.  \n4. Test: confirm attach (validates IMSI) and a data session on each APN.\n\n## Common faults\n\n- **Attach fails** \u2192 IMSI not registered or key mismatch.  \n- **Attaches, no data** \u2192 APN missing or misconfigured.\n\n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1iX1WcU06wst5e-qRfVN6g8F12Mp-lICKmEfEJPs33I0",
+        "depth": 1,
+        "content": "# Copy of Number Portability Process SOP (application/vnd.google-apps.document)\n\n# Number Portability Process SOP\n\n**Owner:** Provisioning & Interconnect **Audience:** Porting desk and provisioning engineers\n\nThis SOP defines how we execute number portability, both port-in (a subscriber joining us and keeping their number) and port-out (leaving us).\n\n## What number portability is\n\n**Number portability** is the subscriber's ability to keep their telephone number when changing carriers. Across the industry and our own tooling it appears under several names \u2014 **Local Number Portability (LNP)**, **Mobile Number Portability (MNP)**, or simply \"porting.\" They refer to the same capability; this SOP uses \"number portability\" throughout. The capability is mandated by the regulator, who also sets the maximum timelines we must meet.\n\n## Roles\n\n- **Recipient (gaining) carrier** \u2014 the carrier the number is moving to.  \n- **Donor (losing) carrier** \u2014 the carrier the number is moving from.\n\n## Port-in procedure\n\n1. **Collect** the customer's number, current account identifier, and any account PIN required by the donor.  \n2. **Submit** the port request to the central porting clearinghouse.  \n3. **Validation window** \u2014 the donor validates the request against its records. Mismatched details are the most common rejection reason; correct and resubmit.  \n4. **Activation** \u2014 on successful validation, the number is cut over to our network and the donor releases it. Brief loss of service during cutover is expected.\n\n## Port-out procedure\n\nWhen we are the donor, we must validate incoming requests promptly and release numbers within the regulatory timeline. We may not unduly delay or block a valid port-out, though we may surface a retention offer before release.\n\n## Timelines and escalation\n\nRegulatory rules cap how long a port may take. A port stalled beyond the validation window is escalated to the interconnect team; do not leave a customer mid-port.  \n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1LPeSLuvREqR9ql9k32aWivsTU8kUWQmH-bi10HPcwZQ",
+        "depth": 1,
+        "content": "# Copy of Telecom Systems Terminology Overview (application/vnd.google-apps.document)\n\n# Telecom Systems & Terminology Overview\n\n**Audience:** New analysts and partners integrating with our subscriber systems **Owner:** Mobile Core Engineering\n\nA meaning-first overview of how subscriber identity and data access fit together. Deliberately conceptual \u2014 no field or schema detail.\n\n## Identity: the IMSI\n\nAt the center of a mobile subscriber sits the **IMSI (International Mobile Subscriber Identity)**. It is the globally unique identifier of the subscriber, held on the SIM, and it is what the network authenticates when a device tries to connect. Think of the IMSI as the subscriber's passport: it proves who they are to the home network and, when they travel, lets a visited network find and check with their home network. Almost everything the network does for a subscriber begins by resolving their IMSI.\n\n## Data access: the APN\n\nIdentity gets you onto the network; the **APN (Access Point Name)** decides what you can reach. The APN names the packet data network a session should connect to, and so selects the gateway and the policies that apply. One subscriber may have several APNs \u2014 for instance a general internet APN and a separate IMS APN that carries voice signaling for VoLTE. Choosing the right APN is what makes a data session land on the right service with the right treatment.\n\n## How they relate\n\nThe two are complementary: the IMSI answers *who is this subscriber?* and the APN answers *what network/service is this session for?* A subscriber must be authenticated by IMSI before any session is established, and each session then uses an APN to reach its destination. Misconfigure the IMSI and the device cannot attach at all; misconfigure the APN and the device attaches but cannot reach the intended service.\n\n## Why this matters for data\n\nWhen you see subscriber records or session logs, expect the IMSI to be the join key for \"which subscriber,\" and the APN to indicate \"which service/network\" a session used. Keeping the distinction clear avoids conflating *identity* with *access*.  \n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1hevfD6a2hojbAU42dp215AX7mN-KY0sLIeJSowu6LcQ",
+        "depth": 1,
+        "content": "# Copy of Roaming Partner Agreement Summary (application/vnd.google-apps.document)\n\n# Roaming Partner Agreement \u2014 Summary\n\n**Owner:** Roaming & Interconnect Business **Audience:** Roaming managers, settlement analysts\n\nA plain-language summary of what a roaming agreement is and the obligations it creates. The legal text governs; this is orientation.\n\n## What a roaming agreement is\n\nA **roaming agreement** is a bilateral arrangement with another operator that lets each party's subscribers use the other's network when outside home coverage. When one of our subscribers travels into a partner's footprint, the partner's network serves them as a \"visited network,\" and we do the same for the partner's subscribers here. Without such an agreement, a subscriber abroad would simply have no service.\n\n## How subscribers are recognized\n\nRoaming relies on the **IMSI (International Mobile Subscriber Identity)** to tell home subscribers apart from the visited network's own. When a device attaches to a visited network, that network reads the IMSI, identifies the home operator from it, and signals home to authenticate the subscriber and authorize service. Every clause about which subscribers are covered ultimately keys off the IMSI ranges assigned to each party.\n\n## Commercial terms\n\n- **Settlement rates.** The agreement fixes the wholesale rates each operator charges the other for voice, data, and messaging consumed by visiting subscribers. These inter-operator charges are reconciled and settled periodically.  \n- **Coverage and service scope.** Specifies which services (e.g., data, VoLTE) are supported for roamers and any technical preconditions.  \n- **Fraud and usage controls.** Near-real-time usage exchange to catch abnormal roaming usage early.\n\n## Operations\n\nRoaming managers monitor partner reachability and the quality roamers receive; settlement analysts reconcile the wholesale charges against the agreed rates each billing period.  \n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1REJ7VjzTcvcEAiviGYU0psJZhCjTjxDPJ6NIHf5zZqQ",
+        "depth": 1,
+        "content": "# Copy of Basel III Filing Summary (application/vnd.google-apps.document)\n\n# Basel III Regulatory Filing \u2014 Internal Summary\n\n**Owner:** Regulatory Reporting **Status:** Authoritative reference for regulatory minimums **Audience:** Treasury, Risk, Finance\n\nThis summary restates the binding Basel III requirements most relevant to our liquidity reporting. Where any internal document quotes a different figure for a regulatory minimum, the number here governs.\n\n## Liquidity Coverage Ratio (LCR)\n\nThe **Liquidity Coverage Ratio (LCR)** is the Basel III short-term liquidity standard. It requires a bank to hold enough high-quality liquid assets (HQLA) to cover its total net cash outflows over a 30-calendar-day stress scenario:\n\n**LCR \\= HQLA / total net cash outflows over 30 days**\n\n**Regulatory minimum: the LCR must be at least 100%.** This is the binding floor. A ratio of 100% means HQLA exactly cover modeled 30-day stressed outflows; the requirement is that the ratio never falls below this level. Any internal management targets above 100% (for example, an operating buffer) are matters of risk appetite, not regulation \u2014 the regulatory obligation is the \u2265100% floor.\n\nHQLA are defined in tiers (Level 1 and Level 2 assets) with prescribed haircuts; net cash outflows are computed by applying standardized run-off rates to liabilities and inflow caps to receivables.\n\n## Reporting obligations\n\n- The LCR is reported to the regulator on the prescribed schedule.  \n- A breach of the 100% minimum, even intraday at reporting date, is a notifiable event and must be escalated immediately to the Regulatory Reporting and Treasury leads.\n\n## Other standards (for reference)\n\nThe Net Stable Funding Ratio (NSFR) addresses longer-term funding stability and is covered in a separate summary. This document is limited to the LCR.  \n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "10ivoRcx7RyKcugHb7zVnJSgIRV98XZgVjtV10CZro04",
+        "depth": 1,
+        "content": "# Copy of Compliance Policy Handbook (application/vnd.google-apps.document)\n\n# Compliance Policy Handbook\n\n**Owner:** Financial Crime Compliance **Audience:** All customer-facing and operations staff\n\nThis handbook is the central reference for our financial-crime controls. It introduces the three pillars that newcomers most often confuse: KYC, AML, and the SAR.\n\n## Know Your Customer (KYC)\n\n**KYC** is the process of verifying who a customer is and assessing the risk they pose, performed at onboarding and refreshed periodically thereafter. At minimum it requires verifying identity documents and establishing beneficial ownership for non-individual customers before an account is activated. KYC also assigns each customer a risk rating \u2014 standard or enhanced \u2014 which determines how much scrutiny and documentation is required. KYC is sometimes called customer due diligence (CDD); treat the terms as equivalent in our policies. Importantly, KYC is not a one-time gate: the customer risk rating it produces is the foundation that ongoing monitoring relies on.\n\n## Anti-Money Laundering (AML)\n\n**AML** refers to the broader set of controls and monitoring designed to detect and prevent money laundering. Where KYC establishes who the customer is, AML watches what they do \u2014 principally through ongoing transaction monitoring that looks for patterns inconsistent with the customer's expected behavior. AML monitoring is risk-based: it leans on the KYC risk rating to decide how closely to watch a given customer.\n\n## Suspicious Activity Report (SAR)\n\nWhen AML monitoring or an investigator surfaces activity that gives rise to a reasonable suspicion of illicit conduct, the firm files a **Suspicious Activity Report (SAR)** with the relevant authority. Two rules are absolute: the SAR is **confidential** \u2014 we must never \"tip off\" the customer that a report has been or may be filed \u2014 and it is **time-bound**, with a regulatory deadline running from the point suspicion is established. The SAR is the formal output at the end of the chain that begins with KYC and runs through AML.  \n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1coQ-rJmhOszO-0LOU_s9su7sL_JjTLzPzpGCFLj0svk",
+        "depth": 1,
+        "content": "# Copy of Marketing Analytics Deck Notes (application/vnd.google-apps.document)\n\n# Marketing Analytics \u2014 Deck Notes\n\n**Owner:** Growth Marketing Analytics **Format:** Speaker notes accompanying the quarterly growth deck\n\nWorking notes behind the growth review slides. Informal; numbers are illustrative.\n\n## Slide 3 \u2014 Why we measure customer LTV\n\nThe headline metric for this deck is **customer LTV** \u2014 the total net profit we expect a customer to generate over their whole relationship with us, revenue minus cost-to-serve and retention spend, summed across their expected lifetime. It is the single number that tells us how much we can afford to spend to win and keep a customer. If acquisition cost exceeds customer LTV for a segment, we are buying unprofitable customers.\n\n## Slide 4 \u2014 LTV by segment\n\nWe split customer LTV by acquisition channel and product mix. The premium-account segment shows the highest customer LTV by a wide margin, which is why we argue for shifting acquisition budget toward it. Note the finance team reports this same quantity as \"CLV\" in the official metrics \u2014 it is the same lifetime-value measure, just labeled differently across teams, so the deck and the finance dashboards should reconcile.\n\n## Slide 5 \u2014 Levers\n\nTwo ways to raise customer LTV:\n\n- **Retention** \u2014 reducing attrition lengthens the lifetime over which value accrues. Small retention gains compound into large LTV gains.  \n- **Cross-sell** \u2014 increasing products per customer raises revenue per period.\n\n## Slide 6 \u2014 Ask\n\nReallocate 15% of acquisition spend from the lowest-LTV channel to the premium-account channel next quarter. Expected effect: higher blended customer LTV without raising total acquisition budget.  \n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1Axp8e_zvhvHjyJ0B3sSuDRzINv-Zt8r9aJVpFGILAtE",
+        "depth": 1,
+        "content": "# Copy of Customer Onboarding SOP (application/vnd.google-apps.document)\n\n# Customer Onboarding SOP\n\n**Owner:** Retail Banking Operations **Audience:** Onboarding agents, branch staff\n\nThis SOP walks through opening a new customer account, from identity checks to the first risk decision.\n\n## Step 1 \u2014 Identity verification (KYC)\n\nNo account is activated until **KYC** is complete. KYC here means verifying the applicant's identity against acceptable documents and, for business customers, identifying the beneficial owners. The agent records the verification result and the customer's KYC risk rating (standard or enhanced due diligence). If documents cannot be verified, the application is paused, not approved. Remember that KYC is the basis for later monitoring, so accuracy at this step matters beyond onboarding.\n\n## Step 2 \u2014 Screening\n\nRun the applicant against sanctions and watchlists. A hit routes the case to Financial Crime Compliance before proceeding.\n\n## Step 3 \u2014 Product and credit decision\n\nIf the customer is applying for a credit product, onboarding requests a **credit risk score** for the applicant. The credit risk score is a quantified estimate of the borrower's likelihood of default; it drives both the approve/decline decision and the pricing (interest rate, limit) offered. Inputs include the applicant's repayment history, existing exposure, and income or leverage. A low score does not automatically decline an application, but it tightens the terms; a very low score routes to manual underwriting.\n\n## Step 4 \u2014 Activation\n\nOnce KYC has passed, screening is clear, and any credit decision is recorded, the account is activated. The KYC risk rating and credit risk score are both stored on the customer profile so downstream monitoring and servicing can use them.\n\n## Common errors\n\n- Activating before KYC verification completes \u2014 never do this.  \n- Confusing the KYC *risk rating* (financial-crime risk) with the *credit risk score* (default risk). They are different assessments for different purposes.\n\n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1qWcFBL9LnXxm2iOegMjnO4_Qywbt17Kw-hAOH-arSUs",
+        "depth": 1,
+        "content": "# Copy of Risk Management Framework (application/vnd.google-apps.document)\n\n# Risk Management Framework\n\n**Owner:** Enterprise Risk **Audience:** Risk, treasury, and finance leadership\n\nThis framework describes the principal risks we manage and the metrics we use to keep them in bounds. Two are central to this document: credit risk and liquidity risk.\n\n## Credit risk\n\nCredit risk is the risk that a borrower fails to repay. We quantify it at the borrower level with a **credit risk score** \u2014 an estimate of default likelihood derived from repayment history, current exposure, and income/leverage. The score is used at origination to decide and price lending, and on an ongoing basis to monitor the health of the portfolio. Aggregated across the book, credit risk scores feed our expected-loss provisioning. A deteriorating average score is an early warning that the portfolio is taking on more default risk.\n\n## Liquidity risk\n\nLiquidity risk is the risk that we cannot meet obligations as they fall due. Our primary control metric is the **Liquidity Coverage Ratio (LCR)** \u2014 the ratio of high-quality liquid assets (HQLA) to projected net cash outflows over a 30-day stress period. Conceptually:\n\n**LCR \\= HQLA / net cash outflows over 30 days**\n\nThe LCR is a regulatory liquidity requirement. As a matter of internal risk appetite we aim to operate with comfortable headroom \u2014 our internal management target is to hold the LCR **around 110%** so that normal fluctuations never bring us close to the regulatory floor. The precise regulatory minimum itself is set out in the Basel III rules and summarized in our regulatory filing materials; this framework defers to those for the binding number.\n\n## Governance\n\nRisk appetite statements for both metrics are reviewed by the Risk Committee quarterly. Breaches of internal targets trigger escalation before any regulatory threshold is approached.  \n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1lX_2XEm4jpiN-gNOv30UEBoJ1eYAvDUl2BL-g-FZ2KE",
+        "depth": 1,
+        "content": "# Copy of Finance Business Glossary (application/vnd.google-apps.document)\n\n# Finance Business Glossary\n\n**Owner:** Finance Data & Analytics **Purpose:** Shared definitions for metrics used across finance reporting.\n\nA plain-language glossary so that analysts, product, and reporting teams use the same meaning for the same term. Definitions only \u2014 no system or field detail.\n\n**Net Interest Margin (NIM).** A profitability metric: net interest income (what we earn on assets minus what we pay on liabilities) divided by average interest-earning assets. NIM expresses how much margin the balance sheet produces per dollar of earning assets. It is reported in earnings and treasury reviews and moves with the interest-rate environment.\n\n**Credit Risk Score.** A quantified estimate of how likely a borrower is to default. It is built from repayment history, current exposure, and income or leverage, and it drives lending decisions and loan pricing. Lower scores indicate higher default risk. Used both at origination and for ongoing portfolio monitoring. (Note: this is distinct from a customer's KYC risk rating, which measures financial-crime risk, not default risk.)\n\n**Customer Lifetime Value (CLV).** The total net profit we expect to earn from a customer over the entire relationship \u2014 projected revenue from the customer minus the cost to serve and retain them, across their expected lifetime. CLV is used to decide how much we can justify spending to acquire and keep a customer. A high-CLV segment warrants more acquisition and retention investment than a low-CLV one.\n\n**A note on naming.** Different teams write CLV differently. Marketing decks often say \"customer LTV\" or just \"LTV\"; finance reporting says \"CLV.\" These are the same metric \u2014 the lifetime value of a customer \u2014 and should not be treated as two different measures.  \n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1dSWNVjfYvUmeb-kA8ETaZ38K6YCJG7SkC5oOksvxKeo",
+        "depth": 1,
+        "content": "# Copy of AML Investigations Playbook (application/vnd.google-apps.document)\n\n# AML Investigations Playbook\n\n**Owner:** Financial Crime Investigations **Audience:** AML investigators\n\nThis playbook describes how an investigator works an alert from creation to disposition, including when to escalate to a regulatory filing.\n\n## Where alerts come from\n\n**AML** transaction monitoring generates alerts when a customer's activity deviates from expectations \u2014 unusual volumes, structuring patterns, or movement inconsistent with the stated profile. The monitoring is risk-based and leans on the customer's **KYC** profile and risk rating: an investigator's first move is always to pull the KYC file, because what counts as \"unusual\" depends entirely on who the customer is supposed to be.\n\n## Working an alert\n\n1. **Review KYC context.** Confirm identity, expected activity, and risk rating. Weak or stale KYC is itself a finding and may require a refresh.  \n2. **Reconstruct the activity.** Trace the flow of funds and compare against the expected profile.  \n3. **Decide.** Either close the alert as explained, or escalate it.\n\n## Escalation to a SAR\n\nWhen the investigation establishes a **reasonable suspicion** of illicit activity, the investigator escalates for a **Suspicious Activity Report (SAR)**. Key rules:\n\n- **No tipping off.** Under no circumstances may the customer be told that a SAR is contemplated or filed. Continue servicing the account normally.  \n- **Meet the deadline.** The SAR has a regulatory filing window that begins when suspicion is established \u2014 do not let an investigation drift past it.  \n- **Document the basis.** The narrative must connect the observed activity to the suspicion; \"looked odd\" is not sufficient.\n\nThe SAR is the formal endpoint of the AML process and the bridge from internal suspicion to the authorities. Filing a SAR does not, by itself, require closing the account \u2014 that is a separate risk decision.  \n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1SsgbjuwQKjwAQHcXoTBiOPKJg9sZAtIHntksCJsCVf8",
+        "depth": 1,
+        "content": "# Copy of Settlement Delay Postmortem (application/vnd.google-apps.document)\n\n# Postmortem: Settlement Cutoff Migration Delay\n\n**Status:** Final **Owner:** Trade Operations / Settlements **Date:** Most recent record on settlement timing \u2014 supersedes prior cutoff guidance where they conflict.\n\n## Summary\n\nFollowing migration to the new settlement platform, a batch of trades missed their intended settlement day. Investigation found the cause was an outdated cutoff time in our operating procedure: the new platform enforces an earlier cutoff than the one analysts were working to.\n\n## Background\n\nWe settle on **T+1** (one business day after trade date). Same-day inclusion in a settlement run depends on the daily **cutoff time**. The legacy runbook documented a **16:00 ET** cutoff, and analysts continued to work to that time after the migration.\n\n## What happened\n\nThe migrated platform was configured to a **15:30 ET** cutoff to align with the upstream market infrastructure's new schedule. On the affected day, several trades matched between 15:30 and 16:00 ET. Analysts believed these were inside the window; the platform rolled them to the next business day, creating an unexpected extra day of settlement exposure and a set of client queries.\n\n## Root cause\n\nStale procedure. The **cutoff moved to 15:30 ET** with the migration, but the runbook and analyst habits still reflected the old 16:00 ET time.\n\n## Corrective action\n\n- **Effective immediately, the settlement cutoff is 15:30 ET.** All settlement instructions must be matched and released by 15:30 ET to make the same-day run. This is the current cutoff and replaces the 16:00 ET figure in the Trade Operations Runbook.  \n- Update the Trade Operations Runbook to 15:30 ET.  \n- Add a platform alert at 15:15 ET warning of approaching cutoff.\n\n## Follow-ups\n\n1. Settlements lead to confirm the runbook is updated this week.  \n2. Communicate the 15:30 ET cutoff to all settlements analysts.\n\n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1tSCGhnctQOuy4Vdjz7IArJ7B6n-PJBlO29Z0ipKc-UE",
+        "depth": 1,
+        "content": "# Copy of Travel Expense Policy (application/vnd.google-apps.document)\n\n# Corporate Travel & Expense Policy\n\n**Owner:** Finance Shared Services **Applies to:** All employees incurring business travel or expenses\n\nThis policy governs booking travel and claiming reimbursable expenses. It has no bearing on customer, risk, or treasury operations.\n\n## Booking travel\n\n- Book flights and hotels through the approved corporate travel tool. Out-of-tool bookings are reimbursed only with prior manager approval.  \n- Economy class is standard for flights under six hours. Premium economy may be approved for longer flights with director sign-off.  \n- Choose hotels within the published per-city nightly cap.\n\n## Expense claims\n\n- Submit expenses within 30 days of the spend date. Claims older than 60 days require an exception approval.  \n- Itemized receipts are required for any expense over the receipt threshold.  \n- Personal expenses must never be charged to the corporate card; if mixed, flag and reimburse the company portion immediately.\n\n## Meals and entertainment\n\n- Daily meal allowances follow the published per-diem by city.  \n- Client entertainment requires a documented business purpose and attendee list.\n\n## Mileage and ground transport\n\n- Personal-vehicle mileage is reimbursed at the standard published rate.  \n- Use standard ride-share or taxi for ground transport; luxury tiers are not reimbursable.\n\n## Approvals\n\n- Each expense report routes to the claimant's manager for approval before payment. Reports with policy exceptions route additionally to Finance Shared Services.\n\nQuestions about eligibility go to the Finance Shared Services help desk.  \n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1kXDYTun6V0lc4d83F_HS1g-L6G_iTsTFt6eoYnTGtwA",
+        "depth": 1,
+        "content": "# Copy of Treasury Operations Guide (application/vnd.google-apps.document)\n\n# Treasury Operations Guide\n\n**Owner:** Group Treasury **Audience:** Treasury analysts and ALM team\n\nThis guide covers the day-to-day metrics Treasury manages: balance-sheet profitability, liquidity, and the mechanics of trade settlement.\n\n## Net Interest Margin (NIM)\n\n**Net Interest Margin (NIM)** is our core measure of balance-sheet profitability. It is the difference between the interest we earn on assets and the interest we pay on liabilities, expressed relative to our interest-earning assets:\n\n**NIM \\= (interest income \u2212 interest expense) / average earning assets**\n\nNIM tells us how efficiently we are turning the balance sheet into net interest income. Treasury watches NIM against the rate environment: when funding costs rise faster than asset yields, NIM compresses, and vice versa.\n\n## Liquidity Coverage Ratio (LCR)\n\nTreasury owns the day-to-day management of the **Liquidity Coverage Ratio (LCR)** \u2014 high-quality liquid assets over 30-day net cash outflows. In normal operations we steer the LCR to the internal management target of **about 110%**, keeping headroom above the regulatory minimum defined under Basel III. Treasury forecasts the LCR daily and adjusts the HQLA portfolio to stay within appetite.\n\n## Settlement\n\nTreasury also oversees **settlement** \u2014 the finalization of trades by exchanging cash and securities. Our equities and most fixed-income trades settle on a **T+1** basis: settlement occurs one business day after the trade date. Each settlement day has a processing **cutoff** after which trades roll to the next cycle; per the Trade Operations Runbook the standing cutoff is **16:00 ET**. Trades instructed before the cutoff settle in that day's batch; later instructions settle the following business day.\n\n## Daily routine\n\n1. Refresh NIM and LCR forecasts from overnight balances.  \n2. Confirm the settlement pipeline is clear ahead of the cutoff.  \n3. Escalate any projected LCR move toward appetite limits.\n\n"
+      }
+    },
+    {
+      "name": "fetch_gdoc",
+      "response": {
+        "url": "1DItkIvyGbrC1vPDIKxuKP0_qBnC1ShzTYoxsgKWSuSk",
+        "depth": 1,
+        "content": "# Copy of Trade Ops Runbook (application/vnd.google-apps.document)\n\n# Trade Operations Runbook\n\n**Owner:** Trade Operations / Settlements **Audience:** Settlements analysts\n\nThis runbook is the operational reference for clearing and settling trades. It is the standing source for our settlement timing.\n\n## What settlement is\n\n**Settlement** is the process that finalizes a trade: the buyer's cash and the seller's securities actually change hands, discharging both parties' obligations. A trade is only economically complete once it has settled \u2014 until then it is a pending obligation carrying counterparty risk.\n\n## Settlement cycle\n\nOur equities and most fixed-income instruments settle on a **T+1** basis: settlement takes place **one business day after the trade date**. So a trade executed Monday settles Tuesday, assuming both are business days. Holidays and weekends extend the calendar accordingly.\n\n## Daily cutoff\n\nEach settlement day has a **cutoff time** that determines which batch a trade makes. **The standing cutoff is 16:00 ET.** Settlement instructions received and matched before 16:00 ET are processed in that day's settlement run; instructions arriving after the cutoff roll into the next business day's cycle. Operations must ensure all matched trades are instructed ahead of the cutoff to avoid an unintended extra day of settlement risk.\n\n## Daily checklist\n\n1. Confirm trades captured overnight are matched with counterparties.  \n2. Resolve any unmatched/affirmed exceptions well before the cutoff.  \n3. Release the settlement batch ahead of 16:00 ET.  \n4. Reconcile settled positions end of day; investigate any fails.\n\n## Fails\n\nA settlement fail (one side cannot deliver cash or securities) is logged, counterparty notified, and the trade re-attempted the next cycle. Persistent fails are escalated to the Settlements lead.  \n"
       }
     },
     {
@@ -859,79 +510,266 @@
       "response": {
         "categories": [
           {
-            "id": "customer-and-order-data",
-            "title": "Customer and Order Data",
-            "description": "Tables related to customer accounts and their purchase orders.",
+            "id": "telecommunications-infrastructure",
+            "title": "Telecommunications Infrastructure",
+            "description": "Core identifiers, routing protocols, and operational targets for mobile network and subscriber management.",
             "entries": [
               {
-                "id": "order_items",
-                "display_name": "Order Items",
-                "aliases": [],
-                "description": "Programatically generated order items for The Look fictitious e-commerce store.",
-                "primary_source_urls": [],
-                "kind": "table"
+                "id": "international-mobile-subscriber-identity",
+                "display_name": "International Mobile Subscriber Identity",
+                "aliases": [
+                  "imsi",
+                  "sim-identity"
+                ],
+                "description": "A globally unique subscriber identifier provisioned onto a SIM card that acts as the core authentication credential and anchor for subscriber services.",
+                "primary_source_urls": [
+                  "https://docs.google.com/document/d/1jdHG_-0mgrVIOR10oZf5bF44j9qXkp9UEGnppu4v30U",
+                  "1r8JdSHyWNkmXNa3_di80tSJJaBeJMPKAzB2_J-IzJdA",
+                  "1LPeSLuvREqR9ql9k32aWivsTU8kUWQmH-bi10HPcwZQ"
+                ],
+                "kind": "kb"
               },
               {
-                "id": "orders",
-                "display_name": "Orders",
-                "aliases": [],
-                "description": "Programatically generated orders for The Look fictitious e-commerce store.",
-                "primary_source_urls": [],
-                "kind": "table"
+                "id": "access-point-name",
+                "display_name": "Access Point Name",
+                "aliases": [
+                  "apn"
+                ],
+                "description": "An identifier presented by a mobile device to route data sessions through specific packet data gateways and networks.",
+                "primary_source_urls": [
+                  "https://docs.google.com/document/d/1jdHG_-0mgrVIOR10oZf5bF44j9qXkp9UEGnppu4v30U",
+                  "1r8JdSHyWNkmXNa3_di80tSJJaBeJMPKAzB2_J-IzJdA",
+                  "1LPeSLuvREqR9ql9k32aWivsTU8kUWQmH-bi10HPcwZQ"
+                ],
+                "kind": "kb"
               },
               {
-                "id": "users",
-                "display_name": "Users",
-                "aliases": [],
-                "description": "Programatically generated users for The Look fictitious e-commerce store.",
-                "primary_source_urls": [],
-                "kind": "table"
+                "id": "voice-over-lte",
+                "display_name": "Voice over LTE",
+                "aliases": [
+                  "volte"
+                ],
+                "description": "A technology that routes real-time voice calls as IP packets over the LTE data network via the IP Multimedia Subsystem (IMS).",
+                "primary_source_urls": [
+                  "1K6Yoj4uE_IwHJHezZKDCY5bC_URWnCHE9BSm5dSd1-0",
+                  "https://docs.google.com/document/d/1jdHG_-0mgrVIOR10oZf5bF44j9qXkp9UEGnppu4v30U",
+                  "145vwcMxn2xKFP5uxq624N5QnBZEbU-Wton8ZUI8QwD0"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "number-portability",
+                "display_name": "Number Portability",
+                "aliases": [
+                  "local-number-portability",
+                  "lnp",
+                  "mobile-number-portability",
+                  "mnp",
+                  "porting"
+                ],
+                "description": "The process and regulatory capability allowing a customer to retain their existing phone number when changing carriers.",
+                "primary_source_urls": [
+                  "1mGNA1aQHvYEJS6N1cmr5N3nkTkZ8fX7Hjz-IvFOd_3o",
+                  "1iX1WcU06wst5e-qRfVN6g8F12Mp-lICKmEfEJPs33I0"
+                ],
+                "kind": "kb"
               }
             ]
           },
           {
-            "id": "product-and-inventory",
-            "title": "Product and Inventory",
-            "description": "Tables containing the product catalog, inventory levels, and distribution center information.",
+            "id": "financial-risk-compliance",
+            "title": "Financial Risk & Compliance",
+            "description": "Core risk scoring, treasury parameters, and regulatory compliance workflows within financial systems.",
             "entries": [
               {
-                "id": "distribution_centers",
-                "display_name": "Distribution Centers",
-                "aliases": [],
-                "description": "The Look fictitious e-commerce dataset: distribution_centers table.",
-                "primary_source_urls": [],
-                "kind": "table"
+                "id": "customer-lifetime-value",
+                "display_name": "Customer Lifetime Value",
+                "aliases": [
+                  "clv",
+                  "customer-ltv"
+                ],
+                "description": "The total net profit expected from a customer over their entire relationship, aligning marketing and financial metrics.",
+                "primary_source_urls": [
+                  "1coQ-rJmhOszO-0LOU_s9su7sL_JjTLzPzpGCFLj0svk",
+                  "1lX_2XEm4jpiN-gNOv30UEBoJ1eYAvDUl2BL-g-FZ2KE"
+                ],
+                "kind": "kb"
               },
               {
-                "id": "inventory_items",
-                "display_name": "Inventory Items",
+                "id": "credit-risk-score",
+                "display_name": "Credit Risk Score",
                 "aliases": [],
-                "description": "Programatically generated inventory for The Look fictitious e-commerce store.",
-                "primary_source_urls": [],
-                "kind": "table"
+                "description": "A quantified estimate of a borrower's likelihood of defaulting on financial obligations.",
+                "primary_source_urls": [
+                  "1Axp8e_zvhvHjyJ0B3sSuDRzINv-Zt8r9aJVpFGILAtE",
+                  "1qWcFBL9LnXxm2iOegMjnO4_Qywbt17Kw-hAOH-arSUs",
+                  "1lX_2XEm4jpiN-gNOv30UEBoJ1eYAvDUl2BL-g-FZ2KE"
+                ],
+                "kind": "kb"
               },
               {
-                "id": "products",
-                "display_name": "Products",
-                "aliases": [],
-                "description": "The Look fictitious e-commerce dataset - products table.",
-                "primary_source_urls": [],
-                "kind": "table"
+                "id": "know-your-customer",
+                "display_name": "Know Your Customer",
+                "aliases": [
+                  "kyc"
+                ],
+                "description": "The onboarding and continuous verification process used to establish customer identity, beneficial ownership, and financial-crime risk profiles.",
+                "primary_source_urls": [
+                  "10ivoRcx7RyKcugHb7zVnJSgIRV98XZgVjtV10CZro04",
+                  "1Axp8e_zvhvHjyJ0B3sSuDRzINv-Zt8r9aJVpFGILAtE"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "anti-money-laundering",
+                "display_name": "Anti-Money Laundering",
+                "aliases": [
+                  "aml"
+                ],
+                "description": "Risk-based transaction and behavioral monitoring programs used to detect deviations from established customer baselines and report suspicious activities.",
+                "primary_source_urls": [
+                  "10ivoRcx7RyKcugHb7zVnJSgIRV98XZgVjtV10CZro04",
+                  "1dSWNVjfYvUmeb-kA8ETaZ38K6YCJG7SkC5oOksvxKeo"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "suspicious-activity-report",
+                "display_name": "Suspicious Activity Report",
+                "aliases": [
+                  "sar"
+                ],
+                "description": "The regulatory output filed when financial crime investigations confirm reasonable suspicion of illegal activity.",
+                "primary_source_urls": [
+                  "10ivoRcx7RyKcugHb7zVnJSgIRV98XZgVjtV10CZro04",
+                  "1dSWNVjfYvUmeb-kA8ETaZ38K6YCJG7SkC5oOksvxKeo"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "liquidity-coverage-ratio",
+                "display_name": "Liquidity Coverage Ratio",
+                "aliases": [
+                  "lcr"
+                ],
+                "description": "A Basel III regulatory metric measuring the proportion of high-quality liquid assets held by a financial institution to meet short-term cash outflows.",
+                "primary_source_urls": [
+                  "1REJ7VjzTcvcEAiviGYU0psJZhCjTjxDPJ6NIHf5zZqQ",
+                  "1qWcFBL9LnXxm2iOegMjnO4_Qywbt17Kw-hAOH-arSUs",
+                  "1kXDYTun6V0lc4d83F_HS1g-L6G_iTsTFt6eoYnTGtwA"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "net-interest-margin",
+                "display_name": "Net Interest Margin",
+                "aliases": [
+                  "nim"
+                ],
+                "description": "A core balance-sheet profitability metric managed by Treasury that measures net interest income relative to average interest-earning assets.",
+                "primary_source_urls": [
+                  "1lX_2XEm4jpiN-gNOv30UEBoJ1eYAvDUl2BL-g-FZ2KE",
+                  "1kXDYTun6V0lc4d83F_HS1g-L6G_iTsTFt6eoYnTGtwA"
+                ],
+                "kind": "kb"
               }
             ]
           },
           {
-            "id": "miscellaneous",
-            "title": "Miscellaneous",
-            "description": "A collection of tables that do not fit into other specific categories.",
+            "id": "supply-chain-logistics",
+            "title": "Supply Chain & Logistics",
+            "description": "Inventory identifiers, structured bill of materials data, and mathematical parameter calculations governing replenishment.",
             "entries": [
               {
-                "id": "events",
-                "display_name": "Events",
-                "aliases": [],
-                "description": "Programatically generated web events for The Look fictitious e-commerce store.",
-                "primary_source_urls": [],
-                "kind": "table"
+                "id": "stock-keeping-unit",
+                "display_name": "Stock Keeping Unit",
+                "aliases": [
+                  "sku"
+                ],
+                "description": "The central internal identifier for a distinct, sellable product variant representing size, color, and pack configurations.",
+                "primary_source_urls": [
+                  "1Tp3jIXE-_Wfeb3gbFbouX0seOyi15etrylUYMzGWyh4",
+                  "1VR5cX-s-EA9fwFyVH9BVPmlLB59qd-UtL0LRZGfNBNU",
+                  "1tcp-BhUCYXWiKrsrTBRST5Umu6_13ib7m_viXBggsYk"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "universal-product-code",
+                "display_name": "Universal Product Code",
+                "aliases": [
+                  "upc",
+                  "gtin",
+                  "global-trade-item-number"
+                ],
+                "description": "An external, globally registered barcode standard used for retail scanning and mapped as an attribute to internal SKUs.",
+                "primary_source_urls": [
+                  "1Tp3jIXE-_Wfeb3gbFbouX0seOyi15etrylUYMzGWyh4",
+                  "1VR5cX-s-EA9fwFyVH9BVPmlLB59qd-UtL0LRZGfNBNU"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "bill-of-materials",
+                "display_name": "Bill of Materials",
+                "aliases": [
+                  "bom"
+                ],
+                "description": "The hierarchical, engineering-controlled structured list of components and sub-assemblies needed to produce a finished SKU.",
+                "primary_source_urls": [
+                  "1IXn1QX1m7lJ7kn6yGnQi8At_hhvBKsHuPGbs5SFUUI0",
+                  "1Tp3jIXE-_Wfeb3gbFbouX0seOyi15etrylUYMzGWyh4",
+                  "1DqruUuQIFjaVVYoBKmXnppaFmqCXj6PVZMom_hVOxxM"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "reorder-point",
+                "display_name": "Reorder Point",
+                "aliases": [
+                  "rop"
+                ],
+                "description": "An automated ERP replenishment system trigger calculated mathematically based on demand, lead times, and safety stock.",
+                "primary_source_urls": [
+                  "1VR5cX-s-EA9fwFyVH9BVPmlLB59qd-UtL0LRZGfNBNU",
+                  "132WG298COjjbV1PqmJ01cnXFeQfTSdF30a1tlf9YjhU",
+                  "1LGv8kJwGMxFmrObzlWWabfavoaapl24zaFbXiQXU_aY",
+                  "1jI6HhNVjOkkpuUYDDZ3xhpUlgzqtjg1lTaBQt9OeImQ"
+                ],
+                "kind": "kb"
+              }
+            ]
+          },
+          {
+            "id": "financial-operations-governance",
+            "title": "Financial Operations & Governance",
+            "description": "Systems, standards, and rules defining corporate travel compliance and daily settlement deadlines.",
+            "entries": [
+              {
+                "id": "settlement-cutoff-time",
+                "display_name": "Settlement Cutoff Time",
+                "aliases": [
+                  "daily-settlement-cutoff"
+                ],
+                "description": "The strict daily deadline determining same-day trade settlement execution versus rolling into the next business day.",
+                "primary_source_urls": [
+                  "1SsgbjuwQKjwAQHcXoTBiOPKJg9sZAtIHntksCJsCVf8",
+                  "1kXDYTun6V0lc4d83F_HS1g-L6G_iTsTFt6eoYnTGtwA",
+                  "1DItkIvyGbrC1vPDIKxuKP0_qBnC1ShzTYoxsgKWSuSk"
+                ],
+                "kind": "kb"
+              },
+              {
+                "id": "travel-and-expense-policy",
+                "display_name": "Travel & Expense Policy",
+                "aliases": [
+                  "t-and-e-policy"
+                ],
+                "description": "The corporate policy framework owned by Finance Shared Services that governs employee travel bookings, booking channels, flight classes, and reimbursements.",
+                "primary_source_urls": [
+                  "1tSCGhnctQOuy4Vdjz7IArJ7B6n-PJBlO29Z0ipKc-UE"
+                ],
+                "kind": "kb"
               }
             ]
           }
@@ -939,10 +777,10 @@
       }
     }
   ],
-  "final_text": "# distribution_centers Overview\n\nThe `distribution_centers` table is a dimension table in theLook eCommerce dataset that represents physical fulfillment warehouses. It serves as the single source of truth for distribution center locations, enabling analysts and engineers to perform logistics, fulfillment, and shipping-time analysis.\n\nThe grain of this table is **one row per fulfillment warehouse**.\n\n## Schema & Key Columns\n\nThe table contains the following columns:\n\n*   **`id`** (INTEGER): The unique identifier for each distribution center. This acts as the primary key at the warehouse grain.\n*   **`name`** (STRING): The name of the fulfillment warehouse.\n*   **`latitude`** (FLOAT): The geographic latitude of the distribution center, used to locate the warehouse and calculate shipping distances.\n*   **`longitude`** (FLOAT): The geographic longitude of the distribution center, used alongside latitude for mapping and logistics.\n*   **`distribution_center_geom`** (GEOGRAPHY): The geospatial representation of the distribution center's location.\n\n## Relationships & Lineage\n\nThe distribution center acts as the origin point for the physical inventory and products sold on theLook platform. Its relationships across the schema include:\n\n*   **`products.distribution_center_id` \u2192 `distribution_centers.id`**: Every sellable product (SKU) in the `products` table is assigned to exactly one distribution center where its inventory is stored and from which it is shipped.\n*   **Denormalization Note**: The `inventory_items` table (which tracks physical units of stock) contains a denormalized column named `product_distribution_center_id`. This column is copied from the `products` table for querying convenience. However, the authoritative source for product-to-warehouse assignments is the `products` table itself. If a discrepancy occurs, trust the relationship defined via `products.distribution_center_id`.\n\n## Business Context\n\nIn theLook's multi-brand apparel and accessories retail model, tracking distribution centers is vital for supply chain operations. Every physical product is stocked and shipped from one of these warehouses. By joining the distribution center's geographic coordinates (`latitude` and `longitude`) with customer locations found in the `users` table, analysts can measure shipping performance, analyze regional fulfillment latency, and optimize inventory distribution.\n\n## Source References\n\n* [theLook eCommerce \u2014 Data Model and Relationships](https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ)\n* [theLook eCommerce \u2014 Business Glossary](https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ)\n\n# Events Overview\n\nThe `events` table contains programmatically generated web event data for \"The Look\", a fictitious e-commerce platform. It records fine-grained clickstream data and user activity, tracking how users navigate the site, where they arrive from, and the actions they perform during their sessions.\n\n## Key Columns\n\nThe schema consists of the following columns:\n\n*   **`id`** (INTEGER): The unique identifier for each distinct web event.\n*   **`user_id`** (INTEGER): The unique identifier of the user who triggered the event. This can be null for anonymous or unauthenticated sessions.\n*   **`sequence_number`** (INTEGER): The chronological position of the event within the user's session sequence.\n*   **`session_id`** (STRING): The unique identifier for the web session grouping a series of related user events.\n*   **`created_at`** (TIMESTAMP): The date and time when the event occurred.\n*   **`ip_address`** (STRING): The IP address of the visitor.\n*   **`city`** (STRING): The city associated with the visitor's IP address.\n*   **`state`** (STRING): The state or region associated with the visitor's IP address.\n*   **`postal_code`** (STRING): The postal code associated with the visitor's IP address.\n*   **`browser`** (STRING): The web browser used by the visitor (e.g., Chrome, Safari, Firefox).\n*   **`traffic_source`** (STRING): The source of the traffic that brought the user to the site (e.g., Search, Email, Brand).\n*   **`uri`** (STRING): The web address path or Uniform Resource Identifier visited during the event.\n*   **`event_type`** (STRING): The category or classification of the action taken during the event (such as a page view, product click, cart addition, or checkout).\n\n# inventory_items Overview\n\nThe `inventory_items` table contains programmatically generated inventory records for **theLook**, a fictitious multi-brand online apparel and accessories retailer. \n\nThe grain of this table is **one row per physical unit of stock** (a stock unit). It tracks when individual inventory items are received, when they are sold, their landed cost, and denormalized details about the products they represent.\n\n---\n\n## Key Columns and Schema\n\nThe table contains 12 columns, which can be categorized into direct inventory tracking attributes and denormalized product attributes.\n\n### Inventory Tracking Columns\n* **`id`** (INTEGER): The unique identifier for a specific physical unit of stock. This joins directly to the order fulfillment records.\n* **`product_id`** (INTEGER): The foreign key referencing the associated product in the `products` table.\n* **`created_at`** (TIMESTAMP): The timestamp indicating when the specific physical stock unit was received into inventory.\n* **`sold_at`** (TIMESTAMP): The timestamp indicating when the specific unit was purchased/sold. This column is `NULL` for units that remain in inventory and have not yet been purchased.\n* **`cost`** (FLOAT): The wholesale or landed cost that theLook paid its supplier for this specific stock unit. This value is strictly internal and is never shown to customers.\n\n### Denormalized Product Columns\nTo make inventory-specific queries convenient and avoid mandatory joins, several product attributes are denormalized directly onto the `inventory_items` table. \n\n> \u26a0\ufe0f **Important Data Integrity Rule:** The `products` table is the single authoritative source of truth for all product attributes. If there is ever a disagreement between the values in these columns and the `products` table, always trust `products`. Do not treat these columns as independent facts.\n\n* **`product_name`** (STRING): The catalog name of the product.\n* **`product_brand`** (STRING): The manufacturer or label brand.\n* **`product_category`** (STRING): The product type (e.g., Jeans, Outerwear) within its department.\n* **`product_department`** (STRING): The broadest grouping of the product taxonomy (e.g., Men, Women).\n* **`product_sku`** (STRING): The Stock Keeping Unit identifier theLook uses to track sellable variants.\n* **`product_retail_price`** (FLOAT): The advertised catalog list price for the product before any discounts or promotions.\n* **`product_distribution_center_id`** (INTEGER): The foreign key linking the product to its home fulfillment warehouse in the `distribution_centers` table.\n\n---\n\n## Relationships and Joins\n\nThe `inventory_items` table acts as a key dimension for physical inventory, connecting products to sales:\n\n* **`inventory_items.id`** $\\rightarrow$ **`order_items.inventory_item_id`**: This relationship connects a physical unit of stock to the specific transaction line item that fulfilled a customer's purchase. `order_items` acts as the analytical hub, tying the customer, order, product, and inventory unit together.\n* **`inventory_items.product_id`** $\\rightarrow$ **`products.id`**: Connects the inventory unit to its canonical product definitions.\n\n---\n\n## Key Metrics Derived from Inventory\n\nThe fields in `inventory_items` are used to compute core operational and financial metrics:\n\n* **Sell-Through Rate**: Calculated as the count of inventory items where `sold_at` is not null, divided by the total count of inventory items.\n* **Average Days in Inventory**: Calculated as the mean difference between `sold_at` and `created_at` over all sold inventory items. This indicates how long a unit typically sits in stock before selling.\n* **Gross Margin**: Calculated per order item as `sale_price - cost` (using `inventory_items.cost` or `products.cost`). When evaluated globally, it is computed as the sum of transaction sales prices minus the cost of the products, evaluated over non-returned and non-cancelled items.\n\n---\n\n## Source References\n\n* [theLook eCommerce \u2014 Data Model and Relationships](https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ)\n* [theLook eCommerce \u2014 Business Glossary](https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ)\n* [theLook eCommerce \u2014 Metric Definitions](https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk)\n\n# order_items Overview\n\nThe `order_items` table is the central fact table for revenue and fulfillment analysis in the theLook eCommerce dataset. The grain of this table is **one row per unit of a product in an order** (an order line or sold unit). \n\nAs the primary hub of the data model, `order_items` ties together the customer, the parent checkout event, the specific product SKU, and the physical inventory item used to fulfill the order. Most analytical queries starting in theLook data warehouse begin with this table and join outward.\n\n## Key Columns and Schema\n\n| Column Name | Data Type | Business Role / Semantic Meaning |\n| :--- | :--- | :--- |\n| `id` | INTEGER | The unique identifier for the order item (the individual sold unit). |\n| `order_id` | INTEGER | The identifier of the parent checkout event. Multiple order items can share the same `order_id` (e.g., if a customer buys three items at once, they generate one order and three order items). Joins to `orders.order_id`. |\n| `user_id` | INTEGER | The identifier of the customer who placed the order. Joins to `users.id`. |\n| `product_id` | INTEGER | The product SKU identifier. Joins to `products.id`. |\n| `inventory_item_id` | INTEGER | The identifier of the physical stock unit shipped to fulfill this specific line. Joins to `inventory_items.id`. |\n| `status` | STRING | The line-item level fulfillment status. Lifecycle states include **Processing**, **Shipped**, **Complete**, **Returned**, and **Cancelled**. |\n| `created_at` | TIMESTAMP | The timestamp when the order and line item were placed. |\n| `shipped_at` | TIMESTAMP | The timestamp when the item departed the distribution center. `NULL` if the item has not yet shipped. |\n| `delivered_at` | TIMESTAMP | The timestamp when the item was delivered to the customer. `NULL` if not yet delivered. |\n| `returned_at` | TIMESTAMP | The timestamp when the item was returned by the customer. `NULL` if no return occurred. |\n| `sale_price` | FLOAT | The actual price the customer paid for the unit. This is the authoritative figure for realized revenue and may differ from `products.retail_price` due to promotions or markdowns. |\n\n---\n\n## Order Lifecycle and Status Funnel\n\n`order_items.status` tracks the order funnel at the line-item grain. Because an order containing multiple items can be partially fulfilled or partially returned, the item-level status can differ from the parent order's status (e.g., an order may be marked **Complete** while one of its corresponding order items is **Returned**). For item-level accuracy, metrics related to returns and fulfillment must be calculated using `order_items.status` rather than `orders.status`.\n\nThe timestamp columns can be used to construct a funnel and perform cycle-time analysis:\n*   **Processing Time:** `shipped_at` - `created_at`\n*   **Transit Time:** `delivered_at` - `shipped_at`\n*   **Return Latency:** `returned_at` - `delivered_at`\n\n---\n\n## Core Business Metrics\n\n### Revenue Types\n*   **Gross Revenue:** Computed by summing `sale_price` for all items that are **not Cancelled**. Cancelled items represent unfulfilled transactions and must be excluded.\n*   **Net Revenue:** Computed by summing `sale_price` for all items that are **neither Cancelled nor Returned**. This represents gross revenue with the value of returned items removed.\n\n### Average Order Value (AOV)\nAOV is calculated at the order level using item-level revenue: \n*   `Gross Revenue / Count of Distinct Orders`\n\n### Units Sold\nThe total count of sold units, calculated as the total count of `order_items.id` where the status is **not Cancelled**.\n\n### Return Rate\nThe share of sold units that were later returned:\n*   `Count of order items with a non-null returned_at / Count of non-cancelled order items`\n\n### Gross Margin and Margin %\n*   **Gross Margin:** The profit on a unit before operating costs, evaluated over non-returned and non-cancelled items. It is calculated by taking `sale_price` from `order_items` and subtracting `cost` (sourced by joining `order_items.product_id` to `products.id` and using `products.cost`).\n*   **Gross Margin %:** Calculated as `Gross Margin / Net Revenue` (or `(sale_price - cost) / sale_price` at the item level).\n\n---\n\n## Lineage and Relationships\n\nThe `order_items` table connects to the rest of theLook eCommerce ecosystem through the following foreign keys:\n*   `order_items.order_id` \u2192 `orders.order_id` (Ties line items to the parent checkout event)\n*   `order_items.user_id` \u2192 `users.id` (Ties line items to the customer profile and their acquisition `traffic_source`)\n*   `order_items.product_id` \u2192 `products.id` (Associates the transaction with the authoritative master catalog details, such as department, category, brand, and retail price)\n*   `order_items.inventory_item_id` \u2192 `inventory_items.id` (Links the line item to the physical stock unit that fulfilled the sale)\n\n---\n\n## Source References\n\n*   [theLook eCommerce \u2014 Data Model and Relationships](https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ)\n*   [theLook eCommerce \u2014 Order Lifecycle and Status](https://docs.google.com/document/d/1fm5barRArG0T_KLCIXWnpUwXkaVNdlHNFljmcQ4ppfA/edit?usp=drivesdk)\n*   [theLook eCommerce \u2014 Business Glossary](https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ)\n*   [theLook eCommerce \u2014 Metric Definitions](https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk)\n\n# orders Overview\n\nThe `orders` table contains programmatically generated order records for theLook eCommerce, a fictitious multi-brand online apparel and accessories retailer. The grain of this table is **one row per order** (a single checkout event placed by a customer). \n\nThis table tracks the overall state of each checkout event, the customer who placed it, the total number of items included, and the key lifecycle timestamps as the order progresses from placement to fulfillment or return.\n\n## Schema\n\n| Column Name | Data Type | Description |\n| :--- | :--- | :--- |\n| **order_id** | INTEGER | The unique identifier for the checkout event / order. |\n| **user_id** | INTEGER | The unique identifier of the customer who placed the order. Joins to `users.id`. |\n| **status** | STRING | The overall fulfillment and lifecycle state of the order. |\n| **gender** | STRING | Gender associated with the order. |\n| **created_at** | TIMESTAMP | The timestamp when the order was placed. |\n| **returned_at** | TIMESTAMP | The timestamp when the order was returned (if applicable). |\n| **shipped_at** | TIMESTAMP | The timestamp when the order shipped from the distribution center. |\n| **delivered_at** | TIMESTAMP | The timestamp when the order reached the customer. |\n| **num_of_item** | INTEGER | The total number of items purchased in this single checkout event. |\n\n## Order Grain vs. Order Item Grain\n\nIt is critical not to confuse the **Order** grain with the **Order Item** grain:\n* An **Order** (`orders` table) represents a single checkout event. One order can contain multiple items, and the total count of these items is recorded in `num_of_item`.\n* An **Order Item** (`order_items` table) represents a single unit of a single product within that order. The `order_items` table is the true revenue-bearing grain where pricing, cost, and item-level returns are calculated.\n\nBecause an order can be partially fulfilled or partially returned, item-level statuses in `order_items` can differ from the parent order's `status` in this table (e.g., a parent order may have a status of **Complete** while one of its constituent order items has a status of **Returned**). For accurate fulfillment, return, and revenue metrics, analysts should calculate metrics at the order-item grain rather than relying solely on the parent order status.\n\n## Order Lifecycle and Statuses\n\nThe `status` column represents the overall state of the order. The typical lifecycle stages are:\n\n1. **Processing**: The order has been placed and is being prepared. Payment has been captured, but the items have not yet shipped.\n2. **Shipped**: The order has left a distribution center.\n3. **Complete**: The order was delivered to the customer, and the return window has closed.\n4. **Returned**: One or more items from the order were returned.\n5. **Cancelled**: The order was cancelled before fulfillment and generated no revenue.\n\n## The Timestamp Funnel\n\nThe sequence of timestamp columns tracks how an order moves through the processing and fulfillment pipeline. They are used to calculate transition latency:\n* **Processing Time**: `shipped_at` - `created_at`\n* **Transit Time**: `delivered_at` - `shipped_at`\n* **Return Latency**: `returned_at` - `delivered_at`\n\nA `NULL` value in any of these timestamp columns indicates that the corresponding stage has not yet occurred.\n\n## Key Relationships\n\n* **`orders.user_id` \u2192 `users.id`**: Connects each order to the customer who placed it. This join allows analysts to connect orders to customer demographics (such as age, gender, and location) and attribute order activity to the customer's acquisition marketing channel (`users.traffic_source`).\n* **`order_items.order_id` \u2192 `orders.order_id`**: Joins individual sold items back to their parent checkout event. This relationship is essential for calculating order-level metrics like Average Order Value (AOV).\n\n## Source References\n\n* [theLook eCommerce \u2014 Order Lifecycle and Status](https://docs.google.com/document/d/1fm5barRArG0T_KLCIXWnpUwXkaVNdlHNFljmcQ4ppfA/edit?usp=drivesdk)\n* [theLook eCommerce \u2014 Business Glossary](https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ)\n* [theLook eCommerce \u2014 Data Model and Relationships](https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ)\n* [theLook eCommerce \u2014 Metric Definitions](https://docs.google.com/document/d/1vN-UzBhsCeC5v7lmzyeVqo131MFddhFuL3BNpy1mAhk/edit?usp=drivesdk)\n\n# products Overview\n\nThe `products` table is a core dimension table in the theLook eCommerce dataset. It contains one row per sellable product variant, also referred to as a Stock Keeping Unit (SKU). \n\nThis table serves as the authoritative source of truth for all product taxonomy, pricing, and supplier cost attributes. \n\n## Key Columns\n\n*   **`id`** (INTEGER): The unique identifier for each product. This ID is used to join products to transactions and physical inventory.\n*   **`sku`** (STRING): The Stock Keeping Unit identifier used to track a specific sellable product variant in inventory. Each SKU corresponds to exactly one row in the `products` table.\n*   **`name`** (STRING): The name of the product.\n*   **`brand`** (STRING): The manufacturer or label of the product.\n*   **`category`** (STRING): The specific product type (e.g., Jeans, Outerwear). This is the second level of the product taxonomy.\n*   **`department`** (STRING): The broadest classification in the product taxonomy (e.g., Men, Women).\n*   **`cost`** (FLOAT): The wholesale or landed cost that theLook paid to its supplier for a single unit of the product. This value is never displayed to customers.\n*   **`retail_price`** (FLOAT): The list price advertised by theLook for the product. This represents the catalog price before any markdowns or promotional discounts.\n*   **`distribution_center_id`** (INTEGER): The ID of the physical fulfillment warehouse where the product is stocked and shipped from.\n\n## Relationships & Joins\n\nThe `products` table acts as a critical hub connecting inventory, orders, and warehousing:\n\n*   **Order Items (`order_items.product_id` \u2192 `products.id`)**: Associates individual transaction lines (sold units) with the sellable product SKU.\n*   **Inventory Items (`inventory_items.product_id` \u2192 `products.id`)**: Connects individual physical items in stock to their corresponding product definition.\n*   **Distribution Centers (`products.distribution_center_id` \u2192 `distribution_centers.id`)**: Associates each product with its designated fulfillment warehouse. Every product is assigned to exactly one distribution center.\n\n### Denormalization and Source of Truth\nThe `inventory_items` table contains several denormalized product columns prefixed with `product_` (such as `product_category`, `product_name`, `product_brand`, `product_retail_price`, `product_department`, `product_sku`, and `product_distribution_center_id`). These are copied into the inventory table for querying convenience. However, the **`products` table is the authoritative source for these attributes**. If any values disagree between the two tables, the data in the `products` table must be trusted.\n\n## Financial Concepts & Metrics\n\nUnderstanding the distinction between the financial attributes in the `products` table and other tables is crucial for correct analysis:\n\n*   **Cost vs. Retail Price vs. Sale Price**:\n    *   `products.cost` is the wholesale cost paid to suppliers.\n    *   `products.retail_price` is the advertised list price.\n    *   `order_items.sale_price` is what the customer actually paid (which may differ from `retail_price` due to promotions).\n*   **Gross Margin (Catalog Analysis)**: For catalog-level planning, list-price gross margin can be evaluated as `retail_price - cost`.\n*   **Realized Gross Margin**: The actual profit realized on completed transactions is calculated using the formula:\n    $$\\text{Gross Margin} = \\sum(\\text{order\\_items.sale\\_price} - \\text{products.cost})$$\n    This is evaluated by joining `order_items.product_id` to `products.id` and filtering only for items that have not been returned or cancelled.\n*   **Gross Margin %**: Calculated as $\\frac{\\text{Gross Margin}}{\\text{sale\\_price}}$.\n\n## Source References\n\n*   [theLook eCommerce \u2014 Data Model and Relationships](https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ)\n*   [theLook eCommerce \u2014 Business Glossary](https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ)\n\n# users Overview\n\nThe `users` table contains records of programmatically generated users for theLook, a fictitious multi-brand online apparel and accessories retailer. The table is structured at the customer level (grain: customer), meaning it contains exactly one row per customer. It serves as the primary source of truth for customer demographics, physical locations, signup details, and acquisition marketing channels.\n\n## Key Columns\n\n* **`id`**: The unique identifier for each customer. This column acts as the primary key for the table.\n* **`first_name` & `last_name`**: The customer's first and last name.\n* **`email`**: The contact email address of the customer.\n* **`age`**: The customer's age, used for demographic analysis.\n* **`gender`**: The customer's gender, used for demographic segmentation.\n* **`street_address`, `city`, `state`, `postal_code`, & `country`**: The physical mailing address details for the customer.\n* **`latitude` & `longitude`**: The geographic coordinates representing the customer's location.\n* **`user_geom`**: A geography spatial data type mapping the physical location of the user.\n* **`traffic_source`**: The marketing channel that brought the customer to theLook (e.g., Search, Organic, Email, Display, and Facebook). This is the basis for customer-acquisition and channel-attribution analysis.\n* **`created_at`**: The timestamp marking when the user account was created (signup time).\n\n## Business Context\n\nThe `users` table is heavily leveraged for customer-acquisition and channel-attribution analysis. By analyzing the `traffic_source` column, analysts can evaluate which marketing channels are most successful at driving customer signups and lifetime value. \n\nAdditionally, the demographic and spatial data (`age`, `gender`, and various location attributes like `user_geom`) allow the commerce data and analytics teams to perform spatial queries, cohort analyses, and regional performance reporting.\n\n## Relationships & Lineage\n\nThe customer sits at the beginning of the e-commerce lifecycle, establishing relationships with key downstream transactional tables:\n\n* **Orders to Users:** The `orders` table links to the `users` table by joining the `orders.user_id` field to the `users.id` field. This maps checkout events to customer demographics and locations. It is also used to evaluate customer acquisition channel revenue attribution by grouping user records by `traffic_source` and joining them through orders.\n* **Order Items to Users:** The central transaction table, `order_items`, directly links to this table by joining `order_items.user_id` to `users.id`. This direct connection bypasses the order-level table, allowing analysts to quickly associate individual sold items and revenue calculations to the customer who purchased them.\n\n## Source References\n\n* [theLook eCommerce \u2014 Business Glossary](https://docs.google.com/document/d/1YjHrEU7yGpJ4rTduR2KMzKoKYfv72EQtBOpIdgFC3OI/edit?usp=drivesdk&resourcekey=0-hhk4row7bi7ObbSH6vUWoQ)\n* [theLook eCommerce \u2014 Data Model and Relationships](https://docs.google.com/document/d/1MdZqPrd1zg4yXxNzEcpzyr-jfl0WX9jBCZTaQaNsy8U/edit?usp=drivesdk&resourcekey=0-iY-s9PeHf0gtu1K7Bs4UdQ)",
+  "final_text": "# International Mobile Subscriber Identity Overview\n\nThe International Mobile Subscriber Identity (IMSI) is a globally unique identifier provisioned onto a SIM card during personalization. It functions as the core authentication credential and an anchor for all subscriber services, both on the home network and during roaming. While \"SIM identity\" is sometimes used loosely, engineering documentation strictly uses \"IMSI\" to refer to this identifier.\n\n## Definition and Core Role\n\nThe IMSI is registered in the Home Subscriber Server (HSS) or Home Location Register (HLR) and is essential for subscriber services. It serves as the fundamental join key for identifying \"which subscriber\" across various records, including subscriber records, session logs, and roaming transactions. Visited networks utilize the IMSI to identify the home operator and authenticate travelers, and it is crucial for reconciling charges in bilateral roaming agreements against defined IMSI ranges and services.\n\n## Lifecycle and Operations\n\nThe provisioning workflow involves several steps where the IMSI plays a critical role:\n1.  **Personalization:** The SIM is personalized with the IMSI and associated security keys.\n2.  **Registration:** The IMSI is registered in the HSS/HLR under the correct service plan.\n3.  **Troubleshooting:** If network attachment fails, it often indicates that the IMSI is unregistered or that a key mismatch has occurred.\n\nA subscriber's data profile, linked to their IMSI, contains one or more Access Point Names (APNs). While the IMSI identifies the subscriber, APNs are identifiers used by a device to route data sessions through specific packet data gateways.\n\n## Metadata Context\n\nAs a unique identifier, the IMSI is a central piece of metadata for telecommunications systems. It acts as the primary key linking subscriber information to service usage, authentication events, and financial settlements across different network entities and roaming partners. Understanding its provisioning, registration, and usage is key to comprehending subscriber lifecycle management and network operations.\n\n## Source References\n*   [Copy of Network Engineering Glossary](https://docs.google.com/document/d/1jdHG_-0mgrVIOR10oZf5bF44j9qXkp9UEGnppu4v30U)\n*   [Copy of SIM Provisioning Runbook](1r8JdSHyWNkmXNa3_di80tSJJaBeJMPKAzB2_J-IzJdA)\n*   [Copy of Telecom Systems Terminology Overview](1LPeSLuvREqR9ql9k32aWivsTU8kUWQmH-bi10HPcwZQ)\n*   [Copy of Roaming Partner Agreement Summary](1hevfD6a2hojbAU42dp215AX7mN-KY0sLIeJSowu6LcQ)\n\n# Access Point Name Overview\n\nAn Access Point Name (APN), also referred to as `apn`, is an identifier presented by a mobile device to route data sessions through specific packet data gateways and networks. It defines the path taken for data communication by specifying the packet data network a session connects to.\n\n## Key Features and Role\n\n*   **Data Session Routing**: The APN specifies the packet data network a session connects to, selecting the appropriate gateway and routing policies. For example, it can separate general internet traffic from voice signaling, such as via an IMS APN for Voice over LTE (VoLTE) services.\n*   **Subscriber Data Profiles**: A subscriber's data profile contains one or more APNs. A typical profile includes a public-internet APN for general data access and an internal IMS APN specifically for voice signaling.\n*   **Data Logging and Identification**: In system logs, the APN maps to \"which service/network\" a data session used, serving as a critical identifier for understanding traffic patterns and service usage.\n*   **Provisioning and Troubleshooting**: Applying the correct APNs is a crucial step in the subscriber provisioning workflow. If a device successfully attaches to the network but cannot transmit data, it often indicates that the APN is misconfigured or missing from the subscriber's profile.\n\n## Source References\n\n*   [Copy of Network Engineering Glossary](https://docs.google.com/document/d/1jdHG_-0mgrVIOR10oZf5bF44j9qXkp9UEGnppu4v30U)\n*   [Copy of SIM Provisioning Runbook](1r8JdSHyWNkmXNa3_di80tSJJaBeJMPKAzB2_J-IzJdA)\n*   [Copy of Telecom Systems Terminology Overview](1LPeSLuvREqR9ql9k32aWivsTU8kUWQmH-bi10HPcwZQ)\n\n# Voice over LTE Overview\n\nVoice over LTE (VoLTE), also known by its alias `volte`, is a telecommunications technology that routes real-time voice calls as IP packets over the existing LTE data network. This system replaces legacy circuit-switched paths by utilizing the IP Multimedia Subsystem (IMS).\n\n## Technical Characteristics and Quality of Service\n\nVoLTE is critical for modern voice communication within LTE networks, requiring strict Quality of Service (QoS) management due to the delay-sensitive nature of voice calls. It operates on the high-priority \"conversational voice\" traffic class to prevent issues such as clipping, audible delay, and dropped calls.\n\nHistorically, the latency target for conversational voice was 100 ms. However, following incidents of elevated dropped calls and clipping, the VoLTE one-way latency target was tightened to 80 ms. Network monitoring is now re-tuned to alarm at 80 ms and warn at 70 ms.\n\n## Related Network Concepts\n\n*   **IP Multimedia Subsystem (IMS):** VoLTE routes calls via the IMS, which handles the signaling and session management for IP-based multimedia services.\n*   **Access Point Name (APN):** The APN specifies the packet data network a session connects to. For VoLTE, an IMS APN is used to separate voice signaling from general internet traffic, selecting the appropriate gateway and routing policies. In logs, APN indicates \"which service/network\" a session utilized.\n*   **International Mobile Subscriber Identity (IMSI):** While not directly part of VoLTE's routing, the IMSI is the globally unique identifier on the SIM that identifies the subscriber. It serves as a fundamental join key across subscriber records and is used in roaming to identify the home operator and for settling wholesale inter-operator charges for services like VoLTE.\n\n## Business Impact\n\nPoor network quality, particularly in \"VoLTE dropped-call zones,\" is identified as a primary driver of customer churn (attrition). Ensuring the stability and quality of VoLTE services is thus crucial for customer retention.\n\n## Source References\n*   [Copy of QoS Policy Doc](1K6Yoj4uE_IwHJHezZKDCY5bC_URWnCHE9BSm5dSd1-0)\n*   [Copy of Network Engineering Glossary](https://docs.google.com/document/d/1jdHG_-0mgrVIOR10oZf5bF44j9qXkp9UEGnppu4v30U)\n*   [Copy of Dropped Calls Postmortem](145vwcMxn2xKFP5uxq624N5QnBZEbU-Wton8ZUI8QwD0)\n*   [Copy of Churn Analysis Quarterly Report](https://docs.google.com/document/d/15XrKEZF7PSXKCzdRbRj7BxleBcFn2onBv1QAkvDDlgs/edit)\n*   [Copy of Telecom Systems Terminology Overview](1LPeSLuvREqR9ql9k32aWivsTU8kUWQmH-bi10HPcwZQ)\n*   [Copy of Roaming Partner Agreement Summary](1hevfD6a2hojbAU42dp215AX7mN-KY0sLIeJSowu6LcQ)\n\n# Number Portability Overview\n\nNumber Portability refers to the process and regulatory capability that allows a customer to retain their existing phone number when changing telecommunications carriers. This concept is central to metadata enrichment efforts, as standardizing its terminology and clarifying operational parameters across systems resolves ambiguity, prevents compliance failures, and enhances cross-functional reporting accuracy.\n\n## Terminology\n\n\"Number portability\" is a broad term that is synonymous with \"Local Number Portability\" (LNP), \"Mobile Number Portability\" (MNP), and \"porting\" [Copy of Customer Care Handbook](1mGNA1aQHvYEJS6N1cmr5N3nkTkZ8fX7Hjz-IvFOd_3o), [Number Portability Process SOP](1iX1WcU06wst5e-qRfVN6g8F12Mp-lICKmEfEJPs33I0). All these terms describe the same fundamental ability for a customer to keep their phone number when switching service providers.\n\n## Key Procedures\n\nThe number portability process involves distinct procedures for both gaining and losing carriers:\n\n*   **Port-In**: This procedure describes the actions taken by the *gaining* carrier. They are responsible for collecting the customer's current account details and PINs, and subsequently submitting this information to a central porting clearinghouse. A common challenge during the validation window is data mismatches, which are the primary cause of rejection. Once validated, the number is successfully cut over to the new carrier [Number Portability Process SOP](1iX1WcU06wst5e-qRfVN6g8F12Mp-lICKmEfEJPs33I0).\n*   **Port-Out**: This procedure outlines the obligations of the *losing* carrier. They must validate port-out requests promptly and release the number within specific timelines mandated by the regulator. Delays or outright blocks of porting requests are prohibited. While prohibited from blocking, carriers may present retention offers to the customer before the number is released. Any stalled port-out processes are to be escalated to the interconnect team [Number Portability Process SOP](1iX1WcU06wst5e-qRfVN6g8F12Mp-lICKmEfEJPs33I0).\n\n## Source References\n*   [Copy of Customer Care Handbook](1mGNA1aQHvYEJS6N1cmr5N3nkTkZ8fX7Hjz-IvFOd_3o)\n*   [Number Portability Process SOP](1iX1WcU06wst5e-qRfVN6g8F12Mp-lICKmEfEJPs33I0)\n\n# Customer Lifetime Value Overview\n\nCustomer Lifetime Value (CLV) represents the total net profit expected from a customer over their entire relationship, aligning both marketing and financial metrics.\n\n## Aliases\n\nThis metric is also known as Customer LTV. The terms Customer LTV (used by Growth Marketing Analytics) and CLV (Customer Lifetime Value, used by the Finance team and in the Finance Business Glossary) refer to the exact same metric and should not be treated as distinct measures.\n\n## Definition and Calculation\n\nCustomer Lifetime Value is defined as the total net profit expected from a customer over their entire relationship. It is calculated as projected revenue minus cost-to-serve and retention spend.\n\n## Application\n\nCLV is used to determine sustainable acquisition spend. High-LTV/CLV segments, such as the premium-account channel, warrant higher acquisition and retention investment.\n\n## Source References\n* [Copy of Marketing Analytics Deck Notes](1coQ-rJmhOszO-0LOU_s9su7sL_JjTLzPzpGCFLj0svk)\n* [Copy of Finance Business Glossary](1lX_2XEm4jpiN-gNOv30UEBoJ1eYAvDUl2BL-g-FZ2KE)\n\n# Credit Risk Score Overview\n\nThe Credit Risk Score is a quantified estimate of a borrower's likelihood of defaulting on financial obligations.\n\n## Definition and Purpose\n\nThis score represents a quantified estimate of a borrower\u2019s default likelihood. It is built from factors such as repayment history, current exposure, and income/leverage. The Credit Risk Score is used to drive pricing decisions, including setting credit limits and interest rates, and feeds into the aggregation of portfolio expected-loss provisioning.\n\n## Metadata Distinction\n\nA critical metadata distinction must be maintained between a customer's **KYC risk rating**, which measures financial-crime risk, and their **Credit Risk Score**, which measures the likelihood of default. These two scores cannot be conflated.\n\n## Source References\n* [Copy of Customer Onboarding SOP](1Axp8e_zvhvHjyJ0B3sSuDRzINv-Zt8r9aJVpFGILAtE)\n* [Copy of Finance Business Glossary](1lX_2XEm4jpiN-gNOv30UEBoJ1eYAvDUl2BL-g-FZ2KE)\n* [Copy of Risk Management Framework](1qWcFBL9LnXxm2iOegMjnO4_Qywbt17Kw-hAOH-arSUs)\n\n# Know Your Customer Overview\n\nKnow Your Customer (KYC), also known by its alias `kyc`, refers to the onboarding and continuous verification process used to establish customer identity, beneficial ownership, and financial-crime risk profiles within the Financial Risk & Compliance category. It is a critical component in distinguishing regulatory compliance markers and framing downstream risk decisions.\n\n## Role as Metadata\n\nA customer's **KYC risk rating** is a crucial metadata distinction, measuring financial-crime risk. It must be carefully differentiated from their **credit risk score**, which measures the likelihood of default; these two metrics cannot be conflated ([Copy of Customer Onboarding SOP](1Axp8e_zvhvHjyJ0B3sSuDRzINv-Zt8r9aJVpFGILAtE), [Copy of Finance Business Glossary](1lX_2XEm4jpiN-gNOv30UEBoJ1eYAvDUl2BL-g-FZ2KE)). The KYC risk rating is established at onboarding and forms the metadata baseline for ongoing downstream monitoring efforts ([Copy of Compliance Policy Handbook](10ivoRcx7RyKcugHb7zVnJSgIRV98XZgVjtV10CZro04), [Copy of Customer Onboarding SOP](1Axp8e_zvhvHjyJ0B3sSuDRzINv-Zt8r9aJVpFGILAtE)).\n\n## Compliance Lifecycle\n\nKYC is the initial step in the compliance lifecycle pipeline. It is established during customer onboarding through verifying identity and beneficial ownership, employing either standard or enhanced due diligence ([Copy of Compliance Policy Handbook](10ivoRcx7RyKcugHb7zVnJSgIRV98XZgVjtV10CZro04), [Copy of Customer Onboarding SOP](1Axp8e_zvhvHjyJ0B3sSuDRzINv-Zt8r9aJVpFGILAtE)). The KYC risk profile then directly informs subsequent stages, such as:\n1.  **AML (Anti-Money Laundering) Monitoring:** Ongoing, risk-based transaction monitoring that uses the KYC risk profile to detect deviations like unexpected transaction volumes or structuring patterns ([Copy of Compliance Policy Handbook](10ivoRcx7RyKcugHb7zVnJSgIRV98XZgVjtV10CZro04), [Copy of AML Investigations Playbook](1dSWNVjfYvUmeb-kA8ETaZ38K6YCJG7SkC5oOksvxKeo)).\n2.  **SAR (Suspicious Activity Report):** The formal output when an investigation confirms reasonable suspicion, subject to strict regulatory timelines and \"no tipping off\" policies ([Copy of Compliance Policy Handbook](10ivoRcx7RyKcugHb7zVnJSgIRV98XZgVjtV10CZro04), [Copy of AML Investigations Playbook](1dSWNVjfYvUmeb-kA8ETaZ38K6YCJG7SkC5oOksvxKeo)).\n\n## Source References\n* [Copy of Compliance Policy Handbook](10ivoRcx7RyKcugHb7zVnJSgIRV98XZgVjtV10CZro04)\n* [Copy of Customer Onboarding SOP](1Axp8e_zvhvHjyJ0B3sSuDRzINv-Zt8r9aJVpFGILAtE)\n* [Copy of Finance Business Glossary](1lX_2XEm4jpiN-gNOv30UEBoJ1eYAvDUl2BL-g-FZ2KE)\n* [Copy of AML Investigations Playbook](1dSWNVjfYvUmeb-kA8ETaZ38K6YCJG7SkC5oOksvxKeo)\n\n# Anti-Money Laundering Overview\n\nAnti-Money Laundering (AML) refers to risk-based transaction and behavioral monitoring programs designed to detect deviations from established customer baselines and identify suspicious activities. These programs are critical components of an organization's financial crime risk and compliance framework, focusing specifically on managing financial-crime risk.\n\n## Role in Financial Crime Risk & Compliance\n\nAML is an integral part of the Compliance Lifecycle Pipeline, following the initial Know Your Customer (KYC) rating and preceding the filing of a Suspicious Activity Report (SAR). It involves ongoing risk-based transaction monitoring that leverages the customer's KYC risk profile\u2014established during onboarding (via standard or enhanced due diligence) and based on identity and beneficial ownership verification\u2014as a crucial metadata baseline.\n\nThe primary objective of AML monitoring is to detect deviations from this established profile, such as unexpected transaction volumes or structuring patterns, that could indicate money laundering activities. This process maintains a critical metadata distinction, focusing on a customer's financial-crime risk, which should not be conflated with their credit risk score (measuring likelihood of default).\n\nWhen an investigation stemming from AML monitoring confirms reasonable suspicion, it leads to the formal output of a SAR, which is subject to strict regulatory timelines and a \"no tipping off\" policy.\n\n## Source References\n* [Copy of Compliance Policy Handbook](10ivoRcx7RyKcugHb7zVnJSgIRV98XZgVjtV10CZro04)\n* [Copy of AML Investigations Playbook](1dSWNVjfYvUmeb-kA8ETaZ38K6YCJG7SkC5oOksvxKeo)\n\n# Suspicious Activity Report Overview\n\nA Suspicious Activity Report (SAR), also known by its alias \"sar\", is a regulatory output filed when investigations confirm reasonable suspicion of illegal activity, particularly financial crime. It serves as a formal notification to authorities regarding potentially illicit financial transactions or behaviors.\n\n## Role in Compliance Lifecycle\n\nThe Suspicious Activity Report is the final stage in the Financial Crime Risk & Compliance lifecycle pipeline, following initial Know Your Customer (KYC) ratings and ongoing Anti-Money Laundering (AML) monitoring.\n\n*   **KYC Rating**: Established at onboarding, this rating (standard vs. enhanced due diligence) provides a baseline for ongoing monitoring by verifying identity and beneficial ownership.\n*   **AML Monitoring**: This involves continuous, risk-based transaction monitoring, utilizing the KYC risk profile to identify deviations such as unexpected transaction volumes or structuring patterns.\n*   **SAR Filing**: When an investigation into suspicious activity confirms reasonable suspicion of illegal activity, an SAR is the formal output. Its filing is subject to strict regulatory timelines and a \"no tipping off\" policy, which prohibits informing the subject of the report.\n\nIt is critical to maintain a clear metadata distinction between a customer's **KYC risk rating** (which measures financial-crime risk) and their **credit risk score** (which measures the likelihood of default), as these two types of risk metadata cannot be conflated.\n\n## Source References\n*   [Copy of Compliance Policy Handbook](10ivoRcx7RyKcugHb7zVnJSgIRV98XZgVjtV10CZro04)\n*   [Copy of AML Investigations Playbook](1dSWNVjfYvUmeb-kA8ETaZ38K6YCJG7SkC5oOksvxKeo)\n\n# Liquidity Coverage Ratio Overview\n\nThe Liquidity Coverage Ratio (LCR) is a Basel III regulatory metric measuring the proportion of high-quality liquid assets held by a financial institution to meet short-term cash outflows. It is designed to monitor a financial institution's short-term resilience under stress [Copy of Basel III Filing Summary](1REJ7VjzTcvcEAiviGYU0psJZhCjTjxDPJ6NIHf5zZqQ), [Copy of Risk Management Framework](1qWcFBL9LnXxm2iOegMjnO4_Qywbt17Kw-hAOH-arSUs).\n\n## Definition and Calculation\n\nThe LCR is defined as the ratio of high-quality liquid assets (HQLA) to projected net cash outflows over a 30-calendar-day stress scenario [Copy of Basel III Filing Summary](1REJ7VjzTcvcEAiviGYU0psJZhCjTjxDPJ6NIHf5zZqQ), [Copy of Risk Management Framework](1qWcFBL9LnXxm2iOegMjnO4_Qywbt17Kw-hAOH-arSUs). This calculation is governed under Basel III regulatory standards [Copy of Treasury Operations Guide](1kXDYTun6V0lc4d83F_HS1g-L6G_iTsTFt6eoYnTGtwA).\n\nThe formula for LCR is:\n\n```\nLCR = High-Quality Liquid Assets (HQLA) / 30-day Net Cash Outflows\n```\n\n## Regulatory and Operational Targets\n\nBasel III rules establish a binding regulatory floor for the LCR, strictly set at **100%**. An intraday breach of this floor is considered a notable regulatory event that requires immediate escalation [Copy of Basel III Filing Summary](1REJ7VjzTcvcEAiviGYU0psJZhCjTjxDPJ6NIHf5zZqQ).\n\nIn addition to the regulatory floor, the organization maintains an internal operating target for the LCR. This internal target is approximately **110%**, providing a buffer for normal fluctuations. The LCR is monitored daily against this internal management target [Copy of Risk Management Framework](1qWcFBL9LnXxm2iOegMjnO4_Qywbt17Kw-hAOH-arSUs), [Copy of Treasury Operations Guide](1kXDYTun6V0lc4d83F_HS1g-L6G_iTsTFt6eoYnTGtwA).\n\n## Monitoring\n\nMonitoring of the Liquidity Coverage Ratio is owned by Group Treasury and the Asset-Liability Management (ALM) team [Copy of Treasury Operations Guide](1kXDYTun6V0lc4d83F_HS1g-L6G_iTsTFt6eoYnTGtwA).\n\n## Source References\n* [Copy of Basel III Filing Summary](1REJ7VjzTcvcEAiviGYU0psJZhCjTjxDPJ6NIHf5zZqQ)\n* [Copy of Risk Management Framework](1qWcFBL9LnXxm2iOegMjnO4_Qywbt17Kw-hAOH-arSUs)\n* [Copy of Treasury Operations Guide](1kXDYTun6V0lc4d83F_HS1g-L6G_iTsTFt6eoYnTGtwA)\n\n# Net Interest Margin Overview\n\nNet Interest Margin (NIM) is a core balance-sheet profitability metric managed by Group Treasury. It serves as a key operational and balance sheet metric required for internal treasury oversight and regulatory filings, measuring net interest income relative to average interest-earning assets.\n\n## Key Features\n\nNIM is calculated as net interest income divided by average interest-earning assets.\n\nThe calculation formula is:\n$\\text{NIM} = \\frac{\\text{Interest Income} - \\text{Interest Expense}}{\\text{Average Earning Assets}}$\n\n### Behavioral Metadata\n*   NIM compresses when funding costs rise faster than asset yields.\n*   NIM expands when asset yields outpace funding costs.\n\n## Source References\n*   [Copy of Finance Business Glossary](1lX_2XEm4jpiN-gNOv30UEBoJ1eYAvDUl2BL-g-FZ2KE)\n*   [Copy of Treasury Operations Guide](1kXDYTun6V0lc4d83F_HS1g-L6G_iTsTFt6eoYnTGtwA)\n\n# Stock Keeping Unit (SKU) Overview\n\nThe Stock Keeping Unit (SKU) is the central internal identifier for a distinct, sellable product variant, precisely representing its specific size, color, and pack configuration. It serves as the foundational element around which all internal inventory, forecasting, stock-holding, and replenishment processes revolve. While merchandising may launch a \"product,\" engineering and planning strictly track and manage it as a set of individual SKUs.\n\n## Key Characteristics and Distinctions\n\n*   **Internal Identifier**: Unlike Universal Product Codes (UPC) or Global Trade Item Numbers (GTINs), which are external barcode standards assigned from a global registry for retail scanning, the SKU is an identifier used exclusively within a company's systems.\n*   **Variant Specificity**: The SKU uniquely identifies a specific variant of a product, ensuring precise tracking for inventory movements. For instance, every warehouse putaway must be scanned to the exact SKU, not just the product family, to prevent downstream pick failures.\n*   **System Mapping**: While a UPC/GTIN is stored as an attribute pointing to an SKU, it's critical to note that a single product can map to several SKUs over its lifecycle. Treating them as identical can lead to double-counting errors in inventory.\n\n## Relationship with Bill of Materials (BOM)\n\nThe SKU is intrinsically linked to the Bill of Materials (BOM), particularly for manufactured goods.\n*   **Finished-Good BOM**: The BOM provides an engineering-controlled, structured definition of all components and sub-assemblies, along with their quantities, required to build one unit of a finished-good SKU.\n*   **Hierarchical Structure**: BOMs are multi-level and hierarchical. A sub-assembly defined within one BOM can itself have its own BOM, enabling the reuse of sub-assemblies across various finished products.\n*   **Procurement and Planning**: Planning systems forecast demand at the finished-good SKU level. To calculate component demand, these systems \"explode\" the SKU through its BOM hierarchy, multiplying parent demand by per-unit quantities at all levels. The BOM is considered the absolute single source of truth; buyers and planners are prohibited from manually editing component quantities on a Purchase Order (PO) without verifying against the BOM.\n\n## Inventory Management and Planning\n\nSKUs are fundamental to advanced inventory management and planning parameters:\n\n*   **Lead Time Calculations**: Although not an attribute of the SKU itself, lead time is a critical metric tracked *for* SKUs. It represents the total elapsed time from Purchase Order (PO) placement until goods are received, inspected, and posted as available to pick. This includes:\n    *   **Inbound Lead Time**: From supplier PO to regional distribution center (DC) receipt, managed by procurement.\n    *   **Inter-Node Lead Time**: Transit time between a regional DC (broad inventory) and a forward DC/fulfillment node (close to demand).\n*   **Safety Stock**: This is the extra inventory held for an SKU to absorb demand spikes or lead-time variability. Safety stock is typically sized in days of supply based on SKU velocity classes:\n    *   **Class A**: Fast movers, initially 14 days of supply, later raised to 21 days due to increased demand variability.\n    *   **Class B**: 10 days of supply.\n    *   **Class C**: 7 days of supply.\n    Dynamic policy updates, such as the increase for Class-A apparel SKUs following Q3 stockouts, directly impact safety stock levels. Failures can result from safety stock levels being sized to outdated demand variability figures.\n*   **Reorder Point (ROP)**: The ROP is the automated system trigger for replenishment, calculated using the formula:\n\n    $$\\text{ROP} = (\\text{Average Daily Demand} \\times \\text{Lead Time in Days}) + \\text{Safety Stock}$$\n\n    The ROP is never set manually; any sustained shift in monitored lead times or safety stock parameters automatically recalculates and adjusts the ROP within the ERP system. Raising Class-A safety stock to 21 days, for example, automatically lifted the ROP for those SKUs.\n\n## Source References\n*   [Copy of Inventory Systems Overview](1Tp3jIXE-_Wfeb3gbFbouX0seOyi15etrylUYMzGWyh4)\n*   [Copy of Inventory Management Glossary](1VR5cX-s-EA9fwFyVH9BVPmlLB59qd-UtL0LRZGfNBNU)\n*   [Copy of Warehouse Ops Runbook](1tcp-BhUCYXWiKrsrTBRST5Umu6_13ib7m_viXBggsYk)\n*   [Copy of Procurement SOP](1IXn1QX1m7lJ7kn6yGnQi8At_hhvBKsHuPGbs5SFUUI0)\n*   [Copy of BOM Spec](1DqruUuQIFjaVVYoBKmXnppaFmqCXj6PVZMom_hVOxxM)\n*   [Copy of Supplier Onboarding Guide](1Obu3LNs7aVPvtEEuKbgiD7b553zn-LOE5xe3KuWt6Fg)\n*   [Copy of Logistics Network Overview](1FFaghxSz7YKUakJzBsGu_u_C1ZeNPXBG38apWoU0Xdc)\n*   [Copy of Inventory Policy Memo](132WG298COjjbV1PqmJ01cnXFeQfTSdF30a1tlf9YjhU)\n*   [Copy of Q3 Stockout Postmortem](1LGv8kJwGMxFmrObzlWWabfavoaapl24zaFbXiQXU_aY)\n*   [Copy of Demand Planning Meeting Notes](1jI6HhNVjOkkpuUYDDZ3xhpUlgzqtjg1lTaBQt9OeImQ)\n\n# Universal Product Code Overview\n\nA Universal Product Code (UPC), also known as a Global Trade Item Number (GTIN), is an external, globally registered barcode standard primarily used for retail scanning. It serves as an external identifier for products, distinguishing it from internal inventory management systems.\n\n## Key Concepts\n\n*   **Definition**: The UPC/GTIN is an external barcode standard assigned from a global registry, designed for retail scanning purposes.\n*   **External vs. Internal Identifier**: While a Stock Keeping Unit (SKU) is an internal identifier that remains within a company's systems, the UPC/GTIN is an external identifier.\n*   **Relationship to SKU**: The UPC/GTIN is stored as an attribute pointing to a specific SKU. It's critical to understand that a single product can map to several SKUs over its lifecycle. Treating a UPC/GTIN and an SKU as identical can lead to double-counting errors within inventory systems.\n\n## Source References\n* [Copy of Inventory Systems Overview](1Tp3jIXE-_Wfeb3gbFbouX0seOyi15etrylUYMzGWyh4)\n* [Copy of Inventory Management Glossary](1VR5cX-s-EA9fwFyVH9BVPmlLB59qd-UtL0LRZGfNBNU)\n\n# Bill of Materials Overview\n\nA Bill of Materials (BOM), also known by its alias `bom`, is a hierarchical, engineering-controlled structured list that defines the exact components and sub-assemblies, along with their quantities, required to produce one unit of a finished-good Stock Keeping Unit (SKU) [Copy of Procurement SOP](1IXn1QX1m7lJ7kn6yGnQi8At_hhvBKsHuPGbs5SFUUI0), [Copy of Inventory Systems Overview](1Tp3jIXE-_Wfeb3gbFbouX0seOyi15etrylUYMzGWyh4), [Copy of BOM Spec](1DqruUuQIFjaVVYoBKmXnppaFmqCXj6PVZMom_hVOxxM). It serves as the authoritative recipe linking finished items to the procurement of raw components.\n\n## Key Features\n\n*   **Hierarchical Structure**: BOMs are multi-level and hierarchical, forming a tree structure. A sub-assembly defined within one BOM can itself have its own BOM. This design allows engineering to construct complex products from simpler parts and enables the reuse of sub-assemblies across multiple finished products [Copy of Inventory Systems Overview](1Tp3jIXE-_Wfeb3gbFbouX0seOyi15etrylUYMzGWyh4), [Copy of BOM Spec](1DqruUuQIFjaVVYoBKmXnppaFmqCXj6PVZMom_hVOxxM).\n*   **Engineering Control**: The BOM is an engineering-controlled definition, ensuring accuracy and consistency in product assembly [Copy of Procurement SOP](1IXn1QX1m7lJ7kn6yGnQi8At_hhvBKsHuPGbs5SFUUI0), [Copy of Inventory Systems Overview](1Tp3jIXE-_Wfeb3gbFbouX0seOyi15etrylUYMzGWyh4), [Copy of BOM Spec](1DqruUuQIFjaVVYoBKmXnppaFmqCXj6PVZMom_hVOxxM).\n\n## Operational Role\n\nThe Bill of Materials plays a critical role in procurement and planning operations:\n\n*   **Demand Calculation**: Planning systems utilize the BOM hierarchy to \"explode\" finished-good SKU forecasts. This process automatically calculates component demand by multiplying the parent demand by the per-unit quantities at all levels of the BOM [Copy of Inventory Systems Overview](1Tp3jIXE-_Wfeb3gbFbouX0seOyi15etrylUYMzGWyh4), [Copy of BOM Spec](1DqruUuQIFjaVVYoBKmXnppaFmqCXj6PVZMom_hVOxxM).\n*   **Single Source of Truth**: The BOM is considered the absolute single source of truth for component requirements. Buyers and planners are strictly prohibited from manually editing component quantities on a Purchase Order (PO) without first updating or verifying against the BOM [Copy of Procurement SOP](1IXn1QX1m7lJ7kn6yGnQi8At_hhvBKsHuPGbs5SFUUI0], [Copy of BOM Spec](1DqruUuQIFjaVVYoBKmXnppaFmqCXj6PVZMom_hVOxxM).\n\n## Source References\n* [Copy of Procurement SOP](1IXn1QX1m7lJ7kn6yGnQi8At_hhvBKsHuPGbs5SFUUI0)\n* [Copy of Inventory Systems Overview](1Tp3jIXE-_Wfeb3gbFbouX0seOyi15etrylUYMzGWyh4)\n* [Copy of BOM Spec](1DqruUuQIFjaVVYoBKmXnppaFmqCXj6PVZMom_hVOxxM)\n\n# Reorder Point Overview\n\nThe Reorder Point (ROP) is an automated system trigger for replenishment within an ERP system, calculated mathematically. It serves to initiate the process of ordering new stock when inventory levels drop to a predetermined point, preventing stockouts while optimizing inventory holding costs. The ROP is never set manually; instead, any sustained shift in monitored lead times or safety stock parameters automatically recalculates and shifts the ROP within the ERP.\n\n## Definition and Calculation\n\nThe Reorder Point is calculated using the following formula:\n\n$$\\text{ROP} = (\\text{Average Daily Demand} \\times \\text{Lead Time in Days}) + \\text{Safety Stock}$$\n\nThis calculation directly incorporates three critical supply chain parameters: Average Daily Demand, Lead Time in Days, and Safety Stock.\n\n## Key Components\n\n### Lead Time\nLead Time is defined as the total elapsed time from the placement of a purchase order (PO) to the moment goods are received, inspected, and posted as available to pick in the system (not merely physical dock arrival). It encompasses:\n*   **Inbound Lead Time:** The time from a supplier PO to regional distribution center (DC) receipt, managed by procurement.\n*   **Inter-Node Lead Time:** The transit time required to move stock between a Regional DC (which holds broad inventory) and a Forward DC/fulfillment node (located closer to customer demand).\n\n### Safety Stock\nSafety stock, also known as buffer stock, represents extra inventory held to mitigate risks such as unexpected demand spikes or variability in lead times. Its parameters are crucial to the ROP calculation.\n*   **Velocity Class Policy:** Safety stock is typically sized in days of supply based on velocity classes:\n    *   **Class A:** Fast-moving items, with a standard policy of 14 days of supply.\n    *   **Class B:** 10 days of supply.\n    *   **Class C:** 7 days of supply.\n*   **Dynamic Policy Updates:** Safety stock parameters can be dynamically updated. For instance, following Q3 Class-A apparel stockouts caused by rising demand variability, Class-A safety stock parameters were raised to 21 days of supply. Such adjustments automatically influence the ROP.\n\n## Relationship with Inventory Policy\n\nThe ROP acts as a direct reflection of underlying inventory policies related to demand, lead times, and safety stock. Raising safety stock parameters, for example, automatically increases the reorder point. For instance, increasing Class-A safety stock to 21 days automatically lifted the ROP for those SKUs. A case study involving Q3 apparel stockouts highlighted that the remedy for near-miss incidents was to recalibrate the safety stock formula against current demand variability rather than directly adjusting reorder points.\n\n## Source References\n*   [Copy of Supplier Onboarding Guide](1Obu3LNs7aVPvtEEuKbgiD7b553zn-LOE5xe3KuWt6Fg)\n*   [Copy of Procurement SOP](1IXn1QX1m7lJ7kn6yGnQi8At_hhvBKsHuPGbs5SFUUI0)\n*   [Copy of Inventory Management Glossary](1VR5cX-s-EA9fwFyVH9BVPmlLB59qd-UtL0LRZGfNBNU)\n*   [Copy of Logistics Network Overview](1FFaghxSz7YKUakJzBsGu_u_C1ZeNPXBG38apWoU0Xdc)\n*   [Copy of Inventory Policy Memo](132WG298COjjbV1PqmJ01cnXFeQfTSdF30a1tlf9YjhU)\n*   [Copy of Q3 Stockout Postmortem](1LGv8kJwGMxFmrObzlWWabfavoaapl24zaFbXiQXU_aY)\n*   [Copy of Demand Planning Meeting Notes](1jI6HhNVjOkkpuUYDDZ3xhpUlgzqtjg1lTaBQt9OeImQ)\n\n# Settlement Cutoff Time Overview\n\nThe Settlement Cutoff Time defines the strict daily deadline that determines whether a trade settlement executes on the same day or rolls over to the next business day. This critical operational parameter is essential for managing counterparty risk and ensuring timely financial operations.\n\n## Key Features\n\n*   **Definition**: The Settlement Cutoff Time is the absolute processing deadline by which trade instructions must be matched and received to be included in the same-day settlement batch. Instructions that arrive after this time are automatically deferred to the next business day's settlement cycle.\n*   **T+1 Settlement Standard**: Financial instruments, including equities and most fixed-income instruments, typically operate on a T+1 (Trade Date plus one business day) settlement basis, meaning settlement occurs one business day after the trade date, with adjustments for weekends and holidays. The daily cutoff time determines which trades meet the \"Trade Date\" requirement for same-day processing in relation to the T+1 cycle.\n*   **Cutoff Time Changes and Impact**:\n    *   Historically or generally, the daily settlement cutoff was set at **16:00 ET**. Instructions received before this time would execute in the same-day batch, while those after would roll to the next business day, introducing an extra day of counterparty risk.\n    *   With a transition to a new settlement platform, the authoritative cutoff time was revised and moved from the legacy **16:00 ET** to **15:30 ET** to align with upstream market infrastructure.\n    *   Failure to update this metadata in operational runbooks, such as the *Trade Operations Runbook*, has led to delayed settlements, resulting in unexpected overnight exposure and client inquiries.\n*   **Metadata Alignment and Automation**: Operational runbooks must be synchronized with the current **15:30 ET** cutoff. To support this, automated platform alerts are configured to trigger at **15:15 ET**, providing a buffer before the final deadline.\n*   **Operational Procedure**: Releasing the settlement batch prior to the daily cutoff time is a key step in the daily settlement checklist.\n\n## Aliases\n\n*   daily-settlement-cutoff\n\n## Source References\n\n*   [Copy of Postmortem: Settlement Cutoff Migration Delay](1SsgbjuwQKjwAQHcXoTBiOPKJg9sZAtIHntksCJsCVf8)\n*   [Copy of Treasury Operations Guide](1kXDYTun6V0lc4d83F_HS1g-L6G_iTsTFt6eoYnTGtwA)\n*   [Copy of Trade Ops Runbook](1DItkIvyGbrC1vPDIKxuKP0_qBnC1ShzTYoxsgKWSuSk)\n\n# Travel & Expense Policy Overview\n\nThe Travel & Expense Policy is the corporate policy framework owned by Finance Shared Services that governs employee travel bookings, booking channels, flight classes, and reimbursements.\n\n## Metadata Role\n\nThis policy is explicitly identified as part of the Travel & Expense Policy Governance Metadata.\n\n## Source References\n* [Travel & Expense Policy Governance Metadata](1tSCGhnctQOuy4Vdjz7IArJ7B6n-PJBlO29Z0ipKc-UE)",
   "token_usage": {
-    "input": 47081,
-    "output": 11175
+    "input": 73058,
+    "output": 21554
   },
   "latency": 0.0
 }

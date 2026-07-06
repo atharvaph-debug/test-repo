@@ -1,0 +1,14 @@
+name: financial-risk-compliance/anti-money-laundering
+id: financial-risk-compliance/anti-money-laundering
+type: dataplex-types.global.generic
+category: financial-risk-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-risk-compliance/anti-money-laundering
+  displayName: Anti-Money Laundering
+  description: Risk-based transaction and behavioral monitoring programs used to detect
+    deviations from established customer baselines and report suspicious activities.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-risk-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

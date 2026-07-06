@@ -1,0 +1,14 @@
+name: financial-risk-compliance/customer-lifetime-value
+id: financial-risk-compliance/customer-lifetime-value
+type: dataplex-types.global.generic
+category: financial-risk-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-risk-compliance/customer-lifetime-value
+  displayName: Customer Lifetime Value
+  description: The total net profit expected from a customer over their entire relationship,
+    aligning marketing and financial metrics.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-risk-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

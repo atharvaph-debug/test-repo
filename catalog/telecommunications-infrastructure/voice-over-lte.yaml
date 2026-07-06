@@ -1,0 +1,14 @@
+name: telecommunications-infrastructure/voice-over-lte
+id: telecommunications-infrastructure/voice-over-lte
+type: dataplex-types.global.generic
+category: telecommunications-infrastructure
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-infrastructure/voice-over-lte
+  displayName: Voice over LTE
+  description: A technology that routes real-time voice calls as IP packets over the
+    LTE data network via the IP Multimedia Subsystem (IMS).
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-infrastructure/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

@@ -1,0 +1,14 @@
+name: financial-operations-governance/settlement-cutoff-time
+id: financial-operations-governance/settlement-cutoff-time
+type: dataplex-types.global.generic
+category: financial-operations-governance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-operations-governance/settlement-cutoff-time
+  displayName: Settlement Cutoff Time
+  description: The strict daily deadline determining same-day trade settlement execution
+    versus rolling into the next business day.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-operations-governance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

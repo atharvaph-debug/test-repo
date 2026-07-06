@@ -1,0 +1,14 @@
+name: financial-operations-governance/travel-and-expense-policy
+id: financial-operations-governance/travel-and-expense-policy
+type: dataplex-types.global.generic
+category: financial-operations-governance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-operations-governance/travel-and-expense-policy
+  displayName: Travel & Expense Policy
+  description: The corporate policy framework owned by Finance Shared Services that
+    governs employee travel bookings, booking channels, flight classes, and reimbursements.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-operations-governance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

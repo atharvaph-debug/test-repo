@@ -1,0 +1,13 @@
+name: supply-chain-logistics/index
+id: supply-chain-logistics/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/supply-chain-logistics/index
+  displayName: Supply Chain & Logistics
+  description: Inventory identifiers, structured bill of materials data, and mathematical
+    parameter calculations governing replenishment.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

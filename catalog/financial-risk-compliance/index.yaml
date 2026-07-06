@@ -1,0 +1,13 @@
+name: financial-risk-compliance/index
+id: financial-risk-compliance/index
+type: dataplex-types.global.generic
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-risk-compliance/index
+  displayName: Financial Risk & Compliance
+  description: Core risk scoring, treasury parameters, and regulatory compliance workflows
+    within financial systems.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base-index
+    system: enrichment-agent

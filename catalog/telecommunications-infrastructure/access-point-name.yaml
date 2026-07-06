@@ -1,0 +1,14 @@
+name: telecommunications-infrastructure/access-point-name
+id: telecommunications-infrastructure/access-point-name
+type: dataplex-types.global.generic
+category: telecommunications-infrastructure
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/telecommunications-infrastructure/access-point-name
+  displayName: Access Point Name
+  description: An identifier presented by a mobile device to route data sessions through
+    specific packet data gateways and networks.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/telecommunications-infrastructure/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent

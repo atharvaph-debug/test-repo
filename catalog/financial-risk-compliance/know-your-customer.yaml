@@ -1,0 +1,14 @@
+name: financial-risk-compliance/know-your-customer
+id: financial-risk-compliance/know-your-customer
+type: dataplex-types.global.generic
+category: financial-risk-compliance
+resource:
+  name: projects/cloud-ml-metadata-test-jialu/locations/global/catalog/financial-risk-compliance/know-your-customer
+  displayName: Know Your Customer
+  description: The onboarding and continuous verification process used to establish
+    customer identity, beneficial ownership, and financial-crime risk profiles.
+  parent: projects/cloud-ml-metadata-test-jialu/locations/global/entryGroups/kc_enrich_verify/entries/financial-risk-compliance/index
+aspects:
+  dataplex-types.global.generic:
+    type: knowledge-base
+    system: enrichment-agent
